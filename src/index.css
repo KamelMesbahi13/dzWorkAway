@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --textColor: #252525;
+  --main: #096fad;
+  --second: #69fab4;
+  --hoverColor: #439cdb;
+  --grey: #eee;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lora", serif;
+}
+
+@layer components {
+  body {
+    @apply text-textColor font-main;
+  }
+
+  p,
+  a {
+    @apply text-sm md:text-base;
+  }
+
+  h1 {
+    @apply text-2xl font-semibold capitalize font-second md:font-bold md:text-3xl;
+  }
+
+  h2 {
+    @apply text-xl font-semibold capitalize font-second md:font-bold md:text-2xl;
+  }
+
+  h6 {
+    @apply mb-2 text-lg md:text-xl font-main;
+  }
+
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .textCenter {
+    text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+  }
+
+  .textRight {
+    text-align: right;
+    text-align: -moz-right;
+    text-align: -webkit-right;
+  }
+
+  .buttonCust {
+    color: white;
+    padding: 13px 20px 13px;
+    outline: 0;
+    text-transform: capitalize;
+    border: 1px solid var(--textColor);
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  .buttonCust:after {
+    content: "";
+    background-color: var(--main);
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+
+  .buttonCust:hover:after {
+    top: 0px;
+    left: 0px;
+  }
+
+  @media (min-width: 768px) {
+    .buttonCust {
+      padding: 13px 50px 13px;
+    }
+  }
+
+  .link {
+    color: var(--textColor);
+    position: relative;
+    text-decoration: none;
+  }
+
+  .link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: var(--main);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .link:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+}
