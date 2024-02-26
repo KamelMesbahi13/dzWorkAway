@@ -107,7 +107,7 @@ export default function App() {
                     src={Img}
                     alt={alt}
                   />
-                  <div className="absolute w-full md:w-1/2 px-16 top-[15%] sm:top-[30%]">
+                  <div className="absolute w-full md:w-1/2 p-8 lg:px-24 top-[15%] sm:top-[20%]">
                     <div>
                       <h1 className="mb-4">{heading_eng}</h1>
                       <h6>{paragraph_eng}</h6>
@@ -143,6 +143,14 @@ export default function App() {
                           <p>{paragraph_three_check_eng}</p>
                         </div>
                       </div>
+                    </div>
+                    <div className="flex mt-4">
+                      <button className="mr-8 simpleButton">
+                        Book Appointment
+                      </button>
+                      <button className="simpleButton">
+                        Check Our Services
+                      </button>
                     </div>
                   </div>
                 </SwiperSlide>
