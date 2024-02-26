@@ -143,4 +143,11 @@ h6 {
     transform-origin: left;
     transform: scaleX(1);
   }
+
+  .backAboutHome {
+    background-image: url(../src/assets/Bg-AboutHome.jpg);
+    background-position: center center;
+    /* background-attachment: fixed; */
+    background-size: cover;
+  }
 }

@@ -1,5 +1,11 @@
 const AboutUs = () => {
-  return <div>AboutUs</div>;
+  return (
+    <>
+      <div className="backAboutHome h-[100vh]">
+        <div></div>
+      </div>
+    </>
+  );
 };
 
 export default AboutUs;
