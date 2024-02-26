@@ -1,5 +1,4 @@
 import Header from "./Header/Header";
-
 import Title from "../../../GeneralFunctions/Title";
 
 const Home = () => {

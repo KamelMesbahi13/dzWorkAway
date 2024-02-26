@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/Logo.png";
-import { BsGlobe } from "react-icons/bs";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FaXmark } from "react-icons/fa6";
 import Facebook from "../../assets/Facebook.png";
 import Instagram from "../../assets/instagram.png";
+import { BsGlobe } from "react-icons/bs";
 
 const Navbar = () => {
   const [nav, setNav] = useState(true);
@@ -35,7 +35,7 @@ const Navbar = () => {
           <div className="z-50 hidden w-full py-6 lg:flex">
             <div className="flex items-center justify-between w-full">
               <div>
-                <img className="w-24" src={Logo} alt="Logo" />
+                <img className="w-28" src={Logo} alt="Logo" />
               </div>
               <div className="flex gap-8">
                 {navbarItems.map((el, i) => (
@@ -47,7 +47,7 @@ const Navbar = () => {
                 ))}
               </div>
               <div className="flex items-center">
-                <span className="p-2 mr-4 text-2xl cursor-pointer">
+                <span className="mr-4 text-2xl cursor-pointer ">
                   <BsGlobe />
                 </span>
                 <div>

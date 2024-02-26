@@ -3,8 +3,6 @@ import ImgOne from "../../../../../assets/HomePageOne.jpg";
 import ImgTwo from "../../../../../assets/HomePageTwo.jpg";
 import ImgThree from "../../../../../assets/HomePageThree.jpg";
 import Check from "../../../../../assets/check.png";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-
 import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
@@ -104,7 +102,7 @@ export default function App() {
             ) => {
               return (
                 <SwiperSlide key={i} className="relative text-white">
-                  <LazyLoadImage
+                  <img
                     className="h-[60vh] sm:h-[80vh] lg:h-[100vh]"
                     src={Img}
                     alt={alt}
