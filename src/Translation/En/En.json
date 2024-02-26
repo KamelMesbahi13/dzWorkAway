@@ -1,3 +1,10 @@
 {
-  "heading": "Immigration visa Consulting"
+  "navbar": [
+    {
+      "navbar_one": "Home",
+      "navbar_two": "Our Services",
+      "navbar_three": "About Us",
+      "navbar_four": "Contact Us"
+    }
+  ]
 }

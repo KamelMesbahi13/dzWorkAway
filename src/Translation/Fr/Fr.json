@@ -1,3 +1,10 @@
 {
-  "heading": "Consultation en visa d'immigration"
+  "navbar": [
+    {
+      "navbar_one": "Accueil",
+      "navbar_two": "Nos Services",
+      "navbar_three": "À Propos de Nous",
+      "navbar_four": "Contactez Nous"
+    }
+  ]
 }
