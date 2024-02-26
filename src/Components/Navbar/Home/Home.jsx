@@ -1,5 +1,6 @@
 import Header from "./Header/Header";
 import Title from "../../../GeneralFunctions/Title";
+import AboutUs from "./AboutUs/AboutUs";
 
 const Home = () => {
   Title("Dz Work Away | Accueil");
@@ -8,7 +9,9 @@ const Home = () => {
     <>
       <div>
         <Header />
-        <div className="container"></div>
+        <div className="container">
+          <AboutUs />
+        </div>
       </div>
     </>
   );
