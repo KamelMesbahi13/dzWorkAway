@@ -5,7 +5,7 @@ import ImgThree from "../../../../../assets/HomePageThree.jpg";
 import Check from "../../../../../assets/check.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "./Swiper.css";
@@ -86,7 +86,7 @@ export default function App() {
             delay: 2500,
             disableOnInteraction: false,
           }}
-          modules={[Autoplay, Pagination, Navigation]}
+          modules={[Autoplay]}
           className="mySwiper"
         >
           {Data.map(
@@ -109,7 +109,7 @@ export default function App() {
                     src={Img}
                     alt={alt}
                   />
-                  <div className="absolute w-full md:w-1/2 px-16 top-1/4 sm:top-[30%]">
+                  <div className="absolute w-full md:w-1/2 px-16 top-[15%] sm:top-[30%]">
                     <div>
                       <h1 className="mb-4">{heading_eng}</h1>
                       <h6>{paragraph_eng}</h6>

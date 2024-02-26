@@ -5,8 +5,7 @@ import { BsGlobe } from "react-icons/bs";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FaXmark } from "react-icons/fa6";
 import Facebook from "../../assets/Facebook.png";
-import Youtube from "../../assets/Youtube.png";
-import Gmail from "../../assets/Gmail.png";
+import Instagram from "../../assets/instagram.png";
 
 const Navbar = () => {
   const [nav, setNav] = useState(true);
@@ -47,10 +46,28 @@ const Navbar = () => {
                   </div>
                 ))}
               </div>
-              <div className="flex">
-                <span className="p-2 text-2xl cursor-pointer">
+              <div className="flex items-center">
+                <span className="p-2 mr-4 text-2xl cursor-pointer">
                   <BsGlobe />
                 </span>
+                <div>
+                  <a
+                    href="https://web.facebook.com/dzworkaway"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img className="w-5 mr-2" src={Facebook} alt="Facebook" />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href="https://www.instagram.com/dzworkaway/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img className="w-5" src={Instagram} alt="Instagram" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -90,7 +107,7 @@ const Navbar = () => {
 
                   <div className="flex gap-2 mt-4">
                     <a
-                      href="https://web.facebook.com/serviclim.studio"
+                      href="https://web.facebook.com/dzworkaway"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -98,19 +115,11 @@ const Navbar = () => {
                     </a>
 
                     <a
-                      href="https://www.youtube.com/@serviclimdz9413"
+                      href="https://www.instagram.com/dzworkaway/"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <img className="w-5" src={Youtube} alt="Youtube" />
-                    </a>
-
-                    <a
-                      href="https://www.linkedin.com/company/serviclimalgerie/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <img className="w-5" src={Gmail} alt="Linkedin" />
+                      <img className="w-5" src={Instagram} alt="Instagram" />
                     </a>
                   </div>
                   <div className="mx-auto mt-2 lg:hidden">
