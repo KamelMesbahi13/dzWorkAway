@@ -109,7 +109,7 @@ export default function App() {
                   />
                   <div className="absolute w-full md:w-1/2 p-8 lg:px-24 top-[15%] sm:top-[20%]">
                     <div>
-                      <h1 className="mb-4">{heading_eng}</h1>
+                      <h1 className="mb-4 text-5xl">{heading_eng}</h1>
                       <h6>{paragraph_eng}</h6>
                     </div>
                     <div>
