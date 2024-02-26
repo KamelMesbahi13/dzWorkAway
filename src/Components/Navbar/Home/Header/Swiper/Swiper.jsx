@@ -76,7 +76,7 @@ const Data = [
 export default function App() {
   return (
     <>
-      <div className=" h-[60vh] sm:h-[100vh] w-full">
+      <div className=" h-[60vh] md:h-[100vh] w-full">
         <Swiper
           spaceBetween={50}
           centeredSlides={true}
@@ -103,13 +103,13 @@ export default function App() {
               return (
                 <SwiperSlide key={i} className="relative text-white">
                   <LazyLoadImage
-                    className="h-[60vh] w-full sm:h-[80vh] lg:h-[100vh]"
+                    className="h-[60vh] w-full md:h-[100vh]"
                     src={Img}
                     alt={alt}
                   />
                   <div className="absolute w-full md:w-1/2 p-8 lg:px-24 top-[15%] sm:top-[20%]">
                     <div>
-                      <h1 className="mb-4 text-5xl">{heading_eng}</h1>
+                      <h1 className="mb-4 md:text-5xl">{heading_eng}</h1>
                       <h6>{paragraph_eng}</h6>
                     </div>
                     <div>

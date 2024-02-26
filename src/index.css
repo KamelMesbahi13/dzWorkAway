@@ -42,11 +42,11 @@ h6 {
   }
 
   .headingStyleLg {
-    @apply before:absolute before:hidden before:md:block before:h-2 before:w-16 before:left-[2rem] before:bg-secondColor before:top-1/2 before:-translate-y-1/2;
+    @apply before:absolute before:hidden before:md:block before:h-2 before:w-16 before:left-[2rem] before:bg-hoverColor before:top-1/2 before:-translate-y-1/2;
   }
 
   .headingStyleMd {
-    @apply before:absolute before:hidden before:md:block before:h-2 before:w-36 before:left-1/2 before:bg-secondColor before:top-[110%] before:-translate-x-1/2;
+    @apply before:absolute before:hidden before:md:block before:h-2 before:w-36 before:left-1/2 before:bg-hoverColor before:top-[110%] before:-translate-x-1/2;
   }
 
   .container {
