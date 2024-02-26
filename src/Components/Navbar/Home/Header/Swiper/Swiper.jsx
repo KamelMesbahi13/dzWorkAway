@@ -1,13 +1,12 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import ImgOne from "../../../../../assets/HomePageOne.jpg";
-import ImgTwo from "../../../../../assets/HomePageTwo.jpg";
-import ImgThree from "../../../../../assets/HomePageThree.jpg";
-import Check from "../../../../../assets/check.png";
 import { Autoplay } from "swiper/modules";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "swiper/css";
 import "./Swiper.css";
-import "react-lazy-load-image-component/src/effects/blur.css";
+import ImgOne from "../../../../../assets/HomePageOne.jpg";
+import ImgTwo from "../../../../../assets/HomePageTwo.jpg";
+import ImgThree from "../../../../../assets/HomePageThree.jpg";
+import Check from "../../../../../assets/check.png";
 
 const Data = [
   {
@@ -79,10 +78,10 @@ export default function App() {
     <>
       <div className=" h-[60vh] sm:h-[100vh] w-full">
         <Swiper
-          spaceBetween={30}
+          spaceBetween={50}
           centeredSlides={true}
           autoplay={{
-            delay: 2500,
+            delay: 4500,
             disableOnInteraction: false,
           }}
           modules={[Autoplay]}
@@ -104,7 +103,6 @@ export default function App() {
               return (
                 <SwiperSlide key={i} className="relative text-white">
                   <LazyLoadImage
-                    // effect="blur"
                     className="h-[60vh] w-full sm:h-[80vh] lg:h-[100vh]"
                     src={Img}
                     alt={alt}
