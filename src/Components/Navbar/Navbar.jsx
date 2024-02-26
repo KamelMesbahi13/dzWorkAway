@@ -33,7 +33,7 @@ const Navbar = () => {
     <>
       <div>
         <div className="container">
-          <div className="z-50 hidden w-full pt-6 lg:flex">
+          <div className="z-50 hidden w-full py-6 lg:flex">
             <div className="flex items-center justify-between w-full">
               <div>
                 <img className="w-24" src={Logo} alt="Logo" />
@@ -55,7 +55,7 @@ const Navbar = () => {
             </div>
           </div>
           <div>
-            <div className="flex flex-row-reverse items-center justify-between">
+            <div className="flex flex-row-reverse items-center justify-between lg:hidden">
               <div className={nav ? "visible lg:invisible" : "invisible"}>
                 <img src={Logo} className="w-24" alt="Logo" />
               </div>
