@@ -10,6 +10,7 @@ const AboutUs = () => {
       <div className="pt-12 md:pt-20">
         <div className="container">
           <div className="flex flex-col items-center textCenter md:text-left md:justify-between md:flex-row">
+            <div></div>
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -62,25 +63,32 @@ const AboutUs = () => {
                       massa. Duis at dui sem. Vivamus ut gravida libero
                     </p>
                   </div>
-                  <div className="flex flex-col justify-between mt-8 md:flex-row">
-                    <div className="flex items-center md:w-[80%] shadow-md p-4 duration-500 hover:shadow-lg">
-                      <img className="w-10 h-10 mr-4" src={Vision} alt="" />
-                      <div>
-                        <h6 className="mb-1">Our Vision</h6>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit.
-                        </p>
+
+                  <div className="text-left">
+                    <div className="flex flex-col justify-between mt-8 md:flex-row">
+                      <div className="flex items-center md:w-[80%] shadow-md p-4 duration-500 hover:shadow-lg">
+                        <img className="w-10 h-10 mr-4" src={Vision} alt="" />
+                        <div>
+                          <p className="mb-1 text-lg font-bold md:text-xl">
+                            Our Vision
+                          </p>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit.
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                    <div className="flex items-center md:w-[80%] shadow-md p-4 duration-500 hover:shadow-lg">
-                      <img className="w-10 h-10 mr-4" src={Mission} alt="" />
-                      <div>
-                        <h6 className="mb-1 font-bold">Our Mission</h6>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit.
-                        </p>
+                      <div className="flex items-center md:w-[80%] shadow-md p-4 duration-500 hover:shadow-lg">
+                        <img className="w-10 h-10 mr-4" src={Mission} alt="" />
+                        <div>
+                          <p className="mb-1 text-lg font-bold md:text-xl">
+                            Our Mission
+                          </p>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit.
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -98,7 +106,7 @@ const AboutUs = () => {
                 }}
                 className="textCenter"
               >
-                <button className="mt-16 md:mt-8 buttonCust">
+                <button className="mt-12 md:mt-8 buttonCust">
                   Discover More
                 </button>
               </motion.div>
