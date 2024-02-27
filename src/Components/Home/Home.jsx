@@ -3,6 +3,7 @@ import Title from "../../GeneralFunctions/Title";
 import AboutUs from "./AboutUs/AboutUs";
 import Platforms from "./Platforms/Platforms";
 import Services from "./Services/Services";
+import ContactSection from "../../Ui/ContactSection/ContactSection";
 
 const Home = () => {
   Title("Dz Work Away | Accueil");
@@ -15,6 +16,9 @@ const Home = () => {
         <div className="container">
           <Platforms />
           <Services />
+        </div>
+        <div>
+          <ContactSection />
         </div>
       </div>
     </>

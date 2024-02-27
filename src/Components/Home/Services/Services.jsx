@@ -2,7 +2,6 @@ import ImgOne from "../../../assets/Arrima.png";
 import ImgTwo from "../../../assets/EntréeExpress.jpg";
 import ImgThree from "../../../assets/NewBrunswick.png";
 import ImgFour from "../../../assets/Flag_of_New_Zealand.svg.png";
-
 import Plane from "../../../assets/Plane.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
@@ -165,7 +164,9 @@ const Platforms = () => {
                 </div>
               </div>
               <div>
-                <button className="buttonCust">{button}</button>
+                <a to={`/services/${id}`}>
+                  <button className="buttonCust">{button}</button>
+                </a>
               </div>
             </motion.div>
           </div>
