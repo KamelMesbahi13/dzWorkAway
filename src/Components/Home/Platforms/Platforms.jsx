@@ -84,7 +84,9 @@ const Platforms = () => {
                       <div className="w-full h-[2px] mt-4 bg-grey"></div>
                       <div>
                         <div>
-                          <h6 className="my-4">{header}</h6>
+                          <p className="my-4 text-lg font-bold md:text-xl">
+                            {header}
+                          </p>
                         </div>
                         <div>
                           <p className="md:w-[90%] mb-4">{description}</p>
