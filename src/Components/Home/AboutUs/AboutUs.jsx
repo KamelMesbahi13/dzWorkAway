@@ -98,7 +98,7 @@ const AboutUs = () => {
                 }}
                 className="textCenter"
               >
-                <button className="mt-4 md:mt-8 buttonCust">
+                <button className="mt-16 md:mt-8 buttonCust">
                   Discover More
                 </button>
               </motion.div>
