@@ -72,7 +72,7 @@ const Platforms = () => {
                         hidden: { opacity: 0, y: 100 },
                         visible: { opacity: 1, y: 0 },
                       }}
-                      className="pt-8 card-content"
+                      className="md:pt-8 card-content"
                     >
                       <div>
                         <LazyLoadImage
