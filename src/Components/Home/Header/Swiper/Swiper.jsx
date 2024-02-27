@@ -3,10 +3,10 @@ import { Autoplay } from "swiper/modules";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "swiper/css";
 import "./Swiper.css";
-import ImgOne from "../../../../../assets/HomePageOne.jpg";
-import ImgTwo from "../../../../../assets/HomePageTwo.jpg";
-import ImgThree from "../../../../../assets/HomePageThree.jpg";
-import Check from "../../../../../assets/check.png";
+import ImgOne from "../../../../assets/HomePageOne.jpg";
+import ImgTwo from "../../../../assets/HomePageTwo.jpg";
+import ImgThree from "../../../../assets/HomePageThree.jpg";
+import Check from "../../../../assets/check.png";
 
 const Data = [
   {

@@ -1,13 +1,13 @@
-import Img from "../../../../assets/aboutHome.jpg";
-import Vision from "../../../../assets/Vision.png";
-import Mission from "../../../../assets/Mission.png";
+import Img from "../../../assets/aboutHome.jpg";
+import Vision from "../../../assets/Vision.png";
+import Mission from "../../../assets/Mission.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
 
 const AboutUs = () => {
   return (
     <>
-      <div className="h-[100vh] pt-12 md:pt-20">
+      <div className="pt-12 md:pt-20">
         <div className="container">
           <div className="flex flex-col items-center textCenter md:text-left md:justify-between md:flex-row">
             <motion.div

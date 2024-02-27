@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
-import Home from "./Components/Navbar/Home/Home";
+import Home from "./Components/Home/Home";
 
 const App = () => {
   return (
