@@ -16,8 +16,8 @@ const AboutUs = () => {
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.5 }}
               variants={{
-                hidden: { opacity: 0, x: -50 },
-                visible: { opacity: 1, x: 0 },
+                hidden: { opacity: 0 },
+                visible: { opacity: 1 },
               }}
             >
               <LazyLoadImage
@@ -35,8 +35,8 @@ const AboutUs = () => {
                   viewport={{ once: true, amount: 0.5 }}
                   transition={{ duration: 0.5 }}
                   variants={{
-                    hidden: { opacity: 0, x: 50 },
-                    visible: { opacity: 1, x: 0 },
+                    hidden: { opacity: 0 },
+                    visible: { opacity: 1 },
                   }}
                 >
                   <h1 className="relative p-0 mt-4 mb-2 md:mb-8 md:mt-0 lg:pl-20 md:headingStyleMd lg:headingStyleLg">
@@ -49,8 +49,8 @@ const AboutUs = () => {
                   viewport={{ once: true, amount: 0.5 }}
                   transition={{ duration: 0.9 }}
                   variants={{
-                    hidden: { opacity: 0, x: 50 },
-                    visible: { opacity: 1, x: 0 },
+                    hidden: { opacity: 0 },
+                    visible: { opacity: 1 },
                   }}
                 >
                   <div>
