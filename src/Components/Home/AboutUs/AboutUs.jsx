@@ -66,7 +66,7 @@ const AboutUs = () => {
                     <div className="flex items-center md:w-[80%] shadow-md p-4 duration-500 hover:shadow-lg">
                       <img className="w-10 h-10 mr-4" src={Vision} alt="" />
                       <div>
-                        <h6 className="mb-1 font-bold">Our Vision</h6>
+                        <h6 className="mb-1">Our Vision</h6>
                         <p>
                           Lorem ipsum dolor sit amet consectetur, adipisicing
                           elit.
