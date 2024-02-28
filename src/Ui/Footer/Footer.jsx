@@ -145,20 +145,12 @@ const Footer = () => {
       <div>
         <div className="relative w-full h-20 bg-grey">
           <div className="container absolute -translate-y-1/2 top-1/2">
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-center">
               <div>
                 <p>
                   Copyright <span>&#169;</span> All Rights Reserved To{" "}
                   <span className="font-semibold">Dz Work Away {year} </span>
                 </p>
-              </div>
-              <div className="flex items-center">
-                <a href="/">
-                  <p className="mr-4">Politics and privacy</p>
-                </a>
-                <a href="/">
-                  <p>Political and legal</p>
-                </a>
               </div>
             </div>
           </div>
