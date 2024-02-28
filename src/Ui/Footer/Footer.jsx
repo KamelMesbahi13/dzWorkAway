@@ -2,7 +2,7 @@ import Logo from "../../assets/Logo.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Facebook from "../../assets/Facebook.png";
 import Instagram from "../../assets/instagram.png";
-import Tiktok from "../../assets/Tiktok.png";
+import Tiktok from "../../assets/TikTok.png";
 import Gmail from "../../assets/Gmail.png";
 import Phone from "../../assets/PhoneCall.png";
 
