@@ -52,7 +52,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className="relative w-full mt-20 h-[50rem] lg:h-[31rem] footerBack border border-grey">
+      <div className="relative w-full mt-12 md:mt-20 h-[50rem] lg:h-[31rem] footerBack border border-grey">
         <div className="container">
           <div className="absolute -translate-y-1/2 top-1/2">
             <div className="flex flex-col items-center justify-between lg:flex-row">
