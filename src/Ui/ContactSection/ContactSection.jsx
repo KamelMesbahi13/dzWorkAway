@@ -1,5 +1,6 @@
 import Img from "../../assets/ContactSection.png";
 import Check from "../../assets/check.png";
+import { motion } from "framer-motion";
 
 const paragraphs = [
   {
@@ -22,7 +23,17 @@ const ContactSection = () => {
       <div className="mt-20 border-2 shadow-xl md:mt-40 border-grey">
         <div>
           <div className="flex flex-col justify-between lg:flex-row">
-            <div className="p-4">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+              className="p-4"
+            >
               <h1>Fly Your Dream Destination</h1>
               <p className="mt-2">
                 Idea of denouncing pleasure & praising pain was born.
@@ -52,10 +63,20 @@ const ContactSection = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="mt-0 textRight md:mt-8">
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, x: 50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+              className="textRight"
+            >
               <img className="w-full lg:w-[80%]" src={Img} alt="Logo" />
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
