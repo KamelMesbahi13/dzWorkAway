@@ -92,8 +92,11 @@ const Platforms = () => {
                           <p className="md:w-[90%] mb-4">{description}</p>
                         </div>
                       </div>
+
                       <div>
-                        <button className="buttonCust">{button}</button>
+                        <a href={`/platform/${id}`}>
+                          <button className="buttonCust">{button}</button>
+                        </a>{" "}
                       </div>
                     </motion.div>
                   </div>

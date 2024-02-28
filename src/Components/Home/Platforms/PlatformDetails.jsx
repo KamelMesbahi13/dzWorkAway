@@ -28,7 +28,7 @@ const data = [
   },
 ];
 
-const ServicesDetails = () => {
+const PlatformDetails = () => {
   const { servicesId } = useParams();
   const services = data.find((service) => service.id == servicesId);
   const { id, description } = services;
@@ -47,4 +47,4 @@ const ServicesDetails = () => {
   );
 };
 
-export default ServicesDetails;
+export default PlatformDetails;

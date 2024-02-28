@@ -90,7 +90,9 @@ const Platforms = () => {
                 </div>
               </div>
               <div>
-                <button className="buttonCust">{button}</button>
+                <a href={`/services/${id}`}>
+                  <button className="buttonCust">{button}</button>
+                </a>
               </div>
             </motion.div>
           </div>
@@ -164,7 +166,7 @@ const Platforms = () => {
                 </div>
               </div>
               <div>
-                <a to={`/services/${id}`}>
+                <a href={`/services/${id}`}>
                   <button className="buttonCust">{button}</button>
                 </a>
               </div>
