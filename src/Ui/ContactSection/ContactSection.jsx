@@ -48,7 +48,7 @@ const ContactSection = () => {
                     );
                   })}
                   <div className="mt-4 md:mt-6">
-                    <button className="buttonCust">ContactUS</button>
+                    <button className="buttonCust">Contact US</button>
                   </div>
                 </div>
               </div>
