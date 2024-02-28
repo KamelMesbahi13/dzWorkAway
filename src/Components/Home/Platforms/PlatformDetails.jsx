@@ -29,9 +29,9 @@ const data = [
 ];
 
 const PlatformDetails = () => {
-  const { servicesId } = useParams();
-  const services = data.find((service) => service.id == servicesId);
-  const { id, description } = services;
+  const { platformId } = useParams();
+  const platform = data.find((platform) => platform.id == platformId);
+  const { id, description } = platform;
 
   return (
     <>

@@ -22,7 +22,7 @@ const Navbar = () => {
   ];
 
   const navbarLinks = [
-    "Accueil",
+    "",
     "Nos-Services",
     "À Propos-de-Nous",
     "Contactez-Nous",
