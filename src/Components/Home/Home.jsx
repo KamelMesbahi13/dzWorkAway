@@ -1,9 +1,12 @@
-import Header from "./Header/Header";
+import { lazy } from "react";
+const Header = lazy(() => import("./Header/Header"));
+const AboutUs = lazy(() => import("./AboutUs/AboutUs"));
+const Platforms = lazy(() => import("./Platforms/Platforms"));
+const Services = lazy(() => import("./Services/Services"));
+const ContactSection = lazy(() =>
+  import("../../Ui/ContactSection/ContactSection")
+);
 import Title from "../../GeneralFunctions/Title";
-import AboutUs from "./AboutUs/AboutUs";
-import Platforms from "./Platforms/Platforms";
-import Services from "./Services/Services";
-import ContactSection from "../../Ui/ContactSection/ContactSection";
 
 const Home = () => {
   Title("Dz Work Away | Accueil");

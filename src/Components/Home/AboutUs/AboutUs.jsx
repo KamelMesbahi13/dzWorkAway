@@ -1,8 +1,8 @@
-import Img from "../../../assets/aboutHome.jpg";
 import Vision from "../../../assets/Vision.png";
 import Mission from "../../../assets/Mission.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
+import Img from "../../../assets/aboutHome.jpg";
 
 const AboutUs = () => {
   return (
@@ -66,7 +66,11 @@ const AboutUs = () => {
                   <div className="text-left">
                     <div className="flex flex-col justify-between mt-8 md:flex-row">
                       <div className="flex items-center md:w-[80%] shadow-md p-4 duration-500 hover:shadow-lg">
-                        <img className="w-10 h-10 mr-4" src={Vision} alt="" />
+                        <LazyLoadImage
+                          className="w-10 h-10 mr-4"
+                          src={Vision}
+                          alt="Vision"
+                        />
                         <div>
                           <p className="mb-1 text-lg font-bold md:text-xl">
                             Our Vision
@@ -78,7 +82,11 @@ const AboutUs = () => {
                         </div>
                       </div>
                       <div className="flex items-center md:w-[80%] shadow-md p-4 duration-500 hover:shadow-lg">
-                        <img className="w-10 h-10 mr-4" src={Mission} alt="" />
+                        <LazyLoadImage
+                          className="w-10 h-10 mr-4"
+                          src={Mission}
+                          alt="Mission"
+                        />
                         <div>
                           <p className="mb-1 text-lg font-bold md:text-xl">
                             Our Mission

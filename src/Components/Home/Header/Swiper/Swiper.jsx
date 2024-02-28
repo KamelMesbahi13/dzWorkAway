@@ -115,7 +115,7 @@ export default function App() {
                     <div>
                       <div className="mt-4">
                         <div className="flex">
-                          <img
+                          <LazyLoadImage
                             className="!w-6 h-6 mr-2"
                             src={Check}
                             alt="Check"
@@ -125,7 +125,7 @@ export default function App() {
                       </div>
                       <div>
                         <div className="flex my-4">
-                          <img
+                          <LazyLoadImage
                             className="!w-6 h-6 mr-2"
                             src={Check}
                             alt="Check"
@@ -135,7 +135,7 @@ export default function App() {
                       </div>
                       <div>
                         <div className="flex">
-                          <img
+                          <LazyLoadImage
                             className="!w-6 h-6 mr-2"
                             src={Check}
                             alt="Check"

@@ -1,6 +1,7 @@
 import Img from "../../assets/ContactSection.png";
 import Check from "../../assets/check.png";
 import { motion } from "framer-motion";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const paragraphs = [
   {
@@ -45,7 +46,7 @@ const ContactSection = () => {
                       <div key={id}>
                         <div className="flex items-center my-4">
                           <div>
-                            <img
+                            <LazyLoadImage
                               className="!w-6 h-6 mr-2"
                               src={Check}
                               alt="Check"
@@ -75,7 +76,11 @@ const ContactSection = () => {
               }}
               className="textRight"
             >
-              <img className="w-full lg:w-[80%]" src={Img} alt="Logo" />
+              <LazyLoadImage
+                className="w-full lg:w-[80%]"
+                src={Img}
+                alt="Logo"
+              />
             </motion.div>
           </div>
         </div>
