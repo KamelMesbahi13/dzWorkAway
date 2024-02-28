@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/Home/Home";
 import ServicesDetails from "./Components/Home/Services/ServicesDetails";
+import Footer from "./Ui/Footer/Footer";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/services/:servicesId" element={<ServicesDetails />} />
         </Routes>
+        <Footer />
       </div>
     </>
   );

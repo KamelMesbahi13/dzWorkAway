@@ -189,4 +189,11 @@ h1 {
     background-position: center center;
     background-size: cover;
   }
+
+  .footerBack {
+    background-image: url(../src/assets/Footer.png);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+  }
 }
