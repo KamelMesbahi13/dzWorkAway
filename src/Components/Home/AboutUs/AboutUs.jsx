@@ -7,10 +7,9 @@ import { motion } from "framer-motion";
 const AboutUs = () => {
   return (
     <>
-      <div className="pt-12 md:pt-20">
+      <div className="pt-12 md:pt-20 aboutHomeBack">
         <div className="container">
           <div className="flex flex-col items-center textCenter md:text-left md:justify-between md:flex-row">
-            <div></div>
             <motion.div
               initial="hidden"
               whileInView="visible"

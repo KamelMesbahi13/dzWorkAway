@@ -2,7 +2,7 @@ import ImgOne from "../../../assets/Arrima.png";
 import ImgTwo from "../../../assets/EntréeExpress.jpg";
 import ImgThree from "../../../assets/NewBrunswick.png";
 import ImgFour from "../../../assets/Flag_of_New_Zealand.svg.png";
-import Plane from "../../../assets/Plane.png";
+import PlaneTwo from "../../../assets/PlaneTwo.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
 
@@ -190,7 +190,7 @@ const Platforms = () => {
             }}
             className="mb-8"
           >
-            <h1 className="relative w-full p-0 mb-4 sm:mb-12 lg:mb-4 lg:pl-20 md:w-1/2 md:headingStyleMd lg:headingStyleLg">
+            <h1 className="relative w-full mb-4 sm:mb-12 lg:mb-4 md:w-1/2 md:headingStyleMd lg:headingStyleLg">
               Discover a Comprehensive Online Immigration Platform
             </h1>
             <p className="w-full md:w-3/4">
@@ -203,8 +203,8 @@ const Platforms = () => {
 
           <div className="relative hidden md:block">
             <LazyLoadImage
-              className="absolute left-[60%] w-[40%] bottom-12 md:left-[70%] md:w-[25%]"
-              src={Plane}
+              className="absolute left-[60%] w-[40%] bottom-4 md:left-[50%] md:w-[25%]"
+              src={PlaneTwo}
               alt="plane"
             />
           </div>

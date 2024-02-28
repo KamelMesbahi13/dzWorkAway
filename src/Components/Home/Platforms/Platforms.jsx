@@ -39,7 +39,7 @@ const Platforms = () => {
             }}
             className="mb-8"
           >
-            <h1 className="relative w-full p-0 mb-4 sm:mb-12 lg:mb-4 lg:pl-20 md:w-1/2 md:headingStyleMd lg:headingStyleLg">
+            <h1 className="relative w-full mb-4 sm:mb-12 lg:mb-4 md:w-1/2 md:headingStyleMd lg:headingStyleLg">
               Discover a Comprehensive Online Immigration Platform
             </h1>
             <p className="w-full md:w-3/4">

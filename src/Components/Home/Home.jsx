@@ -16,8 +16,6 @@ const Home = () => {
         <div className="container">
           <Platforms />
           <Services />
-        </div>
-        <div>
           <ContactSection />
         </div>
       </div>

@@ -37,7 +37,7 @@ h1 {
   }
 
   .headingStyleLg {
-    @apply before:absolute before:hidden before:md:block before:h-2 before:w-16 before:left-[2rem] before:bg-hoverColor before:top-1/2 before:-translate-y-1/2;
+    @apply before:absolute before:hidden lg:pl-20 before:md:block before:h-2 before:w-16 before:left-[2rem] before:bg-hoverColor before:top-1/2 before:-translate-y-1/2;
   }
 
   .headingStyleMd {
@@ -184,7 +184,7 @@ h1 {
     }
   }
 
-  .backAboutHome {
+  .aboutHomeBack {
     background-image: url(../src/assets/Bg-AboutHome.jpg);
     background-position: center center;
     background-size: cover;
