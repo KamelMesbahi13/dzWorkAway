@@ -58,7 +58,7 @@ const Platforms = () => {
                   />
                 </div>
                 <div>
-                  <span className="mx-4 text-4xl font-bold text-hoverColor">
+                  <span className="mx-4 text-4xl font-bold text-secondColor">
                     /
                   </span>
                 </div>
@@ -77,7 +77,7 @@ const Platforms = () => {
                     {headerOne}
                   </p>
                   <div>
-                    <span className="mx-4 text-2xl font-bold text-hoverColor">
+                    <span className="mx-4 text-2xl font-bold text-secondColor">
                       -
                     </span>
                   </div>
@@ -132,7 +132,7 @@ const Platforms = () => {
                   />
                 </div>
                 <div>
-                  <span className="mx-4 text-4xl font-bold text-hoverColor">
+                  <span className="mx-4 text-4xl font-bold text-secondColor">
                     /
                   </span>
                 </div>
@@ -151,7 +151,7 @@ const Platforms = () => {
                     {headerThree}
                   </p>
                   <div>
-                    <span className="mx-4 text-2xl font-bold text-hoverColor">
+                    <span className="mx-4 text-2xl font-bold text-secondColor">
                       -
                     </span>
                   </div>

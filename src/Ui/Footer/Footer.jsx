@@ -71,7 +71,7 @@ const Footer = () => {
                     </div>
                     <div className="my-4 lg:my-0 lg:text-left">
                       <iframe
-                        className="w-[20rem] lg:h-[15rem]"
+                        className="w-[20rem] lg:h-[13rem]"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3196.5674581116455!2d3.4572480746310768!3d36.756952170138284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128e69baa1d2c8f7%3A0x296e1c2f98e626f2!2sdzworkaway!5e0!3m2!1sen!2sdz!4v1709118189454!5m2!1sen!2sdz"
                         allowFullScreen={true}
                         loading="lazy"
@@ -80,7 +80,7 @@ const Footer = () => {
                     </div>
                   </div>
                   <div className="my-4 lg:textCenter">
-                    <h6 className="mb-4 text-3xl">Links</h6>
+                    <h6 className="mb-4 text-3xl md:mb-8">Links</h6>
                     <div className="flex flex-wrap lg:flex-nowrap lg:flex-col gap-y-8">
                       {footerItems.map((el, i) => (
                         <div key={i}>
@@ -96,7 +96,7 @@ const Footer = () => {
               <div className="w-full lg:p-8 lg:w-1/4">
                 <div>
                   <div>
-                    <h6 className="mb-4">Our Social Media:</h6>
+                    <h6 className="mb-4 md:mb-8">Our Social Media:</h6>
                   </div>
                   <div className="flex">
                     {socialMedia.map(({ id, Img }) => {
@@ -143,16 +143,23 @@ const Footer = () => {
         </div>
       </div>
       <div>
-        <div className="relative w-full h-28 bg-mainColor">
-          <div className="container absolute text-white -translate-y-1/2 top-1/2">
-            <div className="flex items-center">
+        <div className="relative w-full h-20 bg-grey">
+          <div className="container absolute -translate-y-1/2 top-1/2">
+            <div className="flex items-center justify-between">
               <div>
                 <p>
                   Copyright <span>&#169;</span> All Rights Reserved To{" "}
                   <span className="font-semibold">Dz Work Away {year} </span>
                 </p>
               </div>
-              <div></div>
+              <div className="flex items-center">
+                <a href="/">
+                  <p className="mr-4">Politics and privacy</p>
+                </a>
+                <a href="/">
+                  <p>Political and legal</p>
+                </a>
+              </div>
             </div>
           </div>
         </div>
