@@ -19,35 +19,36 @@ const footerLinks = [
   "À Propos-de-Nous",
   "Contactez-Nous",
 ];
+const socialMedia = [
+  {
+    id: 1,
+    Img: Facebook,
+  },
+  {
+    id: 2,
+    Img: Instagram,
+  },
+  {
+    id: 3,
+    Img: Tiktok,
+  },
+];
+
+const contact = [
+  {
+    id: 1,
+    Img: Phone,
+    Content: "05 55 55 55",
+  },
+  {
+    id: 2,
+    Img: Gmail,
+    Content: "admin@gmail.com",
+  },
+];
 
 const Footer = () => {
-  const socialMedia = [
-    {
-      id: 1,
-      Img: Facebook,
-    },
-    {
-      id: 2,
-      Img: Instagram,
-    },
-    {
-      id: 3,
-      Img: Tiktok,
-    },
-  ];
-
-  const contact = [
-    {
-      id: 1,
-      Img: Phone,
-      Content: "05 55 55 55",
-    },
-    {
-      id: 2,
-      Img: Gmail,
-      Content: "admin@gmail.com",
-    },
-  ];
+  const year = new Date().getFullYear();
 
   return (
     <>
@@ -137,6 +138,21 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div className="relative w-full h-28 bg-mainColor">
+          <div className="container absolute text-white -translate-y-1/2 top-1/2">
+            <div className="flex items-center">
+              <div>
+                <p>
+                  Copyright <span>&#169;</span> All Rights Reserved To{" "}
+                  <span className="font-semibold">Dz Work Away {year} </span>
+                </p>
+              </div>
+              <div></div>
             </div>
           </div>
         </div>

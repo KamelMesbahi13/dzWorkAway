@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const AboutUs = () => {
   return (
     <>
-      <div className="pt-12 md:pt-20 aboutHomeBack">
+      <div className="pt-12 pb-8 md:pt-20 md:pb-0 aboutHomeBack">
         <div className="container">
           <div className="flex flex-col items-center textCenter md:text-left md:justify-between md:flex-row">
             <motion.div
