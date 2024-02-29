@@ -1,5 +1,13 @@
+import Header from "./Header/Header";
+
 const AboutUs = () => {
-  return <div>AboutUs</div>;
+  return (
+    <>
+      <div>
+        <Header />
+      </div>
+    </>
+  );
 };
 
 export default AboutUs;
