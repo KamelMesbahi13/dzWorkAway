@@ -94,7 +94,7 @@ const Platforms = () => {
                       </div>
 
                       <div>
-                        <a href={`/platform/${id}`}>
+                        <a href={`/Nos-Platform/${id}`}>
                           <button className="buttonCust">{button}</button>
                         </a>{" "}
                       </div>

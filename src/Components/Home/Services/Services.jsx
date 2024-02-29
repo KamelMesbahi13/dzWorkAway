@@ -90,7 +90,7 @@ const Platforms = () => {
                 </div>
               </div>
               <div>
-                <a href={`/services/${id}`}>
+                <a href={`/Nos-Services/${id}`}>
                   <button className="buttonCust">{button}</button>
                 </a>
               </div>
@@ -166,7 +166,7 @@ const Platforms = () => {
                 </div>
               </div>
               <div>
-                <a href={`/services/${id}`}>
+                <a href={`/Nos-Services/${id}`}>
                   <button className="buttonCust">{button}</button>
                 </a>
               </div>

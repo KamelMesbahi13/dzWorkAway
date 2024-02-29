@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
+import AboutUs from "./Components/AboutUs/AboutUs";
 
 const Navbar = lazy(() => import("./Components/Navbar/Navbar"));
 const Home = lazy(() => import("./Components/Home/Home"));
@@ -9,7 +10,7 @@ const ServicesDetails = lazy(() =>
 const PlatformDetails = lazy(() =>
   import("./Components/Home/Platforms/PlatformDetails")
 );
-const Footer = lazy(() => import("./Ui/Footer/Footer"));
+// const Footer = lazy(() => import("./Ui/Footer/Footer"));
 const Loader = lazy(() => import("./Ui/Loader/Loader"));
 
 const App = () => {
@@ -26,10 +27,17 @@ const App = () => {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/services/:servicesId" element={<ServicesDetails />} />
-            <Route path="/platform/:platformId" element={<PlatformDetails />} />
+            <Route
+              path="/Nos-Services/:servicesId"
+              element={<ServicesDetails />}
+            />
+            <Route
+              path="/Nos-Platform/:platformId"
+              element={<PlatformDetails />}
+            />
+            <Route path="/À Propos-de-Nous" element={<AboutUs />} />
           </Routes>
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </Suspense>
     </>
