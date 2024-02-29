@@ -20,7 +20,11 @@ const AboutUs = () => {
                 visible: { opacity: 1 },
               }}
             >
-              <LazyLoadImage className="" src={Img} alt="About" />
+              <LazyLoadImage
+                className="w-[80%] md:w-[90%]"
+                src={Img}
+                alt="About"
+              />
             </motion.div>
 
             <div className="relative w-full lg:w-1/2">
