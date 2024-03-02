@@ -101,7 +101,11 @@ const Navbar = () => {
               <div className="flex flex-col p-8">
                 {navbarItems.map((el, i) => (
                   <div key={i} className="my-4">
-                    <Link className="link" to={navbarLinks[i]}>
+                    <Link
+                      className="link"
+                      onClick={navHandler}
+                      to={navbarLinks[i]}
+                    >
                       {el}
                     </Link>
                   </div>
