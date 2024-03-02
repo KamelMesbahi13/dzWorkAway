@@ -7,11 +7,21 @@ const OurStory = () => {
     <>
       <div>
         <div>
-          <div className="mt-8 md:relative">
-            <div className="textCenter md:text-left">
+          <div className="relative mt-8">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.9 }}
+              variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+              className="textCenter md:text-left"
+            >
               <LazyLoadImage src={Img} alt="Our Story Image" />
-            </div>
-            <div className="md:absolute bg-white shadow-xl duration-500 hover:shadow-2xl px-8 py-12 rounded-md md:top-1/4 md:w-[70%] md:left-[20%]">
+            </motion.div>
+            <div className="absolute bg-white shadow-xl duration-500 hover:shadow-2xl px-8 py-12 rounded-md top-[70%] md:top-1/4 md:w-[70%] md:left-[20%]">
               <h1 className="mb-8 textCenter">Our Story</h1>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non
