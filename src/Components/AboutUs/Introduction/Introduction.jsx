@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 const Introduction = () => {
   return (
     <>
-      <div className="mt-8">
-        <div>
+      <div className="pt-8 my-8 bg-grey md:my-16">
+        <div className="container">
           <div className="flex-col justify-between md:flex-row md:flex">
             <motion.div
               initial="hidden"
@@ -50,22 +50,26 @@ const Introduction = () => {
               </p>
             </motion.div>
           </div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 100 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            className="mt-4 md:mt-8"
+          >
+            <div>
+              <LazyLoadImage
+                className="rounded-xl"
+                src={Img}
+                alt="About Us Image"
+              />
+            </div>
+          </motion.div>
         </div>
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, y: 100 },
-            visible: { opacity: 1, y: 0 },
-          }}
-          className="mt-4 md:mt-8"
-        >
-          <div>
-            <LazyLoadImage src={Img} alt="About Us Image" />
-          </div>
-        </motion.div>
       </div>
     </>
   );
