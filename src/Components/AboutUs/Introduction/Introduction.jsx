@@ -1,4 +1,6 @@
 import Img from "../../../assets/AboutUsImg.jpg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { motion } from "framer-motion";
 
 const Introduction = () => {
   return (
@@ -6,7 +8,17 @@ const Introduction = () => {
       <div className="mt-8">
         <div>
           <div className="flex-col justify-between md:flex-row md:flex">
-            <div className="w-full md:w-[45%]">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+              className="w-full md:w-[45%]"
+            >
               <h1 className="relative md:headingStyleMd lg:headingStyleLg">
                 Welcome To <span className="italic">Dz Work Away</span>
               </h1>
@@ -15,9 +27,19 @@ const Introduction = () => {
                 helping individuals and families achieve their dreams of living
                 and working in Canada and other countries.
               </p>
-            </div>
+            </motion.div>
             <div className="block w-1/2 h-1 mx-auto my-8 bg-secondColor md:hidden"></div>
-            <div className="w-full md:w-[45%]">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, x: 50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+              className="w-full md:w-[45%]"
+            >
               <p>
                 At <span className="italic font-bold">Dz Work Away</span>, we
                 are dedicated to helping individuals and families achieve their
@@ -26,14 +48,24 @@ const Introduction = () => {
                 every step of the way. From consultations to applications, trust
                 us to make your immigration journey smooth and successful.
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
-        <div className="mt-4">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 150 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          className="mt-4 md:mt-8"
+        >
           <div>
-            <img src={Img} alt="About Us Image" />
+            <LazyLoadImage src={Img} alt="About Us Image" />
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );
