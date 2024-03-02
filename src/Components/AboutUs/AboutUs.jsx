@@ -1,5 +1,6 @@
 import Header from "./Header/Header";
 import Introduction from "./Introduction/Introduction";
+import OurStory from "./OurStory/OurStory";
 
 const AboutUs = () => {
   return (
@@ -8,6 +9,7 @@ const AboutUs = () => {
         <Header />
         <div className="container">
           <Introduction />
+          <OurStory />
         </div>
       </div>
     </>
