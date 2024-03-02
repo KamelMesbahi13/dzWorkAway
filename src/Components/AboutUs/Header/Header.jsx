@@ -18,7 +18,7 @@ const Header = () => {
       <div>
         <LazyLoadImage
           src={Img}
-          className="w-full md:h-[35rem]"
+          className="w-full h-[20rem] md:h-[35rem]"
           alt="About US Background"
         />
       </div>

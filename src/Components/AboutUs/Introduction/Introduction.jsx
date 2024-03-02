@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Introduction = () => {
   return (
     <>
-      <div className="pt-8 my-8 bg-grey md:my-16">
+      <div className="pt-8 mb-8 bg-grey md:my-16">
         <div className="container">
           <div className="flex-col justify-between md:flex-row md:flex">
             <motion.div
