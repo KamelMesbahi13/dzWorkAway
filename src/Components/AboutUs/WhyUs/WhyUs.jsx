@@ -40,11 +40,11 @@ const data = [
 const WhyUs = () => {
   return (
     <>
-      <div className="mt-16">
-        <div className="flex justify-between">
-          <div className="w-1/2">
+      <div className="mt-[35rem] md:mt-56 lg:mt-16">
+        <div className="flex flex-col lg:flex-row">
+          <div className="w-full lg:mr-8 lg:w-1/2">
             <div>
-              <h1 className="relative md:headingStyleMd lg:headingStyleLg">
+              <h1 className="relative mb-2 lg:mb-0 md:headingStyleMd lg:headingStyleLg">
                 Why We Are The Best
               </h1>
             </div>
@@ -57,30 +57,29 @@ const WhyUs = () => {
               </p>
             </div>
           </div>
-          <div>
-            <div className="grid w-1/2 grid-cols-4 md:grid-cols-2">
-              {data.map(({ id, Img, Heading, Description }) => {
-                return (
-                  <div key={id}>
-                    <div>
+
+          <div className="grid w-full grid-cols-1 mt-8 lg:mt-24 gap-y-8 lg:gap-20 lg:w-1/2 lg:grid-cols-2">
+            {data.map(({ id, Img, Heading, Description }) => {
+              return (
+                <div key={id}>
+                  <div>
+                    <div className="p-4 shadow-xl lg:p-8">
                       <div>
-                        <div>
-                          <img src={Img} alt="" />
+                        <img src={Img} alt={Heading} />
+                      </div>
+                      <div>
+                        <div className="mt-2">
+                          <h6>{Heading}</h6>
                         </div>
                         <div>
-                          <div>
-                            <h6>{Heading}</h6>
-                          </div>
-                          <div>
-                            <p>{Description}</p>
-                          </div>
+                          <p>{Description}</p>
                         </div>
                       </div>
                     </div>
                   </div>
-                );
-              })}
-            </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
