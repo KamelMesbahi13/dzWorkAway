@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Introduction = () => {
   return (
     <>
-      <div className="pt-8 mb-8 bg-grey md:my-16">
+      <div className="py-8 mb-8 md:pt-8 bg-grey md:my-16">
         <div className="container">
           <div className="flex-col justify-between md:flex-row md:flex">
             <motion.div
@@ -20,7 +20,8 @@ const Introduction = () => {
               className="w-full md:w-[45%]"
             >
               <h1 className="relative md:headingStyleMd lg:headingStyleLg">
-                Welcome To <span className="italic">Dz Work Away</span>
+                Welcome To{" "}
+                <span className="italic font-bold">Dz Work Away</span>
               </h1>
               <p className="mt-4">
                 Welcome to our immigration agency! We are passionate about
