@@ -2,6 +2,8 @@ import ImgOne from "../../../assets/Experience.png";
 import ImgTwo from "../../../assets/Priority.png";
 import ImgThree from "../../../assets/Advice.png";
 import ImgFour from "../../../assets/Support.png";
+import Shape from "../../../assets/OurStoryShape.jpg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const data = [
   {
@@ -49,7 +51,7 @@ const WhyUs = () => {
               </h1>
             </div>
             <div>
-              <p>
+              <p className="md:mt-4 lg:mt-0">
                 At DZ Work Away, we understand that the decision to immigrate is
                 one of the most significant steps you will ever take. That is
                 why we are committed to making your journey as smooth and
@@ -58,7 +60,7 @@ const WhyUs = () => {
             </div>
           </div>
 
-          <div className="grid w-full grid-cols-1 mt-8 lg:mt-24 gap-y-8 lg:gap-20 lg:w-1/2 lg:grid-cols-2">
+          <div className="grid w-full grid-cols-1 mt-8 lg:mt-24 gap-y-8 lg:gap-20 lg:w-3/4 lg:grid-cols-2">
             {data.map(({ id, Img, Heading, Description }) => {
               return (
                 <div key={id}>
@@ -81,6 +83,13 @@ const WhyUs = () => {
               );
             })}
           </div>
+        </div>
+        <div className="relative">
+          <LazyLoadImage
+            className="absolute h-[25rem] w-full bottom-80 -z-10"
+            src={Shape}
+            alt="Shape"
+          />
         </div>
       </div>
     </>
