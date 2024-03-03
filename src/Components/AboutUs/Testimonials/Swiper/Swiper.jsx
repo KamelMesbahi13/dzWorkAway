@@ -69,6 +69,7 @@ export default function App() {
             clickable: true,
           }}
           grabCursor={true}
+          loop={true}
           modules={[Pagination]}
           className="mySwiper"
         >
