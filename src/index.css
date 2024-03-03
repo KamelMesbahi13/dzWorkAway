@@ -190,8 +190,8 @@ h1 {
     background-size: cover;
   }
 
-  .ourMissionBack {
-    background-image: url(../src/assets/OurMissionShape.png);
+  .questionBack {
+    background-image: url(../src/assets/QuestionShape.png);
     background-position: center center;
     background-size: cover;
   }

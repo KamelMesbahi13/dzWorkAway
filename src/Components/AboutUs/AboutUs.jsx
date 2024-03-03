@@ -10,10 +10,10 @@ const AboutUs = () => {
       <div>
         <Header />
         <Introduction />
+        <Questions />
         <div className="container">
           <OurStory />
           <WhyUs />
-          <Questions />
         </div>
       </div>
     </>

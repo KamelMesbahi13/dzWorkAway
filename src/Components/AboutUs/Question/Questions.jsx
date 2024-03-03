@@ -76,8 +76,11 @@ const Questions = () => {
   };
 
   return (
-    <div id="accordion-collapse" className="mt-20 divide-y">
-      <div>
+    <div
+      id="accordion-collapse"
+      className="py-8 my-20 text-white divide-y questionBack"
+    >
+      <div className="container">
         <div>
           <div>
             <div className="w-full mb-8 md:w-3/4">
