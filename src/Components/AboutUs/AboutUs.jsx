@@ -1,7 +1,7 @@
 import Header from "./Header/Header";
 import Introduction from "./Introduction/Introduction";
-import OurMission from "./OurMission/OurMission";
 import OurStory from "./OurStory/OurStory";
+import Questions from "./Question/Questions";
 import WhyUs from "./WhyUs/WhyUs";
 
 const AboutUs = () => {
@@ -13,8 +13,8 @@ const AboutUs = () => {
         <div className="container">
           <OurStory />
           <WhyUs />
+          <Questions />
         </div>
-        <OurMission />
       </div>
     </>
   );
