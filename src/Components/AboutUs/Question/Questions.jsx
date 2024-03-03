@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Down from "../../../assets/DownArrow.png";
+import Up from "../../../assets/UpArrow.png";
 import PropTypes from "prop-types";
 
 const data = [
@@ -45,17 +46,18 @@ const Questions = () => {
         <h2 id={id}>
           <button
             type="button"
-            className="flex items-center justify-between w-full gap-3 py-5 font-medium"
+            className="flex items-center justify-between gap-3 py-5"
             aria-expanded={isOpen ? "true" : "false"}
             aria-controls={id}
             onClick={onClick}
           >
-            <span>{title}</span>
-            <img
-              src={Down}
-              alt="Arrow Down"
-              className={`w-10 h-10 rotate-${isOpen ? "0" : "180"} shrink-0`}
-            ></img>
+            <h6>{title}</h6>
+
+            {isOpen ? (
+              <img className="w-10 h-10" src={Down} alt="Down Arrow" />
+            ) : (
+              <img className="w-10 h-10" src={Up} alt="Up Arrow" />
+            )}
           </button>
         </h2>
         <div id={`${id}-body`} className={`${isOpen ? "" : "hidden"} p-5`}>
@@ -74,23 +76,49 @@ const Questions = () => {
   };
 
   return (
-    <div id="accordion-collapse" className="divide-y">
-      {data.map(({ id, title, description }) => {
-        return (
-          <div key={id}>
-            <div>
-              <AccordionItem
-                id={`accordion-collapse-heading-${id}`}
-                title={title}
-                isOpen={activeAccordion === `accordion-collapse-body-${id}`}
-                onClick={() => toggleAccordion(`accordion-collapse-body-${id}`)}
-              >
-                <p>{description}</p>
-              </AccordionItem>
+    <div id="accordion-collapse" className="mt-20 divide-y">
+      <div>
+        <div>
+          <div>
+            <div className="w-full mb-8 md:w-3/4">
+              <div>
+                <h1 className="relative mb-2 md:headingStyleMd lg:headingStyleLg">
+                  Answers to Your Immigration Questions
+                </h1>
+              </div>
+              <div>
+                <p>
+                  Discover Clear Solutions: Your Top Immigration Questions
+                  Answered. Get quick, concise answers to common immigration
+                  inquiries, curated by our expert team.
+                </p>
+              </div>
             </div>
           </div>
-        );
-      })}
+        </div>
+        <div>
+          {data.map(({ id, title, description }) => {
+            return (
+              <div key={id}>
+                <div className="w-full md:w-3/4">
+                  <AccordionItem
+                    id={`accordion-collapse-heading-${id}`}
+                    title={title}
+                    isOpen={activeAccordion === `accordion-collapse-body-${id}`}
+                    onClick={() =>
+                      toggleAccordion(`accordion-collapse-body-${id}`)
+                    }
+                  >
+                    <div>
+                      <p>{description}</p>
+                    </div>
+                  </AccordionItem>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
     </div>
   );
 };
