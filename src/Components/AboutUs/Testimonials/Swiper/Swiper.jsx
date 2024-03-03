@@ -3,160 +3,85 @@ import { Autoplay } from "swiper/modules";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "swiper/css";
 import "./Swiper.css";
-import ImgOne from "../../../../assets/HomePageOne.jpg";
-import ImgTwo from "../../../../assets/HomePageTwo.jpg";
-import ImgThree from "../../../../assets/HomePageThree.jpg";
-import Check from "../../../../assets/check.png";
+import ImgWoman from "../../../../assets/TestimonialOne.png";
+import ImgMan from "../../../../assets/TestimonialTwo.png";
+import { Pagination } from "swiper/modules";
+import "swiper/css/pagination";
 
 const Data = [
   {
     id: 1,
-    Img: ImgOne,
-    alt: "Background One",
-    heading_fr: "Immigration visa Consulting",
-    heading_eng: "Immigration visa Consulting",
-    heading_ar: "Immigration visa Consulting",
-    paragraph_fr: "Expert Guidance for a Seamless Immigration Journey",
-    paragraph_eng: "Expert Guidance for a Seamless Immigration Journey",
-    paragraph_ar: "Expert Guidance for a Seamless Immigration Journey",
-    paragraph_one_check_fr: "Expert Legal Support",
-    paragraph_one_check_eng: "Meeting Your Unique Needs",
-    paragraph_one_check_ar: "Tailored Immigration Solutions",
-    paragraph_two_check_fr: "Expert Legal Support",
-    paragraph_two_check_eng: "Meeting Your Unique Needs",
-    paragraph_two_check_ar: "Tailored Immigration Solutions",
-    paragraph_three_check_fr: "Expert Legal Support",
-    paragraph_three_check_eng: "Meeting Your Unique Needs",
-    paragraph_three_check_ar: "Tailored Immigration Solutions",
+    Img: ImgMan,
+    Testi:
+      "I couldn't be happier with the service provided by DZ Work Away. As a male immigrant navigating a complex process, their team's guidance and expertise were invaluable. They made everything clear and straightforward, and I'm now living my dream in a new country. Thank you, DZ Work Away!",
+    Name: "John Doe",
   },
 
   {
     id: 2,
-    Img: ImgTwo,
-    alt: "Background Two",
-    heading_fr: "Immigration visa Consulting",
-    heading_eng: "Immigration visa Consulting",
-    heading_ar: "Immigration visa Consulting",
-    paragraph_fr: "Expert Guidance for a Seamless Immigration Journey",
-    paragraph_eng: "Expert Guidance for a Seamless Immigration Journey",
-    paragraph_ar: "Expert Guidance for a Seamless Immigration Journey",
-    paragraph_one_check_fr: "Expert Legal Support",
-    paragraph_one_check_eng: "Meeting Your Unique Needs",
-    paragraph_one_check_ar: "Tailored Immigration Solutions",
-    paragraph_two_check_fr: "Expert Legal Support",
-    paragraph_two_check_eng: "Meeting Your Unique Needs",
-    paragraph_two_check_ar: "Tailored Immigration Solutions",
-    paragraph_three_check_fr: "Expert Legal Support",
-    paragraph_three_check_eng: "Meeting Your Unique Needs",
-    paragraph_three_check_ar: "Tailored Immigration Solutions",
+    Img: ImgWoman,
+    Testi:
+      "Choosing DZ Work Away was the best decision I made for my immigration journey. The support I received from their team was exceptional. They took the time to understand my individual needs and concerns, and they were with me every step of the way. I'm now settled in my new home country, and I owe it all to DZ Work Away",
+    Name: "Emily Smith",
   },
 
   {
     id: 3,
-    Img: ImgThree,
-    alt: "Background Three",
-    heading_fr: "Immigration visa Consulting",
-    heading_eng: "Immigration visa Consulting",
-    heading_ar: "Immigration visa Consulting",
-    paragraph_fr: "Expert Guidance for a Seamless Immigration Journey",
-    paragraph_eng: "Expert Guidance for a Seamless Immigration Journey",
-    paragraph_ar: "Expert Guidance for a Seamless Immigration Journey",
-    paragraph_one_check_fr: "Expert Legal Support",
-    paragraph_one_check_eng: "Meeting Your Unique Needs",
-    paragraph_one_check_ar: "Tailored Immigration Solutions",
-    paragraph_two_check_fr: "Expert Legal Support",
-    paragraph_two_check_eng: "Meeting Your Unique Needs",
-    paragraph_two_check_ar: "Tailored Immigration Solutions",
-    paragraph_three_check_fr: "Expert Legal Support",
-    paragraph_three_check_eng: "Meeting Your Unique Needs",
-    paragraph_three_check_ar: "Tailored Immigration Solutions",
+    Img: ImgMan,
+    Testi:
+      "I was impressed by the professionalism and dedication of DZ Work Away. As a male immigrant, I had many questions and uncertainties about the process, but their team provided clear answers and reassurance. Thanks to their expertise, I successfully obtained my visa and am now building a new life",
+    Name: "David Johnson",
+  },
+  {
+    id: 4,
+    Img: ImgWoman,
+    Testi:
+      "I can't thank DZ Work Away enough for their support throughout my immigration journey. As a female immigrant, I appreciated their understanding and empathy. They were patient, attentive, and always available to answer my questions. Thanks to their guidance, I'm now thriving in a new country.",
+    Name: "Sophia Garcia",
   },
 ];
 
 export default function App() {
   return (
     <>
-      <div className=" h-[75vh] md:h-[100vh] w-full">
+      <div className="w-full mx-auto md:w-3/4">
         <Swiper
-          spaceBetween={50}
-          centeredSlides={true}
-          autoplay={{
-            delay: 4500,
-            disableOnInteraction: false,
+          slidesPerView={2}
+          spaceBetween={30}
+          pagination={{
+            clickable: true,
           }}
-          modules={[Autoplay]}
+          grabCursor={true}
+          modules={[Pagination]}
           className="mySwiper"
         >
-          {Data.map(
-            (
-              {
-                Img,
-                alt,
-                heading_eng,
-                paragraph_eng,
-                paragraph_one_check_eng,
-                paragraph_two_check_eng,
-                paragraph_three_check_eng,
-              },
-              i
-            ) => {
-              return (
-                <SwiperSlide key={i} className="relative text-white">
-                  <LazyLoadImage
-                    className="h-[75vh] w-full md:h-[100vh]"
-                    src={Img}
-                    alt={alt}
-                  />
-                  <div className="absolute w-full md:w-1/2 p-8 lg:px-24 top-[15%] sm:top-[20%]">
+          {Data.map(({ id, Img, Testi, Name }) => {
+            return (
+              <SwiperSlide key={id}>
+                <div className="w-full mx-auto mt-20">
+                  <div>
                     <div>
-                      <h1 className="mb-4 md:text-5xl">{heading_eng}</h1>
-                      <h6>{paragraph_eng}</h6>
+                      <LazyLoadImage
+                        className="!w-10 !h-10 mb-8"
+                        src={Img}
+                        alt={Name}
+                      />
                     </div>
                     <div>
-                      <div className="mt-4">
-                        <div className="flex">
-                          <LazyLoadImage
-                            className="!w-6 h-6 mr-2"
-                            src={Check}
-                            alt="Check"
-                          />
-                          <p>{paragraph_one_check_eng}</p>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="flex my-4">
-                          <LazyLoadImage
-                            className="!w-6 h-6 mr-2"
-                            src={Check}
-                            alt="Check"
-                          />
-                          <p>{paragraph_two_check_eng}</p>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="flex">
-                          <LazyLoadImage
-                            className="!w-6 h-6 mr-2"
-                            src={Check}
-                            alt="Check"
-                          />
-                          <p>{paragraph_three_check_eng}</p>
-                        </div>
-                      </div>
+                      <p>
+                        <span>&#34;</span>
+                        {Testi}
+                        <span>&#34;</span>
+                      </p>
                     </div>
-                    <div className="flex mt-4">
-                      <button className="mr-8 simpleButton">
-                        Book Appointment
-                      </button>
-                      <button className="simpleButton">
-                        Check Our Services
-                      </button>
+                    <div className="mt-4 mb-20">
+                      <h6>{Name}</h6>
                     </div>
                   </div>
-                </SwiperSlide>
-              );
-            }
-          )}
+                </div>
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
       </div>
     </>
