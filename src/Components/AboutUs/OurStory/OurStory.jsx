@@ -7,7 +7,7 @@ const OurStory = () => {
     <>
       <div>
         <div>
-          <div className="relative mt-8">
+          <div className="relative mt-8 mb-20 sm:52">
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -17,11 +17,11 @@ const OurStory = () => {
                 hidden: { opacity: 0, x: -50 },
                 visible: { opacity: 1, x: 0 },
               }}
-              className="textCenter md:text-left"
+              className="textCenter lg:text-left"
             >
               <LazyLoadImage src={Img} alt="Our Story Image" />
             </motion.div>
-            <div className="absolute bg-white shadow-xl duration-500 hover:shadow-2xl px-8 py-12 rounded-md top-[70%] md:top-1/4 md:w-[70%] md:left-[20%]">
+            <div className="lg:absolute bg-white shadow-xl duration-500 hover:shadow-2xl px-8 py-12 rounded-lg lg:top-1/4 lg:w-[70%] lg:left-[20%]">
               <h1 className="mb-8 textCenter">Our Story</h1>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non

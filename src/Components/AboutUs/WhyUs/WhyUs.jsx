@@ -42,7 +42,7 @@ const data = [
 const WhyUs = () => {
   return (
     <>
-      <div className="mt-[35rem] md:mt-56 lg:mt-16">
+      <div className="">
         <div className="flex flex-col lg:flex-row">
           <div className="w-full lg:mr-8 lg:w-1/2">
             <div>
@@ -60,14 +60,18 @@ const WhyUs = () => {
             </div>
           </div>
 
-          <div className="grid w-full grid-cols-1 mt-8 lg:mt-24 gap-y-8 lg:gap-20 lg:w-3/4 lg:grid-cols-2">
+          <div className="grid w-full grid-cols-1 mt-8 lg:mt-32 gap-y-6 lg:gap-20 lg:w-3/4 lg:grid-cols-2">
             {data.map(({ id, Img, Heading, Description }) => {
               return (
                 <div key={id}>
                   <div>
                     <div className="p-4 shadow-xl lg:p-8">
                       <div>
-                        <img src={Img} alt={Heading} />
+                        <LazyLoadImage
+                          className="w-12 h-12"
+                          src={Img}
+                          alt={Heading}
+                        />
                       </div>
                       <div>
                         <div className="mt-2">
