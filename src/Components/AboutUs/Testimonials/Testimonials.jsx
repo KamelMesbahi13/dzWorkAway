@@ -1,3 +1,5 @@
+import Swiper from "./Swiper/Swiper";
+
 const Testimonials = () => {
   return (
     <div>
@@ -10,7 +12,7 @@ const Testimonials = () => {
             <div>
               <p>
                 Thanks to <span className="italic font-bold">Dz Work Away</span>
-                , my immigration process was smooth and stress-free. Their
+                my immigration process was smooth and stress-free. Their
                 personalized support and expertise made all the difference.
                 Highly recommend!
               </p>
@@ -18,6 +20,7 @@ const Testimonials = () => {
           </div>
         </div>
       </div>
+      <Swiper />
     </div>
   );
 };
