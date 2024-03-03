@@ -7,7 +7,7 @@ const Testimonials = () => {
         <div>
           <div className="w-full md:w-3/4">
             <div>
-              <h1 className="relative lg:headingStyleLg">
+              <h1 className="relative mb-2 lg:headingStyleLg">
                 What Our Clients Said About US
               </h1>
             </div>

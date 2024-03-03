@@ -57,8 +57,8 @@ export default function App() {
           {Data.map(({ id, Img, Testi, Name }) => {
             return (
               <SwiperSlide key={id}>
-                <div className="w-full mx-auto mt-20">
-                  <div>
+                <div className="w-full p-4 mx-auto mt-20 border border-grey shadow-lg mb-12 md:h-[22rem]">
+                  <div className="p-4">
                     <div>
                       <LazyLoadImage
                         className="!w-10 !h-10 mb-4"
@@ -73,7 +73,7 @@ export default function App() {
                         <span>&#34;</span>
                       </p>
                     </div>
-                    <div className="mt-4 mb-20">
+                    <div className="mt-4">
                       <h6>{Name}</h6>
                     </div>
                   </div>
