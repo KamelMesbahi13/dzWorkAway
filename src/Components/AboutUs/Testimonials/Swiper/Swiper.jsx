@@ -1,5 +1,4 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "swiper/css";
 import "./Swiper.css";
@@ -62,7 +61,7 @@ export default function App() {
                   <div>
                     <div>
                       <LazyLoadImage
-                        className="!w-10 !h-10 mb-8"
+                        className="!w-10 !h-10 mb-4"
                         src={Img}
                         alt={Name}
                       />

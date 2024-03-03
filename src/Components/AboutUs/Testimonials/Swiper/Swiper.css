@@ -12,7 +12,3 @@
   transition: 800ms ease-in-out !important;
   transition-duration: 800ms !important;
 }
-
-.swiper-pagination-bullet .swiper-pagination-bullet-active {
-  background-color: var(#69fab4);
-}

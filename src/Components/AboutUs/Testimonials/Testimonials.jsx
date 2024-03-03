@@ -2,12 +2,14 @@ import Swiper from "./Swiper/Swiper";
 
 const Testimonials = () => {
   return (
-    <div>
+    <div className="mt-12 md:mt-28">
       <div>
         <div>
           <div className="w-full md:w-3/4">
             <div>
-              <h1>What Our Clients Said About US</h1>
+              <h1 className="relative lg:headingStyleLg">
+                What Our Clients Said About US
+              </h1>
             </div>
             <div>
               <p>
