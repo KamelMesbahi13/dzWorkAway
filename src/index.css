@@ -190,10 +190,15 @@ h1 {
     background-size: cover;
   }
 
+  .ourMissionBack {
+    background-image: url(../src/assets/OurMissionShape.png);
+    background-position: center center;
+    background-size: cover;
+  }
+
   .footerBack {
     background-image: url(../src/assets/Footer.png);
     background-position: center center;
     background-size: cover;
-    position: relative;
   }
 }
