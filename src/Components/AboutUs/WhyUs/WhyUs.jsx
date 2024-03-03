@@ -42,7 +42,7 @@ const data = [
 const WhyUs = () => {
   return (
     <>
-      <div className="">
+      <div>
         <div className="flex flex-col lg:flex-row">
           <div className="w-full lg:mr-8 lg:w-1/2">
             <div>
@@ -65,7 +65,7 @@ const WhyUs = () => {
               return (
                 <div key={id}>
                   <div>
-                    <div className="p-4 shadow-xl lg:p-8">
+                    <div className="p-4 duration-300 ease-in border-2 border-opacity-0 shadow-xl border-secondColor hover:border-opacity-100 lg:p-8">
                       <div>
                         <LazyLoadImage
                           className="w-12 h-12"
