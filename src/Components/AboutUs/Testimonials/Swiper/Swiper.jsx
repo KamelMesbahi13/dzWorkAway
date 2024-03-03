@@ -6,6 +6,8 @@ import ImgWoman from "../../../../assets/TestimonialOne.png";
 import ImgMan from "../../../../assets/TestimonialTwo.png";
 import { Pagination } from "swiper/modules";
 import "swiper/css/pagination";
+import { useEffect } from "react";
+import { useState } from "react";
 
 const Data = [
   {
@@ -41,11 +43,27 @@ const Data = [
 ];
 
 export default function App() {
+  const [slidesPerView, setSlidesPerView] = useState(
+    window.innerWidth < 768 ? 1 : 2
+  );
+
+  useEffect(() => {
+    const handleResize = () => {
+      setSlidesPerView(window.innerWidth < 768 ? 1 : 2);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <>
       <div className="w-full mx-auto md:w-3/4">
         <Swiper
-          slidesPerView={2}
+          slidesPerView={slidesPerView}
           spaceBetween={30}
           pagination={{
             clickable: true,
@@ -57,7 +75,7 @@ export default function App() {
           {Data.map(({ id, Img, Testi, Name }) => {
             return (
               <SwiperSlide key={id}>
-                <div className="w-full p-4 mx-auto mt-20 border border-grey shadow-lg mb-12 md:h-[22rem]">
+                <div className="w-full p-4 md:mx-auto mt-12 md:mt-20 border border-grey shadow-lg mb-12 md:h-[22rem]">
                   <div className="p-4">
                     <div>
                       <LazyLoadImage
