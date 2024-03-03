@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import AboutUs from "./Components/AboutUs/AboutUs";
+import ContactUs from "./Components/ContactUs/ContactUs";
 
 const Navbar = lazy(() => import("./Components/Navbar/Navbar"));
 const Home = lazy(() => import("./Components/Home/Home"));
@@ -36,6 +37,7 @@ const App = () => {
               element={<PlatformDetails />}
             />
             <Route path="/À Propos-de-Nous" element={<AboutUs />} />
+            <Route path="/Contactez-Nous" element={<ContactUs />} />
           </Routes>
           {/* <Footer /> */}
         </div>
