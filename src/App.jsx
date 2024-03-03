@@ -1,7 +1,5 @@
 import { Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
-import AboutUs from "./Components/AboutUs/AboutUs";
-import ContactUs from "./Components/ContactUs/ContactUs";
 
 const Navbar = lazy(() => import("./Components/Navbar/Navbar"));
 const Home = lazy(() => import("./Components/Home/Home"));
@@ -11,6 +9,11 @@ const ServicesDetails = lazy(() =>
 const PlatformDetails = lazy(() =>
   import("./Components/Home/Platforms/PlatformDetails")
 );
+
+const AboutUs = lazy(() => import("./Components/AboutUs/AboutUs"));
+
+const ContactUs = lazy(() => import("./Components/ContactUs/ContactUs"));
+
 // const Footer = lazy(() => import("./Ui/Footer/Footer"));
 const Loader = lazy(() => import("./Ui/Loader/Loader"));
 
