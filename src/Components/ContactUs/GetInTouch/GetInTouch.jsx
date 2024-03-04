@@ -155,7 +155,7 @@ const GetInTouch = () => {
                           <div>
                             <div>
                               <h6>
-                                <span className="mr-2 text-xl text-secondColor">
+                                <span className="mr-2 text-lg md:text-xl text-secondColor">
                                   &#x25CF;
                                 </span>
                                 {CallUs_Title}
@@ -178,11 +178,11 @@ const GetInTouch = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="w-full h-1 my-12 bg-secondColor"></div>
-                        <div className="">
+                        <div className="w-full h-1 my-8 md:my-12 bg-secondColor"></div>
+                        <div>
                           <div>
                             <h6>
-                              <span className="mr-2 text-xl text-secondColor">
+                              <span className="mr-2 text-lg md:text-xl text-secondColor">
                                 &#x25CF;
                               </span>
                               {VisitUs_Title}
