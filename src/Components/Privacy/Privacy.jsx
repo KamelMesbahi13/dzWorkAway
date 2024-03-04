@@ -1,14 +1,10 @@
+import Header from "./Header/Header";
+
 const Privacy = () => {
   return (
     <>
       <div>
-        <div className="container">
-          <div>
-            <div>
-              <div></div>
-            </div>
-          </div>
-        </div>
+        <Header />
       </div>
     </>
   );
