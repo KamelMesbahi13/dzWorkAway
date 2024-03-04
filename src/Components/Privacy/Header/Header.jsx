@@ -1,7 +1,6 @@
 import Img from "../../../assets/Privacy.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
-import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Header = () => {
   return (

@@ -13,7 +13,7 @@ const data = [
     CallUs_Title: "Call us",
     CallUs_paragraph:
       "Contact us for personalized support. Call now to speak to our dedicated team.",
-    CallUs: "055555555",
+    CallUs: "0555 55 55 55",
 
     VisitUs_Title: "Visit us",
     VisitUs_paragraph:
