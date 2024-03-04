@@ -9,8 +9,8 @@ const OurServices = () => {
         <Header />
         <div className="container">
           <Introduction />
-          <HighService />
         </div>
+        <HighService />
       </div>
     </>
   );
