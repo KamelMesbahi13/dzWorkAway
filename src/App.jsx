@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Privacy from "./Components/Privacy/Privacy";
+import OurServices from "./Components/OurServices/OurServices";
 
 const Navbar = lazy(() => import("./Components/Navbar/Navbar"));
 const Home = lazy(() => import("./Components/Home/Home"));
@@ -42,6 +43,7 @@ const App = () => {
             />
             <Route path="/À Propos-de-Nous" element={<AboutUs />} />
             <Route path="/Contactez-Nous" element={<ContactUs />} />
+            <Route path="/Nos-Services" element={<OurServices />} />
             <Route path="/Confidentialité" element={<Privacy />} />
           </Routes>
           {/* <Footer /> */}
