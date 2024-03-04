@@ -2,6 +2,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useForm } from "react-hook-form";
 import CallUsImage from "../../../assets/PhoneCall.png";
 import VisitUsImage from "../../../assets/Location.png";
+import { motion } from "framer-motion";
 
 const data = [
   {
@@ -41,7 +42,17 @@ const GetInTouch = () => {
     <div className="mt-12 md:mt-20">
       <div>
         <div>
-          <div className="mt-8 mb-10 md:mt-12 md:mb-20 md:w-3/4">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            className="mt-8 mb-10 md:mt-12 md:mb-20 md:w-3/4"
+          >
             <div>
               <h1 className="relative mb-2 headingStyleLg">
                 If You Have Any Question Drop A Message Or Visit Us
@@ -57,8 +68,18 @@ const GetInTouch = () => {
                 quasi.
               </p>
             </div>
-          </div>
-          <div className="py-6 border-2 shadow-xl md:px-8 md:py-12 md:border-4 md:pt-0 border-grey">
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: { opacity: 1 },
+            }}
+            className="py-6 border-2 shadow-xl md:px-8 md:py-12 md:border-4 md:pt-0 border-grey"
+          >
             {data.map(
               ({
                 id,
@@ -185,7 +206,6 @@ const GetInTouch = () => {
                                       alt={CallUs_Title}
                                     />
                                   </div>
-
                                   <p>{CallUs}</p>
                                 </a>
                               </div>
@@ -222,7 +242,7 @@ const GetInTouch = () => {
                 );
               }
             )}
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
