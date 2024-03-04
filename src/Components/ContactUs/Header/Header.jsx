@@ -24,7 +24,7 @@ const Header = () => {
       </div>
       <div className="absolute pl-8 text-white -translate-y-1/4 md:pl-24 top-1/2">
         <div>
-          <h1>About Us</h1>
+          <h1>Contact Us</h1>
         </div>
         <div className="flex mt-1 md:mt-2">
           <div className="w-8 h-1 md:w-12 bg-secondColor"></div>
