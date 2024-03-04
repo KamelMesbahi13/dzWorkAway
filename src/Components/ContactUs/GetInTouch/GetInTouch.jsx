@@ -1,6 +1,6 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useForm } from "react-hook-form";
-import CallUsImage from "../../../assets/Phone.png";
+import CallUsImage from "../../../assets/PhoneCall.png";
 import VisitUsImage from "../../../assets/Location.png";
 
 const data = [
@@ -202,7 +202,7 @@ const GetInTouch = () => {
                           <div className="flex items-center">
                             <div className="mr-4">
                               <LazyLoadImage
-                                className="w-7 h-7"
+                                className="w-10 sm:w-14 lg:w-7 h-7"
                                 src={VisitUsImage}
                                 alt={VisitUs_Title}
                               />
