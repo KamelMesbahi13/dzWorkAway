@@ -87,24 +87,28 @@ const GetInTouch = () => {
                           target="_blank"
                           className="mb-8 text-center md:mb-0"
                           onSubmit={onSubmit}
-                          action=""
+                          action="https://formsubmit.co/684a89368411730fd8bf45a2693316d9"
                           method="POST"
                         >
                           <input
                             type="text"
-                            placeholder="Nom"
+                            placeholder="Name"
                             className={inputStyles}
                             {...register("name", {
                               required: true,
+                              minLength: 5,
                               maxLength: 100,
                             })}
                           />
                           {errors.name && (
-                            <p className="mt-1 text-primary-500">
+                            <p className="mt-1 text-mainColor">
                               {errors.name.type === "required" &&
                                 "This field is require"}
                               {errors.name.type === "maxLength" &&
                                 "Max Length is 100 character"}
+                              {errors.name &&
+                                errors.name.type === "minLength" &&
+                                "Name should be more than 5 characters"}
                             </p>
                           )}
                           <input
@@ -118,7 +122,7 @@ const GetInTouch = () => {
                             })}
                           />
                           {errors.email && (
-                            <p className="mt-1 text-primary-500">
+                            <p className="mt-1 text-mainColor">
                               {errors.email.type === "required" &&
                                 "This field is require"}
                               {errors.email.type === "pattern" &&
@@ -132,15 +136,19 @@ const GetInTouch = () => {
                             cols={50}
                             {...register("message", {
                               required: true,
+                              minLength: 5,
                               maxLength: 2000,
                             })}
                           />
                           {errors.message && (
-                            <p className="mt-1 text-primary-500">
+                            <p className="mt-1 text-mainColor">
                               {errors.message.type === "required" &&
                                 "This field is require"}
                               {errors.message.type === "maxLength" &&
                                 "Max length is 2000 char"}
+                              {errors.name &&
+                                errors.name.type === "minLength" &&
+                                "Min Length should be more than 5 characters"}
                             </p>
                           )}
                           <div>
