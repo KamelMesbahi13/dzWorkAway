@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const Map = () => {
   return (
     <>
-      <div className="py-20 md:py-40">
+      <div className="pt-20 pb-10 md:pt-40 md:pb-20">
         <div>
           <div className="relative">
             <motion.div

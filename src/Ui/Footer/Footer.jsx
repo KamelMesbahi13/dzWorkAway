@@ -56,9 +56,9 @@ const Footer = () => {
         <div className="container">
           <div className="absolute -translate-y-1/2 top-1/2">
             <div className="flex flex-col items-center justify-between lg:flex-row">
-              <div className="w-full lg:w-[60%] lg:p-4">
-                <div className="flex flex-col justify-between lg:items-center lg:flex-row">
-                  <div className="w-full lg:w-1/2">
+              <div className="w-full lg:w-1/4">
+                <div>
+                  <div>
                     <div>
                       <LazyLoadImage className="w-36" src={Logo} alt="Logo" />
                     </div>
@@ -79,18 +79,18 @@ const Footer = () => {
                       ></iframe>
                     </div>
                   </div>
-                  <div className="my-4 lg:textCenter">
-                    <h6 className="mb-4 text-3xl md:mb-8">Links</h6>
-                    <div className="flex flex-wrap lg:flex-nowrap lg:flex-col gap-y-8">
-                      {footerItems.map((el, i) => (
-                        <div key={i}>
-                          <a className="mr-2 link" href={footerLinks[i]}>
-                            {el}
-                          </a>
-                        </div>
-                      ))}
+                </div>
+              </div>
+              <div className="my-4 lg:textCenter">
+                <h6 className="mb-4 text-3xl md:mb-8">Links</h6>
+                <div className="flex flex-wrap lg:flex-nowrap lg:flex-col gap-y-8">
+                  {footerItems.map((el, i) => (
+                    <div key={i}>
+                      <a className="mr-2 link" href={footerLinks[i]}>
+                        {el}
+                      </a>
                     </div>
-                  </div>
+                  ))}
                 </div>
               </div>
               <div className="w-full lg:p-8 lg:w-1/4">
