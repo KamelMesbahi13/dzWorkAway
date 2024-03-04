@@ -155,7 +155,7 @@ const GetInTouch = () => {
                           <div>
                             <div>
                               <h6>
-                                <span className="mr-2 text-lg md:text-xl text-secondColor">
+                                <span className="mr-2 text-base md:text-xl text-secondColor">
                                   &#x25CF;
                                 </span>
                                 {CallUs_Title}
@@ -182,7 +182,7 @@ const GetInTouch = () => {
                         <div>
                           <div>
                             <h6>
-                              <span className="mr-2 text-lg md:text-xl text-secondColor">
+                              <span className="mr-2 text-base md:text-xl text-secondColor">
                                 &#x25CF;
                               </span>
                               {VisitUs_Title}
