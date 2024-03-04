@@ -5,6 +5,8 @@ import Instagram from "../../assets/instagram.png";
 import Tiktok from "../../assets/TikTok.png";
 import Gmail from "../../assets/Gmail.png";
 import Phone from "../../assets/PhoneCall.png";
+import Time from "../../assets/Time.png";
+import Location from "../../assets/Location.png";
 
 const footerItems = [
   "Accueil",
@@ -96,7 +98,7 @@ const Footer = () => {
               <div className="w-full lg:p-8 lg:w-1/4">
                 <div>
                   <div>
-                    <h6 className="mb-4 md:mb-8">Our Social Media:</h6>
+                    <h6 className="mb-4">Our Social Media:</h6>
                   </div>
                   <div className="flex">
                     {socialMedia.map(({ id, Img }) => {
@@ -114,13 +116,13 @@ const Footer = () => {
                     })}
                   </div>
                   <div className="mt-8">
-                    <h6 className="mb-4">Our Contacts:</h6>
+                    <h6 className="mb-2">Our Contacts:</h6>
                     <div>
                       {contact.map(({ id, Img, Content }) => {
                         return (
                           <div key={id}>
                             <div className="flex items-center">
-                              <div>
+                              <div className="w-10 h-10">
                                 <LazyLoadImage
                                   className="w-6 my-2 mr-2"
                                   src={Img}
