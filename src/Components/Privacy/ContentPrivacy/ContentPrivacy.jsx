@@ -1,13 +1,25 @@
+import { motion } from "framer-motion";
+
 const ContentPrivacy = () => {
   return (
     <>
       <div className="mt-12">
         <div className="container">
-          <div className="">
+          <div>
             <div>
-              <div className="w-full mb-16 md:w-3/4">
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, x: -50 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                className="w-full mb-16 md:w-3/4"
+              >
                 <div>
-                  <h1 className="relative mb-2 headingStyleLg">
+                  <h1 className="relative mb-2 lg:headingStyleLg">
                     Privacy Policy Statement: Your Data Security and
                     Confidentiality Commitment
                   </h1>
@@ -20,13 +32,13 @@ const ContentPrivacy = () => {
                     Your trust matters.
                   </p>
                 </div>
-              </div>
+              </motion.div>
 
               <div>
                 <div className="mb-8 textCenter">
                   <h1>Privacy Policy</h1>
                 </div>
-                <div className="relative before:absolute before:hidden lg:pl-8 before:md:block before:h-full before:w-2 before:left-0 before:bg-hoverColor before:top-1/2 before:-translate-y-1/2">
+                <div className="relative pl-4 before:absolute lg:pl-8 before:md:block before:h-full before:w-2 before:left-0 before:bg-hoverColor before:top-1/2 before:-translate-y-1/2">
                   <p>
                     Welcome to DZ Work Away, where your privacy and security are
                     our top priorities. This Privacy Policy Statement is a
