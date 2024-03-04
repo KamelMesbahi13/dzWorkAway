@@ -4,6 +4,7 @@ import ImgThree from "../../../assets/Advice.png";
 import ImgFour from "../../../assets/Support.png";
 import Shape from "../../../assets/OurStoryShape.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { motion } from "framer-motion";
 
 const data = [
   {
@@ -44,7 +45,17 @@ const WhyUs = () => {
     <>
       <div>
         <div className="flex flex-col lg:flex-row">
-          <div className="w-full lg:mr-8 lg:w-1/2">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            className="w-full lg:mr-8 lg:w-1/2"
+          >
             <div>
               <h1 className="relative mb-2 lg:mb-0 md:headingStyleMd lg:headingStyleLg">
                 Why We Are The Best
@@ -58,9 +69,19 @@ const WhyUs = () => {
                 successful as possible. Here is why you should choose us:
               </p>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="grid w-full grid-cols-1 mt-8 lg:mt-32 gap-y-6 lg:gap-20 lg:w-3/4 lg:grid-cols-2">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: 50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            className="grid w-full grid-cols-1 mt-8 lg:mt-32 gap-y-6 lg:gap-20 lg:w-3/4 lg:grid-cols-2"
+          >
             {data.map(({ id, Img, Heading, Description }) => {
               return (
                 <div key={id}>
@@ -86,7 +107,7 @@ const WhyUs = () => {
                 </div>
               );
             })}
-          </div>
+          </motion.div>
         </div>
         <div className="relative">
           <LazyLoadImage

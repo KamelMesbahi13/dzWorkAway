@@ -8,6 +8,7 @@ import { Pagination } from "swiper/modules";
 import "swiper/css/pagination";
 import { useEffect } from "react";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const Data = [
   {
@@ -61,7 +62,17 @@ export default function App() {
 
   return (
     <>
-      <div className="w-full mx-auto md:w-3/4">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0 },
+          visible: { opacity: 1 },
+        }}
+        className="w-full mx-auto md:w-3/4"
+      >
         <Swiper
           slidesPerView={slidesPerView}
           spaceBetween={30}
@@ -101,7 +112,7 @@ export default function App() {
             );
           })}
         </Swiper>
-      </div>
+      </motion.div>
     </>
   );
 }

@@ -1,11 +1,22 @@
 import Swiper from "./Swiper/Swiper";
+import { motion } from "framer-motion";
 
 const Testimonials = () => {
   return (
     <div className="mt-12 md:mt-28">
       <div>
         <div>
-          <div className="w-full md:w-3/4">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            className="w-full md:w-3/4"
+          >
             <div>
               <h1 className="relative mb-2 lg:headingStyleLg">
                 What Our Clients Said About US
@@ -19,7 +30,7 @@ const Testimonials = () => {
                 Highly recommend!
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
       <Swiper />

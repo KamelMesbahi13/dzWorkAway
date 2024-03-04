@@ -2,6 +2,7 @@ import { useState } from "react";
 import Down from "../../../assets/DownArrow.png";
 import Up from "../../../assets/UpArrow.png";
 import PropTypes from "prop-types";
+import { motion } from "framer-motion";
 
 const data = [
   {
@@ -76,7 +77,15 @@ const Questions = () => {
   };
 
   return (
-    <div
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.5 }}
+      transition={{ duration: 0.5 }}
+      variants={{
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 },
+      }}
       id="accordion-collapse"
       className="py-8 my-20 text-white divide-y questionBack"
     >
@@ -122,7 +131,7 @@ const Questions = () => {
           })}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
