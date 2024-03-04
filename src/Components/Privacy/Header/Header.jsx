@@ -1,4 +1,4 @@
-import Img from "../../../assets/Privacy.jpg";
+import Img from "../../../assets/PrivacyBack.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
 
