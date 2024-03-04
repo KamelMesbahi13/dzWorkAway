@@ -6,7 +6,6 @@ import Tiktok from "../../assets/TikTok.png";
 import Gmail from "../../assets/Gmail.png";
 import Phone from "../../assets/PhoneCall.png";
 import Time from "../../assets/Time.png";
-import Location from "../../assets/Location.png";
 
 const footerItems = [
   "Accueil",
@@ -46,6 +45,14 @@ const contact = [
     id: 2,
     Img: Gmail,
     Content: "admin@gmail.com",
+  },
+];
+
+const time = [
+  {
+    id: 1,
+    Img: Time,
+    Content: "Numéro 1, Résidence Zidan, Bloc 1, Boumerdès 35000",
   },
 ];
 
@@ -95,7 +102,7 @@ const Footer = () => {
                   ))}
                 </div>
               </div>
-              <div className="w-full lg:p-8 lg:w-1/4">
+              <div className="w-full lg:bg-white lg:p-8 lg:w-1/4">
                 <div>
                   <div>
                     <h6 className="mb-4">Our Social Media:</h6>
@@ -125,6 +132,24 @@ const Footer = () => {
                               <div className="w-10 h-10">
                                 <LazyLoadImage
                                   className="w-6 my-2 mr-2"
+                                  src={Img}
+                                  alt="Contact"
+                                />
+                              </div>
+                              <div>
+                                <p>{Content}</p>
+                              </div>
+                            </div>
+                          </div>
+                        );
+                      })}
+                      {time.map(({ id, Img, Content }) => {
+                        return (
+                          <div key={id}>
+                            <div className="flex items-center">
+                              <div className="w-10 h-10">
+                                <LazyLoadImage
+                                  className="w-6 my-2 mr-12"
                                   src={Img}
                                   alt="Contact"
                                 />
