@@ -173,14 +173,20 @@ const GetInTouch = () => {
                               <p>{CallUs_paragraph}</p>
                             </div>
                             <div className="flex items-center">
-                              <div className="mr-2">
-                                <a href="tel:+2135555555" className="flex">
-                                  <LazyLoadImage
-                                    className="w-7 h-7"
-                                    src={CallUsImage}
-                                    alt={CallUs_Title}
-                                  />
-                                  <p className="ml-4">{CallUs}</p>
+                              <div>
+                                <a
+                                  href="tel:+2135555555"
+                                  className="flex items-center"
+                                >
+                                  <div className="mr-4">
+                                    <LazyLoadImage
+                                      className="w-7 h-7"
+                                      src={CallUsImage}
+                                      alt={CallUs_Title}
+                                    />
+                                  </div>
+
+                                  <p>{CallUs}</p>
                                 </a>
                               </div>
                             </div>
