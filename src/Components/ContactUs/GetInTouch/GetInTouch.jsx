@@ -19,6 +19,8 @@ const data = [
     VisitUs_paragraph:
       "Come visit us! Our doors are open to you for any questions or advice. Looking forward to meeting you.",
     VisitUs: "Numéro 1, Résidence Zidan, Bloc 1, Boumerdès 35000",
+    Privacy_Policy_Title: "Privacy Policy",
+    Privacy_Policy_Text: "Please find our Privacy Policy here.",
   },
 ];
 
@@ -91,6 +93,8 @@ const GetInTouch = () => {
                 VisitUs,
                 VisitUs_Title,
                 VisitUs_paragraph,
+                Privacy_Policy_Title,
+                Privacy_Policy_Text,
               }) => {
                 return (
                   <div key={id}>
@@ -178,6 +182,17 @@ const GetInTouch = () => {
                             </button>
                           </div>
                         </form>
+                        <div>
+                          <div className="my-4">
+                            <a
+                              className="italic font-bold"
+                              href="/Confidentialité"
+                              target="_blank"
+                            >
+                              {Privacy_Policy_Text}
+                            </a>
+                          </div>
+                        </div>
                       </div>
                       <div className="w-full md:w-[40%] p-8">
                         <div>
