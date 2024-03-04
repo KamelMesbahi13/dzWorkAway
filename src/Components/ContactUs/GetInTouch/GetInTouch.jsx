@@ -19,7 +19,6 @@ const data = [
     VisitUs_paragraph:
       "Come visit us! Our doors are open to you for any questions or advice. Looking forward to meeting you.",
     VisitUs: "Numéro 1, Résidence Zidan, Bloc 1, Boumerdès 35000",
-    Privacy_Policy_Title: "Privacy Policy",
     Privacy_Policy_Text: "Please find our Privacy Policy here.",
   },
 ];
@@ -93,7 +92,6 @@ const GetInTouch = () => {
                 VisitUs,
                 VisitUs_Title,
                 VisitUs_paragraph,
-                Privacy_Policy_Title,
                 Privacy_Policy_Text,
               }) => {
                 return (
