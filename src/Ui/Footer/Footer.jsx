@@ -90,9 +90,9 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="my-4 lg:textCenter">
+              <div className="w-full my-4 lg:w-1/4 lg:textCenter">
                 <h6 className="mb-4 text-3xl md:mb-8">Links</h6>
-                <div className="flex flex-wrap lg:flex-nowrap lg:flex-col gap-y-8">
+                <div className="flex flex-row flex-wrap lg:flex-nowrap lg:flex-col gap-y-8">
                   {footerItems.map((el, i) => (
                     <div key={i}>
                       <a className="mr-2 link" href={footerLinks[i]}>
