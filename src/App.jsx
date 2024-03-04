@@ -15,7 +15,7 @@ const AboutUs = lazy(() => import("./Components/AboutUs/AboutUs"));
 
 const ContactUs = lazy(() => import("./Components/ContactUs/ContactUs"));
 
-const Footer = lazy(() => import("./Ui/Footer/Footer"));
+// const Footer = lazy(() => import("./Ui/Footer/Footer"));
 const Loader = lazy(() => import("./Ui/Loader/Loader"));
 
 const App = () => {
@@ -44,7 +44,7 @@ const App = () => {
             <Route path="/Contactez-Nous" element={<ContactUs />} />
             <Route path="/Confidentialité" element={<Privacy />} />
           </Routes>
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </Suspense>
     </>

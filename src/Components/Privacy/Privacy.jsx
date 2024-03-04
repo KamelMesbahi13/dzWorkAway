@@ -1,3 +1,4 @@
+import ContentPrivacy from "./ContentPrivacy/ContentPrivacy";
 import Header from "./Header/Header";
 
 const Privacy = () => {
@@ -5,6 +6,7 @@ const Privacy = () => {
     <>
       <div>
         <Header />
+        <ContentPrivacy />
       </div>
     </>
   );
