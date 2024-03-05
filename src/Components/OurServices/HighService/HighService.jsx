@@ -1,7 +1,6 @@
 import Quality from "../../../assets/Quality.png";
 import Speed from "../../../assets/Speed.png";
 import Reliability from "../../../assets/Reliability.png";
-import ImgOne from "../../../assets/ServicesOne.jpg";
 
 const data = [
   {
@@ -10,7 +9,6 @@ const data = [
     Content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur earum laborum quisquam nihil. Itaque consectetur neque consequuntur et fuga dignissimos, eos rem! Provident veniam temporibus non beatae laudantium consectetur error!",
     Icon: Quality,
-    Img: ImgOne,
   },
 
   {
@@ -19,7 +17,6 @@ const data = [
     Content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur earum laborum quisquam nihil. Itaque consectetur neque consequuntur et fuga dignissimos, eos rem! Provident veniam temporibus non beatae laudantium consectetur error!",
     Icon: Speed,
-    Img: ImgOne,
   },
 
   {
@@ -28,34 +25,33 @@ const data = [
     Content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur earum laborum quisquam nihil. Itaque consectetur neque consequuntur et fuga dignissimos, eos rem! Provident veniam temporibus non beatae laudantium consectetur error!",
     Icon: Reliability,
-    Img: ImgOne,
   },
 ];
 
 const HighService = () => {
   return (
     <>
-      <div className="py-8 mt-16 shadow-lg md:mt-28">
-        <div className="">
+      <div className="py-8 mt-16 text-white md:mt-28 bestServicesBack">
+        <div>
           <div>
-            <div className="container w-full md:w-3/4">
-              <h1 className="relative headingStyleLg">
+            <div className="w-full px-20 mx-auto md:w-3/4">
+              <h1 className="textCenter">
                 We offer our customers the highest level of services
               </h1>
             </div>
             <div>
               <div>
-                <div>
-                  {data.map(({ id, Title, Img, Content, Icon }) => {
+                <div className="py-2">
+                  {data.map(({ id, Title, Content, Icon }) => {
                     return (
                       <div key={id}>
-                        <div className="py-16 border bg-grey">
-                          <div className="pl-8 md:pl-24">
-                            <div className="flex items-center justify-between">
+                        <div className="container my-3 md:my-6">
+                          <div className="px-4 py-6 duration-500 border-b-2 border-opacity-0 md:py-12 border-b-white hover:border-opacity-100">
+                            <div className="flex flex-col items-center justify-between p-4 shadow-sm md:shadow shadow-grey md:p-0 border-grey md:border-0 md:flex-row">
                               <div>
                                 <img src={Icon} alt={Title} />
                               </div>
-                              <div className="w-fullmmd:w-1/2">
+                              <div className="w-full md:w-1/2">
                                 <div>
                                   <h6>{Title}</h6>
                                 </div>

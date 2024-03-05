@@ -196,6 +196,13 @@ h1 {
     background-size: cover;
   }
 
+  .bestServicesBack {
+    background-image: url(../src/assets/WorldMap.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
   .footerBack {
     background-image: url(../src/assets/Footer.png);
     background-position: center center;
