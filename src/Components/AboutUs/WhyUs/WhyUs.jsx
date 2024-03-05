@@ -45,31 +45,47 @@ const WhyUs = () => {
     <>
       <div>
         <div className="flex flex-col lg:flex-row">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5 }}
-            variants={{
-              hidden: { opacity: 0, x: -50 },
-              visible: { opacity: 1, x: 0 },
-            }}
-            className="w-full lg:mr-8 lg:w-1/2"
-          >
-            <div>
-              <h1 className="relative mb-2 lg:mb-0 md:headingStyleMd lg:headingStyleLg">
-                Why We Are The Best
-              </h1>
-            </div>
-            <div>
-              <p className="md:mt-4 lg:mt-0">
-                At DZ Work Away, we understand that the decision to immigrate is
-                one of the most significant steps you will ever take. That is
-                why we are committed to making your journey as smooth and
-                successful as possible. Here is why you should choose us:
-              </p>
-            </div>
-          </motion.div>
+          <div className="w-full lg:mr-8 lg:w-3/4">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+            >
+              <div>
+                <h1 className="relative mb-2 lg:mb-0 md:headingStyleMd lg:headingStyleLg">
+                  Why We Are The Best
+                </h1>
+              </div>
+              <div>
+                <p className="md:mt-4 lg:mt-0">
+                  At DZ Work Away, we understand that the decision to immigrate
+                  is one of the most significant steps you will ever take. That
+                  is why we are committed to making your journey as smooth and
+                  successful as possible. Here is why you should choose us:
+                </p>
+              </div>
+            </motion.div>
+            <motion.div
+              className="hidden md:block"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 150 },
+                visible: { opacity: 1, y: 0 },
+              }}
+            >
+              <button className="mt-12 buttonCust">
+                <a href="#">Our Services</a>{" "}
+              </button>
+            </motion.div>
+          </div>
 
           <motion.div
             initial="hidden"
@@ -108,10 +124,25 @@ const WhyUs = () => {
               );
             })}
           </motion.div>
+          <motion.div
+            className="block md:hidden"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 150 },
+              visible: { opacity: 1, y: 0 },
+            }}
+          >
+            <button className="mt-8 buttonCust">
+              <a href="#">Our Services</a>{" "}
+            </button>
+          </motion.div>
         </div>
         <div className="relative">
           <LazyLoadImage
-            className="absolute h-[25rem] w-full bottom-80 -z-10"
+            className="absolute h-[25rem] w-full bottom-96 md:bottom-80 -z-10"
             src={Shape}
             alt="Shape"
           />
