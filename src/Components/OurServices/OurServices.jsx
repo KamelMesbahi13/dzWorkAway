@@ -2,6 +2,7 @@ import ChooseUs from "./ChooseUs/ChooseUs";
 import Header from "./Header/Header";
 import HighService from "./HighService/HighService";
 import Introduction from "./Introduction/Introduction";
+import Services from "./Services/Services";
 
 const OurServices = () => {
   return (
@@ -17,6 +18,7 @@ const OurServices = () => {
         <div className="container">
           <ChooseUs />
         </div>
+        <Services />
       </div>
     </>
   );
