@@ -87,7 +87,7 @@ const WhyUs = () => {
               return (
                 <div key={id}>
                   <div>
-                    <div className="p-4 duration-300 shadow-xl lg:h-[28rem] cardServices xl:h-[22rem] hover:text-white lg:p-8">
+                    <div className="p-4 duration-300 shadow-xl lg:h-[28rem] md:cardServices xl:h-[22rem] hover:text-white lg:p-8">
                       <div className="relative w-16 h-16 bg-white rounded-full">
                         <LazyLoadImage
                           className="absolute w-12 h-12 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"

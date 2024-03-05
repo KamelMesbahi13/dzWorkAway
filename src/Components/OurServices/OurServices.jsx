@@ -2,7 +2,7 @@ import ChooseUs from "./ChooseUs/ChooseUs";
 import Header from "./Header/Header";
 import HighService from "./HighService/HighService";
 import Introduction from "./Introduction/Introduction";
-import Platforms from "./Platforms/Platforms";
+import Platforms from "./PlatformsAndServices/Platforms";
 import Services from "./Services/Services";
 
 const OurServices = () => {
