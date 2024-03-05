@@ -1,7 +1,7 @@
 import ImgOne from "../../../assets/Globe.png";
 import ImgTwo from "../../../assets/Canada.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 const data = [
   {
@@ -50,7 +50,11 @@ const Platforms = () => {
                     <div>
                       <div>
                         <div>
-                          <img className="w-16 h-14" src={Img} alt={header} />
+                          <LazyLoadImage
+                            className="w-16 h-14"
+                            src={Img}
+                            alt={header}
+                          />
                         </div>
                         <div>
                           <div className="mt-2">
