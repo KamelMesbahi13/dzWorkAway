@@ -35,7 +35,7 @@ const data = [
 const HighService = () => {
   return (
     <>
-      <div className="py-8 mt-16 shadow-lg md:mt-28 bg-grey">
+      <div className="py-8 mt-16 shadow-lg md:mt-28">
         <div className="">
           <div>
             <div className="container w-full md:w-3/4">
@@ -49,20 +49,13 @@ const HighService = () => {
                   {data.map(({ id, Title, Img, Content, Icon }) => {
                     return (
                       <div key={id}>
-                        <div className="relative text-white">
-                          <div className="duration-500 lg:opacity-0 lg:hover:opacity-100">
-                            <img
-                              className="w-full h-[20rem]"
-                              src={Img}
-                              alt={Title}
-                            />
-                          </div>
-                          <div className="absolute pl-8 -translate-y-1/4 md:pl-24 top-1/2">
+                        <div className="py-16 border bg-grey">
+                          <div className="pl-8 md:pl-24">
                             <div className="flex items-center justify-between">
                               <div>
                                 <img src={Icon} alt={Title} />
                               </div>
-                              <div className="w-1/2">
+                              <div className="w-fullmmd:w-1/2">
                                 <div>
                                   <h6>{Title}</h6>
                                 </div>
