@@ -1,4 +1,4 @@
-import ImgOne from "../../../assets/Globe.jpg";
+import ImgOne from "../../../assets/Globe.png";
 import ImgTwo from "../../../assets/Canada.jpg";
 import Plane from "../../../assets/Plane.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
