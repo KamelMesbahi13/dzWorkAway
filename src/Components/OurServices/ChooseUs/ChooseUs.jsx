@@ -47,8 +47,8 @@ const ChooseUs = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col justify-between mt-12 duration-500 shadow-lg hover:shadow-xl bg-grey md:mt-16 md:flex-row">
-            <div className="w-full pl-4 mt-8 md:w-1/2 md:mt-20">
+          <div className="flex flex-col justify-between py-4 mt-12 duration-500 shadow-lg md:py-0 hover:shadow-xl bg-grey md:mt-16 md:flex-row">
+            <div className="w-full pl-4 md:w-1/2 md:mt-20">
               <div>
                 <h6>We offer a great variety of features and services</h6>
               </div>
@@ -61,17 +61,17 @@ const ChooseUs = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 p-4 gap-y-4 md:gap-y-8 md:grid-cols-2 md:gap-x-52 textCenter">
+            <div className="grid grid-cols-1 md:p-4 md:gap-y-8 md:grid-cols-2 md:gap-x-52 textCenter">
               {data.map(({ id, Icon, Heading }) => {
                 return (
                   <div key={id}>
                     <div className="mt-12 md:mt-0">
                       <div>
                         <div>
-                          <img className="md:w-12 md:h-12" src={Icon} alt="" />
+                          <img className="w-12 h-12" src={Icon} alt="" />
                         </div>
                         <div>
-                          <h6 className="text-lg">{Heading}</h6>
+                          <h6 className="text-base md:text-lg">{Heading}</h6>
                         </div>
                       </div>
                     </div>
