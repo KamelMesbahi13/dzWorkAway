@@ -31,7 +31,7 @@ const data = [
 const HighService = () => {
   return (
     <>
-      <div className="py-8 mt-16 text-white md:mt-28 bestServicesBack">
+      <div className="py-8 mt-16 text-white md:py-16 md:mt-28 bestServicesBack">
         <div>
           <div>
             <div className="w-full px-20 mx-auto md:w-3/4">
@@ -41,12 +41,12 @@ const HighService = () => {
             </div>
             <div>
               <div>
-                <div className="py-2">
+                <div>
                   {data.map(({ id, Title, Content, Icon }) => {
                     return (
                       <div key={id}>
                         <div className="container my-3 md:my-6">
-                          <div className="px-4 py-6 duration-500 border-b-2 border-opacity-0 md:py-12 border-b-white hover:border-opacity-100">
+                          <div className="px-4 py-6 duration-500 md:border-b-2 md:border-opacity-0 md:py-12 md:border-b-grey md:hover:border-opacity-100">
                             <div className="flex flex-col items-center justify-between p-4 shadow-sm md:shadow shadow-grey md:p-0 border-grey md:border-0 md:flex-row">
                               <div>
                                 <img src={Icon} alt={Title} />
