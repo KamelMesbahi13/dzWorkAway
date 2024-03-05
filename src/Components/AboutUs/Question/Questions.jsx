@@ -87,7 +87,7 @@ const Questions = () => {
         visible: { opacity: 1 },
       }}
       id="accordion-collapse"
-      className="py-8 my-20 text-white divide-y questionBack"
+      className="py-8 mb-20 text-white divide-y questionBack"
     >
       <div className="container">
         <div>
