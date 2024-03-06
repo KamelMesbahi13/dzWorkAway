@@ -2,11 +2,12 @@ import ImgOne from "../../../assets/Arrima.png";
 import ImgTwo from "../../../assets/EntréeExpress.jpg";
 import ImgThree from "../../../assets/NewBrunswick.png";
 import ImgFour from "../../../assets/Flag_of_New_Zealand.svg.png";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import { motion } from "framer-motion";
+// import { LazyLoadImage } from "react-lazy-load-image-component";
+// import { motion } from "framer-motion";
 // import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useParams } from "react-router-dom";
 import Header from "./PlatformDetailHeader";
+import PlatformsForm from "./PlatformsForm";
 
 const data = [
   {
@@ -23,8 +24,8 @@ const data = [
     id: 2,
     headerOne: "New Zélande",
     headerTwo: "New Brunswick",
-    ImgThree: ImgThree,
-    ImgFour: ImgFour,
+    ImgOne: ImgThree,
+    ImgTwo: ImgFour,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
     button: "Apply",
@@ -34,7 +35,7 @@ const data = [
 const PlatformDetails = () => {
   const { platformId } = useParams();
   const platform = data.find((platform) => platform.id == platformId);
-  const { id, description, headerOne, headerTwo } = platform;
+  const { headerOne, headerTwo } = platform;
 
   return (
     <>
@@ -67,8 +68,8 @@ const PlatformDetails = () => {
                   <p>
                     ARRIMA and Entrée express are both systems used in the
                     province of Quebec, Canada, for managing immigration
-                    applications. ARRIMA stands for "Arrima System," which is
-                    Quebec's Expression of Interest (EOI) system for managing
+                    applications. ARRIMA stands for Arrima System, which is
+                    Quebec s Expression of Interest (EOI) system for managing
                     applications to the Quebec Skilled Worker Program (QSWP). It
                     allows candidates to submit an expression of interest online
                     and enter a pool of candidates. The Quebec government then
@@ -83,13 +84,16 @@ const PlatformDetails = () => {
                     such as age, education, work experience, and language
                     proficiency. The Canadian government regularly invites
                     top-ranked candidates to apply for permanent residence. In
-                    summary, ARRIMA is specific to Quebec's immigration system,
-                    while Entrée express is part of Canada's federal immigration
+                    summary, ARRIMA is specific to Quebec s immigration system,
+                    while Entrée express is part of Canada s federal immigration
                     system.
                   </p>
                 </div>
               </div>
             </div>
+          </div>
+          <div>
+            <PlatformsForm />
           </div>
         </div>
       </div>
