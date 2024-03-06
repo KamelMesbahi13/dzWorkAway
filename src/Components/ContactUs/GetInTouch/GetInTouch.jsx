@@ -96,7 +96,7 @@ const GetInTouch = () => {
               }) => {
                 return (
                   <div key={id}>
-                    <div className="flex flex-col md:items-center md:justify-between md:flex-row">
+                    <div className="flex flex-col md:pt-8 md:justify-between md:flex-row">
                       <div className="w-full px-4 md:px-8 md:w-[40%]">
                         <div>
                           <div className="mb-4">
@@ -192,7 +192,7 @@ const GetInTouch = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="w-full md:w-[40%] p-8">
+                      <div className="w-full md:w-[40%] px-8">
                         <div>
                           <div>
                             <div>
