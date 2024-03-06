@@ -18,8 +18,8 @@ const data = [
   },
   {
     id: 2,
-    headerThree: "New Zélande",
-    headerFour: "New Brunswick",
+    headerOne: "New Zélande",
+    headerTwo: "New Brunswick",
     ImgThree: ImgThree,
     ImgFour: ImgFour,
     description:
@@ -31,15 +31,20 @@ const data = [
 const PlatformDetails = () => {
   const { platformId } = useParams();
   const platform = data.find((platform) => platform.id == platformId);
-  const { id, description } = platform;
+  const { id, description, headerOne, headerTwo } = platform;
 
   return (
     <>
       <div>
-        <div>
+        <div className="container">
           <div>
-            <h1>{id}</h1>
-            <h1>{description}</h1>
+            <div>
+              <div>
+                <div>
+                  <h1></h1>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
