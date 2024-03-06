@@ -32,14 +32,12 @@ const ServicesDetails = () => {
     <>
       <div>
         <ServicesDetailsHeader header={header} />
-        <div>
+        <div className="container">
           <div className="mt-20">
             <div>
               <div className="w-full md:w-3/4">
                 <div>
-                  <h1 className="relative mb-2 headingStyleLg">
-                    {header} <span className="text-secondColor"> / </span>{" "}
-                  </h1>
+                  <h1 className="relative mb-2 headingStyleLg">{header}</h1>
                 </div>
                 <div>
                   <p>

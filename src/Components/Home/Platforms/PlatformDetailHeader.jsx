@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 // import { LazyLoadImage } from "react-lazy-load-image-component";
 
-const Header = ({ headerOne, headerTwo }) => {
+const PlatformDetailHeader = ({ headerOne, headerTwo }) => {
   return (
     <motion.div
       initial="hidden"
@@ -43,9 +43,9 @@ const Header = ({ headerOne, headerTwo }) => {
   );
 };
 
-Header.propTypes = {
+PlatformDetailHeader.propTypes = {
   headerOne: PropTypes.string.isRequired,
   headerTwo: PropTypes.string.isRequired,
 };
 
-export default Header;
+export default PlatformDetailHeader;
