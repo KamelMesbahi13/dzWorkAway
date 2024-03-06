@@ -3,6 +3,7 @@ import ImgTwo from "../../../assets/Canada.jpg";
 // import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useParams } from "react-router-dom";
 import ServicesDetailsHeader from "./ServicesDetailsHeader";
+import ServicesForm from "./ServicesForm";
 
 const data = [
   {
@@ -79,7 +80,8 @@ const ServicesDetails = () => {
                 </div>
               </div>
             </div>
-          </div>{" "}
+          </div>
+          <ServicesForm />
         </div>
       </div>
     </>
