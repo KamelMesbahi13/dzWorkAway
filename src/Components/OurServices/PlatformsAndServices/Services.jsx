@@ -37,7 +37,7 @@ const Platforms = () => {
     ({ id, headerOne, headerTwo, ImgOne, ImgTwo, description, button }) => {
       return (
         <div key={id}>
-          <div className="duration-500 hover:scale-[1.02] hover:shadow-2xl rounded-md p-8 w-full md:w-[70%] shadow-xl bg-white">
+          <div className="p-8 w-full mt-4 md:mt-0 md:w-[70%] shadow-lg duration-500 hover:shadow-xl hover:scale-[1.02]">
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -113,7 +113,7 @@ const Platforms = () => {
     }) => {
       return (
         <div key={id}>
-          <div className="duration-500 hover:scale-[1.02] hover:shadow-2xl rounded-md p-8 w-full md:w-[70%] shadow-xl bg-white">
+          <div className="p-8 w-full mt-4 md:mt-0 md:w-[70%] shadow-lg duration-500 hover:shadow-xl hover:scale-[1.02]">
             <motion.div
               initial="hidden"
               whileInView="visible"
