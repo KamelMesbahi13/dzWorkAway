@@ -7,7 +7,7 @@ const PlatformsForm = () => {
         <div className="p-4 border-2 md:px-20 md:py-12 border-grey">
           <div>
             <div>
-              <div className="mb-36 textCenter">
+              <div className="mb-12 md:mb-36 textCenter">
                 <h6>Please fill out the form below with your information</h6>
               </div>
               <div>
