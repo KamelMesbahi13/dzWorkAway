@@ -45,7 +45,7 @@ const WhyUs = () => {
     <>
       <div>
         <div className="flex flex-col lg:flex-row">
-          <div className="w-full lg:mr-8 lg:w-3/4">
+          <div className="w-full lg:mr-8 lg:w-1/2">
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -102,7 +102,7 @@ const WhyUs = () => {
               return (
                 <div key={id}>
                   <div>
-                    <div className="p-4 duration-300 ease-in border-2 border-opacity-0 shadow-xl border-secondColor hover:border-opacity-100 lg:p-8">
+                    <div className="ease-in border-2 border-opacity-0 border-secondColor hover:border-opacity-100 p-4 duration-300 shadow-xl lg:h-[28rem] xl:h-[22rem] lg:p-8">
                       <div>
                         <LazyLoadImage
                           className="w-12 h-12"
