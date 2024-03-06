@@ -14,7 +14,6 @@ const data = [
     CallUs_paragraph:
       "Contact us for personalized support. Call now to speak to our dedicated team.",
     CallUs: "0555 55 55 55",
-
     VisitUs_Title: "Visit us",
     VisitUs_paragraph:
       "Come visit us! Our doors are open to you for any questions or advice. Looking forward to meeting you.",
