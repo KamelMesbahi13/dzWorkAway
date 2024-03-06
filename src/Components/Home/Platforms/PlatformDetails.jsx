@@ -2,8 +2,11 @@ import ImgOne from "../../../assets/Arrima.png";
 import ImgTwo from "../../../assets/EntréeExpress.jpg";
 import ImgThree from "../../../assets/NewBrunswick.png";
 import ImgFour from "../../../assets/Flag_of_New_Zealand.svg.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { motion } from "framer-motion";
 // import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useParams } from "react-router-dom";
+import Header from "./PlatformDetailHeader";
 
 const data = [
   {
@@ -36,12 +39,25 @@ const PlatformDetails = () => {
   return (
     <>
       <div>
+        <Header headerOne={headerOne} headerTwo={headerTwo} />
         <div className="container">
-          <div>
+          <div className="mt-20">
             <div>
-              <div>
+              <div className="w-full md:w-3/4">
                 <div>
-                  <h1></h1>
+                  <h1 className="relative mb-2 headingStyleLg">
+                    {headerOne} <span className="text-secondColor"> / </span>{" "}
+                    {headerTwo}
+                  </h1>
+                </div>
+                <div>
+                  <p>
+                    Welcome to our form page! Please fill out the form below
+                    with your details and any inquiries you may have. Your
+                    information is secure and will only be used to assist you.
+                    If you need help, just let us know. Thank you for reaching
+                    out!
+                  </p>
                 </div>
               </div>
             </div>
