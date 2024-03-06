@@ -1,7 +1,19 @@
+import { motion } from "framer-motion";
+
 const Introduction = () => {
   return (
     <>
-      <div className="mt-12 md:mt-20">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: { opacity: 1, x: 0 },
+        }}
+        className="mt-12 md:mt-20"
+      >
         <div>
           <div className="w-full md:w-3/4">
             <div>
@@ -19,7 +31,7 @@ const Introduction = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
