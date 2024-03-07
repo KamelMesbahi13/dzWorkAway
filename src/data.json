@@ -2,35 +2,31 @@
   "Home_Header_Swipper": [
     {
       "id": 1,
-      "Img": "ImgOne",
-      "alt": "Background One",
-      "heading": "Immigration visa Consulting",
-      "paragraph": "Expert Guidance for a Seamless Immigration Journey",
-      "paragraph_one_check": "Meeting Your Unique Needs",
-      "paragraph_two_check": "Meeting Your Unique Needs",
-      "paragraph_three_check": "Meeting Your Unique Needs"
+      "heading_eng": "Immigration visa Consulting",
+      "paragraph_eng": "Expert Guidance for a Seamless Immigration Journey",
+      "paragraph_check_eng": "Meeting Your Unique Needs"
     },
 
     {
       "id": 2,
-      "Img": "ImgTwo",
-      "alt": "Background Two",
-      "heading": "Immigration visa Consulting",
-      "paragraph": "Expert Guidance for a Seamless Immigration Journey",
-      "paragraph_one_check": "Meeting Your Unique Needs",
-      "paragraph_two_check": "Meeting Your Unique Needs",
-      "paragraph_three_check": "Meeting Your Unique Needs"
+      "heading_eng": "Immigration visa Consulting",
+      "paragraph_eng": "Expert Guidance for a Seamless Immigration Journey",
+      "paragraph_check_eng": "Meeting Your Unique Needs"
     },
 
     {
       "id": 3,
-      "Img": "ImgThree",
-      "alt": "Background Three",
-      "heading": "Immigration visa Consulting",
-      "paragraph": "Expert Guidance for a Seamless Immigration Journey",
-      "paragraph_one_check": "Meeting Your Unique Needs",
-      "paragraph_two_check": "Meeting Your Unique Needs",
-      "paragraph_three_check": "Meeting Your Unique Needs"
+      "heading_eng": "Immigration visa Consulting",
+      "paragraph_eng": "Expert Guidance for a Seamless Immigration Journey",
+      "paragraph_check_eng": "Meeting Your Unique Needs"
+    }
+  ],
+
+  "Home_Header_Button": [
+    {
+      "id": 1,
+      "button_one_eng": "Book Appointment",
+      "button_two_eng": "Check Our Services"
     }
   ]
 }
