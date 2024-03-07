@@ -1,8 +1,8 @@
 import { lazy } from "react";
-const ChooseUs = lazy(() => import("./ChooseUs/ChooseUs"));
 const Header = lazy(() => import("./Header/Header"));
-const HighService = lazy(() => import("./HighService/HighService"));
 const Introduction = lazy(() => import("./Introduction/Introduction"));
+const HighService = lazy(() => import("./HighService/HighService"));
+const ChooseUs = lazy(() => import("./ChooseUs/ChooseUs"));
 const Platforms = lazy(() => import("./PlatformsAndServices/Platforms"));
 const Services = lazy(() => import("./Services/Services"));
 

@@ -1,8 +1,23 @@
+import Data from "../../../data.json";
 import Quality from "../../../assets/Quality.png";
 import Speed from "../../../assets/Speed.png";
 import Reliability from "../../../assets/Reliability.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
+
+const HeadingsAndParagraphs = Data.OurServices_HighService__Heading.map(
+  ({ id, header }) => {
+    return (
+      <div key={id}>
+        <div>
+          <div>
+            <h1 className="textCenter">{header}</h1>
+          </div>
+        </div>
+      </div>
+    );
+  }
+);
 
 const data = [
   {
@@ -47,9 +62,7 @@ const HighService = () => {
         <div>
           <div>
             <div className="w-full px-20 mx-auto md:w-3/4">
-              <h1 className="textCenter">
-                We offer our customers the highest level of services
-              </h1>
+              {HeadingsAndParagraphs}
             </div>
             <div>
               <div>
