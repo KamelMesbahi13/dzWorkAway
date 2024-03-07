@@ -1,4 +1,4 @@
-import Data from "../../../Data/db.json";
+import Data from "../../../../Data/db.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { LazyLoadImage } from "react-lazy-load-image-component";
