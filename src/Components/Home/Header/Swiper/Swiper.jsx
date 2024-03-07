@@ -1,3 +1,4 @@
+import Data from "../../../../db.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -8,70 +9,34 @@ import ImgTwo from "../../../../assets/HomePageTwo.jpg";
 import ImgThree from "../../../../assets/HomePageThree.jpg";
 import Check from "../../../../assets/check.png";
 
-const Data = [
+const DataImgs = [
   {
-    id: 1,
     Img: ImgOne,
     alt: "Background One",
-    heading_fr: "Immigration visa Consulting",
-    heading_eng: "Immigration visa Consulting",
-    heading_ar: "Immigration visa Consulting",
-    paragraph_fr: "Expert Guidance for a Seamless Immigration Journey",
-    paragraph_eng: "Expert Guidance for a Seamless Immigration Journey",
-    paragraph_ar: "Expert Guidance for a Seamless Immigration Journey",
-    paragraph_one_check_fr: "Expert Legal Support",
-    paragraph_one_check_eng: "Meeting Your Unique Needs",
-    paragraph_one_check_ar: "Tailored Immigration Solutions",
-    paragraph_two_check_fr: "Expert Legal Support",
-    paragraph_two_check_eng: "Meeting Your Unique Needs",
-    paragraph_two_check_ar: "Tailored Immigration Solutions",
-    paragraph_three_check_fr: "Expert Legal Support",
-    paragraph_three_check_eng: "Meeting Your Unique Needs",
-    paragraph_three_check_ar: "Tailored Immigration Solutions",
   },
 
   {
-    id: 2,
     Img: ImgTwo,
     alt: "Background Two",
-    heading_fr: "Immigration visa Consulting",
-    heading_eng: "Immigration visa Consulting",
-    heading_ar: "Immigration visa Consulting",
-    paragraph_fr: "Expert Guidance for a Seamless Immigration Journey",
-    paragraph_eng: "Expert Guidance for a Seamless Immigration Journey",
-    paragraph_ar: "Expert Guidance for a Seamless Immigration Journey",
-    paragraph_one_check_fr: "Expert Legal Support",
-    paragraph_one_check_eng: "Meeting Your Unique Needs",
-    paragraph_one_check_ar: "Tailored Immigration Solutions",
-    paragraph_two_check_fr: "Expert Legal Support",
-    paragraph_two_check_eng: "Meeting Your Unique Needs",
-    paragraph_two_check_ar: "Tailored Immigration Solutions",
-    paragraph_three_check_fr: "Expert Legal Support",
-    paragraph_three_check_eng: "Meeting Your Unique Needs",
-    paragraph_three_check_ar: "Tailored Immigration Solutions",
   },
 
   {
-    id: 3,
     Img: ImgThree,
     alt: "Background Three",
-    heading_fr: "Immigration visa Consulting",
-    heading_eng: "Immigration visa Consulting",
-    heading_ar: "Immigration visa Consulting",
-    paragraph_fr: "Expert Guidance for a Seamless Immigration Journey",
-    paragraph_eng: "Expert Guidance for a Seamless Immigration Journey",
-    paragraph_ar: "Expert Guidance for a Seamless Immigration Journey",
-    paragraph_one_check_fr: "Expert Legal Support",
-    paragraph_one_check_eng: "Meeting Your Unique Needs",
-    paragraph_one_check_ar: "Tailored Immigration Solutions",
-    paragraph_two_check_fr: "Expert Legal Support",
-    paragraph_two_check_eng: "Meeting Your Unique Needs",
-    paragraph_two_check_ar: "Tailored Immigration Solutions",
-    paragraph_three_check_fr: "Expert Legal Support",
-    paragraph_three_check_eng: "Meeting Your Unique Needs",
-    paragraph_three_check_ar: "Tailored Immigration Solutions",
   },
 ];
+
+const Images = DataImgs.map(({ Img, alt }, i) => {
+  return (
+    <div key={i}>
+      <LazyLoadImage
+        className="h-[75vh] w-full md:h-[100vh]"
+        src={Img}
+        alt={alt}
+      />
+    </div>
+  );
+});
 
 export default function App() {
   return (
@@ -87,30 +52,22 @@ export default function App() {
           modules={[Autoplay]}
           className="mySwiper"
         >
-          {Data.map(
-            (
-              {
-                Img,
-                alt,
-                heading_eng,
-                paragraph_eng,
-                paragraph_one_check_eng,
-                paragraph_two_check_eng,
-                paragraph_three_check_eng,
-              },
-              i
-            ) => {
+          {Data.Home_Header_Swipper.map(
+            ({
+              id,
+              heading,
+              paragraph,
+              paragraph_one_check,
+              paragraph_two_check,
+              paragraph_three_check,
+            }) => {
               return (
-                <SwiperSlide key={i} className="relative text-white">
-                  <LazyLoadImage
-                    className="h-[75vh] w-full md:h-[100vh]"
-                    src={Img}
-                    alt={alt}
-                  />
+                <SwiperSlide key={id} className="relative text-white">
+                  {Images}
                   <div className="absolute w-full md:w-1/2 p-8 lg:px-24 top-[15%] sm:top-[20%]">
                     <div>
-                      <h1 className="mb-4 md:text-5xl">{heading_eng}</h1>
-                      <h6>{paragraph_eng}</h6>
+                      <h1 className="mb-4 md:text-5xl">{heading}</h1>
+                      <h6>{paragraph}</h6>
                     </div>
                     <div>
                       <div className="mt-4">
@@ -120,7 +77,7 @@ export default function App() {
                             src={Check}
                             alt="Check"
                           />
-                          <p>{paragraph_one_check_eng}</p>
+                          <p>{paragraph_one_check}</p>
                         </div>
                       </div>
                       <div>
@@ -130,7 +87,7 @@ export default function App() {
                             src={Check}
                             alt="Check"
                           />
-                          <p>{paragraph_two_check_eng}</p>
+                          <p>{paragraph_two_check}</p>
                         </div>
                       </div>
                       <div>
@@ -140,7 +97,7 @@ export default function App() {
                             src={Check}
                             alt="Check"
                           />
-                          <p>{paragraph_three_check_eng}</p>
+                          <p>{paragraph_three_check}</p>
                         </div>
                       </div>
                     </div>
