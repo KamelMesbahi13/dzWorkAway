@@ -2,7 +2,7 @@ import ImgOne from "../../../assets/Globe.png";
 import ImgTwo from "../../../assets/Canada.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Services from "./Services";
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const data = [
   {
@@ -26,7 +26,16 @@ const data = [
 const Platforms = () => {
   return (
     <div className="mt-28">
-      <div>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: { opacity: 1, x: 0 },
+        }}
+      >
         <div className="w-full md:w-3/4">
           <div>
             <h1 className="relative headingStyleLg">Our Platforms</h1>
@@ -40,13 +49,22 @@ const Platforms = () => {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
       <div>
         <div className="flex flex-col md:mt-12 md:flex-row md:items-center md:justify-between textCenter">
           {data.map(({ id, Img, header, description, button }) => {
             return (
               <div key={id}>
-                <div>
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.5 }}
+                  transition={{ duration: 0.5 }}
+                  variants={{
+                    hidden: { opacity: 0, y: 50 },
+                    visible: { opacity: 1, y: 0 },
+                  }}
+                >
                   <div className="p-8 w-full mt-4 md:mt-0 md:w-[70%] shadow-lg duration-500 hover:shadow-xl hover:scale-[1.02]">
                     <div>
                       <div>
@@ -73,7 +91,7 @@ const Platforms = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               </div>
             );
           })}

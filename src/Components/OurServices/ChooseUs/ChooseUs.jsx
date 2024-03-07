@@ -34,19 +34,19 @@ const data = [
 const ChooseUs = () => {
   return (
     <>
-      <div className="mt-12 md:mt-20">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0 },
+          visible: { opacity: 1 },
+        }}
+        className="mt-12 md:mt-20"
+      >
         <div>
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5 }}
-            variants={{
-              hidden: { opacity: 0, x: -50 },
-              visible: { opacity: 1, x: 0 },
-            }}
-            className="w-full md:w-2/4"
-          >
+          <div className="w-full md:w-2/4">
             <div>
               <h1 className="relative headingStyleLg">Why Choose Us</h1>
             </div>
@@ -58,7 +58,7 @@ const ChooseUs = () => {
                 success.
               </p>
             </div>
-          </motion.div>
+          </div>
           <div className="flex flex-col justify-between py-4 mt-12 duration-500 shadow-lg md:py-0 hover:shadow-xl bg-grey md:mt-16 md:flex-row">
             <div className="w-full pl-4 md:w-1/2 md:mt-20">
               <div>
@@ -97,7 +97,7 @@ const ChooseUs = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
