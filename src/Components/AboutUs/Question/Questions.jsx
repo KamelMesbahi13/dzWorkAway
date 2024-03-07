@@ -1,3 +1,4 @@
+import Data from "../../../data.json";
 import { useState } from "react";
 import Down from "../../../assets/DownArrow.png";
 import Up from "../../../assets/UpArrow.png";
@@ -5,35 +6,35 @@ import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-const data = [
-  {
-    id: 1,
-    title: "What services does your immigration agency offer?",
-    description:
-      "At Dz Work Away, we offer a wide range of immigration services tailored to meet the diverse needs of our clients. Our services include visa applications, permanent residency applications, citizenship applications, immigration consultations, family sponsorship, work permits, study permits, and more. Whether you're an individual, family, or employer, we're here to provide comprehensive support and guidance throughout your immigration journey.",
-  },
+// const data = [
+//   {
+//     id: 1,
+//     title: "What services does your immigration agency offer?",
+//     description:
+//       "At Dz Work Away, we offer a wide range of immigration services tailored to meet the diverse needs of our clients. Our services include visa applications, permanent residency applications, citizenship applications, immigration consultations, family sponsorship, work permits, study permits, and more. Whether you're an individual, family, or employer, we're here to provide comprehensive support and guidance throughout your immigration journey.",
+//   },
 
-  {
-    id: 2,
-    title: "What sets your immigration agency apart from others?",
-    description:
-      "At Dz Work Away, we distinguish ourselves through our unwavering commitment to excellence, personalized approach, and dedication to client satisfaction. Our team of experienced immigration professionals combines in-depth knowledge with a client-centric mindset to deliver exceptional service and results. We prioritize transparency, communication, and integrity in everything we do, ensuring that our clients receive the support and guidance they need to achieve their immigration goals.",
-  },
+//   {
+//     id: 2,
+//     title: "What sets your immigration agency apart from others?",
+//     description:
+//       "At Dz Work Away, we distinguish ourselves through our unwavering commitment to excellence, personalized approach, and dedication to client satisfaction. Our team of experienced immigration professionals combines in-depth knowledge with a client-centric mindset to deliver exceptional service and results. We prioritize transparency, communication, and integrity in everything we do, ensuring that our clients receive the support and guidance they need to achieve their immigration goals.",
+//   },
 
-  {
-    id: 3,
-    title: "How experienced is your team in handling immigration matters?",
-    description:
-      "Our team at Dz Work Away comprises seasoned immigration professionals with extensive experience in handling a wide range of immigration matters. We stay abreast of the latest developments in immigration law, policies, and procedures to provide our clients with accurate and up-to-date guidance. Whether you're navigating a complex visa application or seeking advice on citizenship requirements, you can trust our team to offer knowledgeable and reliable assistance every step of the way.",
-  },
+//   {
+//     id: 3,
+//     title: "How experienced is your team in handling immigration matters?",
+//     description:
+//       "Our team at Dz Work Away comprises seasoned immigration professionals with extensive experience in handling a wide range of immigration matters. We stay abreast of the latest developments in immigration law, policies, and procedures to provide our clients with accurate and up-to-date guidance. Whether you're navigating a complex visa application or seeking advice on citizenship requirements, you can trust our team to offer knowledgeable and reliable assistance every step of the way.",
+//   },
 
-  {
-    id: 4,
-    title: "What can clients expect when working with your immigration agency?",
-    description:
-      "When you choose Dz Work Away, you can expect a personalized and comprehensive approach to immigration services. From the initial consultation to the successful completion of your immigration process, we're here to provide guidance, support, and peace of mind. Our dedicated team will work closely with you to understand your unique circumstances, address your concerns, and develop a tailored immigration strategy that aligns with your goals. With [Your Agency Name], you'll have a trusted partner by your side, committed to helping you navigate the complexities of immigration with confidence and ease.",
-  },
-];
+//   {
+//     id: 4,
+//     title: "What can clients expect when working with your immigration agency?",
+//     description:
+//       "When you choose Dz Work Away, you can expect a personalized and comprehensive approach to immigration services. From the initial consultation to the successful completion of your immigration process, we're here to provide guidance, support, and peace of mind. Our dedicated team will work closely with you to understand your unique circumstances, address your concerns, and develop a tailored immigration strategy that aligns with your goals. With [Your Agency Name], you'll have a trusted partner by your side, committed to helping you navigate the complexities of immigration with confidence and ease.",
+//   },
+// ];
 
 const Questions = () => {
   const [activeAccordion, setActiveAccordion] = useState("");
@@ -114,7 +115,7 @@ const Questions = () => {
           </div>
         </div>
         <div>
-          {data.map(({ id, title, description }) => {
+          {Data.AboutUs_Question.map(({ id, title, description }) => {
             return (
               <div key={id}>
                 <div className="w-full md:w-3/4">
