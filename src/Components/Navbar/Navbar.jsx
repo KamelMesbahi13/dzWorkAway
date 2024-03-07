@@ -6,7 +6,7 @@ import { FaXmark } from "react-icons/fa6";
 import Facebook from "../../assets/Facebook.png";
 import Instagram from "../../assets/instagram.png";
 import { BsGlobe } from "react-icons/bs";
-import TranslateIcon from "../../Ui/TranslationIcon/TranslationIcon";
+// import TranslateIcon from "../../Ui/TranslationIcon/TranslationIcon";
 
 const Navbar = () => {
   const [nav, setNav] = useState(true);
@@ -33,7 +33,7 @@ const Navbar = () => {
     <>
       <div>
         <div className="container">
-          <TranslateIcon />
+          {/* <TranslateIcon /> */}
           <div className="z-50 hidden w-full py-6 lg:flex">
             <div className="flex items-center justify-between w-full">
               <div>

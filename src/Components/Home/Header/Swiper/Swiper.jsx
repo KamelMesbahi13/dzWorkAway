@@ -8,6 +8,7 @@ import ImgOne from "../../../../assets/HomePageOne.jpg";
 import ImgTwo from "../../../../assets/HomePageTwo.jpg";
 import ImgThree from "../../../../assets/HomePageThree.jpg";
 import Check from "../../../../assets/check.png";
+import { useTranslation } from "react-i18next";
 
 const DataImgs = [
   {
@@ -73,6 +74,31 @@ const Buttons = Data.Home_Header_Button.map(
 );
 
 export default function App() {
+  const { i18n } = useTranslation();
+
+  const data = Data.Home_Header_Swipper.map((data) => {
+    if (i18n.language == "ar") {
+      return {
+        id: data.id,
+        heading: data.heading_ar,
+        paragraph: data.paragraph_ar,
+        paragraph_check: data.paragraph_check_ar,
+      };
+    }
+
+    // if (i18n.language == 'fr') {
+    //   return {
+    //     id: teacher.id,
+    //     image: teacher.image,
+    //     job: teacher.job_fr,
+    //     name: teacher.name_fr,
+    //     introduction: teacher.introduction_fr,
+    //   };
+    // }
+
+    return data;
+  });
+
   return (
     <>
       <div className=" h-[75vh] md:h-[100vh] w-full">
@@ -86,7 +112,7 @@ export default function App() {
           modules={[Autoplay]}
           className="mySwiper"
         >
-          {Data.Home_Header_Swipper.map(({ id, heading, paragraph }) => {
+          {data.map(({ id, heading, paragraph }) => {
             return (
               <SwiperSlide key={id} className="relative text-white">
                 {Images}
