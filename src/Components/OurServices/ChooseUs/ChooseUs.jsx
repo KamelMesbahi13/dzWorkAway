@@ -2,6 +2,8 @@ import ImgOne from "../../../assets/Team.png";
 import ImgTwo from "../../../assets/Checklist.png";
 import ImgThree from "../../../assets/Support.png";
 import ImgFour from "../../../assets/QualityService.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { motion } from "framer-motion";
 
 const data = [
   {
@@ -34,7 +36,17 @@ const ChooseUs = () => {
     <>
       <div className="mt-12 md:mt-20">
         <div>
-          <div className="w-full md:w-2/4">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            className="w-full md:w-2/4"
+          >
             <div>
               <h1 className="relative headingStyleLg">Why Choose Us</h1>
             </div>
@@ -46,7 +58,7 @@ const ChooseUs = () => {
                 success.
               </p>
             </div>
-          </div>
+          </motion.div>
           <div className="flex flex-col justify-between py-4 mt-12 duration-500 shadow-lg md:py-0 hover:shadow-xl bg-grey md:mt-16 md:flex-row">
             <div className="w-full pl-4 md:w-1/2 md:mt-20">
               <div>
@@ -68,7 +80,11 @@ const ChooseUs = () => {
                     <div className="mt-12 md:mt-0">
                       <div>
                         <div>
-                          <img className="w-12 h-12" src={Icon} alt="" />
+                          <LazyLoadImage
+                            className="w-12 h-12"
+                            src={Icon}
+                            alt={Heading}
+                          />
                         </div>
                         <div>
                           <h6 className="text-base md:text-lg">{Heading}</h6>
