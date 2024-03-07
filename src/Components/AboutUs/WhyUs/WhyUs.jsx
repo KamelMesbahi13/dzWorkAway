@@ -1,3 +1,4 @@
+import Data from "../../../data.json";
 import ImgOne from "../../../assets/Experience.png";
 import ImgTwo from "../../../assets/Priority.png";
 import ImgThree from "../../../assets/Advice.png";
@@ -5,6 +6,26 @@ import ImgFour from "../../../assets/Support.png";
 import Shape from "../../../assets/OurStoryShape.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
+
+const HeadingsAndParagraphs = Data.AboutUs_WhyUs_Heading_Paragraph.map(
+  ({ id, header, description }) => {
+    return (
+      <div key={id}>
+        <div>
+          {" "}
+          <div>
+            <h1 className="relative mb-2 lg:mb-0 md:headingStyleMd lg:headingStyleLg">
+              {header}
+            </h1>
+          </div>
+          <div>
+            <p className="md:mt-4 lg:mt-0">{description}</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+);
 
 const data = [
   {
@@ -56,19 +77,7 @@ const WhyUs = () => {
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              <div>
-                <h1 className="relative mb-2 lg:mb-0 md:headingStyleMd lg:headingStyleLg">
-                  Why We Are The Best
-                </h1>
-              </div>
-              <div>
-                <p className="md:mt-4 lg:mt-0">
-                  At DZ Work Away, we understand that the decision to immigrate
-                  is one of the most significant steps you will ever take. That
-                  is why we are committed to making your journey as smooth and
-                  successful as possible. Here is why you should choose us:
-                </p>
-              </div>
+              {HeadingsAndParagraphs}
             </motion.div>
             <motion.div
               className="hidden md:block"

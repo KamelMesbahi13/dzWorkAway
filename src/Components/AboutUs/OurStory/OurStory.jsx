@@ -1,6 +1,22 @@
+import Data from "../../../data.json";
 import Img from "../../../assets/OurStoryImg.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
+
+const HeadingsAndParagraphs = Data.AboutUs_OurStory.map(
+  ({ id, header, description }) => {
+    return (
+      <div key={id}>
+        <div>
+          <div>
+            <h1 className="mb-8 textCenter">{header}</h1>
+            <p>{description}</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+);
 
 const OurStory = () => {
   return (
@@ -22,28 +38,7 @@ const OurStory = () => {
               <LazyLoadImage src={Img} alt="Our Story Image" />
             </motion.div>
             <div className="lg:absolute bg-white shadow-xl duration-500 hover:shadow-2xl px-8 py-12 rounded-lg lg:top-1/4 lg:w-[70%] lg:left-[20%]">
-              <h1 className="mb-8 textCenter">Our Story</h1>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non
-                reprehenderit architecto vero sequi suscipit, earum porro quo ad
-                voluptas nisi recusandae illum ipsum amet, repellendus soluta
-                tenetur veritatis tempore odit sunt nihil quam laudantium
-                aliquid neque illo! Quae suscipit asperiores quasi nesciunt
-                exercitationem vero vel alias, repellat dignissimos tempore ad
-                rerum tempora dolorem nihil distinctio culpa commodi aliquam
-                sint, molestias optio labore nam. Dolorum aliquid aut rerum a
-                deserunt dolor saepe, iure nesciunt velit recusandae asperiores
-                soluta adipisci, porro perferendis reprehenderit sapiente
-                mollitia obcaecati ut? Exercitationem molestias, cumque dicta
-                officia deserunt rerum sapiente a? Harum, natus itaque
-                distinctio illo rem sapiente dolorem maiores ipsa, commodi
-                quidem qui. Laborum repellendus nemo quis numquam officiis in
-                impedit alias deserunt, ipsa ex error ipsam molestiae
-                perspiciatis, ab eaque. Dicta quos accusamus, porro iusto
-                doloribus et nisi officia? Iste, obcaecati ipsam! Reprehenderit
-                animi fugiat doloremque repudiandae, vel accusantium veniam
-                corrupti. At odio distinctio impedit.
-              </p>
+              {HeadingsAndParagraphs}
             </div>
           </div>
         </div>
