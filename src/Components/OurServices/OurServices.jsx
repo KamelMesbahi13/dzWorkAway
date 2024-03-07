@@ -1,11 +1,10 @@
-// import { lazy, Suspense } from "react";
-
-import ChooseUs from "./ChooseUs/ChooseUs";
-import Header from "./Header/Header";
-import HighService from "./HighService/HighService";
-import Introduction from "./Introduction/Introduction";
-import Platforms from "./PlatformsAndServices/Platforms";
-import Services from "./Services/Services";
+import { lazy } from "react";
+const ChooseUs = lazy(() => import("./ChooseUs/ChooseUs"));
+const Header = lazy(() => import("./Header/Header"));
+const HighService = lazy(() => import("./HighService/HighService"));
+const Introduction = lazy(() => import("./Introduction/Introduction"));
+const Platforms = lazy(() => import("./PlatformsAndServices/Platforms"));
+const Services = lazy(() => import("./Services/Services"));
 
 const OurServices = () => {
   return (
