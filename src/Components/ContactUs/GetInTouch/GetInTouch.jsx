@@ -1,26 +1,27 @@
+import Data from "../../../data.json";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useForm } from "react-hook-form";
 import CallUsImage from "../../../assets/PhoneCall.png";
 import VisitUsImage from "../../../assets/Location.png";
 import { motion } from "framer-motion";
 
-const data = [
-  {
-    id: 1,
-    Title: "Contact Our Team ",
-    Paragraph:
-      "Reach out to our team for prompt assistance and dedicated support.",
-    CallUs_Title: "Call us",
-    CallUs_paragraph:
-      "Contact us for personalized support. Call now to speak to our dedicated team.",
-    CallUs: "0555 55 55 55",
-    VisitUs_Title: "Visit us",
-    VisitUs_paragraph:
-      "Come visit us! Our doors are open to you for any questions or advice. Looking forward to meeting you.",
-    VisitUs: "Numéro 1, Résidence Zidan, Bloc 1, Boumerdès 35000",
-    Privacy_Policy_Text: "Please find our Privacy Policy here.",
-  },
-];
+const HeadingsAndParagraphs = Data.ContactUs_GetInTouch__Heading_Paragraph.map(
+  ({ id, header, description }) => {
+    return (
+      <div key={id}>
+        <div>
+          <div>
+            <h1 className="relative mb-2 headingStyleLg">{header} </h1>
+          </div>
+
+          <div>
+            <p>{description}</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+);
 
 const GetInTouch = () => {
   const {
@@ -53,21 +54,7 @@ const GetInTouch = () => {
             }}
             className="mt-8 mb-10 md:mt-12 md:mb-20 md:w-3/4"
           >
-            <div>
-              <h1 className="relative mb-2 headingStyleLg">
-                If You Have Any Question Drop A Message Or Visit Us
-              </h1>
-            </div>
-
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Blanditiis ipsa excepturi est mollitia voluptatem nihil illum?
-                Eaque laudantium natus laboriosam doloremque officiis
-                necessitatibus tempora incidunt eum consequatur animi? Ut,
-                quasi.
-              </p>
-            </div>
+            {HeadingsAndParagraphs}
           </motion.div>
           <motion.div
             initial="hidden"
@@ -80,7 +67,7 @@ const GetInTouch = () => {
             }}
             className="py-6 border-2 shadow-xl md:px-8 md:py-12 md:border-4 md:pt-0 border-grey"
           >
-            {data.map(
+            {Data.ContactUs_GetInTouch_Data.map(
               ({
                 id,
                 Title,

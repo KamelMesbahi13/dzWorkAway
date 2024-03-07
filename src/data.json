@@ -212,5 +212,28 @@
       "header": "What Our Clients Said About US",
       "description": "Thanks to Dz Work Away my immigration process was smooth and stress-free. Their personalized support and expertise made all the difference. Highly recommend!"
     }
+  ],
+
+  "ContactUs_GetInTouch__Heading_Paragraph": [
+    {
+      "id": 1,
+      "header": "If You Have Any Question Drop A Message Or Visit Us",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ipsa excepturi est mollitia voluptatem nihil illum? Eaque laudantium natus laboriosam doloremque officiis necessitatibus tempora incidunt eum consequatur animi? Ut, quasi."
+    }
+  ],
+
+  "ContactUs_GetInTouch_Data": [
+    {
+      "id": 1,
+      "Title": "Contact Our Team",
+      "Paragraph": "Reach out to our team for prompt assistance and dedicated support.",
+      "CallUs_Title": "Call us",
+      "CallUs_paragraph": "Contact us for personalized support. Call now to speak to our dedicated team.",
+      "CallUs": "0555 55 55 55",
+      "VisitUs_Title": "Visit us",
+      "VisitUs_paragraph": "Come visit us! Our doors are open to you for any questions or advice. Looking forward to meeting you.",
+      "VisitUs": "Numéro 1, Résidence Zidan, Bloc 1, Boumerdès 35000",
+      "Privacy_Policy_Text": "Please find our Privacy Policy here."
+    }
   ]
 }
