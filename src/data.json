@@ -78,5 +78,23 @@
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
       "button": "Apply"
     }
+  ],
+
+  "Services_One": [
+    {
+      "id": 1,
+      "header": "All The World",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
+      "button": "Apply"
+    }
+  ],
+
+  "Services_Two": [
+    {
+      "id": 2,
+      "header": "Canada",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
+      "button": "Apply"
+    }
   ]
 }
