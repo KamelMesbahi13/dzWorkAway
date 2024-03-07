@@ -1,5 +1,6 @@
-import ContentPrivacy from "./ContentPrivacy/ContentPrivacy";
-import Header from "./Header/Header";
+import { lazy } from "react";
+const ContentPrivacy = lazy(() => import("./ContentPrivacy/ContentPrivacy"));
+const Header = lazy(() => import("./Header/Header"));
 
 const Privacy = () => {
   return (
