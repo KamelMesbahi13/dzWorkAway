@@ -5,36 +5,73 @@ import ImgFour from "../../../assets/Flag_of_New_Zealand.svg.png";
 import PlaneTwo from "../../../assets/PlaneTwo.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
+import Data from "../../../data.json";
 
-const dataOne = [
+const DataImgsOne = [
   {
     id: 1,
-    headerOne: "Arrima",
-    headerTwo: "Entrée Express",
     ImgOne: ImgOne,
     ImgTwo: ImgTwo,
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
-    button: "Apply",
+    alt: "Arrima / EntréeExpress",
   },
 ];
 
-const dataTwo = [
+const ImagesOne = DataImgsOne.map(({ id, ImgOne, ImgTwo, alt }) => {
+  return (
+    <div key={id}>
+      <div>
+        <div>
+          <div className="flex items-center justify-center">
+            <div>
+              <LazyLoadImage className="w-20 h-16" src={ImgOne} alt={alt} />
+            </div>
+            <div>
+              <span className="mx-4 text-4xl font-bold text-secondColor">
+                /
+              </span>
+            </div>
+            <div>
+              <LazyLoadImage className="w-20 h-16" src={ImgTwo} alt={alt} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+});
+
+const DataImgsTwo = [
   {
-    id: 2,
-    headerThree: "New Zélande ",
-    headerFour: "New Brunswick",
+    id: 1,
     ImgThree: ImgThree,
     ImgFour: ImgFour,
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
-    button: "Apply",
+    alt: "NewBrunswick / New Zealand",
   },
 ];
 
+const ImagesTwo = DataImgsTwo.map(({ id, ImgThree, ImgFour, alt }) => {
+  return (
+    <div key={id}>
+      <div>
+        <div className="flex items-center justify-center">
+          <div>
+            <LazyLoadImage className="w-20 h-16" src={ImgThree} alt={alt} />
+          </div>
+          <div>
+            <span className="mx-4 text-4xl font-bold text-secondColor">/</span>
+          </div>
+          <div>
+            <LazyLoadImage className="w-20 h-16" src={ImgFour} alt={alt} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+});
+
 const Platforms = () => {
-  const dataOneRendering = dataOne.map(
-    ({ id, headerOne, headerTwo, ImgOne, ImgTwo, description, button }) => {
+  const dataOneRendering = Data.Platforms_One.map(
+    ({ id, headerOne, headerTwo, description, button }) => {
       return (
         <div key={id}>
           <div className="duration-500 hover:scale-[1.01] hover:shadow-2xl card rounded-md p-8 w-full md:w-[60%] shadow-xl md:h-[60vh] bg-white">
@@ -49,27 +86,7 @@ const Platforms = () => {
               }}
               className="md:pt-8 card-content"
             >
-              <div className="flex items-center justify-center">
-                <div>
-                  <LazyLoadImage
-                    className="w-20 h-16"
-                    src={ImgOne}
-                    alt={headerOne}
-                  />
-                </div>
-                <div>
-                  <span className="mx-4 text-4xl font-bold text-secondColor">
-                    /
-                  </span>
-                </div>
-                <div>
-                  <LazyLoadImage
-                    className="w-20 h-16"
-                    src={ImgTwo}
-                    alt={headerTwo}
-                  />
-                </div>
-              </div>
+              {ImagesOne}
               <div className="w-full h-[2px] mt-4 bg-grey"></div>
               <div>
                 <div className="flex items-center justify-center">
@@ -101,16 +118,8 @@ const Platforms = () => {
     }
   );
 
-  const dataTwoRendering = dataTwo.map(
-    ({
-      id,
-      headerThree,
-      headerFour,
-      ImgThree,
-      ImgFour,
-      description,
-      button,
-    }) => {
+  const dataTwoRendering = Data.Platforms_Two.map(
+    ({ id, headerThree, headerFour, description, button }) => {
       return (
         <div key={id}>
           <div className="duration-500 hover:scale-[1.01] hover:shadow-2xl card rounded-md p-8 w-full md:w-[60%] shadow-xl md:h-[60vh] bg-white">
@@ -125,27 +134,7 @@ const Platforms = () => {
               }}
               className="md:pt-8 card-content"
             >
-              <div className="flex items-center justify-center">
-                <div>
-                  <LazyLoadImage
-                    className="w-20 h-16"
-                    src={ImgThree}
-                    alt={headerFour}
-                  />
-                </div>
-                <div>
-                  <span className="mx-4 text-4xl font-bold text-secondColor">
-                    /
-                  </span>
-                </div>
-                <div>
-                  <LazyLoadImage
-                    className="w-20 h-16"
-                    src={ImgFour}
-                    alt={headerThree}
-                  />
-                </div>
-              </div>
+              {ImagesTwo}
               <div className="w-full h-[2px] mt-4 bg-grey"></div>
               <div>
                 <div className="flex items-center justify-center">

@@ -58,5 +58,25 @@
       "header": "Our Mission",
       "paragraph": "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
     }
+  ],
+
+  "Platforms_One": [
+    {
+      "id": 1,
+      "headerOne": "Arrima",
+      "headerTwo": "Entrée Express",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
+      "button": "Apply"
+    }
+  ],
+
+  "Platforms_Two": [
+    {
+      "id": 2,
+      "headerFour": "New Brunswick",
+      "headerThree": "New Zélande",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
+      "button": "Apply"
+    }
   ]
 }

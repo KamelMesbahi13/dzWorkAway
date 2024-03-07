@@ -86,25 +86,23 @@ export default function App() {
           modules={[Autoplay]}
           className="mySwiper"
         >
-          {Data.Home_Header_Swipper.map(
-            ({ id, heading_eng, paragraph_eng }) => {
-              return (
-                <SwiperSlide key={id} className="relative text-white">
-                  {Images}
-                  <div className="absolute w-full md:w-1/2 p-8 lg:px-24 top-[15%] sm:top-[20%]">
-                    <div>
-                      <h1 className="mb-4 md:text-5xl">{heading_eng}</h1>
-                      <h6>{paragraph_eng}</h6>
-                    </div>
-                    <div>
-                      <div className="mt-4">{Paragraphs}</div>
-                    </div>
-                    <div>{Buttons}</div>
+          {Data.Home_Header_Swipper.map(({ id, heading, paragraph }) => {
+            return (
+              <SwiperSlide key={id} className="relative text-white">
+                {Images}
+                <div className="absolute w-full md:w-1/2 p-8 lg:px-24 top-[15%] sm:top-[20%]">
+                  <div>
+                    <h1 className="mb-4 md:text-5xl">{heading}</h1>
+                    <h6>{paragraph}</h6>
                   </div>
-                </SwiperSlide>
-              );
-            }
-          )}
+                  <div>
+                    <div className="mt-4">{Paragraphs}</div>
+                  </div>
+                  <div>{Buttons}</div>
+                </div>
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
       </div>
     </>
