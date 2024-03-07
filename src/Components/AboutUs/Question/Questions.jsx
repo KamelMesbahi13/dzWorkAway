@@ -3,6 +3,7 @@ import Down from "../../../assets/DownArrow.png";
 import Up from "../../../assets/UpArrow.png";
 import PropTypes from "prop-types";
 import { motion } from "framer-motion";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const data = [
   {
@@ -55,9 +56,13 @@ const Questions = () => {
             <h6>{title}</h6>
 
             {isOpen ? (
-              <img className="w-10 h-10" src={Down} alt="Down Arrow" />
+              <LazyLoadImage
+                className="w-10 h-10"
+                src={Down}
+                alt="Down Arrow"
+              />
             ) : (
-              <img className="w-10 h-10" src={Up} alt="Up Arrow" />
+              <LazyLoadImage className="w-10 h-10" src={Up} alt="Up Arrow" />
             )}
           </button>
         </h2>

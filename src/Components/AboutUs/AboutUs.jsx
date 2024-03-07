@@ -1,9 +1,10 @@
-import Header from "./Header/Header";
-import Introduction from "./Introduction/Introduction";
-import OurStory from "./OurStory/OurStory";
-import Questions from "./Question/Questions";
-import Testimonials from "./Testimonials/Testimonials";
-import WhyUs from "./WhyUs/WhyUs";
+import { lazy } from "react";
+const Header = lazy(() => import("./Header/Header"));
+const Introduction = lazy(() => import("./Introduction/Introduction"));
+const OurStory = lazy(() => import("./OurStory/OurStory"));
+const Questions = lazy(() => import("./Question/Questions"));
+const Testimonials = lazy(() => import("./Testimonials/Testimonials"));
+const WhyUs = lazy(() => import("./WhyUs/WhyUs"));
 
 const AboutUs = () => {
   return (

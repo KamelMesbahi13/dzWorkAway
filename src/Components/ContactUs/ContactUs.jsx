@@ -1,6 +1,7 @@
-import Header from "./Header/Header";
-import GetInTouch from "./GetInTouch/GetInTouch";
-import Map from "./Map/Map";
+import { lazy } from "react";
+const Header = lazy(() => import("./Header/Header"));
+const GetInTouch = lazy(() => import("./GetInTouch/GetInTouch"));
+const Map = lazy(() => import("./Map/Map"));
 
 const ContactUs = () => {
   return (

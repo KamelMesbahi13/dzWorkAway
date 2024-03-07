@@ -1,6 +1,6 @@
 import { lazy } from "react";
-const ContentPrivacy = lazy(() => import("./ContentPrivacy/ContentPrivacy"));
 const Header = lazy(() => import("./Header/Header"));
+const ContentPrivacy = lazy(() => import("./ContentPrivacy/ContentPrivacy"));
 
 const Privacy = () => {
   return (
