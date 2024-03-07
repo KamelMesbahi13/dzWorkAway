@@ -1,29 +1,15 @@
+import Data from "../../data.json";
 import Img from "../../assets/ContactSection.png";
 import Check from "../../assets/check.png";
 import { motion } from "framer-motion";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-const paragraphs = [
-  {
-    id: 1,
-    paragraph: "Entering & Leaving From Country",
-  },
-  {
-    id: 2,
-    paragraph: "Entering & Leaving From Country",
-  },
-  {
-    id: 3,
-    paragraph: "Entering & Leaving From Country",
-  },
-];
-
-const ContactSection = () => {
-  return (
-    <>
-      <div className="mt-20 border-2 shadow-xl md:mt-40 border-grey">
+const HeadingsAndParagraphs = Data.ContactSection_Heading_Paragraph.map(
+  ({ id, header, description }) => {
+    return (
+      <div key={id}>
         <div>
-          <div className="flex flex-col justify-between lg:flex-row">
+          <div>
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -35,13 +21,11 @@ const ContactSection = () => {
               }}
               className="p-4"
             >
-              <h1>Fly Your Dream Destination</h1>
-              <p className="mt-2">
-                Idea of denouncing pleasure & praising pain was born.
-              </p>
+              <h1>{header}</h1>
+              <p className="mt-2">{description} </p>
               <div>
                 <div className="mt-4 md:mt-6">
-                  {paragraphs.map(({ id, paragraph }) => {
+                  {Data.ContactSection_Paragraphs.map(({ id, paragraph }) => {
                     return (
                       <div key={id}>
                         <div className="flex items-center my-4">
@@ -65,6 +49,20 @@ const ContactSection = () => {
                 </div>
               </div>
             </motion.div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+);
+
+const ContactSection = () => {
+  return (
+    <>
+      <div className="mt-20 border-2 shadow-xl md:mt-40 border-grey">
+        <div>
+          <div className="flex flex-col justify-between lg:flex-row">
+            <div>{HeadingsAndParagraphs}</div>
             <motion.div
               initial="hidden"
               whileInView="visible"

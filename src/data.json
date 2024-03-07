@@ -60,6 +60,14 @@
     }
   ],
 
+  "Platforms_Heading_Paragraphs": [
+    {
+      "id": 1,
+      "heading": "Discover a Comprehensive Online Platforms Platform",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam."
+    }
+  ],
+
   "Platforms_One": [
     {
       "id": 1,
@@ -80,6 +88,14 @@
     }
   ],
 
+  "Services_Heading_Paragraphs": [
+    {
+      "id": 1,
+      "heading": "Discover a Comprehensive Online Immigration Platform",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam."
+    }
+  ],
+
   "Services_One": [
     {
       "id": 1,
@@ -95,6 +111,29 @@
       "header": "Canada",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
       "button": "Apply"
+    }
+  ],
+
+  "ContactSection_Heading_Paragraph": [
+    {
+      "id": 1,
+      "header": "Fly Your Dream Destination",
+      "description": "Idea of denouncing pleasure & praising pain was born."
+    }
+  ],
+
+  "ContactSection_Paragraphs": [
+    {
+      "id": 1,
+      "paragraph": "Entering & Leaving From Country"
+    },
+    {
+      "id": 2,
+      "paragraph": "Entering & Leaving From Country"
+    },
+    {
+      "id": 3,
+      "paragraph": "Entering & Leaving From Country"
     }
   ]
 }

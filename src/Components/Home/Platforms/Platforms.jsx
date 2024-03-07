@@ -7,6 +7,36 @@ import PlaneTwo from "../../../assets/PlaneTwo.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
 
+const HeadingsAndParagraphs = Data.Platforms_Heading_Paragraphs.map(
+  ({ id, heading, description }) => {
+    return (
+      <div key={id}>
+        <div>
+          <div>
+            {" "}
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+              className="mb-8"
+            >
+              <h1 className="relative w-full mb-4 sm:mb-12 lg:mb-4 md:w-1/2 md:headingStyleMd lg:headingStyleLg">
+                {heading}{" "}
+              </h1>
+              <p className="w-full md:w-3/4">{description}</p>
+            </motion.div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+);
+
 const DataImgsOne = [
   {
     id: 1,
@@ -170,28 +200,7 @@ const Platforms = () => {
     <>
       <div className="mt-16 md:mt-28">
         <div>
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5 }}
-            variants={{
-              hidden: { opacity: 0, x: -50 },
-              visible: { opacity: 1, x: 0 },
-            }}
-            className="mb-8"
-          >
-            <h1 className="relative w-full mb-4 sm:mb-12 lg:mb-4 md:w-1/2 md:headingStyleMd lg:headingStyleLg">
-              Discover a Comprehensive Online Immigration Platform
-            </h1>
-            <p className="w-full md:w-3/4">
-              Step into an online platform tailored to meet your immigration
-              needs. Explore personalized solutions designed to guide you
-              through every step of your journey, ensuring a seamless transition
-              to your new destination.
-            </p>
-          </motion.div>
-
+          <div>{HeadingsAndParagraphs}</div>
           <div className="relative hidden md:block">
             <LazyLoadImage
               className="absolute left-[60%] w-[40%] bottom-4 md:left-[50%] md:w-[25%]"
