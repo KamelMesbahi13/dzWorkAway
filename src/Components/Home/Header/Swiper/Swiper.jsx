@@ -38,38 +38,32 @@ const Images = DataImgs.map(({ Img, alt }, i) => {
   );
 });
 
-const Paragraphs = Data.Home_Header_Swipper.map(
-  ({ id, paragraph_check_eng }) => {
-    return (
-      <div key={id}>
+const Paragraphs = Data.Home_Header_Swipper.map(({ id, paragraph_check }) => {
+  return (
+    <div key={id}>
+      <div>
         <div>
-          <div>
-            <div className="flex">
-              <LazyLoadImage
-                className="!w-6 h-6 mr-2"
-                src={Check}
-                alt="Check"
-              />
+          <div className="flex">
+            <LazyLoadImage className="!w-6 h-6 mr-2" src={Check} alt="Check" />
 
-              <p>{paragraph_check_eng}</p>
-            </div>
+            <p>{paragraph_check}</p>
           </div>
         </div>
       </div>
-    );
-  }
-);
+    </div>
+  );
+});
 
 const Buttons = Data.Home_Header_Button.map(
-  ({ id, button_one_eng, button_two_eng }) => {
+  ({ id, button_one, button_two }) => {
     return (
       <div key={id}>
         <div>
           <div>
             {" "}
             <div className="flex mt-4">
-              <button className="mr-8 simpleButton">{button_one_eng}</button>
-              <button className="simpleButton">{button_two_eng}</button>
+              <button className="mr-8 simpleButton">{button_one}</button>
+              <button className="simpleButton">{button_two}</button>
             </div>
           </div>
         </div>

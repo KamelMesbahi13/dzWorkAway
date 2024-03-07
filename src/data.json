@@ -2,31 +2,61 @@
   "Home_Header_Swipper": [
     {
       "id": 1,
-      "heading_eng": "Immigration visa Consulting",
-      "paragraph_eng": "Expert Guidance for a Seamless Immigration Journey",
-      "paragraph_check_eng": "Meeting Your Unique Needs"
+      "heading": "Immigration visa Consulting",
+      "paragraph": "Expert Guidance for a Seamless Immigration Journey",
+      "paragraph_check": "Meeting Your Unique Needs"
     },
 
     {
       "id": 2,
-      "heading_eng": "Immigration visa Consulting",
-      "paragraph_eng": "Expert Guidance for a Seamless Immigration Journey",
-      "paragraph_check_eng": "Meeting Your Unique Needs"
+      "heading": "Immigration visa Consulting",
+      "paragraph": "Expert Guidance for a Seamless Immigration Journey",
+      "paragraph_check": "Meeting Your Unique Needs"
     },
 
     {
       "id": 3,
-      "heading_eng": "Immigration visa Consulting",
-      "paragraph_eng": "Expert Guidance for a Seamless Immigration Journey",
-      "paragraph_check_eng": "Meeting Your Unique Needs"
+      "heading": "Immigration visa Consulting",
+      "paragraph": "Expert Guidance for a Seamless Immigration Journey",
+      "paragraph_check": "Meeting Your Unique Needs"
     }
   ],
 
   "Home_Header_Button": [
     {
       "id": 1,
-      "button_one_eng": "Book Appointment",
-      "button_two_eng": "Check Our Services"
+      "button_one": "Book Appointment",
+      "button_two": "Check Our Services"
+    }
+  ],
+
+  "AboutUs_Heading": [
+    {
+      "id": 1,
+      "heading": "Welcome to immigration Advisory services"
+    }
+  ],
+
+  "AboutUs_Paragraph_One": [
+    {
+      "id": 1,
+      "paragraph": "Quisque dignissim enim diam, eget pulvinar ex viverra id. Nulla a lobortis lectus, id volutpat magna. Morbi consequat porttitor fermentum. Nulla vestibulum tincidunt viverra. Vestibulum accumsan molestie lorem, non laoreet massa. Duis at dui sem. Vivamus ut gravida libero"
+    }
+  ],
+
+  "AboutUs_Paragraph_Two_Vision": [
+    {
+      "id": 1,
+      "header": "Our Vision",
+      "paragraph": "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+    }
+  ],
+
+  "AboutUs_Paragraph_Two_Mission": [
+    {
+      "id": 1,
+      "header": "Our Mission",
+      "paragraph": "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
     }
   ]
 }
