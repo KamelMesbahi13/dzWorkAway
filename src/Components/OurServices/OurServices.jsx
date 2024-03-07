@@ -1,3 +1,5 @@
+// import { lazy, Suspense } from "react";
+
 import ChooseUs from "./ChooseUs/ChooseUs";
 import Header from "./Header/Header";
 import HighService from "./HighService/HighService";
