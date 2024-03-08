@@ -2,9 +2,8 @@ import Img from "../../../assets/PlatformDetailsBack.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
-// import { LazyLoadImage } from "react-lazy-load-image-component";
 
-const PlatformDetailHeader = ({ headerOne, headerTwo }) => {
+const PlatformDetailHeader = ({ header }) => {
   return (
     <motion.div
       initial="hidden"
@@ -26,9 +25,7 @@ const PlatformDetailHeader = ({ headerOne, headerTwo }) => {
       </div>
       <div className="absolute pl-8 text-white -translate-y-1/4 md:pl-24 top-1/2">
         <div>
-          <h1>
-            {headerOne} <span className="text-secondColor">/</span> {headerTwo}
-          </h1>
+          <h1>{header} </h1>
         </div>
         <div className="flex mt-1 md:mt-2">
           <div className="w-8 h-1 md:w-12 bg-secondColor"></div>
@@ -44,8 +41,7 @@ const PlatformDetailHeader = ({ headerOne, headerTwo }) => {
 };
 
 PlatformDetailHeader.propTypes = {
-  headerOne: PropTypes.string.isRequired,
-  headerTwo: PropTypes.string.isRequired,
+  header: PropTypes.string.isRequired,
 };
 
 export default PlatformDetailHeader;

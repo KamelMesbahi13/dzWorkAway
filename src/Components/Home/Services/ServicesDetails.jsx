@@ -1,44 +1,39 @@
-import ImgOne from "../../../assets/Globe.png";
-import ImgTwo from "../../../assets/Canada.jpg";
-// import { LazyLoadImage } from "react-lazy-load-image-component";
+// import { motion } from "framer-motion";
 import { useParams } from "react-router-dom";
-import ServicesDetailsHeader from "./ServicesDetailsHeader";
+import ServicesDetailsHeader from "./ServicesDetailHeader";
 import ServicesForm from "./ServicesForm";
 
 const data = [
   {
     id: 1,
-    header: "All The World",
-    Img: ImgOne,
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
-    button: "Apply",
+    headerOne: "Arrima",
+    headerTwo: "Entrée Express",
   },
   {
     id: 2,
-    header: "Canada",
-    Img: ImgTwo,
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
-    button: "Apply",
+    headerOne: "New Zélande",
+    headerTwo: "New Brunswick",
   },
 ];
 
 const ServicesDetails = () => {
   const { servicesId } = useParams();
-  const services = data.find((service) => service.id == servicesId);
-  const { header } = services;
+  const services = data.find((services) => services.id == servicesId);
+  const { headerOne, headerTwo } = services;
 
   return (
     <>
       <div>
-        <ServicesDetailsHeader header={header} />
+        <ServicesDetailsHeader headerOne={headerOne} headerTwo={headerTwo} />
         <div className="container">
           <div className="mt-20">
             <div>
               <div className="w-full md:w-3/4">
                 <div>
-                  <h1 className="relative mb-2 headingStyleLg">{header}</h1>
+                  <h1 className="relative mb-2 headingStyleLg">
+                    {headerOne} <span className="text-secondColor"> / </span>{" "}
+                    {headerTwo}
+                  </h1>
                 </div>
                 <div>
                   <p>
@@ -81,7 +76,9 @@ const ServicesDetails = () => {
               </div>
             </div>
           </div>
-          <ServicesForm />
+          <div>
+            <ServicesForm />
+          </div>
         </div>
       </div>
     </>

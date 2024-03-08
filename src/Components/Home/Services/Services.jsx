@@ -1,11 +1,13 @@
 import Data from "../../../data.json";
-import ImgOne from "../../../assets/Globe.png";
-import ImgTwo from "../../../assets/Canada.jpg";
-import Plane from "../../../assets/Plane.png";
+import ImgOne from "../../../assets/Arrima.png";
+import ImgTwo from "../../../assets/EntréeExpress.jpg";
+import ImgThree from "../../../assets/NewBrunswick.png";
+import ImgFour from "../../../assets/Flag_of_New_Zealand.svg.png";
+import PlaneTwo from "../../../assets/PlaneTwo.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
 
-const HeadingsAndParagraphs = Data.Services_Heading_Paragraphs.map(
+const HeadingsAndParagraphs = Data.Platforms_Heading_Paragraphs.map(
   ({ id, heading, description }) => {
     return (
       <div key={id}>
@@ -38,52 +40,29 @@ const HeadingsAndParagraphs = Data.Services_Heading_Paragraphs.map(
 const DataImgsOne = [
   {
     id: 1,
-    Img: ImgOne,
-    alt: "",
+    ImgOne: ImgOne,
+    ImgTwo: ImgTwo,
+    alt: "Arrima / EntréeExpress",
   },
 ];
 
-const DataImgsTwo = [
-  {
-    id: 1,
-    Img: ImgTwo,
-    alt: "",
-  },
-];
-
-const BoxOne = Data.Services_One.map(({ id, header, description, button }) => {
+const ImagesOne = DataImgsOne.map(({ id, ImgOne, ImgTwo, alt }) => {
   return (
     <div key={id}>
       <div>
         <div>
-          <div>
-            {DataImgsOne.map((el, i) => {
-              return (
-                <div key={i}>
-                  <LazyLoadImage
-                    key={i}
-                    className="w-20 h-16"
-                    src={el.Img}
-                    alt={el.alt}
-                  />
-                </div>
-              );
-            })}
-          </div>
-          <div className="w-full h-[2px] mt-4 bg-grey"></div>
-          <div>
+          <div className="flex items-center justify-center">
             <div>
-              <p className="my-4 text-lg font-bold md:text-xl">{header}</p>
+              <LazyLoadImage className="w-20 h-16" src={ImgOne} alt={alt} />
             </div>
             <div>
-              <p className="md:w-[90%] mb-4">{description}</p>
+              <span className="mx-4 text-4xl font-bold text-secondColor">
+                /
+              </span>
             </div>
-          </div>
-
-          <div>
-            <a href={`/Nos-Services/${id}`}>
-              <button className="buttonCust">{button}</button>
-            </a>{" "}
+            <div>
+              <LazyLoadImage className="w-20 h-16" src={ImgTwo} alt={alt} />
+            </div>
           </div>
         </div>
       </div>
@@ -91,39 +70,28 @@ const BoxOne = Data.Services_One.map(({ id, header, description, button }) => {
   );
 });
 
-const BoxTwo = Data.Services_Two.map(({ id, header, description, button }) => {
+const DataImgsTwo = [
+  {
+    id: 1,
+    ImgThree: ImgThree,
+    ImgFour: ImgFour,
+    alt: "NewBrunswick / New Zealand",
+  },
+];
+
+const ImagesTwo = DataImgsTwo.map(({ id, ImgThree, ImgFour, alt }) => {
   return (
     <div key={id}>
       <div>
-        <div>
+        <div className="flex items-center justify-center">
           <div>
-            {DataImgsTwo.map((el, i) => {
-              return (
-                <div key={i}>
-                  <LazyLoadImage
-                    key={i}
-                    className="w-20 h-16"
-                    src={el.Img}
-                    alt={el.alt}
-                  />
-                </div>
-              );
-            })}
+            <LazyLoadImage className="w-20 h-16" src={ImgThree} alt={alt} />
           </div>
-          <div className="w-full h-[2px] mt-4 bg-grey"></div>
           <div>
-            <div>
-              <p className="my-4 text-lg font-bold md:text-xl">{header}</p>
-            </div>
-            <div>
-              <p className="md:w-[90%] mb-4">{description}</p>
-            </div>
+            <span className="mx-4 text-4xl font-bold text-secondColor">/</span>
           </div>
-
           <div>
-            <a href={`/Nos-Services/${id}`}>
-              <button className="buttonCust">{button}</button>
-            </a>{" "}
+            <LazyLoadImage className="w-20 h-16" src={ImgFour} alt={alt} />
           </div>
         </div>
       </div>
@@ -132,56 +100,118 @@ const BoxTwo = Data.Services_Two.map(({ id, header, description, button }) => {
 });
 
 const Services = () => {
+  const dataOneRendering = Data.Platforms_One.map(
+    ({ id, headerOne, headerTwo, description, button }) => {
+      return (
+        <div key={id}>
+          <div className="duration-500 hover:scale-[1.01] hover:shadow-2xl card rounded-md p-8 w-full md:w-[60%] shadow-xl md:h-[60vh] bg-white">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 100 },
+                visible: { opacity: 1, y: 0 },
+              }}
+              className="md:pt-8 card-content"
+            >
+              {ImagesOne}
+              <div className="w-full h-[2px] mt-4 bg-grey"></div>
+              <div>
+                <div className="flex items-center justify-center">
+                  <p className="my-4 text-lg font-bold md:text-xl">
+                    {headerOne}
+                  </p>
+                  <div>
+                    <span className="mx-4 text-2xl font-bold text-secondColor">
+                      -
+                    </span>
+                  </div>
+                  <p className="my-4 text-lg font-bold md:text-xl">
+                    {headerTwo}
+                  </p>
+                </div>
+                <div>
+                  <p className="md:w-[90%] mb-4">{description}</p>
+                </div>
+              </div>
+              <div>
+                <a href={`/Nos-Services/${id}`}>
+                  <button className="buttonCust">{button}</button>
+                </a>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      );
+    }
+  );
+
+  const dataTwoRendering = Data.Platforms_Two.map(
+    ({ id, headerThree, headerFour, description, button }) => {
+      return (
+        <div key={id}>
+          <div className="duration-500 hover:scale-[1.01] hover:shadow-2xl card rounded-md p-8 w-full md:w-[60%] shadow-xl md:h-[60vh] bg-white">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 100 },
+                visible: { opacity: 1, y: 0 },
+              }}
+              className="md:pt-8 card-content"
+            >
+              {ImagesTwo}
+              <div className="w-full h-[2px] mt-4 bg-grey"></div>
+              <div>
+                <div className="flex items-center justify-center">
+                  <p className="my-4 text-lg font-bold md:text-xl">
+                    {headerThree}
+                  </p>
+                  <div>
+                    <span className="mx-4 text-2xl font-bold text-secondColor">
+                      -
+                    </span>
+                  </div>
+                  <p className="my-4 text-lg font-bold md:text-xl">
+                    {headerFour}
+                  </p>
+                </div>
+                <div>
+                  <p className="md:w-[90%] mb-4">{description}</p>
+                </div>
+              </div>
+              <div>
+                <a href={`/Nos-Services/${id}`}>
+                  <button className="buttonCust">{button}</button>
+                </a>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      );
+    }
+  );
+
   return (
     <>
       <div className="mt-16 md:mt-28">
         <div>
+          <div>{HeadingsAndParagraphs}</div>
           <div className="relative hidden md:block">
             <LazyLoadImage
-              className="absolute left-[60%] w-[40%] bottom-12 md:left-[70%] md:w-[25%]"
-              src={Plane}
+              className="absolute left-[60%] w-[40%] bottom-4 md:left-[50%] md:w-[25%]"
+              src={PlaneTwo}
               alt="plane"
             />
           </div>
 
-          <div>{HeadingsAndParagraphs}</div>
-
           <div className="grid grid-cols-1 gap-8 mt-12 md:grid-cols-2 textCenter">
-            <div>
-              <div className="duration-500 hover:scale-[1.01] hover:shadow-2xl card rounded-md p-8 w-full md:w-[60%] shadow-xl md:h-[60vh] bg-white">
-                <motion.div
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, amount: 0.5 }}
-                  transition={{ duration: 0.5 }}
-                  variants={{
-                    hidden: { opacity: 0, y: 100 },
-                    visible: { opacity: 1, y: 0 },
-                  }}
-                  className="md:pt-8 card-content"
-                >
-                  {BoxOne}
-                </motion.div>
-              </div>
-            </div>
-
-            <div>
-              <div className="duration-500 hover:scale-[1.01] hover:shadow-2xl card rounded-md p-8 w-full md:w-[60%] shadow-xl md:h-[60vh] bg-white">
-                <motion.div
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, amount: 0.5 }}
-                  transition={{ duration: 0.5 }}
-                  variants={{
-                    hidden: { opacity: 0, y: 100 },
-                    visible: { opacity: 1, y: 0 },
-                  }}
-                  className="md:pt-8 card-content"
-                >
-                  {BoxTwo}
-                </motion.div>
-              </div>
-            </div>
+            {dataOneRendering}
+            {dataTwoRendering}
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ const ServicesDetails = lazy(() =>
   import("./Components/Home/Services/ServicesDetails")
 );
 const PlatformDetails = lazy(() =>
-  import("./Components/Home/Platforms/PlatformDetails")
+  import("./Components/Home/Platforms/PlatformsDetails")
 );
 const Privacy = lazy(() => import("./Components/Privacy/Privacy"));
 import Loader from "./Ui/Loader/Loader";
@@ -37,7 +37,7 @@ const App = () => {
               element={<ServicesDetails />}
             />
             <Route
-              path="/Nos-Platform/:platformId"
+              path="/Nos-Platforms/:platformId"
               element={<PlatformDetails />}
             />
             <Route path="/Confidentialité" element={<Privacy />} />

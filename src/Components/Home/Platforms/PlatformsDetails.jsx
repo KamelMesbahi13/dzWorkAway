@@ -1,55 +1,34 @@
-import ImgOne from "../../../assets/Arrima.png";
-import ImgTwo from "../../../assets/EntréeExpress.jpg";
-import ImgThree from "../../../assets/NewBrunswick.png";
-import ImgFour from "../../../assets/Flag_of_New_Zealand.svg.png";
-// import { LazyLoadImage } from "react-lazy-load-image-component";
-// import { motion } from "framer-motion";
-// import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useParams } from "react-router-dom";
-import Header from "./PlatformDetailHeader";
+import PlatformsDetailsHeader from "./PlatformsDetailsHeader";
 import PlatformsForm from "./PlatformsForm";
 
 const data = [
   {
     id: 1,
-    headerOne: "Arrima",
-    headerTwo: "Entrée Express",
-    ImgOne: ImgOne,
-    ImgTwo: ImgTwo,
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
-    button: "Apply",
+    header: "All The World",
   },
   {
     id: 2,
-    headerOne: "New Zélande",
-    headerTwo: "New Brunswick",
-    ImgOne: ImgThree,
-    ImgTwo: ImgFour,
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
-    button: "Apply",
+    header: "Canada",
   },
 ];
 
-const PlatformDetails = () => {
+const PlatformsDetails = () => {
   const { platformId } = useParams();
+
   const platform = data.find((platform) => platform.id == platformId);
-  const { headerOne, headerTwo } = platform;
+  const { header } = platform;
 
   return (
     <>
       <div>
-        <Header headerOne={headerOne} headerTwo={headerTwo} />
+        <PlatformsDetailsHeader header={header} />
         <div className="container">
           <div className="mt-20">
             <div>
               <div className="w-full md:w-3/4">
                 <div>
-                  <h1 className="relative mb-2 headingStyleLg">
-                    {headerOne} <span className="text-secondColor"> / </span>{" "}
-                    {headerTwo}
-                  </h1>
+                  <h1 className="relative mb-2 headingStyleLg">{header}</h1>
                 </div>
                 <div>
                   <p>
@@ -92,13 +71,11 @@ const PlatformDetails = () => {
               </div>
             </div>
           </div>
-          <div>
-            <PlatformsForm />
-          </div>
+          <PlatformsForm />
         </div>
       </div>
     </>
   );
 };
 
-export default PlatformDetails;
+export default PlatformsDetails;
