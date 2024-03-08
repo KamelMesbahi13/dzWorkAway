@@ -84,9 +84,11 @@ const Platforms = () => {
                           </div>
                         </div>
                         <div>
-                          <button className="mt-4 buttonCust">
-                            <a href="#">{button}</a>
-                          </button>
+                          <a href={`/Nos-Platforms/${id}`}>
+                            <button className="mt-4 buttonCust">
+                              {button}
+                            </button>
+                          </a>
                         </div>
                       </div>
                     </div>
