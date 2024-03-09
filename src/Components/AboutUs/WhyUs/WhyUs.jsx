@@ -91,7 +91,9 @@ const WhyUs = () => {
               }}
             >
               <button className="mt-12 buttonCust">
-                <a href="#">Our Services</a>{" "}
+                <a target="_blank" href="/Nos-Services">
+                  Our Services
+                </a>{" "}
               </button>
             </motion.div>
           </div>

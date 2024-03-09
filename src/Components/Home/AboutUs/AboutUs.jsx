@@ -38,7 +38,7 @@ const ParagraphTwoVision = Data.AboutUs_Paragraph_Two_Vision.map(
   }
 );
 
-const ParagraphTwoMission = Data.AboutUs_Paragraph_Two_Vision.map(
+const ParagraphTwoMission = Data.AboutUs_Paragraph_Two_Mission.map(
   ({ id, header, paragraph }) => {
     return (
       <div key={id}>
@@ -133,11 +133,7 @@ const AboutUs = () => {
                   visible: { opacity: 1, y: 0 },
                 }}
                 className="textCenter"
-              >
-                <button className="mt-12 md:mt-8 buttonCust">
-                  Discover More
-                </button>
-              </motion.div>
+              ></motion.div>
             </div>
           </div>
         </div>
