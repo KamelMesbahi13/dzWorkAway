@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import PlatformsDetailsHeader from "./PlatformsDetailsHeader";
 import PlatformsForm from "./PlatformsForm";
 import Title from "../../../GeneralFunctions/Title";
+import { motion } from "framer-motion";
 
 const data = [
   {
@@ -23,12 +24,22 @@ const PlatformsDetails = () => {
 
   return (
     <>
-      <div>
+      <motion.div>
         <PlatformsDetailsHeader header={header} />
         <div className="container">
           <div className="mt-20">
             <div>
-              <div className="w-full md:w-3/4">
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, x: -50 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                className="w-full md:w-3/4"
+              >
                 <div>
                   <h1 className="relative mb-2 headingStyleLg">{header}</h1>
                 </div>
@@ -41,10 +52,20 @@ const PlatformsDetails = () => {
                     out!
                   </p>
                 </div>
-              </div>
+              </motion.div>
             </div>
             <div>
-              <div className="mt-12">
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, x: -50 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                className="mt-12"
+              >
                 <div className="relative pl-4 before:absolute lg:pl-8 before:md:block before:h-full before:w-2 before:left-0 before:bg-hoverColor before:top-1/2 before:-translate-y-1/2">
                   <p>
                     ARRIMA and Entrée express are both systems used in the
@@ -70,12 +91,12 @@ const PlatformsDetails = () => {
                     system.
                   </p>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
           <PlatformsForm />
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
