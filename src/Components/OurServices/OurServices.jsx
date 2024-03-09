@@ -5,8 +5,11 @@ const HighService = lazy(() => import("./HighService/HighService"));
 const ChooseUs = lazy(() => import("./ChooseUs/ChooseUs"));
 const Platforms = lazy(() => import("./PlatformsAndServices/Platforms"));
 const Services = lazy(() => import("./Services/Services"));
+import Title from "../../GeneralFunctions/Title";
 
 const OurServices = () => {
+  Title("Dz Work Away | Nos-Services");
+
   return (
     <>
       <div>
