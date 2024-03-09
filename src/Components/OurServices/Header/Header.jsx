@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 const Header = () => {
   return (
     <motion.div
+      name="services"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.5 }}

@@ -46,7 +46,6 @@ const Paragraphs = Data.Home_Header_Swipper.map(({ id, paragraph_check }) => {
         <div>
           <div className="flex">
             <LazyLoadImage className="!w-6 h-6 mr-2" src={Check} alt="Check" />
-
             <p>{paragraph_check}</p>
           </div>
         </div>
@@ -61,10 +60,13 @@ const Buttons = Data.Home_Header_Button.map(
       <div key={id}>
         <div>
           <div>
-            {" "}
             <div className="flex mt-4">
-              <button className="mr-8 simpleButton">{button_one}</button>
-              <button className="simpleButton">{button_two}</button>
+              <a target="_blank" href="/À Propos-de-Nous">
+                <button className="mr-8 simpleButton">{button_one}</button>
+              </a>
+              <a target="_blank" href="/Nos-Services">
+                <button className="simpleButton">{button_two}</button>
+              </a>
             </div>
           </div>
         </div>
