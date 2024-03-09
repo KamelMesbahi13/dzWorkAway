@@ -68,10 +68,10 @@ const Buttons = Data.Home_Header_Button.map(
         <div>
           <div>
             <div className="flex mt-4">
-              <a target="_blank" href="/À Propos-de-Nous">
+              <a rel="noreferrer" target="_blank" href="/À Propos-de-Nous">
                 <button className="mr-8 simpleButton">{button_one}</button>
               </a>
-              <a target="_blank" href="/Nos-Services">
+              <a target="_blank" rel="noreferrer" href="/Nos-Services">
                 <button className="simpleButton">{button_two}</button>
               </a>
             </div>

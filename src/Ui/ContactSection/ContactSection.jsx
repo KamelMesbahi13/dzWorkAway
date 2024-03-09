@@ -44,7 +44,7 @@ const HeadingsAndParagraphs = Data.ContactSection_Heading_Paragraph.map(
                     );
                   })}
                   <div className="mt-4 md:mt-6">
-                    <a target="_blank" href="/Contactez-Nous">
+                    <a rel="noreferrer" target="_blank" href="/Contactez-Nous">
                       <button className="buttonCust">Contact US</button>
                     </a>
                   </div>

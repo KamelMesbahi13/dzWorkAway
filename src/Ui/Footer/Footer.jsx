@@ -24,14 +24,17 @@ const socialMedia = [
   {
     id: 1,
     Img: Facebook,
+    Link: "https://web.facebook.com/dzworkaway",
   },
   {
     id: 2,
     Img: Instagram,
+    Link: "https://www.instagram.com/dzworkaway/",
   },
   {
     id: 3,
     Img: Tiktok,
+    Link: "#",
   },
 ];
 
@@ -95,7 +98,11 @@ const Footer = () => {
                 <div className="flex flex-row flex-wrap lg:flex-nowrap lg:flex-col gap-y-8">
                   {footerItems.map((el, i) => (
                     <div key={i}>
-                      <a className="mr-2 link" href={footerLinks[i]}>
+                      <a
+                        rel="noreferrer"
+                        className="mr-2 link"
+                        href={footerLinks[i]}
+                      >
                         {el}
                       </a>
                     </div>
@@ -108,16 +115,16 @@ const Footer = () => {
                     <h6 className="mb-4">Our Social Media:</h6>
                   </div>
                   <div className="flex">
-                    {socialMedia.map(({ id, Img }) => {
+                    {socialMedia.map(({ id, Img, Link }) => {
                       return (
                         <div key={id}>
-                          <div>
+                          <a target="_blank" rel="noreferrer" href={Link}>
                             <LazyLoadImage
                               className="w-6 mr-2"
                               src={Img}
                               alt="Social Media"
                             />
-                          </div>
+                          </a>
                         </div>
                       );
                     })}

@@ -84,7 +84,7 @@ const Platforms = () => {
                           </div>
                         </div>
                         <div>
-                          <a href={`/Nos-Platforms/${id}`}>
+                          <a rel="noreferrer" href={`/Nos-Platforms/${id}`}>
                             <button className="mt-4 buttonCust">
                               {button}
                             </button>

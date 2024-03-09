@@ -81,7 +81,7 @@ const BoxOne = Data.Services_One.map(({ id, header, description, button }) => {
           </div>
 
           <div>
-            <a href={`/Nos-Platforms/${id}`}>
+            <a rel="noreferrer" href={`/Nos-Platforms/${id}`}>
               <button className="buttonCust">{button}</button>
             </a>{" "}
           </div>
@@ -121,7 +121,7 @@ const BoxTwo = Data.Services_Two.map(({ id, header, description, button }) => {
           </div>
 
           <div>
-            <a href={`/Nos-Platforms/${id}`}>
+            <a rel="noreferrer" href={`/Nos-Platforms/${id}`}>
               <button className="buttonCust">{button}</button>
             </a>{" "}
           </div>

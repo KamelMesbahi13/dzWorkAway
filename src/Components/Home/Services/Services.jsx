@@ -137,7 +137,7 @@ const Services = () => {
                 </div>
               </div>
               <div>
-                <a href={`/Nos-Services/${id}`}>
+                <a rel="noreferrer" href={`/Nos-Services/${id}`}>
                   <button className="buttonCust">{button}</button>
                 </a>
               </div>
@@ -185,7 +185,7 @@ const Services = () => {
                 </div>
               </div>
               <div>
-                <a href={`/Nos-Services/${id}`}>
+                <a rel="noreferrer" href={`/Nos-Services/${id}`}>
                   <button className="buttonCust">{button}</button>
                 </a>
               </div>

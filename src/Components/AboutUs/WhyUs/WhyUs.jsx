@@ -90,11 +90,9 @@ const WhyUs = () => {
                 visible: { opacity: 1, y: 0 },
               }}
             >
-              <button className="mt-12 buttonCust">
-                <a target="_blank" href="/Nos-Services">
-                  Our Services
-                </a>{" "}
-              </button>
+              <a rel="noreferrer" target="_blank" href="/Nos-Services">
+                <button className="mt-12 buttonCust">Our Services</button>
+              </a>{" "}
             </motion.div>
           </div>
 
