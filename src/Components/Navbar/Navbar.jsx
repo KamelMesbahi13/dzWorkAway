@@ -31,7 +31,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div>
+      <div id="nav">
         <div className="container">
           {/* <TranslateIcon /> */}
           <div className="z-50 hidden w-full py-6 lg:flex">
