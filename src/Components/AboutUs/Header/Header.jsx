@@ -1,4 +1,4 @@
-import Img from "../../../assets/AboutUsBack.jpg";
+import Img from "../../../assets/AboutUsBack.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
 

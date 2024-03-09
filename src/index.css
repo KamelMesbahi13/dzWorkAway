@@ -230,26 +230,26 @@ h1 {
   }
 
   .aboutHomeBack {
-    background-image: url(../src/assets/Bg-AboutHome.jpg);
+    background-image: url(../src/assets/Bg-AboutHome.webp);
     background-position: center center;
     background-size: cover;
   }
 
   .questionBack {
-    background-image: url(../src/assets/QuestionShape.png);
+    background-image: url(../src/assets/QuestionShape.webp);
     background-position: center center;
     background-size: cover;
   }
 
   .bestServicesBack {
-    background-image: url(../src/assets/WorldMap.jpg);
+    background-image: url(../src/assets/WorldMap.webp);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
   }
 
   .footerBack {
-    background-image: url(../src/assets/Footer.png);
+    background-image: url(../src/assets/Footer.webp);
     background-position: center center;
     background-size: cover;
   }
