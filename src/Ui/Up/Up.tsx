@@ -25,8 +25,8 @@ const Up = () => {
     <div
       className={
         up
-          ? "fixed bottom-20 w-full z-50 transition-all duration-500 opacity-100"
-          : "transition-all duration-500 fixed bottom-20 w-full z-50 opacity-0"
+          ? "fixed bottom-20 w-full z-50 transition-all duration-500 block"
+          : "transition-all duration-500 fixed bottom-20 w-full z-50 hidden"
       }
     >
       <div className="container">
