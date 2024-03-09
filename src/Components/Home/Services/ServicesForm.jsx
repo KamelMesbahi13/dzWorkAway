@@ -1,4 +1,87 @@
 import { useForm } from "react-hook-form";
+import Data from "../../../data.json";
+
+const Heading = Data.ServicesForm_Heading.map(({ id, Paragraph }) => {
+  return (
+    <div key={id}>
+      <div>
+        <p>{Paragraph}</p>
+      </div>
+    </div>
+  );
+});
+
+const Name = Data.Form_Name.map(({ id, Title }) => {
+  return (
+    <label key={id} htmlFor="firstName">
+      {Title}
+    </label>
+  );
+});
+
+const LastName = Data.Form_LastName.map(({ id, Title }) => {
+  return (
+    <label key={id} htmlFor="lastName">
+      {Title}
+    </label>
+  );
+});
+
+const Email = Data.Form_Email.map(({ id, Title }) => {
+  return (
+    <label key={id} htmlFor="Email">
+      {Title}
+    </label>
+  );
+});
+
+const PhoneNumber = Data.Form_Phone_Number.map(({ id, Title }) => {
+  return (
+    <label key={id} htmlFor="PhoneNumber">
+      {Title}
+    </label>
+  );
+});
+
+const Address = Data.Form_Address.map(({ id, Title }) => {
+  return (
+    <label key={id} htmlFor="Address">
+      {Title}
+    </label>
+  );
+});
+
+const City = Data.Form_City.map(({ id, Title }) => {
+  return (
+    <label key={id} htmlFor="City">
+      {Title}
+    </label>
+  );
+});
+
+const Zip = Data.Form_Zip.map(({ id, Title }) => {
+  return (
+    <label key={id} htmlFor="Zip">
+      {Title}
+    </label>
+  );
+});
+
+const Cv = Data.Form_Cv.map(({ id, Title }) => {
+  return (
+    <label key={id} htmlFor="Cv">
+      {Title}
+    </label>
+  );
+});
+
+const Message = Data.Form_Message.map(({ id, Title }) => {
+  return (
+    <label key={id} htmlFor="Message">
+      {Title}
+    </label>
+  );
+});
 
 const ServicesForm = () => {
   const inputStyle = `p-2 mt-1 border-b-2 outline-none border-mainColor`;
@@ -23,7 +106,7 @@ const ServicesForm = () => {
           <div>
             <div>
               <div className="mb-12 md:mb-36 textCenter">
-                <h6>Please fill out the form below with your information</h6>
+                <h6>{Heading}</h6>
               </div>
               <div>
                 <form
@@ -36,7 +119,7 @@ const ServicesForm = () => {
                     <div>
                       <div className="flex flex-col justify-between md:flex-row">
                         <div>
-                          <label htmlFor="firstName">First Name</label> <br />
+                          {Name} <br />
                           <input
                             className={`${inputStyle} mb-6 md:mb-0 w-full`}
                             type="text"
@@ -59,7 +142,7 @@ const ServicesForm = () => {
                           )}
                         </div>
                         <div>
-                          <label htmlFor="lastName">Last Name</label> <br />
+                          {LastName} <br />
                           <input
                             className={`${inputStyle} w-full`}
                             type="text"
@@ -83,7 +166,7 @@ const ServicesForm = () => {
                         </div>
                       </div>
                       <div className="mt-6">
-                        <label htmlFor="Email">Email</label> <br />
+                        {Email} <br />
                         <input
                           className={`${inputStyle} w-full`}
                           type="email"
@@ -103,7 +186,7 @@ const ServicesForm = () => {
                       </div>
 
                       <div className="mt-6">
-                        <label htmlFor="PhoneNumber">Phone Number</label> <br />
+                        {PhoneNumber} <br />
                         <input
                           className={`${inputStyle} w-full`}
                           type="text"
@@ -129,7 +212,7 @@ const ServicesForm = () => {
                       </div>
 
                       <div className="mt-6">
-                        <label htmlFor="Address">Address</label> <br />
+                        {Address} <br />
                         <input
                           className={`${inputStyle} w-full`}
                           type="text"
@@ -153,7 +236,7 @@ const ServicesForm = () => {
                       </div>
 
                       <div className="mt-6">
-                        <label htmlFor="City">City</label> <br />
+                        {City} <br />
                         <input
                           className={`${inputStyle} w-full`}
                           type="text"
@@ -177,7 +260,7 @@ const ServicesForm = () => {
                       </div>
 
                       <div className="mt-6">
-                        <label htmlFor="Zip">Zip / Postal Code</label> <br />
+                        {Zip} <br />
                         <input
                           className={`${inputStyle} w-full`}
                           {...register("Zip", {
@@ -202,7 +285,7 @@ const ServicesForm = () => {
                       </div>
 
                       <div className="mt-6">
-                        <label htmlFor="Cv">Your Cv</label> <br />
+                        {Cv} <br />
                         <input
                           required
                           className={`${inputStyle} w-full`}
@@ -211,7 +294,7 @@ const ServicesForm = () => {
                       </div>
 
                       <div className="mt-6">
-                        <label htmlFor="Message">Message</label> <br />
+                        {Message} <br />
                         <textarea
                           name="message"
                           id="message"
