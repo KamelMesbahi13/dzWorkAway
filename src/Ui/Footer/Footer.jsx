@@ -52,7 +52,7 @@ const time = [
   {
     id: 1,
     Img: Time,
-    Content: "Numéro 1, Résidence Zidan, Bloc 1, Boumerdès 35000",
+    Content: "De 08:00h - 16:00h (Vendredi Et Samedi Fermé)",
   },
 ];
 
