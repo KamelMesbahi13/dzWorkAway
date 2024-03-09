@@ -3,7 +3,7 @@ import Vision from "../../../assets/Vision.png";
 import Mission from "../../../assets/Mission.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
-import Img from "../../../assets/aboutHome.jpg";
+import Img from "../../../assets/aboutHome.webp";
 
 const Heading = Data.AboutUs_Heading.map(({ id, heading }) => {
   return (

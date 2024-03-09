@@ -5,8 +5,8 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "swiper/css";
 import "./Swiper.css";
 import ImgOne from "../../../../assets/HomePageOne.webp";
-import ImgTwo from "../../../../assets/HomePageTwo.webp";
-import ImgThree from "../../../../assets/HomePageThree.webp";
+// import ImgTwo from "../../../../assets/HomePageTwo.webp";
+// import ImgThree from "../../../../assets/HomePageThree.webp";
 import Check from "../../../../assets/check.png";
 // import { useTranslation } from "react-i18next";
 
@@ -31,8 +31,8 @@ const data = [
     paragraph: "Expert Guidance for a Seamless Immigration Journey",
     paragraph_check: "Meeting Your Unique Needs",
 
-    Img: ImgTwo,
-    alt: "Background Two",
+    // Img: ImgTwo,
+    // alt: "Background Two",
   },
 
   {
@@ -41,8 +41,8 @@ const data = [
     paragraph: "Expert Guidance for a Seamless Immigration Journey",
     paragraph_check: "Meeting Your Unique Needs",
 
-    Img: ImgThree,
-    alt: "Background Three",
+    // Img: ImgThree,
+    // alt: "Background Three",
   },
 ];
 
