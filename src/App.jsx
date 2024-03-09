@@ -13,7 +13,7 @@ const PlatformDetails = lazy(() =>
 );
 const Privacy = lazy(() => import("./Components/Privacy/Privacy"));
 import Loader from "./Ui/Loader/Loader";
-import Up from "./Ui/Up/Up";
+// import Up from "./Ui/Up/Up";
 
 const Footer = lazy(() => import("./Ui/Footer/Footer"));
 
@@ -44,7 +44,7 @@ const App = () => {
             />
             <Route path="/Confidentialité" element={<Privacy />} />
           </Routes>
-          <Up />
+          {/* <Up /> */}
           <Footer />
         </div>
       </Suspense>
