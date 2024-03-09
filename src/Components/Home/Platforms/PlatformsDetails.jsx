@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import PlatformsDetailsHeader from "./PlatformsDetailsHeader";
 import PlatformsForm from "./PlatformsForm";
+import Title from "../../../GeneralFunctions/Title";
 
 const data = [
   {
@@ -14,8 +15,9 @@ const data = [
 ];
 
 const PlatformsDetails = () => {
-  const { platformId } = useParams();
+  Title("Dz Work Away | Détails des plateformes");
 
+  const { platformId } = useParams();
   const platform = data.find((platform) => platform.id == platformId);
   const { header } = platform;
 

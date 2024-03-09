@@ -1,8 +1,9 @@
+import Data from "../../../data.json";
+import ServicesForm from "./ServicesForm";
 // import { motion } from "framer-motion";
 import { useParams } from "react-router-dom";
 import ServicesDetailsHeader from "./ServicesDetailHeader";
-import ServicesForm from "./ServicesForm";
-import Data from "../../../data.json";
+import Title from "../../../GeneralFunctions/Title";
 
 const ParagraphOne = Data.ServicesDetails_Paragraph_One.map(
   ({ id, Paragraph }) => {
@@ -33,6 +34,8 @@ const ParagraphTwo = Data.ServicesDetails_Paragraph_Two.map(
 );
 
 const ServicesDetails = () => {
+  Title("Dz Work Away | Détails des services");
+
   const { servicesId } = useParams();
   const services = Data.ServicesDetails.find(
     (services) => services.id == servicesId
