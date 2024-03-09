@@ -102,7 +102,7 @@ const Footer = () => {
                   ))}
                 </div>
               </div>
-              <div className="w-full lg:bg-white lg:p-8 lg:w-1/4">
+              <div className="w-full bg-white lg:p-8 lg:w-1/4">
                 <div>
                   <div>
                     <h6 className="mb-4">Our Social Media:</h6>
