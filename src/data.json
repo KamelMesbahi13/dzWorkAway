@@ -81,7 +81,12 @@
     {
       "id": 1,
       "heading": "Discover a Comprehensive Online Immigration Platform",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam."
+      "heading_ar": "ابابابتشيمبا يئمنلامتلايس يمبتايست",
+      "heading_fr": "Discover a Comprehensive Online Immigration Platform",
+
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
+      "description_ar": "التينينبلتت ؤاترئتمابتمئيالمتؤالمتؤالؤ ئمؤلاؤمءامتؤءالمءؤالمتءال ؤملاتءؤنمالمؤءالنؤال",
+      "description_fr": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam."
     }
   ],
 
@@ -89,8 +94,16 @@
     {
       "id": 1,
       "header": "All The World",
+      "header_ar": "فغلعاهخ هماعنلبي البتنتمن",
+      "header_fr": "All The World",
+
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
-      "button": "Apply"
+      "description_ar": "نتالنبتلابت يمابميابمياب هابميئابناي يئهبتنميتبهيتب يهبتهيتبهي",
+      "description_fr": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
+
+      "button": "Apply",
+      "button_ar": "يلليلي",
+      "button_fr": "Apply"
     }
   ],
 
@@ -98,8 +111,14 @@
     {
       "id": 2,
       "header": "Canada",
+      "header_ar": "فغلعاهخ هماعنلبي البتنتمن",
+      "header_fr": "Canada",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
-      "button": "Apply"
+      "description_ar": "نتالنبتلابت يمابميابمياب هابميئابناي يئهبتنميتبهيتب يهبتهيتبهي",
+      "description_fr": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
+      "button": "Apply",
+      "button_ar": "يلليلي",
+      "button_fr": "Apply"
     }
   ],
 
