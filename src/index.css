@@ -59,6 +59,12 @@ h1 {
     text-align: -webkit-right;
   }
 
+  .textLeft {
+    text-align: left;
+    text-align: -moz-left;
+    text-align: -webkit-left;
+  }
+
   .buttonCust {
     color: white;
     padding: 13px 20px 13px;

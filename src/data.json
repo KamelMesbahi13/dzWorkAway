@@ -138,22 +138,33 @@
     {
       "id": 1,
       "header": "Fly Your Dream Destination",
-      "description": "Idea of denouncing pleasure & praising pain was born."
+      "header_ar": "بنالنمالشيبن يلنيالنيالن",
+      "header_fr": "Fly Your Dream Destination",
+
+      "description": "Idea of denouncing pleasure & praising pain was born.",
+      "description_ar": "يبخعابل سيهتههلتي يهلتيهلهتتتشب حيهتلهيستلهي شيحهلتحهبال سبحهلتبيهتل",
+      "description_fr": "Idea of denouncing pleasure & praising pain was born."
     }
   ],
 
   "ContactSection_Paragraphs": [
     {
       "id": 1,
-      "paragraph": "Entering & Leaving From Country"
+      "paragraph": "Entering & Leaving From Country",
+      "paragraph_ar": "التيتل يناالثهل يمتاتتال يلمتتال",
+      "paragraph_fr": "Entering & Leaving From Country"
     },
     {
       "id": 2,
-      "paragraph": "Entering & Leaving From Country"
+      "paragraph": "Entering & Leaving From Country",
+      "paragraph_ar": "التيتل يناالثهل يمتاتتال يلمتتال",
+      "paragraph_fr": "Entering & Leaving From Country"
     },
     {
       "id": 3,
-      "paragraph": "Entering & Leaving From Country"
+      "paragraph": "Entering & Leaving From Country",
+      "paragraph_ar": "التيتل يناالثهل يمتاتتال يلمتتال",
+      "paragraph_fr": "Entering & Leaving From Country"
     }
   ],
 
