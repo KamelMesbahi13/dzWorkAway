@@ -16,7 +16,7 @@ h1 {
 
 @layer components {
   body {
-    @apply text-textColor font-main h-[999vh];
+    @apply text-textColor font-main;
   }
 
   p,
