@@ -1,4 +1,5 @@
 import Logo from "../../assets/Logo.png";
+import Data from "../../data.json";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Facebook from "../../assets/Facebook.png";
 import Instagram from "../../assets/instagram.png";
@@ -6,6 +7,7 @@ import Tiktok from "../../assets/TikTok.png";
 import Gmail from "../../assets/Gmail.png";
 import Phone from "../../assets/PhoneCall.png";
 import Time from "../../assets/Time.png";
+import { useTranslation } from "react-i18next";
 
 const footerItems = [
   "Accueil",
@@ -60,6 +62,124 @@ const time = [
 ];
 
 const Footer = () => {
+  const { i18n } = useTranslation();
+
+  // --------------------------------------------------------
+
+  const modifiedDataParagraph = Data.Footer_Paragraph.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Paragraph: data.Paragraph_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Paragraph: data.Paragraph_fr,
+      };
+    }
+    return data;
+  });
+
+  const Paragraph = modifiedDataParagraph.map(({ id, Paragraph }) => {
+    return (
+      <div key={id}>
+        <p className="w-3/4 my-4 lg:w-full lg:my-8">{Paragraph}</p>
+      </div>
+    );
+  });
+
+  // ------------------------------------------------------------------
+
+  const modifiedDataLinksHeader = Data.Footer_Links_Header.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Header: data.Header_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Header: data.Header_fr,
+      };
+    }
+    return data;
+  });
+
+  const LinksHeader = modifiedDataLinksHeader.map(({ id, Header }) => {
+    return (
+      <div key={id}>
+        <h6 className="mb-4 text-3xl md:mb-8">{Header}</h6>
+      </div>
+    );
+  });
+
+  // -------------------------------------------------------------
+
+  const modifiedDataSocialMediaLinks = Data.Footer_Social_Media_Header.map(
+    (data) => {
+      if (i18n.language === "ar") {
+        return {
+          id: data.id,
+          Header: data.Header_ar,
+        };
+      }
+
+      if (i18n.language === "fr") {
+        return {
+          id: data.id,
+          Header: data.Header_fr,
+        };
+      }
+      return data;
+    }
+  );
+
+  const SocialMediaHeader = modifiedDataSocialMediaLinks.map(
+    ({ id, Header }) => {
+      return (
+        <div key={id}>
+          <h6 className="mb-4">{Header}</h6>
+        </div>
+      );
+    }
+  );
+
+  // ----------------------------------------------------------
+  const modifiedDataSocialContactsHeader = Data.Footer_Social_Contacts.map(
+    (data) => {
+      if (i18n.language === "ar") {
+        return {
+          id: data.id,
+          Header: data.Header_ar,
+        };
+      }
+
+      if (i18n.language === "fr") {
+        return {
+          id: data.id,
+          Header: data.Header_fr,
+        };
+      }
+      return data;
+    }
+  );
+
+  const SocialMediaContactsHeader = modifiedDataSocialContactsHeader.map(
+    ({ id, Header }) => {
+      return (
+        <div key={id}>
+          <h6 className="mb-2">{Header}</h6>
+        </div>
+      );
+    }
+  );
+  // -------------------------------------------------------------
+
   const year = new Date().getFullYear();
 
   return (
@@ -74,13 +194,7 @@ const Footer = () => {
                     <div>
                       <LazyLoadImage className="w-36" src={Logo} alt="Logo" />
                     </div>
-                    <div>
-                      <p className="w-3/4 my-4 lg:w-full lg:my-8">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Optio quae aut et. Impedit, repudiandae
-                        voluptatibus? Nisi ut quam dolore voluptatum.
-                      </p>
-                    </div>
+                    <div>{Paragraph}</div>
                     <div className="my-4 lg:my-0 lg:text-left">
                       <iframe
                         className="w-[20rem] lg:h-[13rem]"
@@ -94,13 +208,13 @@ const Footer = () => {
                 </div>
               </div>
               <div className="w-full my-4 lg:w-1/4 lg:textCenter">
-                <h6 className="mb-4 text-3xl md:mb-8">Links</h6>
+                {LinksHeader}{" "}
                 <div className="flex flex-row flex-wrap lg:flex-nowrap lg:flex-col gap-y-8">
                   {footerItems.map((el, i) => (
                     <div key={i}>
                       <a
                         rel="noreferrer"
-                        className="mr-2 link"
+                        className="ltr:mr-2 rtl:ml-2 link"
                         href={footerLinks[i]}
                       >
                         {el}
@@ -111,16 +225,14 @@ const Footer = () => {
               </div>
               <div className="w-full bg-white lg:p-8 lg:w-1/4">
                 <div>
-                  <div>
-                    <h6 className="mb-4">Our Social Media:</h6>
-                  </div>
+                  {SocialMediaHeader}
                   <div className="flex">
                     {socialMedia.map(({ id, Img, Link }) => {
                       return (
                         <div key={id}>
                           <a target="_blank" rel="noreferrer" href={Link}>
                             <LazyLoadImage
-                              className="w-6 mr-2"
+                              className="w-6 ltr:mr-2 rtl:ml-2"
                               src={Img}
                               alt="Social Media"
                             />
@@ -130,21 +242,23 @@ const Footer = () => {
                     })}
                   </div>
                   <div className="mt-8">
-                    <h6 className="mb-2">Our Contacts:</h6>
+                    {SocialMediaContactsHeader}{" "}
                     <div>
                       {contact.map(({ id, Img, Content }) => {
                         return (
                           <div key={id}>
-                            <div className="flex items-center">
+                            <div className="flex items-center ltr:flex-row rtl:flex-row-reverse">
                               <div className="w-10 h-10">
                                 <LazyLoadImage
-                                  className="w-6 my-2 mr-2"
+                                  className="w-6 my-2 ltr:mr-2 rtl:ml-2"
                                   src={Img}
                                   alt="Contact"
                                 />
                               </div>
                               <div>
-                                <p>{Content}</p>
+                                <p className="ml-4 initialDirection">
+                                  {Content}
+                                </p>
                               </div>
                             </div>
                           </div>
@@ -153,16 +267,16 @@ const Footer = () => {
                       {time.map(({ id, Img, Content }) => {
                         return (
                           <div key={id}>
-                            <div className="flex items-center">
+                            <div className="flex items-center ltr:flex-row rtl:flex-row-reverse">
                               <div className="w-10 h-10">
                                 <LazyLoadImage
-                                  className="w-6 my-2 mr-12"
+                                  className="w-6 my-2 ltr:mr-12 rtl:ml-12"
                                   src={Img}
                                   alt="Contact"
                                 />
                               </div>
                               <div>
-                                <p>{Content}</p>
+                                <p className="rtl:ml-4">{Content}</p>
                               </div>
                             </div>
                           </div>

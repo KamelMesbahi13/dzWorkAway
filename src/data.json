@@ -390,5 +390,41 @@
       "id": 1,
       "Title": "Message"
     }
+  ],
+
+  "Footer_Paragraph": [
+    {
+      "id": 1,
+      "Paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quae aut et. Impedit, repudiandae voluptatibus? Nisi ut quam dolore voluptatum.",
+      "Paragraph_ar": "العايبي ينععلتس سيتابنيالي سيهلتسنمالمستل سيملتنسيمنلاسي سيمنلتسمينال سميلناسمينلا ",
+      "Paragraph_fr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quae aut et. Impedit, repudiandae voluptatibus? Nisi ut quam dolore voluptatum."
+    }
+  ],
+
+  "Footer_Links_Header": [
+    {
+      "id": 1,
+      "Header": "Links",
+      "Header_ar": "سميلناسمينل",
+      "Header_fr": "Liens."
+    }
+  ],
+
+  "Footer_Social_Media_Header": [
+    {
+      "id": 1,
+      "Header": "Social Media",
+      "Header_ar": " بلبل سميلناسمينل",
+      "Header_fr": "Social Media."
+    }
+  ],
+
+  "Footer_Social_Contacts": [
+    {
+      "id": 1,
+      "Header": "Social Media",
+      "Header_ar": " بلبل سميلناسمينل",
+      "Header_fr": "Social Media."
+    }
   ]
 }
