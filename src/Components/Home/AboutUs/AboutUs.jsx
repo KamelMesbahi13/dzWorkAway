@@ -6,16 +6,6 @@ import { motion } from "framer-motion";
 import Img from "../../../assets/aboutHome.webp";
 import { useTranslation } from "react-i18next";
 
-const Heading = Data.AboutUs_Heading.map(({ id, heading }) => {
-  return (
-    <div key={id}>
-      <h1 className="relative p-0 mt-4 mb-2 md:mb-8 md:mt-0 lg:pl-20 md:headingStyleMd lg:headingStyleLg">
-        {heading}
-      </h1>{" "}
-    </div>
-  );
-});
-
 const AboutUs = () => {
   const { i18n } = useTranslation();
 
@@ -41,7 +31,7 @@ const AboutUs = () => {
   const Heading = modifiedDataHeader.map(({ id, heading }) => {
     return (
       <div key={id}>
-        <h1 className="relative p-0 mt-4 mb-2 md:mb-8 md:mt-0 lg:pl-20 md:headingStyleMd lg:headingStyleLg">
+        <h1 className="relative p-0 mt-4 mb-2 md:mb-8 md:mt-0 lg:headingStyleLg">
           {heading}
         </h1>{" "}
       </div>
@@ -105,7 +95,9 @@ const AboutUs = () => {
       return (
         <div key={id}>
           <div>
-            <p className="mb-1 text-lg font-bold md:text-xl">{header}</p>
+            <p className="mb-1 text-lg font-bold rtl:textRight md:text-xl">
+              {header}
+            </p>
             <p>{paragraph}</p>
           </div>
         </div>
@@ -141,7 +133,9 @@ const AboutUs = () => {
       return (
         <div key={id}>
           <div>
-            <p className="mb-1 text-lg font-bold md:text-xl">{header}</p>
+            <p className="mb-1 text-lg font-bold rtl:textRight md:text-xl">
+              {header}
+            </p>
             <p>{paragraph}</p>
           </div>
         </div>
@@ -175,7 +169,7 @@ const AboutUs = () => {
               />
             </motion.div>
 
-            <div className="relative w-full lg:w-1/2">
+            <div className="relative w-full lg:w-1/2 rtl:textRight">
               <div>
                 <motion.div
                   initial="hidden"
@@ -205,7 +199,7 @@ const AboutUs = () => {
                     <div className="flex flex-col justify-between mt-8 md:flex-row">
                       <div className="flex items-center md:w-[80%] shadow-md p-4 duration-500 hover:shadow-lg">
                         <LazyLoadImage
-                          className="w-10 h-10 mr-4"
+                          className="w-10 h-10 rtl:ml-4 ltr:mr-4"
                           src={Vision}
                           alt="Vision"
                         />
