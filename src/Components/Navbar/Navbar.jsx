@@ -49,7 +49,7 @@ const Navbar = () => {
                 ))}
               </div>
               <div className="flex items-center">
-                <span className="mr-4 text-2xl cursor-pointer ">
+                <span className="text-2xl cursor-pointer ">
                   <TranslateIcon />
                 </span>
                 <div>
@@ -58,7 +58,7 @@ const Navbar = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img className="w-6 mr-2" src={Facebook} alt="Facebook" />
+                    <img className="w-6 mx-2" src={Facebook} alt="Facebook" />
                   </a>
                 </div>
                 <div>
@@ -96,8 +96,8 @@ const Navbar = () => {
             <div
               className={
                 nav
-                  ? "absolute w-full left-[-150%] duration-500 z-50"
-                  : "absolute w-full left-0 bg-grey shadow-2xl z-50 duration-500"
+                  ? "absolute w-full rtl:left-[150%] opacity-0 ltr:left-[-150%] duration-500 z-50"
+                  : "absolute w-full left-0 bg-grey opacity-100 shadow-2xl z-50 duration-500"
               }
             >
               <div className="flex flex-col p-8">
