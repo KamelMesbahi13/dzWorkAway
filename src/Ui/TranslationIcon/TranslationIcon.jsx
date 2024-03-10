@@ -1,10 +1,9 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import cookies from "js-cookie";
 import classNames from "classnames";
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import "bootstrap/dist/js/bootstrap.js";
+import PropTypes from "prop-types";
 
 const languages = [
   {
@@ -37,7 +36,8 @@ const GlobeIcon = ({ width = 24, height = 24 }) => (
 );
 
 function TranslateIcon() {
-  const currentLanguageCode = cookies.get("i18next") || "ar";
+  const [isOpen, setIsOpen] = useState(false);
+  const currentLanguageCode = cookies.get("i18next") || "fr";
   const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
   const { t } = useTranslation();
 
@@ -46,50 +46,54 @@ function TranslateIcon() {
   }, [currentLanguage, t]);
 
   return (
-    <div className="container">
+    <div>
       <div className="language-select">
         <div className="flex items-center justify-end language-select-root">
-          <div className="dropdown">
-            <span
-              className="btn btn-link dropdown-toggle"
-              id="dropdownMenuButton1"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
+          <div className="relative">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="flex items-center space-x-1 text-sm font-medium"
             >
               <GlobeIcon />
-            </span>
-            <ul className="text-center" aria-labelledby="dropdownMenuButton1">
-              <li>
-                <span className="text-lg font-bold">{t("language")}</span>
-              </li>
-              <div>
-                {languages.map(({ code, name }, i) => (
-                  <li key={i}>
-                    <a
-                      href="#"
-                      className={classNames("dropdown-item", {
-                        disabled: currentLanguageCode === code,
-                      })}
-                      onClick={() => {
-                        i18next.changeLanguage(code);
-                      }}
-                    >
-                      <span
-                        style={{
-                          opacity: currentLanguageCode === code ? 0.5 : 1,
+            </button>
+            {isOpen && (
+              <ul className="absolute right-0 z-10 px-8 mt-2 bg-white border-2 rounded-md shadow-2xl border-grey">
+                <li>
+                  <h6 className="block px-4 py-2 text-lg font-bold text-mainColor">
+                    {t("Language")}
+                  </h6>
+                </li>
+                <div>
+                  {languages.map(({ code, name }, i) => (
+                    <li key={i}>
+                      <a
+                        href="#"
+                        className={classNames("block px-4 py-2 text-sm", {
+                          "text-gray-500": currentLanguageCode === code,
+                          "text-gray-900": currentLanguageCode !== code,
+                        })}
+                        onClick={() => {
+                          i18next.changeLanguage(code);
+                          setIsOpen(false);
                         }}
-                      ></span>
-                      {name}
-                    </a>
-                  </li>
-                ))}
-              </div>
-            </ul>
+                      >
+                        {name}
+                      </a>
+                    </li>
+                  ))}
+                </div>
+              </ul>
+            )}
           </div>
         </div>
       </div>
     </div>
   );
 }
+
+GlobeIcon.propTypes = {
+  width: PropTypes.number,
+  height: PropTypes.number,
+};
 
 export default TranslateIcon;

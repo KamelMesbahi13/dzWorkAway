@@ -5,8 +5,8 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { FaXmark } from "react-icons/fa6";
 import Facebook from "../../assets/Facebook.png";
 import Instagram from "../../assets/instagram.png";
-import { BsGlobe } from "react-icons/bs";
-// import TranslateIcon from "../../Ui/TranslationIcon/TranslationIcon";
+// import { BsGlobe } from "react-icons/bs";
+import TranslateIcon from "../../Ui/TranslationIcon/TranslationIcon";
 
 const Navbar = () => {
   const [nav, setNav] = useState(true);
@@ -50,7 +50,7 @@ const Navbar = () => {
               </div>
               <div className="flex items-center">
                 <span className="mr-4 text-2xl cursor-pointer ">
-                  <BsGlobe />
+                  <TranslateIcon />
                 </span>
                 <div>
                   <a
@@ -113,7 +113,7 @@ const Navbar = () => {
                   </div>
                 ))}
 
-                <div className="flex gap-2 mt-4">
+                <div className="flex items-center gap-2 mt-4">
                   <a
                     href="https://web.facebook.com/dzworkaway"
                     target="_blank"
@@ -129,6 +129,7 @@ const Navbar = () => {
                   >
                     <img className="w-5" src={Instagram} alt="Instagram" />
                   </a>
+                  <TranslateIcon />
                 </div>
                 <div className="mx-auto mt-2 lg:hidden">
                   <img
