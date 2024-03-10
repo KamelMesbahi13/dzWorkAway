@@ -10,14 +10,18 @@
   "AboutUs_Heading": [
     {
       "id": 1,
-      "heading": "Welcome to immigration Advisory services"
+      "heading": "Welcome to immigration Advisory services",
+      "heading_fr": "Welcome to immigration Advisory services fr",
+      "heading_ar": "ال يااينبا يبتااصصتب يبمتشم"
     }
   ],
 
   "AboutUs_Paragraph_One": [
     {
       "id": 1,
-      "paragraph": "Quisque dignissim enim diam, eget pulvinar ex viverra id. Nulla a lobortis lectus, id volutpat magna. Morbi consequat porttitor fermentum. Nulla vestibulum tincidunt viverra. Vestibulum accumsan molestie lorem, non laoreet massa. Duis at dui sem. Vivamus ut gravida libero"
+      "paragraph": "Quisque dignissim enim diam, eget pulvinar ex viverra id. Nulla a lobortis lectus, id volutpat magna. Morbi consequat porttitor fermentum. Nulla vestibulum tincidunt viverra. Vestibulum accumsan molestie lorem, non laoreet massa. Duis at dui sem. Vivamus ut gravida libero",
+      "paragraph_fr": "Quisque dignissim enim diam, eget pulvinar ex viverra id. Nulla a lobortis lectus, id volutpat magna. Morbi consequat porttitor fermentum. Nulla vestibulum tincidunt viverra. Vestibulum accumsan molestie lorem, non laoreet massa. Duis at dui sem. Vivamus ut gravida libero fr",
+      "paragraph_ar": "يلنتبل سينتامتشسنىبكنلاليه شسنبشلميتبض سيبنتنيبل يبميتتي"
     }
   ],
 
@@ -25,7 +29,11 @@
     {
       "id": 1,
       "header": "Our Vision",
-      "paragraph": "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+      "header_fr": "Our Vision fr",
+      "header_ar": "الببل بللاي",
+      "paragraph": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "paragraph_fr": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "paragraph_ar": "ال يعبايلتال يعاتتيا يبايتباي يلايتتيب"
     }
   ],
 
@@ -33,7 +41,11 @@
     {
       "id": 1,
       "header": "Our Mission",
-      "paragraph": "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+      "header_fr": "Our Mission fr",
+      "header_ar": "الببل بللاي",
+      "paragraph": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "paragraph_fr": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "paragraph_ar": "ال يعبايلتال يعاتتيا يبايتباي يلايتتيب"
     }
   ],
 

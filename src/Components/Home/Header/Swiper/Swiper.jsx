@@ -14,10 +14,16 @@ const data = [
     id: 1,
     heading: "Immigration visa Consulting",
     heading_ar: "This Text Is On Arabic",
+    heading_fr: "This Text Is On fr",
+
     paragraph_ar: "This Paragraph Is On Arabic",
+    paragraph_fr: "This Paragraph Is On fr",
+
     paragraph: "Expert Guidance for a Seamless Immigration Journey",
     paragraph_check: "Meeting Your Unique Needs",
     paragraph_check_ar: "يبننتب",
+    paragraph_check_fr: "frfrfrfr",
+
     Img: ImgOne,
     alt: "Background One",
   },
@@ -26,9 +32,12 @@ const data = [
     heading: "Immigration visa Consulting",
     heading_ar: "This Text Is On Arabic",
     paragraph_ar: "This Paragraph Is On Arabic",
+    paragraph_fr: "This Paragraph Is On fr",
     paragraph: "Expert Guidance for a Seamless Immigration Journey",
     paragraph_check: "Meeting Your Unique Needs",
     paragraph_check_ar: "This Check Paragraph is on arabic",
+    paragraph_check_fr: "This Check Paragraph is on fr",
+
     Img: ImgThree,
     alt: "Background Three",
   },
@@ -65,6 +74,17 @@ export default function App() {
         heading: data.heading_ar,
         paragraph: data.paragraph_ar,
         paragraph_check: data.paragraph_check_ar,
+        Img: data.Img,
+        alt: data.alt,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        heading: data.heading_fr,
+        paragraph: data.paragraph_fr,
+        paragraph_check: data.paragraph_check_fr,
         Img: data.Img,
         alt: data.alt,
       };

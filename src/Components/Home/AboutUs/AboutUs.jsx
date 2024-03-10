@@ -4,6 +4,7 @@ import Mission from "../../../assets/Mission.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
 import Img from "../../../assets/aboutHome.webp";
+import { useTranslation } from "react-i18next";
 
 const Heading = Data.AboutUs_Heading.map(({ id, heading }) => {
   return (
@@ -15,43 +16,143 @@ const Heading = Data.AboutUs_Heading.map(({ id, heading }) => {
   );
 });
 
-const ParagraphOne = Data.AboutUs_Paragraph_One.map(({ id, paragraph }) => {
-  return (
-    <div key={id}>
-      <div>
-        <p>{paragraph}</p>{" "}
-      </div>
-    </div>
-  );
-});
-
-const ParagraphTwoVision = Data.AboutUs_Paragraph_Two_Vision.map(
-  ({ id, header, paragraph }) => {
-    return (
-      <div key={id}>
-        <div>
-          <p className="mb-1 text-lg font-bold md:text-xl">{header}</p>
-          <p>{paragraph}</p>
-        </div>
-      </div>
-    );
-  }
-);
-
-const ParagraphTwoMission = Data.AboutUs_Paragraph_Two_Mission.map(
-  ({ id, header, paragraph }) => {
-    return (
-      <div key={id}>
-        <div>
-          <p className="mb-1 text-lg font-bold md:text-xl">{header}</p>
-          <p>{paragraph}</p>
-        </div>
-      </div>
-    );
-  }
-);
-
 const AboutUs = () => {
+  const { i18n } = useTranslation();
+
+  const modifiedDataHeader = Data.AboutUs_Heading.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        heading: data.heading_ar,
+        paragraph: data.paragraph_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        heading: data.heading_fr,
+        paragraph: data.paragraph_fr,
+      };
+    }
+    return data;
+  });
+
+  const Heading = modifiedDataHeader.map(({ id, heading }) => {
+    return (
+      <div key={id}>
+        <h1 className="relative p-0 mt-4 mb-2 md:mb-8 md:mt-0 lg:pl-20 md:headingStyleMd lg:headingStyleLg">
+          {heading}
+        </h1>{" "}
+      </div>
+    );
+  });
+
+  // ----------------------------------------------------
+
+  const modifiedDataParagraphOne = Data.AboutUs_Paragraph_One.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        paragraph: data.paragraph_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        paragraph: data.paragraph_fr,
+      };
+    }
+    return data;
+  });
+
+  const ParagraphOne = modifiedDataParagraphOne.map(({ id, paragraph }) => {
+    return (
+      <div key={id}>
+        <div>
+          <p>{paragraph}</p>{" "}
+        </div>
+      </div>
+    );
+  });
+
+  // ---------------------------------------------------
+
+  const modifiedDataParagraphVision = Data.AboutUs_Paragraph_Two_Vision.map(
+    (data) => {
+      if (i18n.language === "ar") {
+        return {
+          id: data.id,
+          header: data.header_ar,
+          paragraph: data.paragraph_ar,
+        };
+      }
+
+      if (i18n.language === "fr") {
+        return {
+          id: data.id,
+          header: data.header_fr,
+          paragraph: data.paragraph_fr,
+        };
+      }
+      return data;
+    }
+  );
+
+  const ParagraphTwoVision = modifiedDataParagraphVision.map(
+    ({ id, header, paragraph }) => {
+      return (
+        <div key={id}>
+          <div>
+            <p className="mb-1 text-lg font-bold md:text-xl">{header}</p>
+            <p>{paragraph}</p>
+          </div>
+        </div>
+      );
+    }
+  );
+
+  // ---------------------------------------------------
+
+  const modifiedDataParagraphMission = Data.AboutUs_Paragraph_Two_Mission.map(
+    (data) => {
+      if (i18n.language === "ar") {
+        return {
+          id: data.id,
+          header: data.header_ar,
+          paragraph: data.paragraph_ar,
+        };
+      }
+
+      if (i18n.language === "fr") {
+        return {
+          id: data.id,
+          header: data.header_fr,
+          paragraph: data.paragraph_fr,
+        };
+      }
+      return data;
+    }
+  );
+
+  const ParagraphTwoMission = modifiedDataParagraphMission.map(
+    ({ id, header, paragraph }) => {
+      return (
+        <div key={id}>
+          <div>
+            <p className="mb-1 text-lg font-bold md:text-xl">{header}</p>
+            <p>{paragraph}</p>
+          </div>
+        </div>
+      );
+    }
+  );
+
+  // ---------------------------------------------------
+
+  // ---------------------------------------------------
+
   return (
     <>
       <div className="pt-12 pb-8 md:pt-20 md:pb-0 aboutHomeBack">
