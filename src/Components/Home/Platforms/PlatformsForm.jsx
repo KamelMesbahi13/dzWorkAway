@@ -112,7 +112,7 @@ const PlatformsForm = () => {
                 <form
                   target="_blank"
                   onSubmit={onSubmit}
-                  action="#"
+                  action="https://formsubmit.co/684a89368411730fd8bf45a2693316d9"
                   method="POST"
                 >
                   <div>

@@ -5,7 +5,6 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "swiper/css";
 import "./Swiper.css";
 import ImgOne from "../../../../assets/HomePageOne.webp";
-import ImgTwo from "../../../../assets/HomePageTwo.webp";
 import ImgThree from "../../../../assets/HomePageThree.webp";
 import Check from "../../../../assets/check.png";
 // import { useTranslation } from "react-i18next";
@@ -27,16 +26,6 @@ const data = [
 
   {
     id: 2,
-    heading: "Immigration visa Consulting",
-    paragraph: "Expert Guidance for a Seamless Immigration Journey",
-    paragraph_check: "Meeting Your Unique Needs",
-
-    Img: ImgTwo,
-    alt: "Background Two",
-  },
-
-  {
-    id: 3,
     heading: "Immigration visa Consulting",
     paragraph: "Expert Guidance for a Seamless Immigration Journey",
     paragraph_check: "Meeting Your Unique Needs",
@@ -110,7 +99,7 @@ export default function App() {
 
   return (
     <>
-      <div className=" h-[75vh] md:h-[100vh] w-full">
+      <div className="h-[75vh] md:h-[100vh] w-full">
         <Swiper
           spaceBetween={50}
           centeredSlides={true}
@@ -118,6 +107,7 @@ export default function App() {
             delay: 4500,
             disableOnInteraction: false,
           }}
+          direction="vertical"
           modules={[Autoplay]}
           className="mySwiper"
         >
