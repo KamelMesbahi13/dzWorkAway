@@ -52,8 +52,12 @@
   "Platforms_Heading_Paragraphs": [
     {
       "id": 1,
-      "heading": "Discover a Comprehensive Online Platforms Services",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam."
+      "heading": "Discover a Comprehensive Online Immigration Platform",
+      "heading_ar": "ابابابتشيمبا يئمنلامتلايس يمبتايست",
+      "heading_fr": "Discover a Comprehensive Online Immigration Platform",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
+      "description_ar": "التينينبلتت ؤاترئتمابتمئيالمتؤالمتؤالؤ ئمؤلاؤمءامتؤءالمءؤالمتءال ؤملاتءؤنمالمؤءالنؤال",
+      "description_fr": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam."
     }
   ],
 
@@ -63,7 +67,11 @@
       "headerOne": "Arrima",
       "headerTwo": "Entrée Express",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
-      "button": "Apply"
+      "description_ar": "نتالنبتلابت يمابميابمياب هابميئابناي يئهبتنميتبهيتب يهبتهيتبهي",
+      "description_fr": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
+      "button": "Apply",
+      "button_ar": "يلليلي",
+      "button_fr": "Apply"
     }
   ],
 
@@ -73,7 +81,11 @@
       "headerFour": "New Brunswick",
       "headerThree": "New Zélande",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
-      "button": "Apply"
+      "description_ar": "نتالنبتلابت يمابميابمياب هابميئابناي يئهبتنميتبهيتب يهبتهيتبهي",
+      "description_fr": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
+      "button": "Apply",
+      "button_ar": "يلليلي",
+      "button_fr": "Apply"
     }
   ],
 

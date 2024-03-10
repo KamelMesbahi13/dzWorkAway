@@ -6,36 +6,7 @@ import ImgFour from "../../../assets/Flag_of_New_Zealand.svg.png";
 import PlaneTwo from "../../../assets/PlaneTwo.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
-
-const HeadingsAndParagraphs = Data.Platforms_Heading_Paragraphs.map(
-  ({ id, heading, description }) => {
-    return (
-      <div key={id}>
-        <div>
-          <div>
-            {" "}
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.5 }}
-              variants={{
-                hidden: { opacity: 0, x: -50 },
-                visible: { opacity: 1, x: 0 },
-              }}
-              className="mb-8"
-            >
-              <h1 className="relative w-full mb-4 sm:mb-12 lg:mb-4 md:w-1/2 md:headingStyleMd lg:headingStyleLg">
-                {heading}{" "}
-              </h1>
-              <p className="w-full md:w-3/4">{description}</p>
-            </motion.div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-);
+import { useTranslation } from "react-i18next";
 
 const DataImgsOne = [
   {
@@ -100,7 +71,87 @@ const ImagesTwo = DataImgsTwo.map(({ id, ImgThree, ImgFour, alt }) => {
 });
 
 const Services = () => {
-  const dataOneRendering = Data.Platforms_One.map(
+  const { i18n } = useTranslation();
+
+  // -----------------------------------------------------
+
+  const modifiedDataHeaderAndParagraph = Data.Platforms_Heading_Paragraphs.map(
+    (data) => {
+      if (i18n.language === "ar") {
+        return {
+          id: data.id,
+          heading: data.heading_ar,
+          description: data.description_ar,
+        };
+      }
+
+      if (i18n.language === "fr") {
+        return {
+          id: data.id,
+          heading: data.heading_fr,
+          description: data.description_fr,
+        };
+      }
+      return data;
+    }
+  );
+
+  const HeadingsAndParagraphs = modifiedDataHeaderAndParagraph.map(
+    ({ id, heading, description }) => {
+      return (
+        <div key={id}>
+          <div>
+            <div>
+              {" "}
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, x: -50 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                className="mb-8"
+              >
+                <h1 className="relative w-full mb-4 sm:mb-12 lg:mb-4 md:w-1/2 md:headingStyleMd lg:headingStyleLg">
+                  {heading}{" "}
+                </h1>
+                <p className="w-full md:w-3/4">{description}</p>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      );
+    }
+  );
+
+  // -----------------------------------------------------
+
+  const modifiedDataBoxOne = Data.Platforms_One.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        headerOne: data.headerOne,
+        headerTwo: data.headerTwo,
+        description: data.description_ar,
+        button: data.button_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        headerOne: data.headerOne,
+        headerTwo: data.headerTwo,
+        description: data.description_fr,
+        button: data.button_ar,
+      };
+    }
+    return data;
+  });
+
+  const dataOneRendering = modifiedDataBoxOne.map(
     ({ id, headerOne, headerTwo, description, button }) => {
       return (
         <div key={id}>
@@ -148,7 +199,32 @@ const Services = () => {
     }
   );
 
-  const dataTwoRendering = Data.Platforms_Two.map(
+  // -----------------------------------------------------
+
+  const modifiedDataBoxTwo = Data.Platforms_Two.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        headerThree: data.headerThree,
+        headerFour: data.headerFour,
+        description: data.description_ar,
+        button: data.button_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        headerThree: data.headerThree,
+        headerFour: data.headerFour,
+        description: data.description_fr,
+        button: data.button_ar,
+      };
+    }
+    return data;
+  });
+
+  const dataTwoRendering = modifiedDataBoxTwo.map(
     ({ id, headerThree, headerFour, description, button }) => {
       return (
         <div key={id}>
