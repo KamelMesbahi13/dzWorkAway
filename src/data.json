@@ -168,6 +168,15 @@
     }
   ],
 
+  "AboutUs_Header": [
+    {
+      "id": 1,
+      "header": "About Us",
+      "header_ar": "االبي للبي",
+      "header_fr": "About Us"
+    }
+  ],
+
   "AboutUs_Introduction_Heading_Paragraph": [
     {
       "id": 1,
