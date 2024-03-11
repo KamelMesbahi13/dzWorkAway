@@ -12,7 +12,7 @@ const data = [
     id: 1,
     Icon: ImgOne,
     Heading: "Team",
-    Heading_ar: "Team",
+    Heading_ar: "بللس",
     Heading_fr: "Team",
   },
 
@@ -20,7 +20,7 @@ const data = [
     id: 2,
     Icon: ImgTwo,
     Heading: "CheckList",
-    Heading_ar: "CheckList",
+    Heading_ar: "سيلصضضش",
     Heading_fr: "CheckList",
   },
 
@@ -28,7 +28,7 @@ const data = [
     id: 3,
     Icon: ImgThree,
     Heading: "Support",
-    Heading_ar: "Support",
+    Heading_ar: "نهفغهمف",
     Heading_fr: "Support",
   },
 
@@ -36,7 +36,7 @@ const data = [
     id: 4,
     Icon: ImgFour,
     Heading: "Quality",
-    Heading_ar: "Quality",
+    Heading_ar: "ضشسبلات",
     Heading_fr: "Quality",
   },
 ];
@@ -121,6 +121,29 @@ const ChooseUs = () => {
     }
   );
 
+  // ----------------------------------------------------------
+
+  const modifiedDataContent = data.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Heading: data.Heading_ar,
+        Icon: data.Icon,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Heading: data.Heading_fr,
+        Icon: data.Icon,
+      };
+    }
+    return data;
+  });
+
+  // ----------------------------------------------------------
+
   return (
     <>
       <motion.div
@@ -142,7 +165,7 @@ const ChooseUs = () => {
             </div>
 
             <div className="grid grid-cols-1 md:p-4 md:gap-y-8 md:grid-cols-2 md:gap-x-52 textCenter">
-              {data.map(({ id, Icon, Heading }) => {
+              {modifiedDataContent.map(({ id, Icon, Heading }) => {
                 return (
                   <div key={id}>
                     <div className="mt-12 md:mt-0">
