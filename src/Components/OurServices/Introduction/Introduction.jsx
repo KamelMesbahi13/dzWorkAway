@@ -1,15 +1,40 @@
 import Data from "../../../data.json";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
-const HeadingsAndParagraphs =
-  Data.OurServices_Introduction__Heading_Paragraph.map(
+const Introduction = () => {
+  const { i18n } = useTranslation();
+
+  const modifiedDataHeader =
+    Data.OurServices_Introduction__Heading_Paragraph.map((data) => {
+      if (i18n.language === "ar") {
+        return {
+          id: data.id,
+          header: data.header_ar,
+          description: data.description_ar,
+        };
+      }
+
+      if (i18n.language === "fr") {
+        return {
+          id: data.id,
+          header: data.header_fr,
+          description: data.description_fr,
+        };
+      }
+      return data;
+    });
+
+  const HeadingsAndParagraphs = modifiedDataHeader.map(
     ({ id, header, description }) => {
       return (
         <div key={id}>
           <div>
             {" "}
             <div>
-              <h1 className="relative headingStyleLg">{header}</h1>
+              <h1 className="relative mb-2 lg:mb-0 before:absolute before:hidden rtl:lg:pr-20 ltr:lg:pl-20 before:md:block before:h-2 before:w-16 before:rtl:left-[93%] before:left-0 before:bg-hoverColor before:top-1/2 before:-translate-y-1/2">
+                {header}
+              </h1>
             </div>
             <div>
               <p>{description}</p>
@@ -20,7 +45,6 @@ const HeadingsAndParagraphs =
     }
   );
 
-const Introduction = () => {
   return (
     <>
       <motion.div

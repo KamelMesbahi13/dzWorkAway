@@ -72,7 +72,7 @@ const HighService = () => {
                       <div key={id}>
                         <div className="container my-3 md:my-6">
                           <div className="px-4 py-6 duration-500 md:border-b-2 md:border-opacity-0 md:py-12 md:border-b-grey md:hover:border-opacity-100">
-                            <div className="flex flex-col items-center justify-between p-4 shadow-sm md:shadow shadow-grey md:p-0 border-grey md:border-0 md:flex-row">
+                            <div className="flex flex-col items-center justify-between p-4 shadow-sm rtl:initialDirection md:shadow shadow-grey md:p-0 border-grey md:border-0 md:flex-row">
                               <div>
                                 <LazyLoadImage src={Icon} alt={Title} />
                               </div>
