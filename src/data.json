@@ -284,7 +284,12 @@
     {
       "id": 1,
       "header": "What Our Clients Said About US",
-      "description": "Thanks to Dz Work Away my immigration process was smooth and stress-free. Their personalized support and expertise made all the difference. Highly recommend!"
+      "header_ar": "المنب بتس سابلا سايتت سبتلى",
+      "header_fr": "What Our Clients Said About US",
+
+      "description": "Thanks to Dz Work Away my immigration process was smooth and stress-free. Their personalized support and expertise made all the difference. Highly recommend!",
+      "description_ar": "التينينبلتت ؤاترئتمابتمئيالمتؤالمتؤالؤ ئمؤلاؤمءامتؤءالمءؤالمتءال ؤملاتءؤنمالمؤءالنؤال",
+      "description_fr": "Thanks to Dz Work Away my immigration process was smooth and stress-free. Their personalized support and expertise made all the difference. Highly recommend!"
     }
   ],
 
