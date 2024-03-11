@@ -119,6 +119,7 @@ const WhyUs = () => {
         id: data.id,
         Heading: data.Heading_ar,
         Description: data.Description_ar,
+        Img: data.Img,
       };
     }
 
@@ -127,6 +128,7 @@ const WhyUs = () => {
         id: data.id,
         Heading: data.Heading_fr,
         Description: data.Description_fr,
+        Img: data.Img,
       };
     }
     return data;
