@@ -2,57 +2,106 @@ import Data from "../../../data.json";
 import Img from "../../../assets/AboutUsImg.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
-
-const HeadingsAndParagraphs = Data.AboutUs_Introduction_Heading_Paragraph.map(
-  ({ id, header, description }) => {
-    return (
-      <div key={id}>
-        <div>
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5 }}
-            variants={{
-              hidden: { opacity: 0, x: -50 },
-              visible: { opacity: 1, x: 0 },
-            }}
-          >
-            <h1 className="relative md:headingStyleMd lg:headingStyleLg">
-              {header}
-            </h1>
-            <p className="mt-4">{description}</p>
-          </motion.div>
-        </div>
-      </div>
-    );
-  }
-);
-
-const ParagraphTwo = Data.AboutUs_Introduction_Paragraph_Two.map(
-  ({ id, description }) => {
-    return (
-      <div key={id}>
-        <div>
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5 }}
-            variants={{
-              hidden: { opacity: 0, x: 50 },
-              visible: { opacity: 1, x: 0 },
-            }}
-          >
-            <p>{description}</p>
-          </motion.div>
-        </div>
-      </div>
-    );
-  }
-);
+import { useTranslation } from "react-i18next";
 
 const Introduction = () => {
+  // --------------------------------------
+
+  const { i18n } = useTranslation();
+
+  const modifiedDataHeaderAndParagraph =
+    Data.AboutUs_Introduction_Heading_Paragraph.map((data) => {
+      if (i18n.language === "ar") {
+        return {
+          id: data.id,
+          header: data.header_ar,
+          description: data.description_ar,
+        };
+      }
+
+      if (i18n.language === "fr") {
+        return {
+          id: data.id,
+          header: data.header_fr,
+          description: data.description_fr,
+        };
+      }
+      return data;
+    });
+
+  const HeadingsAndParagraphs = modifiedDataHeaderAndParagraph.map(
+    ({ id, header, description }) => {
+      return (
+        <div key={id}>
+          <div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+            >
+              <h1 className="relative md:headingStyleMd lg:headingStyleLg">
+                {header}
+              </h1>
+              <p className="mt-4">{description}</p>
+            </motion.div>
+          </div>
+        </div>
+      );
+    }
+  );
+
+  // --------------------------------------
+
+  const modifiedDataHeaderAndParagraphTwo =
+    Data.AboutUs_Introduction_Paragraph_Two.map((data) => {
+      if (i18n.language === "ar") {
+        return {
+          id: data.id,
+          description: data.description_ar,
+        };
+      }
+
+      if (i18n.language === "fr") {
+        return {
+          id: data.id,
+          description: data.description_fr,
+        };
+      }
+      return data;
+    });
+
+  const ParagraphTwo = modifiedDataHeaderAndParagraphTwo.map(
+    ({ id, description }) => {
+      return (
+        <div key={id}>
+          <div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, x: 50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+            >
+              <p>{description}</p>
+            </motion.div>
+          </div>
+        </div>
+      );
+    }
+  );
+
+  // --------------------------------------
+
+  // --------------------------------------
+
   return (
     <>
       <div className="py-8 md:pt-8 bg-grey">

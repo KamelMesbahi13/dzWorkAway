@@ -181,14 +181,21 @@
     {
       "id": 1,
       "header": "Welcome To Dz Work Away",
-      "description": " Welcome to our immigration agency! We are passionate about helping individuals and families achieve their dreams of living and working in Canada and other countries."
+      "header_ar": "مبنتل بنيمب بننب بنبن",
+      "header_fr": "Welcome To Dz Work Away",
+
+      "description": "Welcome to our immigration agency! We are passionate about helping individuals and families achieve their dreams of living and working in Canada and other countries.",
+      "description_ar": "لبابتلمب بلمنبملسينسبل سكملتبكناتكسبنتابس سبكمتاسبشكخعاقحه قسبتهب سخبتبا جختسثحثقب ينتينلس شيبىتك يلكسنتي كن جختبل",
+      "description_fr": "Welcome to our immigration agency! We are passionate about helping individuals and families achieve their dreams of living and working in Canada and other countries."
     }
   ],
 
   "AboutUs_Introduction_Paragraph_Two": [
     {
       "id": 1,
-      "description": "At Dz Work Away, we are dedicated to helping individuals and families achieve their dreams of living and working in Canada and beyond. With our expert team and personalized approach, we are here to guide you every step of the way. From consultations to applications, trust us to make your immigration journey smooth and successful."
+      "description": "At Dz Work Away, we are dedicated to helping individuals and families achieve their dreams of living and working in Canada and beyond. With our expert team and personalized approach, we are here to guide you every step of the way. From consultations to applications, trust us to make your immigration journey smooth and successful.",
+      "description_ar": "لااب يبتلايتل يلتاسنيتل سيمتلشي شيهتبش حهاشيبىيسلت شحهبهصق اسيجسينالاتل شتملاسياثهل خسيعالستلاضه سهالخهقت سهاسشكخق سهالهقاقحخ سثهفاقسل سخعلاسضخ سيهلاثهثب شيخهابثه سيخهالضثهه سيحهلاصهض سبحهل",
+      "description_fr": "At Dz Work Away, we are dedicated to helping individuals and families achieve their dreams of living and working in Canada and beyond. With our expert team and personalized approach, we are here to guide you every step of the way. From consultations to applications, trust us to make your immigration journey smooth and successful."
     }
   ],
 
