@@ -2,23 +2,45 @@ import Data from "../../../data.json";
 import Img from "../../../assets/OurStoryImg.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
-
-const HeadingsAndParagraphs = Data.AboutUs_OurStory.map(
-  ({ id, header, description }) => {
-    return (
-      <div key={id}>
-        <div>
-          <div>
-            <h1 className="mb-8 textCenter">{header}</h1>
-            <p>{description}</p>
-          </div>
-        </div>
-      </div>
-    );
-  }
-);
+import { useTranslation } from "react-i18next";
 
 const OurStory = () => {
+  const { i18n } = useTranslation();
+
+  const modifiedDataOurStory = Data.AboutUs_OurStory.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        header: data.header_ar,
+        description: data.description_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        header: data.header_fr,
+        description: data.description_ar,
+      };
+    }
+    return data;
+  });
+
+  const HeadingsAndParagraphs = modifiedDataOurStory.map(
+    ({ id, header, description }) => {
+      return (
+        <div key={id}>
+          <div>
+            <div>
+              <h1 className="mb-8 textCenter">{header}</h1>
+              <p>{description}</p>
+            </div>
+          </div>
+        </div>
+      );
+    }
+  );
+
   return (
     <>
       <div>
