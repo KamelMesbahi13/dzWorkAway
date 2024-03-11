@@ -150,8 +150,8 @@ const Footer = () => {
   );
 
   // ----------------------------------------------------------
-  const modifiedDataSocialContactsHeader = Data.Footer_Social_Contacts.map(
-    (data) => {
+  const modifiedDataSocialContactsHeader =
+    Data.Footer_Social_Contacts_Header.map((data) => {
       if (i18n.language === "ar") {
         return {
           id: data.id,
@@ -166,8 +166,7 @@ const Footer = () => {
         };
       }
       return data;
-    }
-  );
+    });
 
   const SocialMediaContactsHeader = modifiedDataSocialContactsHeader.map(
     ({ id, Header }) => {
@@ -186,7 +185,7 @@ const Footer = () => {
     <>
       <div className="relative w-full mt-12 md:mt-20 h-[50rem] lg:h-[31rem] footerBack border border-grey">
         <div className="container">
-          <div className="absolute -translate-y-1/2 top-1/2">
+          <div className="absolute -translate-y-1/2 top-1/2 rtl:lg:w-[94%]">
             <div className="flex flex-col items-center justify-between lg:flex-row">
               <div className="w-full lg:w-1/4">
                 <div>
