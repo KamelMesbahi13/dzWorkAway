@@ -20,7 +20,7 @@ const OurStory = () => {
       return {
         id: data.id,
         header: data.header_fr,
-        description: data.description_ar,
+        description: data.description_fr,
       };
     }
     return data;
