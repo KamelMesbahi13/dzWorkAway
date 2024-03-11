@@ -511,5 +511,22 @@
       "Header_ar": " بلبل سميلناسمينل",
       "Header_fr": "Social Media."
     }
+  ],
+
+  "Form_Placeholder": [
+    {
+      "id": 1,
+      "Name": "Name",
+      "Name_ar": "اسم",
+      "Name_fr": "Nom",
+
+      "Email": "Email",
+      "Email_ar": "ايسثص",
+      "Email_fr": "Email",
+
+      "Message": "Message",
+      "Message_ar": "رسالة",
+      "Message_fr": "Message"
+    }
   ]
 }

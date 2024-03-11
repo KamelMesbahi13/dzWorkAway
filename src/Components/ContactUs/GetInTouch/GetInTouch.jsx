@@ -80,6 +80,27 @@ const GetInTouch = () => {
     }
   );
 
+  const modifiedDataPlaceholder = Data.Form_Placeholder.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Name: data.Name_ar,
+        Email: data.Email_ar,
+        Message: data.Message_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        d: data.id,
+        Name: data.Name_fr,
+        Email: data.Email_fr,
+        Message: data.Message_fr,
+      };
+    }
+    return data;
+  });
+
   const {
     register,
     trigger,
@@ -157,7 +178,9 @@ const GetInTouch = () => {
                         >
                           <input
                             type="text"
-                            placeholder="Name"
+                            placeholder={modifiedDataPlaceholder.map(
+                              (el) => el.Name
+                            )}
                             className={inputStyles}
                             {...register("name", {
                               required: true,
@@ -178,7 +201,9 @@ const GetInTouch = () => {
                           )}
                           <input
                             type="text"
-                            placeholder="Email"
+                            placeholder={modifiedDataPlaceholder.map(
+                              (el) => el.Email
+                            )}
                             className={inputStyles}
                             {...register("email", {
                               required: true,
@@ -195,7 +220,9 @@ const GetInTouch = () => {
                             </p>
                           )}
                           <textarea
-                            placeholder="Message"
+                            placeholder={modifiedDataPlaceholder.map(
+                              (el) => el.Message
+                            )}
                             className={inputStyles}
                             rows={4}
                             cols={50}
