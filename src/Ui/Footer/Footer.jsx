@@ -255,7 +255,7 @@ const Footer = () => {
                                 />
                               </div>
                               <div>
-                                <p className="ml-4 initialDirection">
+                                <p className="rtl:ml-4 initialDirection">
                                   {Content}
                                 </p>
                               </div>
