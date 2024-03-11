@@ -5,28 +5,61 @@ import Up from "../../../assets/UpArrow.png";
 import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-
-const HeadingsAndParagraphs = Data.AboutUs_Question_Heading_Paragraph.map(
-  ({ id, header, description }) => {
-    return (
-      <div key={id}>
-        <div>
-          {" "}
-          <div>
-            <h1 className="relative mb-2 md:headingStyleMd lg:headingStyleLg">
-              {header}{" "}
-            </h1>
-          </div>
-          <div>
-            <p>{description}</p>
-          </div>
-        </div>
-      </div>
-    );
-  }
-);
+import { useTranslation } from "react-i18next";
 
 const Questions = () => {
+  const { i18n } = useTranslation();
+
+  // --------------------------------------------------------
+
+  const modifiedDataHeaderAndParagraph =
+    Data.AboutUs_Question_Heading_Paragraph.map((data) => {
+      if (i18n.language === "ar") {
+        return {
+          id: data.id,
+          header: data.header_ar,
+          description: data.description_ar,
+        };
+      }
+
+      if (i18n.language === "fr") {
+        return {
+          id: data.id,
+          header: data.header_fr,
+          description: data.description_fr,
+        };
+      }
+      return data;
+    });
+
+  const HeadingsAndParagraphs = modifiedDataHeaderAndParagraph.map(
+    ({ id, header, description }) => {
+      return (
+        <div key={id}>
+          <div>
+            {" "}
+            <div>
+              <h1 className="relative mb-2">{header}</h1>
+            </div>
+            <div>
+              <p>{description}</p>
+            </div>
+          </div>
+        </div>
+      );
+    }
+  );
+
+  // --------------------------------------------------------
+
+  // --------------------------------------------------------
+
+  // --------------------------------------------------------
+
+  // --------------------------------------------------------
+
+  // --------------------------------------------------------
+
   const [activeAccordion, setActiveAccordion] = useState("");
 
   const toggleAccordion = (accordionId) => {
@@ -72,6 +105,48 @@ const Questions = () => {
     children: PropTypes.node.isRequired,
   };
 
+  // -----------------------------------------------------------
+
+  const modifiedDataQuestion = Data.AboutUs_Question.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        title: data.title_ar,
+        description: data.description_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        title: data.title_fr,
+        description: data.description_fr,
+      };
+    }
+    return data;
+  });
+
+  const Questions = modifiedDataQuestion.map(({ id, title, description }) => {
+    return (
+      <div key={id}>
+        <div className="w-full md:w-3/4">
+          <AccordionItem
+            id={`accordion-collapse-heading-${id}`}
+            title={title}
+            isOpen={activeAccordion === `accordion-collapse-body-${id}`}
+            onClick={() => toggleAccordion(`accordion-collapse-body-${id}`)}
+          >
+            <div>
+              <p>{description}</p>
+            </div>
+          </AccordionItem>
+        </div>
+      </div>
+    );
+  });
+
+  // -----------------------------------------------------------
+
   return (
     <motion.div
       initial="hidden"
@@ -91,28 +166,7 @@ const Questions = () => {
             <div className="w-full mb-8 md:w-3/4">{HeadingsAndParagraphs}</div>
           </div>
         </div>
-        <div>
-          {Data.AboutUs_Question.map(({ id, title, description }) => {
-            return (
-              <div key={id}>
-                <div className="w-full md:w-3/4">
-                  <AccordionItem
-                    id={`accordion-collapse-heading-${id}`}
-                    title={title}
-                    isOpen={activeAccordion === `accordion-collapse-body-${id}`}
-                    onClick={() =>
-                      toggleAccordion(`accordion-collapse-body-${id}`)
-                    }
-                  >
-                    <div>
-                      <p>{description}</p>
-                    </div>
-                  </AccordionItem>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+        <div>{Questions}</div>
       </div>
     </motion.div>
   );
