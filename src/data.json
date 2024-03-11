@@ -293,6 +293,15 @@
     }
   ],
 
+  "ContactUs_Header": [
+    {
+      "id": 1,
+      "header": "Contact Us",
+      "header_ar": "االبي شيببلي",
+      "header_fr": "Contact Us"
+    }
+  ],
+
   "ContactUs_GetInTouch__Heading_Paragraph": [
     {
       "id": 1,
