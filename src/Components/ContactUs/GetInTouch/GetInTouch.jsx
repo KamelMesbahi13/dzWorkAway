@@ -4,26 +4,82 @@ import { useForm } from "react-hook-form";
 import CallUsImage from "../../../assets/PhoneCall.png";
 import VisitUsImage from "../../../assets/Location.png";
 import { motion } from "framer-motion";
-
-const HeadingsAndParagraphs = Data.ContactUs_GetInTouch__Heading_Paragraph.map(
-  ({ id, header, description }) => {
-    return (
-      <div key={id}>
-        <div>
-          <div>
-            <h1 className="relative mb-2 headingStyleLg">{header} </h1>
-          </div>
-
-          <div>
-            <p>{description}</p>
-          </div>
-        </div>
-      </div>
-    );
-  }
-);
+import { useTranslation } from "react-i18next";
 
 const GetInTouch = () => {
+  const { i18n } = useTranslation();
+
+  const modifiedDataHeader = Data.ContactUs_GetInTouch__Heading_Paragraph.map(
+    (data) => {
+      if (i18n.language === "ar") {
+        return {
+          id: data.id,
+          header: data.header_ar,
+          description: data.description_ar,
+        };
+      }
+
+      if (i18n.language === "fr") {
+        return {
+          id: data.id,
+          header: data.header_fr,
+          description: data.description_fr,
+        };
+      }
+      return data;
+    }
+  );
+
+  const modifiedDataContent = Data.ContactUs_GetInTouch_Data.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Title: data.Title_ar,
+        Paragraph: data.Paragraph_ar,
+        CallUs_Title: data.CallUs_Title_ar,
+        CallUs_paragraph: data.CallUs_paragraph_ar,
+        CallUs: data.CallUs,
+        VisitUs_Title: data.VisitUs_Title_ar,
+        VisitUs_paragraph: data.VisitUs_paragraph_ar,
+        VisitUs: data.VisitUs,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Title: data.Title_fr,
+        Paragraph: data.Paragraph_fr,
+        CallUs_Title: data.CallUs_Title_fr,
+        CallUs_paragraph: data.CallUs_paragraph_fr,
+        CallUs: data.CallUs,
+        VisitUs_Title: data.VisitUs_Title_fr,
+        VisitUs_paragraph: data.VisitUs_paragraph_fr,
+        VisitUs: data.VisitUs,
+      };
+    }
+    return data;
+  });
+
+  const HeadingsAndParagraphs = modifiedDataHeader.map(
+    ({ id, header, description }) => {
+      return (
+        <div key={id}>
+          <div>
+            <div>
+              <h1 className="relative mb-2 lg:mb-0 before:absolute before:hidden rtl:lg:pr-20 ltr:lg:pl-20 before:md:block before:h-2 before:w-16 before:rtl:left-[93%] before:left-0 before:bg-hoverColor before:top-1/2 before:-translate-y-1/2">
+                {header}{" "}
+              </h1>
+            </div>
+            <div>
+              <p>{description}</p>
+            </div>
+          </div>
+        </div>
+      );
+    }
+  );
+
   const {
     register,
     trigger,
@@ -67,7 +123,7 @@ const GetInTouch = () => {
             }}
             className="py-6 border-2 shadow-xl md:px-8 md:py-12 md:border-4 md:pt-0 border-grey"
           >
-            {Data.ContactUs_GetInTouch_Data.map(
+            {modifiedDataContent.map(
               ({
                 id,
                 Title,
@@ -183,7 +239,7 @@ const GetInTouch = () => {
                           <div>
                             <div>
                               <h6>
-                                <span className="mr-2 text-sm md:text-xl text-secondColor">
+                                <span className="text-sm ltr:mr-2 rtl:ml-2 md:text-xl text-secondColor">
                                   &#x25CF;
                                 </span>
                                 {CallUs_Title}
@@ -192,7 +248,7 @@ const GetInTouch = () => {
                             <div className="my-4">
                               <p>{CallUs_paragraph}</p>
                             </div>
-                            <div className="flex items-center">
+                            <div className="flex items-center initialDirection">
                               <div>
                                 <a
                                   href="tel:+2135555555"
@@ -215,7 +271,7 @@ const GetInTouch = () => {
                         <div>
                           <div>
                             <h6>
-                              <span className="mr-2 text-sm md:text-xl text-secondColor">
+                              <span className="text-sm ltr:mr-2 rtl:ml-2 md:text-xl text-secondColor">
                                 &#x25CF;
                               </span>
                               {VisitUs_Title}
@@ -224,7 +280,7 @@ const GetInTouch = () => {
                           <div className="my-4">
                             <p>{VisitUs_paragraph}</p>
                           </div>
-                          <div className="flex items-center">
+                          <div className="flex items-center initialDirection">
                             <div className="mr-4">
                               <LazyLoadImage
                                 className="w-10 sm:w-14 lg:w-7 h-7"
