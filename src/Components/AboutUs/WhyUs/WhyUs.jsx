@@ -6,33 +6,20 @@ import ImgFour from "../../../assets/Support.png";
 import Shape from "../../../assets/OurStoryShape.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
-
-const HeadingsAndParagraphs = Data.AboutUs_WhyUs_Heading_Paragraph.map(
-  ({ id, header, description }) => {
-    return (
-      <div key={id}>
-        <div>
-          {" "}
-          <div>
-            <h1 className="relative mb-2 lg:mb-0 md:headingStyleMd lg:headingStyleLg">
-              {header}
-            </h1>
-          </div>
-          <div>
-            <p className="md:mt-4 lg:mt-0">{description}</p>
-          </div>
-        </div>
-      </div>
-    );
-  }
-);
+import { useTranslation } from "react-i18next";
 
 const data = [
   {
     id: 1,
     Img: ImgOne,
     Heading: "Experience",
+    Heading_ar: "لاينيتب",
+    Heading_fr: "Experience",
     Description:
+      "With extensive experience guiding countless clients, we offer seasoned expertise to navigate your journey seamlessly. Trust in our track record and let us streamline your path to success.",
+    Description_ar:
+      "ماسبل سيملاسي سيلش شيختل يحخستل شحهيلتق حقهاش حهيت حهيسل شخحبس شيخلت شيجختلش شجيختل شج ثهقا شبشيلا حشثهف",
+    Description_fr:
       "With extensive experience guiding countless clients, we offer seasoned expertise to navigate your journey seamlessly. Trust in our track record and let us streamline your path to success.",
   },
 
@@ -40,33 +27,146 @@ const data = [
     id: 2,
     Img: ImgTwo,
     Heading: "Priority",
+    Heading_ar: "لاينيتب",
+    Heading_fr: "Priority",
     Description:
       "Your needs come first. We prioritize understanding your goals, challenges, and aspirations to deliver tailored solutions and exceptional service, ensuring your satisfaction and success.",
+    Description_ar:
+      "ماسبل سيملاسي سيلش شيختل يحخستل شحهيلتق حقهاش حهيت حهيسل شخحبس شيخلت شيجختلش شجيختل شج ثهقا شبشيلا حشثهف",
+    Description_fr:
+      "With extensive experience guiding countless clients, we offer seasoned expertise to navigate your journey seamlessly. Trust in our track record and let us streamline your path to success.",
   },
 
   {
     id: 3,
     Img: ImgThree,
     Heading: "Advice",
+    Heading_ar: "لاينيتب",
+    Heading_fr: "Priority",
     Description:
       "Trust our guidance. We offer tailored advice to help you navigate life's complexities with confidence and clarity.",
+    Description_ar:
+      "ماسبل سيملاسي سيلش شيختل يحخستل شحهيلتق حقهاش حهيت حهيسل شخحبس شيخلت شيجختلش شجيختل شج ثهقا شبشيلا حشثهف",
+    Description_fr:
+      "With extensive experience guiding countless clients, we offer seasoned expertise to navigate your journey seamlessly. Trust in our track record and let us streamline your path to success.",
   },
 
   {
     id: 4,
     Img: ImgFour,
     Heading: "Support",
+    Heading_ar: "لاينيتب",
+    Heading_fr: "Priority",
     Description:
       "Our support is unwavering. We're here to guide you through challenges and celebrate your successes, offering personalized assistance every step of the way.",
+    Description_ar:
+      "ماسبل سيملاسي سيلش شيختل يحخستل شحهيلتق حقهاش حهيت حهيسل شخحبس شيخلت شيجختلش شجيختل شج ثهقا شبشيلا حشثهف",
+    Description_fr:
+      "With extensive experience guiding countless clients, we offer seasoned expertise to navigate your journey seamlessly. Trust in our track record and let us streamline your path to success.",
   },
 ];
 
 const WhyUs = () => {
+  const { i18n } = useTranslation();
+
+  // --------------------------------------------------------
+
+  const modifiedDataHeaderAndParagraph =
+    Data.AboutUs_WhyUs_Heading_Paragraph.map((data) => {
+      if (i18n.language === "ar") {
+        return {
+          id: data.id,
+          header: data.header_ar,
+          description: data.description_ar,
+        };
+      }
+
+      if (i18n.language === "fr") {
+        return {
+          id: data.id,
+          header: data.header_fr,
+          description: data.description_fr,
+        };
+      }
+      return data;
+    });
+
+  const HeadingsAndParagraphs = modifiedDataHeaderAndParagraph.map(
+    ({ id, header, description }) => {
+      return (
+        <div key={id}>
+          <div>
+            {" "}
+            <div>
+              <h1 className="relative mb-2 lg:mb-0 lg:headingStyleLg">
+                {header}
+              </h1>
+            </div>
+            <div>
+              <p className="md:mt-4 lg:mt-0">{description}</p>
+            </div>
+          </div>
+        </div>
+      );
+    }
+  );
+
+  // --------------------------------------------------------
+
+  const modifiedDataBoxes = data.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Heading: data.Heading_ar,
+        description: data.Description_ar,
+        Img: data.Img,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Heading: data.Heading_fr,
+        description: data.Description_fr,
+        Img: data.Img,
+      };
+    }
+    return data;
+  });
+
+  const Boxes = modifiedDataBoxes.map(({ id, Img, Heading, description }) => {
+    return (
+      <div key={id}>
+        <div>
+          <div className="ease-in border-2 border-opacity-0 border-secondColor hover:border-opacity-100 p-4 duration-300 shadow-xl lg:h-[28rem] xl:h-[22rem] lg:p-8">
+            <div>
+              <LazyLoadImage className="w-12 h-12" src={Img} alt={Heading} />
+            </div>
+            <div>
+              <div className="mt-2">
+                <h6>{Heading}</h6>
+              </div>
+              <div>
+                <p>{description}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  });
+
+  // --------------------------------------------------------
+
+  // --------------------------------------------------------
+
+  // --------------------------------------------------------
+
   return (
     <>
       <div>
         <div className="flex flex-col lg:flex-row">
-          <div className="w-full lg:mr-8 lg:w-1/2">
+          <div className="w-full lg:ltr:mr-8 lg:w-3/4">
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -107,31 +207,7 @@ const WhyUs = () => {
             }}
             className="grid w-full grid-cols-1 mt-8 lg:mt-32 gap-y-6 lg:gap-20 lg:w-3/4 lg:grid-cols-2"
           >
-            {data.map(({ id, Img, Heading, Description }) => {
-              return (
-                <div key={id}>
-                  <div>
-                    <div className="ease-in border-2 border-opacity-0 border-secondColor hover:border-opacity-100 p-4 duration-300 shadow-xl lg:h-[28rem] xl:h-[22rem] lg:p-8">
-                      <div>
-                        <LazyLoadImage
-                          className="w-12 h-12"
-                          src={Img}
-                          alt={Heading}
-                        />
-                      </div>
-                      <div>
-                        <div className="mt-2">
-                          <h6>{Heading}</h6>
-                        </div>
-                        <div>
-                          <p>{Description}</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
+            {Boxes}
           </motion.div>
           <motion.div
             className="block md:hidden"
