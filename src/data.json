@@ -374,7 +374,9 @@
   "OurServices_HighService__Heading": [
     {
       "id": 1,
-      "header": "We offer our customers the highest level of services"
+      "header": "We offer our customers the highest level of services",
+      "header_ar": "يسنىتبس سينتاب سمهبلت سههث شمثخبتل مهيبا يبسلتر سيهبتستيله صخعلسح",
+      "header_fr": "We offer our customers the highest level of services"
     }
   ],
 

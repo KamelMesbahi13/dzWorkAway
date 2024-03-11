@@ -4,9 +4,75 @@ import Speed from "../../../assets/Speed.png";
 import Reliability from "../../../assets/Reliability.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
-const HeadingsAndParagraphs = Data.OurServices_HighService__Heading.map(
-  ({ id, header }) => {
+const data = [
+  {
+    id: 1,
+    Title: "Quality",
+    Title_ar: "يبةسم",
+    Title_fr: "Quality",
+    Content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur earum laborum quisquam nihil. Itaque consectetur neque consequuntur et fuga dignissimos, eos rem! Provident veniam temporibus non beatae laudantium consectetur error!",
+    Content_ar:
+      "سمبتلبس سبتللاسنتبل سبمتلاسى شهخقالسب سخعبالىشحهب شسبخلاهاسش شسبحهلسبهل سحهلعشيبش شيحهلعشيتلاعقسل قسعلتاسب",
+    Content_fr:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur earum laborum quisquam nihil. Itaque consectetur neque consequuntur et fuga dignissimos, eos rem! Provident veniam temporibus non beatae laudantium consectetur error!",
+    Icon: Quality,
+  },
+
+  {
+    id: 2,
+    Title: "Speed",
+    Title_ar: "شبيل",
+    Title_fr: "Speed",
+    Content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur earum laborum quisquam nihil. Itaque consectetur neque consequuntur et fuga dignissimos, eos rem! Provident veniam temporibus non beatae laudantium consectetur error!",
+    Content_ar:
+      "سمبتلبس سبتللاسنتبل سبمتلاسى شهخقالسب سخعبالىشحهب شسبخلاهاسش شسبحهلسبهل سحهلعشيبش شيحهلعشيتلاعقسل قسعلتاسب",
+    Content_fr:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur earum laborum quisquam nihil. Itaque consectetur neque consequuntur et fuga dignissimos, eos rem! Provident veniam temporibus non beatae laudantium consectetur error!",
+    Icon: Speed,
+  },
+
+  {
+    id: 3,
+    Title: "Reliability",
+    Title_ar: "ضصيبنشييخ",
+    Title_fr: "Reliability",
+    Content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur earum laborum quisquam nihil. Itaque consectetur neque consequuntur et fuga dignissimos, eos rem! Provident veniam temporibus non beatae laudantium consectetur error!",
+    Content_ar:
+      "سمبتلبس سبتللاسنتبل سبمتلاسى شهخقالسب سخعبالىشحهب شسبخلاهاسش شسبحهلسبهل سحهلعشيبش شيحهلعشيتلاعقسل قسعلتاسب",
+    Content_fr:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur earum laborum quisquam nihil. Itaque consectetur neque consequuntur et fuga dignissimos, eos rem! Provident veniam temporibus non beatae laudantium consectetur error!",
+    Icon: Reliability,
+  },
+];
+
+const HighService = () => {
+  const { i18n } = useTranslation();
+
+  const modifiedDataHeader = Data.OurServices_HighService__Heading.map(
+    (data) => {
+      if (i18n.language === "ar") {
+        return {
+          id: data.id,
+          header: data.header_ar,
+        };
+      }
+
+      if (i18n.language === "fr") {
+        return {
+          id: data.id,
+          header: data.header_fr,
+        };
+      }
+      return data;
+    }
+  );
+
+  const HeadingsAndParagraphs = modifiedDataHeader.map(({ id, header }) => {
     return (
       <div key={id}>
         <div>
@@ -16,36 +82,29 @@ const HeadingsAndParagraphs = Data.OurServices_HighService__Heading.map(
         </div>
       </div>
     );
-  }
-);
+  });
 
-const data = [
-  {
-    id: 1,
-    Title: "Quality",
-    Content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur earum laborum quisquam nihil. Itaque consectetur neque consequuntur et fuga dignissimos, eos rem! Provident veniam temporibus non beatae laudantium consectetur error!",
-    Icon: Quality,
-  },
+  const modifiedDataContent = data.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Title: data.Title_ar,
+        Content: data.Content_ar,
+        Icon: data.Icon,
+      };
+    }
 
-  {
-    id: 2,
-    Title: "Speed",
-    Content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur earum laborum quisquam nihil. Itaque consectetur neque consequuntur et fuga dignissimos, eos rem! Provident veniam temporibus non beatae laudantium consectetur error!",
-    Icon: Speed,
-  },
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Title: data.Title_fr,
+        Content: data.Content_fr,
+        Icon: data.Icon,
+      };
+    }
+    return data;
+  });
 
-  {
-    id: 3,
-    Title: "Reliability",
-    Content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur earum laborum quisquam nihil. Itaque consectetur neque consequuntur et fuga dignissimos, eos rem! Provident veniam temporibus non beatae laudantium consectetur error!",
-    Icon: Reliability,
-  },
-];
-
-const HighService = () => {
   return (
     <>
       <motion.div
@@ -67,7 +126,7 @@ const HighService = () => {
             <div>
               <div>
                 <div>
-                  {data.map(({ id, Title, Content, Icon }) => {
+                  {modifiedDataContent.map(({ id, Title, Content, Icon }) => {
                     return (
                       <div key={id}>
                         <div className="container my-3 md:my-6">
@@ -76,7 +135,7 @@ const HighService = () => {
                               <div>
                                 <LazyLoadImage src={Icon} alt={Title} />
                               </div>
-                              <div className="w-full md:w-1/2">
+                              <div className="w-full rtl:textRight md:w-1/2">
                                 <div>
                                   <h6>{Title}</h6>
                                 </div>
