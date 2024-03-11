@@ -118,8 +118,7 @@ const WhyUs = () => {
       return {
         id: data.id,
         Heading: data.Heading_ar,
-        description: data.Description_ar,
-        Img: data.Img,
+        Description: data.Description_ar,
       };
     }
 
@@ -127,33 +126,10 @@ const WhyUs = () => {
       return {
         id: data.id,
         Heading: data.Heading_fr,
-        description: data.Description_fr,
-        Img: data.Img,
+        Description: data.Description_fr,
       };
     }
     return data;
-  });
-
-  const Boxes = modifiedDataBoxes.map(({ id, Img, Heading, description }) => {
-    return (
-      <div key={id}>
-        <div>
-          <div className="ease-in border-2 border-opacity-0 border-secondColor hover:border-opacity-100 p-4 duration-300 shadow-xl lg:h-[28rem] xl:h-[22rem] lg:p-8">
-            <div>
-              <LazyLoadImage className="w-12 h-12" src={Img} alt={Heading} />
-            </div>
-            <div>
-              <div className="mt-2">
-                <h6>{Heading}</h6>
-              </div>
-              <div>
-                <p>{description}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
   });
 
   // --------------------------------------------------------
@@ -207,7 +183,31 @@ const WhyUs = () => {
             }}
             className="grid w-full grid-cols-1 mt-8 lg:mt-32 gap-y-6 lg:gap-20 lg:w-3/4 lg:grid-cols-2"
           >
-            {Boxes}
+            {modifiedDataBoxes.map(({ id, Img, Heading, Description }) => {
+              return (
+                <div key={id}>
+                  <div>
+                    <div className="ease-in border-2 border-opacity-0 border-secondColor hover:border-opacity-100 p-4 duration-300 shadow-xl lg:h-[28rem] xl:h-[22rem] lg:p-8">
+                      <div>
+                        <LazyLoadImage
+                          className="w-12 h-12"
+                          src={Img}
+                          alt={Heading}
+                        />
+                      </div>
+                      <div>
+                        <div className="mt-2">
+                          <h6>{Heading}</h6>
+                        </div>
+                        <div>
+                          <p>{Description}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </motion.div>
           <motion.div
             className="block md:hidden"
