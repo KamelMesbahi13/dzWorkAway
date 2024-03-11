@@ -406,6 +406,19 @@
     }
   ],
 
+  "OurServices_Services_Header": [
+    {
+      "id": 1,
+      "header": "Our Services",
+      "header_ar": "تبسلت سيمهل ييسش",
+      "header_fr": "Nos Services",
+
+      "description": "At DZ Work Away, we understand that the decision to immigrate is one of the most significant steps you will ever take. That is why we are committed to making your journey as smooth and successful as possible. Here is why you should choose us:",
+      "description_ar": "لااب يبتلايتل يلتاسنيتل سيمتلشي شيهتبش حهاشيبىيسلت شحهبهصق اسيجسينالاتل شتملاسياثهل خسيعالستلاضه سهالخهقت سهاسشكخق سهالهقاقحخ سثهفاقسل سخعلاسضخ سيهلاثهثب شيخهابثه سيخهالضثهه سيحهلاصهض سبحهل",
+      "description_fr": "At DZ Work Away, we understand that the decision to immigrate is one of the most significant steps you will ever take. That is why we are committed to making your journey as smooth and successful as possible. Here is why you should choose us:"
+    }
+  ],
+
   "ServicesDetails": [
     {
       "id": 1,
