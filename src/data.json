@@ -384,7 +384,12 @@
     {
       "id": 1,
       "header": "Why Choose Us",
-      "description": "Choose us for unparalleled quality and value. Our commitment to excellence and dedicated team ensure top-notch service and innovative solutions. Trust us as your reliable partner for success."
+      "header_ar": "النسبع سبعب",
+      "header_fr": "Why Choose Us",
+
+      "description": "Choose us for unparalleled quality and value. Our commitment to excellence and dedicated team ensure top-notch service and innovative solutions. Trust us as your reliable partner for success.",
+      "description_ar": "يبخعابل سيهتههلتي يهلتيهلهتتتشب حيهتلهيستلهي شيحهلتحهبال سبحهلتبيهل",
+      "description_fr": "Choose us for unparalleled quality and value. Our commitment to excellence and dedicated team ensure top-notch service and innovative solutions. Trust us as your reliable partner for success."
     }
   ],
 
@@ -392,7 +397,12 @@
     {
       "id": 1,
       "header": "We offer a great variety of features and services",
-      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde itaque, fugit voluptatum earum dolor iure animi officia vero explicabo rem?"
+      "header_ar": "لابسنس نسبعا سخهال ستبح سبنتض سبعللح سنبلا سبنال",
+      "header_fr": "We offer a great variety of features and services",
+
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde itaque, fugit voluptatum earum dolor iure animi officia vero explicabo rem?",
+      "description_ar": "لااب يبتلايتل يلتاسنيتل سيمتلشي شيهتبش حهاشيبىيسلت شحهبهصق اسيجسينالاتل شتملاسياثهل خسيعالستلاضه سهالخهقت سهاسشكخق سهالهقاقحخ سثهفاقسل سخعلاسضخ سيهلاثهثب شيخهابثه سيخهالضثهه سيحهلاصهض سبحهل",
+      "description_fr": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde itaque, fugit voluptatum earum dolor iure animi officia vero explicabo rem?"
     }
   ],
 
