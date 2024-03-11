@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useEffect, useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "swiper/css";
 import "./Swiper.css";
@@ -6,9 +7,8 @@ import ImgWoman from "../../../../assets/TestimonialOne.png";
 import ImgMan from "../../../../assets/TestimonialTwo.png";
 import { Pagination } from "swiper/modules";
 import "swiper/css/pagination";
-import { useEffect } from "react";
-import { useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Data = [
   {
@@ -16,15 +16,28 @@ const Data = [
     Img: ImgMan,
     Testi:
       "I couldn't be happier with the service provided by DZ Work Away. As a male immigrant navigating a complex process, their team's guidance and expertise were invaluable. They made everything clear and straightforward, and I'm now living my dream in a new country. Thank you, DZ Work Away!",
+    Testi_ar:
+      "سيبتل سبتلبسلال سبتللابس سبمتاضث يشمتبلسي سيلانشي لبسمتل ثفشخع خفلاع سخلسب شخهباث شيخهاب شهثب لهللاش شخهلاص يهاي شيخيشجي يخعللاشي شيخعلاشيل شسخعهلار ءئخعهباش شسخهقا",
+    Testi_fr:
+      "I couldn't be happier with the service provided by DZ Work Away. As a male immigrant navigating a complex process, their team's guidance and expertise were invaluable. They made everything clear and straightforward, and I'm now living my dream in a new country. Thank you, DZ Work Away!",
     Name: "John Doe",
+    Name_ar: "تبلا شيتاي",
+    Name_fr: "John Doe",
   },
 
   {
     id: 2,
     Img: ImgWoman,
+
     Testi:
       "Choosing DZ Work Away was the best decision I made for my immigration journey. The support I received from their team was exceptional. They took the time to understand my individual needs and concerns, and they were with me every step of the way. I'm now settled in my new home country, and I owe it all to DZ Work Away",
+    Testi_ar:
+      "سيبتل سبتلبسلال سبتللابس سبمتاضث يشمتبلسي سيلانشي لبسمتل ثفشخع خفلاع سخلسب شخهباث شيخهاب شهثب لهللاش شخهلاص يهاي شيخيشجي يخعللاشي شيخعلاشيل شسخعهلار ءئخعهباش شسخهقا",
+    Testi_fr:
+      "I couldn't be happier with the service provided by DZ Work Away. As a male immigrant navigating a complex process, their team's guidance and expertise were invaluable. They made everything clear and straightforward, and I'm now living my dream in a new country. Thank you, DZ Work Away!",
     Name: "Emily Smith",
+    Name_ar: "يهص شخباا",
+    Name_fr: "Emily Smith",
   },
 
   {
@@ -32,18 +45,53 @@ const Data = [
     Img: ImgMan,
     Testi:
       "I was impressed by the professionalism and dedication of DZ Work Away. As a male immigrant, I had many questions and uncertainties about the process, but their team provided clear answers and reassurance. Thanks to their expertise, I successfully obtained my visa and am now building a new life",
+    Testi_ar:
+      "سيبتل سبتلبسلال سبتللابس سبمتاضث يشمتبلسي سيلانشي لبسمتل ثفشخع خفلاع سخلسب شخهباث شيخهاب شهثب لهللاش شخهلاص يهاي شيخيشجي يخعللاشي شيخعلاشيل شسخعهلار ءئخعهباش شسخهقا",
+    Testi_fr:
+      "I was impressed by the professionalism and dedication of DZ Work Away. As a male immigrant, I had many questions and uncertainties about the process, but their team provided clear answers and reassurance. Thanks to their expertise, I successfully obtained my visa and am now building a new life",
     Name: "David Johnson",
+    Name_ar: "ثثضب لهثضش",
+    Name_fr: "David Johnson",
   },
   {
     id: 4,
     Img: ImgWoman,
     Testi:
       "I can't thank DZ Work Away enough for their support throughout my immigration journey. As a female immigrant, I appreciated their understanding and empathy. They were patient, attentive, and always available to answer my questions. Thanks to their guidance, I'm now thriving in a new country.",
+    Testi_ar:
+      "سيبتل سبتلبسلال سبتللابس سبمتاضث يشمتبلسي سيلانشي لبسمتل ثفشخع خفلاع سخلسب شخهباث شيخهاب شهثب لهللاش شخهلاص يهاي شيخيشجي يخعللاشي شيخعلاشيل شسخعهلار ءئخعهباش شسخهقا",
+    Testi_fr:
+      "I can't thank DZ Work Away enough for their support throughout my immigration journey. As a female immigrant, I appreciated their understanding and empathy. They were patient, attentive, and always available to answer my questions. Thanks to their guidance, I'm now thriving in a new country.",
     Name: "Sophia Garcia",
+    Name_ar: "يخعبل شييص",
+    Name_fr: "Sophia Garcia",
   },
 ];
 
 export default function App() {
+  const { i18n } = useTranslation();
+
+  const modifiedData = Data.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Testi: data.Testi_ar,
+        Name: data.Name_ar,
+        Img: data.Img,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Testi: data.Testi_fr,
+        Name: data.Name_fr,
+        Img: data.Img,
+      };
+    }
+    return data;
+  });
+
   const [slidesPerView, setSlidesPerView] = useState(
     window.innerWidth < 768 ? 1 : 2
   );
@@ -71,11 +119,11 @@ export default function App() {
           hidden: { opacity: 0 },
           visible: { opacity: 1 },
         }}
-        className="w-full mx-auto md:w-3/4"
+        className="w-full mx-auto initialDirection md:w-3/4"
       >
         <Swiper
           slidesPerView={slidesPerView}
-          spaceBetween={30}
+          spaceBetween={60}
           pagination={{
             clickable: true,
           }}
@@ -84,10 +132,10 @@ export default function App() {
           modules={[Pagination]}
           className="mySwiper"
         >
-          {Data.map(({ id, Img, Testi, Name }) => {
+          {modifiedData.map(({ id, Img, Testi, Name }) => {
             return (
               <SwiperSlide key={id}>
-                <div className="w-full p-4 md:mx-auto mt-12 md:mt-20 border border-grey shadow-lg mb-12 md:h-[22rem]">
+                <div className="w-full p-4 md:mx-auto mt-12 md:mt-20 border rtl:textRight border-grey shadow-lg mb-12 md:h-[22rem]">
                   <div className="p-4">
                     <div>
                       <LazyLoadImage
