@@ -1,8 +1,10 @@
+import Data from "../../../data.json";
 import ImgOne from "../../../assets/Globe.png";
 import ImgTwo from "../../../assets/Canada.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Services from "./Services";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const data = [
   {
@@ -24,6 +26,44 @@ const data = [
 ];
 
 const Platforms = () => {
+  const { i18n } = useTranslation();
+
+  const modifiedDataHeader = Data.Platform_Header.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Header: data.Header_ar,
+        Paragraph: data.Paragraph_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Header: data.Header_fr,
+        Paragraph: data.Paragraph_fr,
+      };
+    }
+    return data;
+  });
+
+  const HeadingAndParagraph = modifiedDataHeader.map(
+    ({ id, Header, Paragraph }) => {
+      return (
+        <div key={id}>
+          <div>
+            <h1 className="relative mb-2 lg:mb-0 before:absolute before:hidden rtl:lg:pr-20 ltr:lg:pl-20 before:md:block before:h-2 before:w-16 before:rtl:left-[93%] before:left-0 before:bg-hoverColor before:top-1/2 before:-translate-y-1/2">
+              {Header}
+            </h1>
+          </div>
+          <div>
+            <p className="md:mt-4 lg:mt-0">{Paragraph}</p>
+          </div>
+        </div>
+      );
+    }
+  );
+
   return (
     <div className="mt-28">
       <motion.div
@@ -36,19 +76,7 @@ const Platforms = () => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <div className="w-full md:w-3/4">
-          <div>
-            <h1 className="relative headingStyleLg">Our Platforms</h1>
-          </div>
-          <div>
-            <p>
-              Welcome to Our Immigration Platforms, your one-stop solution for
-              streamlined immigration services. With expert guidance and
-              user-friendly interfaces, we make your journey to new beginnings
-              hassle-free.
-            </p>
-          </div>
-        </div>
+        <div className="w-full md:w-3/4">{HeadingAndParagraph}</div>
       </motion.div>
       <div>
         <div className="flex flex-col md:mt-12 md:flex-row md:items-center md:justify-between textCenter">

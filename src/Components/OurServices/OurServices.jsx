@@ -3,8 +3,8 @@ const Header = lazy(() => import("./Header/Header"));
 const Introduction = lazy(() => import("./Introduction/Introduction"));
 const HighService = lazy(() => import("./HighService/HighService"));
 const ChooseUs = lazy(() => import("./ChooseUs/ChooseUs"));
-const Platforms = lazy(() => import("./PlatformsAndServices/Platforms"));
 const Services = lazy(() => import("./Services/Services"));
+const Platforms = lazy(() => import("./PlatformsAndServices/Platforms"));
 import Title from "../../GeneralFunctions/Title";
 
 const OurServices = () => {
