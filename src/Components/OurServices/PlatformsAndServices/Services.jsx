@@ -1,3 +1,4 @@
+import Data from "../../../data.json";
 import ImgOne from "../../../assets/Arrima.png";
 import ImgTwo from "../../../assets/EntréeExpress.jpg";
 import ImgThree from "../../../assets/NewBrunswick.png";
@@ -5,35 +6,127 @@ import ImgFour from "../../../assets/Flag_of_New_Zealand.svg.png";
 import PlaneTwo from "../../../assets/PlaneTwo.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const dataOne = [
   {
     id: 1,
     headerOne: "Arrima",
+    headerOne_ar: "اريما",
+    headerOne_fr: "Arrima",
+
     headerTwo: "Entrée Express",
+    headerTwo_ar: "انتري اكسبرس",
+    headerTwo_fr: "Entrée Express",
+
     ImgOne: ImgOne,
     ImgTwo: ImgTwo,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
+    description_ar:
+      "يبساينلار بسنترا سبتمايئن اكسبيعال سبخلهتاىشي لشخيهئالس لاخهيالش ثخهلاسبلا سيخلعاس لخقثعللاق صقخعللاخ شيخبالقل خشثهلاقل سقخعلسق خعلاسحرلا سخبعلاصقخعل سخعللاسيهعر سعلرسلااب شخعثبش خعيب",
+    description_fr:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
     button: "Apply",
+    button_ar: "التيهضه",
+    button_fr: "Apply",
   },
 ];
 
 const dataTwo = [
   {
     id: 2,
-    headerThree: "New Zélande ",
+    headerThree: "New Zélande",
+    headerThree_ar: "نيو زيلاند",
+    headerThree_fr: "New Zélande",
+
     headerFour: "New Brunswick",
+    headerFour_ar: "نيو هينبتش",
+    headerFour_fr: "New Brunswick",
+
     ImgThree: ImgThree,
     ImgFour: ImgFour,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
+    description_ar:
+      "يبساينلار بسنترا سبتمايئن اكسبيعال سبخلهتاىشي لشخيهئالس لاخهيالش ثخهلاسبلا سيخلعاس لخقثعللاق صقخعللاخ شيخبالقل خشثهلاقل سقخعلسق خعلاسحرلا سخبعلاصقخعل سخعللاسيهعر سعلرسلااب شخعثبش خعيب",
+    description_fr:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
     button: "Apply",
+    button_ar: "التيهضه",
+    button_fr: "Apply",
   },
 ];
 
 const Platforms = () => {
-  const dataOneRendering = dataOne.map(
+  const { i18n } = useTranslation();
+
+  const modifiedDataHeader = Data.Services_Service_Header_Paragraph.map(
+    (data) => {
+      if (i18n.language === "ar") {
+        return {
+          id: data.id,
+          Header: data.Header_ar,
+          Paragraph: data.Paragraph_ar,
+        };
+      }
+
+      if (i18n.language === "fr") {
+        return {
+          id: data.id,
+          Header: data.Header_fr,
+          Paragraph: data.Paragraph_fr,
+        };
+      }
+      return data;
+    }
+  );
+
+  const HeadingAndParagraph = modifiedDataHeader.map(
+    ({ id, Header, Paragraph }) => {
+      return (
+        <div key={id}>
+          <div>
+            <h1 className="relative mb-2 lg:mb-0 before:absolute before:hidden rtl:lg:pr-20 ltr:lg:pl-20 before:md:block before:h-2 before:w-16 before:rtl:left-[95%] before:left-0 before:bg-hoverColor before:top-1/2 before:-translate-y-1/2">
+              {Header}
+            </h1>
+          </div>
+          <div>
+            <p className="md:mt-4 lg:mt-0">{Paragraph}</p>
+          </div>
+        </div>
+      );
+    }
+  );
+
+  const modifiedDataContentOne = dataOne.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        headerOne: data.headerOne_ar,
+        headerTwo: data.headerTwo_ar,
+        description: data.description_ar,
+        ImgOne: data.ImgOne,
+        ImgTwo: data.ImgTwo,
+        button: data.button_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        headerOne: data.headerOne_fr,
+        headerTwo: data.headerTwo_fr,
+        description: data.description_fr,
+        ImgOne: data.ImgOne,
+        ImgTwo: data.ImgTwo,
+        button: data.button_fr,
+      };
+    }
+    return data;
+  });
+
+  const dataOneRendering = modifiedDataContentOne.map(
     ({ id, headerOne, headerTwo, ImgOne, ImgTwo, description, button }) => {
       return (
         <div key={id}>
@@ -101,7 +194,34 @@ const Platforms = () => {
     }
   );
 
-  const dataTwoRendering = dataTwo.map(
+  const modifiedDataContentTwo = dataTwo.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        headerThree: data.headerThree_ar,
+        headerFour: data.headerFour_ar,
+        description: data.description_ar,
+        ImgThree: data.ImgThree,
+        ImgFour: data.ImgFour,
+        button: data.button_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        headerThree: data.headerThree_fr,
+        headerFour: data.headerFour_fr,
+        description: data.description_fr,
+        ImgThree: data.ImgThree,
+        ImgFour: data.ImgFour,
+        button: data.button_fr,
+      };
+    }
+    return data;
+  });
+
+  const dataTwoRendering = modifiedDataContentTwo.map(
     ({
       id,
       headerThree,
@@ -192,15 +312,7 @@ const Platforms = () => {
             }}
             className="mb-8"
           >
-            <h1 className="relative w-full mb-4 sm:mb-12 lg:mb-4 md:w-1/2 md:headingStyleMd lg:headingStyleLg">
-              Discover a Comprehensive Online Immigration Platform
-            </h1>
-            <p className="w-full md:w-3/4">
-              Step into an online platform tailored to meet your immigration
-              needs. Explore personalized solutions designed to guide you
-              through every step of your journey, ensuring a seamless transition
-              to your new destination.
-            </p>
+            {HeadingAndParagraph}
           </motion.div>
 
           <div className="relative hidden md:block">

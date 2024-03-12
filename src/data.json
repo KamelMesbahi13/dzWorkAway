@@ -459,10 +459,21 @@
       "Header": "Our Platforms",
       "Header_ar": "ىبتث ثمتش",
       "Header_fr": "Our Platforms",
-
       "Paragraph": "Welcome to Our Immigration Platforms, your one-stop solution for streamlined immigration services. With expert guidance and user-friendly interfaces, we make your journey to new beginnings hassle-free.",
       "Paragraph_ar": "العايبي ينععلتس سيتابنيالي سيهلتسنمالمستل سيملتنسيمنلاسي سيمنلتسمينال سميلناسمينلا ",
       "Paragraph_fr": "Welcome to Our Immigration Platforms, your one-stop solution for streamlined immigration services. With expert guidance and user-friendly interfaces, we make your journey to new beginnings hassle-free."
+    }
+  ],
+
+  "Services_Service_Header_Paragraph": [
+    {
+      "id": 1,
+      "Header": "Discover a Comprehensive Online Immigration Platform",
+      "Header_ar": " لناسم لناسم بلبل سميلناسمينل",
+      "Header_fr": "Discover a Comprehensive Online Immigration Platform",
+      "Paragraph": "Step into an online platform tailored to meet your immigration needs. Explore personalized solutions designed to guide you through every step of your journey, ensuring a seamless transition to your new destination.",
+      "Paragraph_ar": "العايبي ينععلتس سيتابنيالي سيهلتسنمالمستل سيملتنسيمنلاسي سيمنلتسمينال سميلناسمينلا ",
+      "Paragraph_fr": "Step into an online platform tailored to meet your immigration needs. Explore personalized solutions designed to guide you through every step of your journey, ensuring a seamless transition to your new destination."
     }
   ],
 
