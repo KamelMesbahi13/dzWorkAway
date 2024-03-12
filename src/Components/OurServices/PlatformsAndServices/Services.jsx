@@ -14,11 +14,9 @@ const dataOne = [
     headerOne: "Arrima",
     headerOne_ar: "اريما",
     headerOne_fr: "Arrima",
-
     headerTwo: "Entrée Express",
     headerTwo_ar: "انتري اكسبرس",
     headerTwo_fr: "Entrée Express",
-
     ImgOne: ImgOne,
     ImgTwo: ImgTwo,
     description:
@@ -39,11 +37,9 @@ const dataTwo = [
     headerThree: "New Zélande",
     headerThree_ar: "نيو زيلاند",
     headerThree_fr: "New Zélande",
-
     headerFour: "New Brunswick",
     headerFour_ar: "نيو هينبتش",
     headerFour_fr: "New Brunswick",
-
     ImgThree: ImgThree,
     ImgFour: ImgFour,
     description:

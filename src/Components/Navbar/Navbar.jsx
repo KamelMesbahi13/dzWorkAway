@@ -1,14 +1,40 @@
 import { useState } from "react";
+import Data from "../../data.json";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/Logo.png";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FaXmark } from "react-icons/fa6";
 import Facebook from "../../assets/Facebook.png";
 import Instagram from "../../assets/instagram.png";
-// import { BsGlobe } from "react-icons/bs";
 import TranslateIcon from "../../Ui/TranslationIcon/TranslationIcon";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+  const { i18n } = useTranslation();
+
+  const modifiedDataNav = Data.navbarItems.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        ItemOne: data.ItemOne_ar,
+        ItemTwo: data.ItemTwo_ar,
+        ItemThree: data.ItemThree_ar,
+        ItemFour: data.ItemFour_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        ItemOne: data.ItemOne_fr,
+        ItemTwo: data.ItemTwo_fr,
+        ItemThree: data.ItemThree_fr,
+        ItemFour: data.ItemFour_fr,
+      };
+    }
+    return data;
+  });
+
   const [nav, setNav] = useState(true);
 
   const navHandler = () => {
@@ -23,7 +49,7 @@ const Navbar = () => {
   ];
 
   const navbarLinks = [
-    "",
+    "Accueil",
     "Nos-Services",
     "À Propos-de-Nous",
     "Contactez-Nous",
@@ -33,20 +59,22 @@ const Navbar = () => {
     <>
       <div id="nav">
         <div className="container">
-          {/* <TranslateIcon /> */}
           <div className="z-50 hidden w-full py-6 lg:flex">
             <div className="flex items-center justify-between w-full">
               <div>
                 <img className="w-28" src={Logo} alt="Logo" />
               </div>
               <div className="flex gap-8">
-                {navbarItems.map((el, i) => (
-                  <div key={i}>
-                    <Link className="link" to={navbarLinks[i]}>
-                      {el}
-                    </Link>
-                  </div>
-                ))}
+                <Link to="/">{modifiedDataNav.map((el) => el.ItemOne)}</Link>
+                <Link to="/Nos-Services">
+                  {modifiedDataNav.map((el) => el.ItemTwo)}
+                </Link>
+                <Link to="/À Propos-de-Nous">
+                  {modifiedDataNav.map((el) => el.ItemThree)}
+                </Link>
+                <Link to="/Contactez-Nous">
+                  {modifiedDataNav.map((el) => el.ItemFour)}
+                </Link>
               </div>
               <div className="flex items-center">
                 <span className="text-2xl cursor-pointer ">

@@ -7,6 +7,24 @@
     }
   ],
 
+  "navbarItems": [
+    {
+      "id": 1,
+      "ItemOne": "Accueil",
+      "ItemOne_ar": "الصفحة الرئيسية",
+      "ItemOne_fr": "Accueil",
+      "ItemTwo": "Nos Services",
+      "ItemTwo_ar": "خدماتنا",
+      "ItemTwo_fr": "Nos Services",
+      "ItemThree": "À Propos de Nous",
+      "ItemThree_ar": "عنا",
+      "ItemThree_fr": "À Propos de Nous",
+      "ItemFour": "Contactez Nous",
+      "ItemFour_ar": "اتصل بنا",
+      "ItemFour_fr": "Contactez Nous"
+    }
+  ],
+
   "AboutUs_Heading": [
     {
       "id": 1,
