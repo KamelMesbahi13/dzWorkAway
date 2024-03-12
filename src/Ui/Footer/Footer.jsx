@@ -9,19 +9,6 @@ import Phone from "../../assets/PhoneCall.png";
 import Time from "../../assets/Time.png";
 import { useTranslation } from "react-i18next";
 
-const footerItems = [
-  "Accueil",
-  "Nos Services",
-  "À Propos de Nous",
-  "Contactez Nous",
-];
-
-const footerLinks = [
-  "Accueil",
-  "Nos-Services",
-  "À Propos-de-Nous",
-  "Contactez-Nous",
-];
 const socialMedia = [
   {
     id: 1,
@@ -63,6 +50,29 @@ const time = [
 
 const Footer = () => {
   const { i18n } = useTranslation();
+
+  const modifiedDataNav = Data.navbarItems.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        ItemOne: data.ItemOne_ar,
+        ItemTwo: data.ItemTwo_ar,
+        ItemThree: data.ItemThree_ar,
+        ItemFour: data.ItemFour_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        ItemOne: data.ItemOne_fr,
+        ItemTwo: data.ItemTwo_fr,
+        ItemThree: data.ItemThree_fr,
+        ItemFour: data.ItemFour_fr,
+      };
+    }
+    return data;
+  });
 
   // --------------------------------------------------------
 
@@ -209,7 +219,7 @@ const Footer = () => {
               <div className="w-full my-4 lg:w-1/4 lg:textCenter">
                 {LinksHeader}{" "}
                 <div className="flex flex-row flex-wrap lg:flex-nowrap lg:flex-col gap-y-8">
-                  {footerItems.map((el, i) => (
+                  {/* {footerItems.map((el, i) => (
                     <div key={i}>
                       <a
                         rel="noreferrer"
@@ -219,7 +229,18 @@ const Footer = () => {
                         {el}
                       </a>
                     </div>
-                  ))}
+                  ))} */}
+
+                  <a to="/">{modifiedDataNav.map((el) => el.ItemOne)}</a>
+                  <a to="/Nos-Services">
+                    {modifiedDataNav.map((el) => el.ItemTwo)}
+                  </a>
+                  <a to="/À Propos-de-Nous">
+                    {modifiedDataNav.map((el) => el.ItemThree)}
+                  </a>
+                  <a to="/Contactez-Nous">
+                    {modifiedDataNav.map((el) => el.ItemFour)}
+                  </a>
                 </div>
               </div>
               <div className="w-full bg-white lg:p-8 lg:w-1/4">

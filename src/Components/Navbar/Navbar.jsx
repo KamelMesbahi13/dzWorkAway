@@ -41,20 +41,6 @@ const Navbar = () => {
     setNav(!nav);
   };
 
-  const navbarItems = [
-    "Accueil",
-    "Nos Services",
-    "À Propos de Nous",
-    "Contactez Nous",
-  ];
-
-  const navbarLinks = [
-    "Accueil",
-    "Nos-Services",
-    "À Propos-de-Nous",
-    "Contactez-Nous",
-  ];
-
   return (
     <>
       <div id="nav">
@@ -129,17 +115,16 @@ const Navbar = () => {
               }
             >
               <div className="flex flex-col p-8">
-                {navbarItems.map((el, i) => (
-                  <div key={i} className="my-4">
-                    <Link
-                      className="link"
-                      onClick={navHandler}
-                      to={navbarLinks[i]}
-                    >
-                      {el}
-                    </Link>
-                  </div>
-                ))}
+                <Link to="/">{modifiedDataNav.map((el) => el.ItemOne)}</Link>
+                <Link to="/Nos-Services">
+                  {modifiedDataNav.map((el) => el.ItemTwo)}
+                </Link>
+                <Link to="/À Propos-de-Nous">
+                  {modifiedDataNav.map((el) => el.ItemThree)}
+                </Link>
+                <Link to="/Contactez-Nous">
+                  {modifiedDataNav.map((el) => el.ItemFour)}
+                </Link>
 
                 <div className="flex items-center gap-2 mt-4">
                   <a
