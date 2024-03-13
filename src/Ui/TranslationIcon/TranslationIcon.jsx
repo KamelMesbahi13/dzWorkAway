@@ -59,7 +59,7 @@ function TranslateIcon() {
             {isOpen && (
               <ul className="absolute right-0 z-10 px-8 mt-2 bg-white border-2 rounded-md shadow-2xl border-grey">
                 <li>
-                  <h6 className="block px-4 py-2 text-lg font-bold text-mainColor">
+                  <h6 className="block px-2 py-1 text-lg font-bold lg:px-4 lg:py-2 text-mainColor">
                     {t("Language")}
                   </h6>
                 </li>

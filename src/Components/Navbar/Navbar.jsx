@@ -114,7 +114,7 @@ const Navbar = () => {
                   : "absolute w-full left-0 bg-grey opacity-100 shadow-2xl z-50 duration-500"
               }
             >
-              <div className="flex flex-col p-8">
+              <div className="flex flex-col p-8 gap-y-8">
                 <Link to="/">{modifiedDataNav.map((el) => el.ItemOne)}</Link>
                 <Link to="/Nos-Services">
                   {modifiedDataNav.map((el) => el.ItemTwo)}
