@@ -59,6 +59,41 @@ const PlatformsDetails = () => {
 
   // ----------------------------------------------------------
 
+  const modifiedDataHeaderAndParagraphTwo = Data.Platforms_Paragraph_Two.map(
+    (data) => {
+      if (i18n.language === "ar") {
+        return {
+          id: data.id,
+          Paragraph: data.Paragraph_ar,
+        };
+      }
+
+      if (i18n.language === "fr") {
+        return {
+          id: data.id,
+          Paragraph: data.Paragraph_fr,
+        };
+      }
+      return data;
+    }
+  );
+
+  const ParagraphTwo = modifiedDataHeaderAndParagraphTwo.map(
+    ({ id, Paragraph }) => {
+      return (
+        <div key={id}>
+          <div>
+            <div>
+              <p>{Paragraph}</p>
+            </div>
+          </div>
+        </div>
+      );
+    }
+  );
+
+  // ----------------------------------------------------------
+
   const { platformId } = useParams();
   const platform = data.find((platform) => platform.id == platformId);
   const { header } = platform;
@@ -100,29 +135,7 @@ const PlatformsDetails = () => {
                 className="mt-12"
               >
                 <div className="relative pl-4 before:absolute lg:pl-8 before:md:block before:h-full before:w-2 before:left-0 before:bg-hoverColor before:top-1/2 before:-translate-y-1/2">
-                  <p>
-                    ARRIMA and Entrée express are both systems used in the
-                    province of Quebec, Canada, for managing immigration
-                    applications. ARRIMA stands for Arrima System, which is
-                    Quebec s Expression of Interest (EOI) system for managing
-                    applications to the Quebec Skilled Worker Program (QSWP). It
-                    allows candidates to submit an expression of interest online
-                    and enter a pool of candidates. The Quebec government then
-                    selects candidates from this pool based on their skills,
-                    qualifications, and the labor market needs of the province.
-                    Entrée express, on the other hand, is not specific to Quebec
-                    but rather a federal system used across Canada. It manages
-                    applications for the Federal Skilled Worker Program, Federal
-                    Skilled Trades Program, and Canadian Experience Class.
-                    Applicants create an online profile, enter a pool of
-                    candidates, and are then ranked based on various factors
-                    such as age, education, work experience, and language
-                    proficiency. The Canadian government regularly invites
-                    top-ranked candidates to apply for permanent residence. In
-                    summary, ARRIMA is specific to Quebec s immigration system,
-                    while Entrée express is part of Canada s federal immigration
-                    system.
-                  </p>
+                  <div>{ParagraphTwo}</div>
                 </div>
               </motion.div>
             </div>
