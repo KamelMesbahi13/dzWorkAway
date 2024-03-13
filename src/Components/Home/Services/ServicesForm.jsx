@@ -2,46 +2,6 @@ import { useForm } from "react-hook-form";
 import Data from "../../../data.json";
 import { useTranslation } from "react-i18next";
 
-const LastName = Data.Form_LastName.map(({ id, Title }) => {
-  return (
-    <label key={id} htmlFor="lastName">
-      {Title}
-    </label>
-  );
-});
-
-const Email = Data.Form_Email.map(({ id, Title }) => {
-  return (
-    <label key={id} htmlFor="Email">
-      {Title}
-    </label>
-  );
-});
-
-const PhoneNumber = Data.Form_Phone_Number.map(({ id, Title }) => {
-  return (
-    <label key={id} htmlFor="PhoneNumber">
-      {Title}
-    </label>
-  );
-});
-
-const Address = Data.Form_Address.map(({ id, Title }) => {
-  return (
-    <label key={id} htmlFor="Address">
-      {Title}
-    </label>
-  );
-});
-
-const City = Data.Form_City.map(({ id, Title }) => {
-  return (
-    <label key={id} htmlFor="City">
-      {Title}
-    </label>
-  );
-});
-
 const Zip = Data.Form_Zip.map(({ id, Title }) => {
   return (
     <label key={id} htmlFor="Zip">
@@ -126,6 +86,141 @@ const ServicesForm = () => {
   const Name = modifiedName.map(({ id, Title }) => {
     return (
       <label key={id} htmlFor="firstName">
+        {Title}
+      </label>
+    );
+  });
+
+  // ----------------------------------------------------------
+
+  const modifiedLastName = Data.Form_LastName.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Title: data.Title_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Title: data.Title_fr,
+      };
+    }
+    return data;
+  });
+
+  const LastName = modifiedLastName.map(({ id, Title }) => {
+    return (
+      <label key={id} htmlFor="lastName">
+        {Title}
+      </label>
+    );
+  });
+
+  // ----------------------------------------------------------
+
+  const modifiedEmail = Data.Form_Email.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Title: data.Title_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Title: data.Title_fr,
+      };
+    }
+    return data;
+  });
+
+  const Email = modifiedEmail.map(({ id, Title }) => {
+    return (
+      <label key={id} htmlFor="Email">
+        {Title}
+      </label>
+    );
+  });
+
+  // ----------------------------------------------------------
+
+  const modifiedPhoneNumber = Data.Form_Phone_Number.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Title: data.Title_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Title: data.Title_fr,
+      };
+    }
+    return data;
+  });
+
+  const PhoneNumber = modifiedPhoneNumber.map(({ id, Title }) => {
+    return (
+      <label key={id} htmlFor="PhoneNumber">
+        {Title}
+      </label>
+    );
+  });
+
+  // ----------------------------------------------------------
+
+  const modifiedAddress = Data.Form_Address.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Title: data.Title_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Title: data.Title_fr,
+      };
+    }
+    return data;
+  });
+
+  const Address = modifiedAddress.map(({ id, Title }) => {
+    return (
+      <label key={id} htmlFor="Address">
+        {Title}
+      </label>
+    );
+  });
+
+  // ----------------------------------------------------------
+
+  const modifiedCity = Data.Form_City.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Title: data.Title_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Title: data.Title_fr,
+      };
+    }
+    return data;
+  });
+
+  const City = modifiedCity.map(({ id, Title }) => {
+    return (
+      <label key={id} htmlFor="City">
         {Title}
       </label>
     );
