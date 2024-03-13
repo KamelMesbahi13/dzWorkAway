@@ -311,7 +311,7 @@ const PlatformsForm = () => {
                       <div className="flex flex-col justify-between md:flex-row">
                         <div>
                           {Name} <br />
-                          {/* <input
+                          <input
                             className={`${inputStyle} mb-6 md:mb-0 w-full`}
                             type="text"
                             {...register("name", {
@@ -330,7 +330,7 @@ const PlatformsForm = () => {
                                 errors.name.type === "minLength" &&
                                 "Name should be more than 5 characters"}
                             </p>
-                          )} */}
+                          )}
                         </div>
                         <div>
                           {LastName} <br />
