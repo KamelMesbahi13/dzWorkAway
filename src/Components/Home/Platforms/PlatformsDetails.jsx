@@ -136,7 +136,9 @@ const PlatformsDetails = () => {
                 className="w-full md:w-3/4"
               >
                 <div>
-                  <h1 className="relative mb-2 headingStyleLg">{header}</h1>
+                  <h1 className="relative mb-2 lg:mb-0 before:absolute before:hidden rtl:lg:pr-20 ltr:lg:pl-20 before:md:block before:h-2 before:w-16 before:rtl:left-[93%] before:left-0 before:bg-hoverColor before:top-1/2 before:-translate-y-1/2">
+                    {header}
+                  </h1>
                 </div>
                 <div>{ParagraphOne}</div>
               </motion.div>
@@ -153,8 +155,8 @@ const PlatformsDetails = () => {
                 }}
                 className="mt-12"
               >
-                <div className="relative pl-4 before:absolute lg:pl-8 before:md:block before:h-full before:w-2 before:left-0 before:bg-hoverColor before:top-1/2 before:-translate-y-1/2">
-                  <div>{ParagraphTwo}</div>
+                <div className="relative ltr:pl-4 rtl:pr-4 before:absolute ltr:lg:pl-8 rtl:lg:pr-8 before:md:block before:h-full before:w-2 before:ltr:left-0  before:rtl:left-[100%] before:bg-hoverColor before:top-1/2 before:-translate-y-1/2">
+                  {ParagraphTwo}
                 </div>
               </motion.div>
             </div>

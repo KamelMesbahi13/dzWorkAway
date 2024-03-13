@@ -25,7 +25,7 @@ const PlatformDetailHeader = ({ header }) => {
       </div>
       <div className="absolute text-white rtl:pr-8 ltr:pl-8 ltr:md:pl-20 rtl:md:pr-20 -translate-y-1/4 md:pl-24 top-1/2">
         <div>
-          <h1>{header} </h1>
+          <h1>{header}</h1>
         </div>
         <div className="flex mt-1 md:mt-2">
           <div className="w-8 h-1 md:w-12 bg-secondColor"></div>

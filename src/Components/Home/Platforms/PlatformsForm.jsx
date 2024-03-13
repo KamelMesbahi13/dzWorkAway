@@ -1,89 +1,280 @@
 import { useForm } from "react-hook-form";
 import Data from "../../../data.json";
-
-const Heading = Data.ServicesForm_Heading.map(({ id, Paragraph }) => {
-  return (
-    <div key={id}>
-      <div>
-        <p>{Paragraph}</p>
-      </div>
-    </div>
-  );
-});
-
-const Name = Data.Form_Name.map(({ id, Title }) => {
-  return (
-    <label key={id} htmlFor="firstName">
-      {Title}
-    </label>
-  );
-});
-
-const LastName = Data.Form_LastName.map(({ id, Title }) => {
-  return (
-    <label key={id} htmlFor="lastName">
-      {Title}
-    </label>
-  );
-});
-
-const Email = Data.Form_Email.map(({ id, Title }) => {
-  return (
-    <label key={id} htmlFor="Email">
-      {Title}
-    </label>
-  );
-});
-
-const PhoneNumber = Data.Form_Phone_Number.map(({ id, Title }) => {
-  return (
-    <label key={id} htmlFor="PhoneNumber">
-      {Title}
-    </label>
-  );
-});
-
-const Address = Data.Form_Address.map(({ id, Title }) => {
-  return (
-    <label key={id} htmlFor="Address">
-      {Title}
-    </label>
-  );
-});
-
-const City = Data.Form_City.map(({ id, Title }) => {
-  return (
-    <label key={id} htmlFor="City">
-      {Title}
-    </label>
-  );
-});
-
-const Zip = Data.Form_Zip.map(({ id, Title }) => {
-  return (
-    <label key={id} htmlFor="Zip">
-      {Title}
-    </label>
-  );
-});
-
-const Cv = Data.Form_Cv.map(({ id, Title }) => {
-  return (
-    <label key={id} htmlFor="Cv">
-      {Title}
-    </label>
-  );
-});
-
-const Message = Data.Form_Message.map(({ id, Title }) => {
-  return (
-    <label key={id} htmlFor="Message">
-      {Title}
-    </label>
-  );
-});
+import { useTranslation } from "react-i18next";
 
 const PlatformsForm = () => {
+  const { i18n } = useTranslation();
+
+  const modifiedHeader = Data.ServicesForm_Heading.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Paragraph: data.Paragraph_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Paragraph: data.Paragraph_fr,
+      };
+    }
+    return data;
+  });
+
+  const Heading = modifiedHeader.map(({ id, Paragraph }) => {
+    return (
+      <div key={id}>
+        <div>
+          <p>{Paragraph}</p>
+        </div>
+      </div>
+    );
+  });
+
+  // ----------------------------------------------------------
+
+  const modifiedName = Data.Form_Name.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Title: data.Title_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Title: data.Title_fr,
+      };
+    }
+    return data;
+  });
+
+  const Name = modifiedName.map(({ id, Title }) => {
+    return (
+      <label key={id} htmlFor="firstName">
+        {Title}
+      </label>
+    );
+  });
+
+  // ----------------------------------------------------------
+
+  const modifiedLastName = Data.Form_LastName.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Title: data.Title_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Title: data.Title_fr,
+      };
+    }
+    return data;
+  });
+
+  const LastName = modifiedLastName.map(({ id, Title }) => {
+    return (
+      <label key={id} htmlFor="lastName">
+        {Title}
+      </label>
+    );
+  });
+
+  // ----------------------------------------------------------
+
+  const modifiedEmail = Data.Form_Email.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Title: data.Title_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Title: data.Title_fr,
+      };
+    }
+    return data;
+  });
+
+  const Email = modifiedEmail.map(({ id, Title }) => {
+    return (
+      <label key={id} htmlFor="Email">
+        {Title}
+      </label>
+    );
+  });
+
+  // ----------------------------------------------------------
+
+  const modifiedPhoneNumber = Data.Form_Phone_Number.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Title: data.Title_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Title: data.Title_fr,
+      };
+    }
+    return data;
+  });
+
+  const PhoneNumber = modifiedPhoneNumber.map(({ id, Title }) => {
+    return (
+      <label key={id} htmlFor="PhoneNumber">
+        {Title}
+      </label>
+    );
+  });
+
+  // ----------------------------------------------------------
+
+  const modifiedAddress = Data.Form_Address.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Title: data.Title_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Title: data.Title_fr,
+      };
+    }
+    return data;
+  });
+
+  const Address = modifiedAddress.map(({ id, Title }) => {
+    return (
+      <label key={id} htmlFor="Address">
+        {Title}
+      </label>
+    );
+  });
+
+  // ----------------------------------------------------------
+
+  const modifiedCity = Data.Form_City.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Title: data.Title_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Title: data.Title_fr,
+      };
+    }
+    return data;
+  });
+
+  const City = modifiedCity.map(({ id, Title }) => {
+    return (
+      <label key={id} htmlFor="City">
+        {Title}
+      </label>
+    );
+  });
+
+  // ----------------------------------------------------------
+
+  const modifiedZip = Data.Form_Zip.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Title: data.Title_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Title: data.Title_fr,
+      };
+    }
+    return data;
+  });
+
+  const Zip = modifiedZip.map(({ id, Title }) => {
+    return (
+      <label key={id} htmlFor="Zip">
+        {Title}
+      </label>
+    );
+  });
+
+  // ----------------------------------------------------------
+
+  const modifiedCv = Data.Form_Cv.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Title: data.Title_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Title: data.Title_fr,
+      };
+    }
+    return data;
+  });
+
+  const Cv = modifiedCv.map(({ id, Title }) => {
+    return (
+      <label key={id} htmlFor="Cv">
+        {Title}
+      </label>
+    );
+  });
+
+  // ----------------------------------------------------------
+
+  const modifiedMessage = Data.Form_Message.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Title: data.Title_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Title: data.Title_fr,
+      };
+    }
+    return data;
+  });
+
+  const Message = modifiedMessage.map(({ id, Title }) => {
+    return (
+      <label key={id} htmlFor="Message">
+        {Title}
+      </label>
+    );
+  });
+
   const inputStyle = `p-2 mt-1 border-b-2 outline-none border-mainColor`;
 
   const {
