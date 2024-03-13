@@ -4,40 +4,99 @@ import { useParams } from "react-router-dom";
 import ServicesDetailsHeader from "./ServicesDetailHeader";
 import Title from "../../../GeneralFunctions/Title";
 import { motion } from "framer-motion";
-
-const ParagraphOne = Data.ServicesDetails_Paragraph_One.map(
-  ({ id, Paragraph }) => {
-    return (
-      <div key={id}>
-        <div>
-          <div>
-            <p>{Paragraph}</p>
-          </div>
-        </div>
-      </div>
-    );
-  }
-);
-
-const ParagraphTwo = Data.ServicesDetails_Paragraph_Two.map(
-  ({ id, Paragraph }) => {
-    return (
-      <div key={id}>
-        <div>
-          <div>
-            <p>{Paragraph}</p>
-          </div>
-        </div>
-      </div>
-    );
-  }
-);
+import { useTranslation } from "react-i18next";
 
 const ServicesDetails = () => {
   Title("Dz Work Away | Détails des services");
 
+  const { i18n } = useTranslation();
+
+  const modifiedDataHeaderAndParagraph = Data.ServicesDetails_Paragraph_One.map(
+    (data) => {
+      if (i18n.language === "ar") {
+        return {
+          id: data.id,
+          Paragraph: data.Paragraph_ar,
+        };
+      }
+
+      if (i18n.language === "fr") {
+        return {
+          id: data.id,
+          Paragraph: data.Paragraph_fr,
+        };
+      }
+      return data;
+    }
+  );
+
+  const ParagraphOne = modifiedDataHeaderAndParagraph.map(
+    ({ id, Paragraph }) => {
+      return (
+        <div key={id}>
+          <div>
+            <div>
+              <p>{Paragraph}</p>
+            </div>
+          </div>
+        </div>
+      );
+    }
+  );
+
+  const modifiedDataHeaderAndParagraphTwo =
+    Data.ServicesDetails_Paragraph_Two.map((data) => {
+      if (i18n.language === "ar") {
+        return {
+          id: data.id,
+          Paragraph: data.Paragraph_ar,
+        };
+      }
+
+      if (i18n.language === "fr") {
+        return {
+          id: data.id,
+          Paragraph: data.Paragraph_fr,
+        };
+      }
+      return data;
+    });
+
+  const ParagraphTwo = modifiedDataHeaderAndParagraphTwo.map(
+    ({ id, Paragraph }) => {
+      return (
+        <div key={id}>
+          <div>
+            <div>
+              <p>{Paragraph}</p>
+            </div>
+          </div>
+        </div>
+      );
+    }
+  );
+
+  const modifiedDataHeader = Data.ServicesDetails_Header.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        headerOne: data.headerOne_ar,
+        headerTwo: data.headerTwo_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        headerOne: data.headerOne_fr,
+        headerTwo: data.headerTwo_fr,
+      };
+    }
+    return data;
+  });
+
   const { servicesId } = useParams();
-  const services = Data.ServicesDetails.find(
+  const services = modifiedDataHeader.find(
     (services) => services.id == servicesId
   );
   const { headerOne, headerTwo } = services;
@@ -61,7 +120,7 @@ const ServicesDetails = () => {
                 className="w-full md:w-3/4"
               >
                 <div>
-                  <h1 className="relative mb-2 headingStyleLg">
+                  <h1 className="relative mb-2 lg:mb-0 before:absolute before:hidden rtl:lg:pr-20 ltr:lg:pl-20 before:md:block before:h-2 before:w-16 before:rtl:left-[93%] before:left-0 before:bg-hoverColor before:top-1/2 before:-translate-y-1/2">
                     {headerOne} <span className="text-secondColor"> / </span>{" "}
                     {headerTwo}
                   </h1>
@@ -80,7 +139,7 @@ const ServicesDetails = () => {
               }}
             >
               <div className="mt-12">
-                <div className="relative pl-4 before:absolute lg:pl-8 before:md:block before:h-full before:w-2 before:left-0 before:bg-hoverColor before:top-1/2 before:-translate-y-1/2">
+                <div className="relative ltr:pl-4 rtl:pr-4 before:absolute ltr:lg:pl-8 rtl:lg:pr-8 before:md:block before:h-full before:w-2 before:ltr:left-0  before:rtl:left-[100%] before:bg-hoverColor before:top-1/2 before:-translate-y-1/2">
                   {ParagraphTwo}
                 </div>
               </div>

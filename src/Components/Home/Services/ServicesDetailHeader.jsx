@@ -23,7 +23,7 @@ const ServicesDetailsHeader = ({ headerOne, headerTwo }) => {
           alt="About US Background"
         />
       </div>
-      <div className="absolute pl-8 text-white -translate-y-1/4 md:pl-24 top-1/2">
+      <div className="absolute text-white rtl:pr-8 ltr:pl-8 ltr:md:pl-20 rtl:md:pr-20 -translate-y-1/4 md:pl-24 top-1/2">
         <div>
           <h1>
             {headerOne} <span className="text-secondColor">/</span> {headerTwo}
