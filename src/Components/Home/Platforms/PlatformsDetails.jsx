@@ -3,6 +3,7 @@ import PlatformsDetailsHeader from "./PlatformsDetailsHeader";
 import PlatformsForm from "./PlatformsForm";
 import Title from "../../../GeneralFunctions/Title";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const data = [
   {
@@ -17,6 +18,8 @@ const data = [
 
 const PlatformsDetails = () => {
   Title("Dz Work Away | Détails des plateformes");
+
+  const { i18n } = useTranslation();
 
   const { platformId } = useParams();
   const platform = data.find((platform) => platform.id == platformId);
