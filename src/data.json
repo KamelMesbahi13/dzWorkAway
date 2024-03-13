@@ -512,7 +512,9 @@
   "Form_Name": [
     {
       "id": 1,
-      "Title": "First Name"
+      "Title": "First Name",
+      "Title_ar": "الأسم",
+      "Title_fr": "First Name"
     }
   ],
 

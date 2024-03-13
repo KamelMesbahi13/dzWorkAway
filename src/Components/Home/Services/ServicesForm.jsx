@@ -1,23 +1,6 @@
 import { useForm } from "react-hook-form";
 import Data from "../../../data.json";
-
-const Heading = Data.ServicesForm_Heading.map(({ id, Paragraph }) => {
-  return (
-    <div key={id}>
-      <div>
-        <p>{Paragraph}</p>
-      </div>
-    </div>
-  );
-});
-
-const Name = Data.Form_Name.map(({ id, Title }) => {
-  return (
-    <label key={id} htmlFor="firstName">
-      {Title}
-    </label>
-  );
-});
+import { useTranslation } from "react-i18next";
 
 const LastName = Data.Form_LastName.map(({ id, Title }) => {
   return (
@@ -84,6 +67,74 @@ const Message = Data.Form_Message.map(({ id, Title }) => {
 });
 
 const ServicesForm = () => {
+  const { i18n } = useTranslation();
+
+  // ----------------------------------------------------------
+
+  const modifiedHeader = Data.ServicesForm_Heading.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        headerOne: data.headerOne,
+        headerTwo: data.headerTwo,
+        description: data.description_ar,
+        button: data.button_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        headerOne: data.headerOne,
+        headerTwo: data.headerTwo,
+        description: data.description_fr,
+        button: data.button_ar,
+      };
+    }
+    return data;
+  });
+
+  const Heading = modifiedHeader.map(({ id, Paragraph }) => {
+    return (
+      <div key={id}>
+        <div>
+          <p>{Paragraph}</p>
+        </div>
+      </div>
+    );
+  });
+
+  // ----------------------------------------------------------
+
+  const modifiedName = Data.Form_Name.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Title: data.Title_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Title: data.Title_fr,
+      };
+    }
+    return data;
+  });
+
+  const Name = modifiedName.map(({ id, Title }) => {
+    return (
+      <label key={id} htmlFor="firstName">
+        {Title}
+      </label>
+    );
+  });
+
+  // ----------------------------------------------------------
+
+  // ----------------------------------------------------------
+
   const inputStyle = `p-2 mt-1 border-b-2 outline-none border-mainColor`;
 
   const {
