@@ -126,7 +126,7 @@ const Navbar = () => {
                   {modifiedDataNav.map((el) => el.ItemFour)}
                 </Link>
 
-                <div className="flex items-center gap-2 mt-4">
+                <div className="flex items-center justify-center gap-2 mt-4">
                   <a
                     href="https://web.facebook.com/dzworkaway"
                     target="_blank"
