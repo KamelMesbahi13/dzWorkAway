@@ -2,22 +2,6 @@ import { useForm } from "react-hook-form";
 import Data from "../../../data.json";
 import { useTranslation } from "react-i18next";
 
-const Zip = Data.Form_Zip.map(({ id, Title }) => {
-  return (
-    <label key={id} htmlFor="Zip">
-      {Title}
-    </label>
-  );
-});
-
-const Cv = Data.Form_Cv.map(({ id, Title }) => {
-  return (
-    <label key={id} htmlFor="Cv">
-      {Title}
-    </label>
-  );
-});
-
 const Message = Data.Form_Message.map(({ id, Title }) => {
   return (
     <label key={id} htmlFor="Message">
@@ -221,6 +205,60 @@ const ServicesForm = () => {
   const City = modifiedCity.map(({ id, Title }) => {
     return (
       <label key={id} htmlFor="City">
+        {Title}
+      </label>
+    );
+  });
+
+  // ----------------------------------------------------------
+
+  const modifiedZip = Data.Form_Zip.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Title: data.Title_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Title: data.Title_fr,
+      };
+    }
+    return data;
+  });
+
+  const Zip = modifiedZip.map(({ id, Title }) => {
+    return (
+      <label key={id} htmlFor="Zip">
+        {Title}
+      </label>
+    );
+  });
+
+  // ----------------------------------------------------------
+
+  const modifiedCv = Data.Form_Cv.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Title: data.Title_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Title: data.Title_fr,
+      };
+    }
+    return data;
+  });
+
+  const Cv = modifiedCv.map(({ id, Title }) => {
+    return (
+      <label key={id} htmlFor="Cv">
         {Title}
       </label>
     );
