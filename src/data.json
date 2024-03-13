@@ -514,6 +514,21 @@
     }
   ],
 
+  "PlatformDetails_Header": [
+    {
+      "id": 1,
+      "header": "All The World",
+      "header_ar": "كل انحاء العالم",
+      "header_fr": "All The World"
+    },
+    {
+      "id": 2,
+      "header": "Canada",
+      "header_ar": "كندا",
+      "header_fr": "Canada"
+    }
+  ],
+
   "Services_Service_Header_Paragraph": [
     {
       "id": 1,

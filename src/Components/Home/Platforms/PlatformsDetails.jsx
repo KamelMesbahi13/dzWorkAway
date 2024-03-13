@@ -6,16 +6,16 @@ import Title from "../../../GeneralFunctions/Title";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
-const data = [
-  {
-    id: 1,
-    header: "All The World",
-  },
-  {
-    id: 2,
-    header: "Canada",
-  },
-];
+// const data = [
+//   {
+//     id: 1,
+//     header: "All The World",
+//   },
+//   {
+//     id: 2,
+//     header: "Canada",
+//   },
+// ];
 
 const PlatformsDetails = () => {
   Title("Dz Work Away | Détails des plateformes");
@@ -94,8 +94,27 @@ const PlatformsDetails = () => {
 
   // ----------------------------------------------------------
 
+  const modifiedDataHeader = Data.PlatformDetails_Header.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        header: data.header_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        header: data.header_fr,
+      };
+    }
+    return data;
+  });
+
   const { platformId } = useParams();
-  const platform = data.find((platform) => platform.id == platformId);
+  const platform = modifiedDataHeader.find(
+    (platform) => platform.id == platformId
+  );
   const { header } = platform;
 
   return (
