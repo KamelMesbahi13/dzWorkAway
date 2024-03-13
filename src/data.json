@@ -521,56 +521,72 @@
   "Form_LastName": [
     {
       "id": 1,
-      "Title": "Last Name"
+      "Title": "Last Name",
+      "Title_ar": "اللقب",
+      "Title_fr": "Last Name"
     }
   ],
 
   "Form_Email": [
     {
       "id": 1,
-      "Title": "Email"
+      "Title": "Email",
+      "Title_ar": "ايمايل",
+      "Title_fr": "Email"
     }
   ],
 
   "Form_Phone_Number": [
     {
       "id": 1,
-      "Title": "Phone Number"
+      "Title": "Phone Number",
+      "Title_ar": "رقم الهاتف",
+      "Title_fr": "Phone Number"
     }
   ],
 
   "Form_Address": [
     {
       "id": 1,
-      "Title": "Address"
+      "Title": "Address",
+      "Title_ar": "العنوان",
+      "Title_fr": "Address"
     }
   ],
 
   "Form_City": [
     {
       "id": 1,
-      "Title": "City"
+      "Title": "City",
+      "Title_ar": "الولاية",
+      "Title_fr": "City"
     }
   ],
 
   "Form_Zip": [
     {
       "id": 1,
-      "Title": "Zip / Postal Code"
+      "Title": "Zip / Postal Code",
+      "Title_ar": "Zip / Postal Code",
+      "Title_fr": "Zip / Postal Code"
     }
   ],
 
   "Form_Cv": [
     {
       "id": 1,
-      "Title": "Your Cv"
+      "Title": "Your Cv",
+      "Title_ar": "السيرة الذاتية",
+      "Title_fr": "Your Cv"
     }
   ],
 
   "Form_Message": [
     {
       "id": 1,
-      "Title": "Message"
+      "Title": "Message",
+      "Title_ar": "الرسالة",
+      "Title_fr": "Message"
     }
   ],
 
