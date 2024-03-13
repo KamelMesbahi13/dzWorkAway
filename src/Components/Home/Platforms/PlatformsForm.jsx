@@ -275,23 +275,6 @@ const PlatformsForm = () => {
     );
   });
 
-  const modifiedRequired = Data.Form_Required.map((data) => {
-    if (i18n.language === "ar") {
-      return {
-        id: data.id,
-        Content: data.Content_ar,
-      };
-    }
-
-    if (i18n.language === "fr") {
-      return {
-        id: data.id,
-        Content: data.Content_ar,
-      };
-    }
-    return data;
-  });
-
   const inputStyle = `p-2 mt-1 border-b-2 outline-none border-mainColor`;
 
   const {
@@ -328,7 +311,7 @@ const PlatformsForm = () => {
                       <div className="flex flex-col justify-between md:flex-row">
                         <div>
                           {Name} <br />
-                          <input
+                          {/* <input
                             className={`${inputStyle} mb-6 md:mb-0 w-full`}
                             type="text"
                             {...register("name", {
@@ -347,7 +330,7 @@ const PlatformsForm = () => {
                                 errors.name.type === "minLength" &&
                                 "Name should be more than 5 characters"}
                             </p>
-                          )}
+                          )} */}
                         </div>
                         <div>
                           {LastName} <br />
