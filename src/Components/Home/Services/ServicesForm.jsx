@@ -2,14 +2,6 @@ import { useForm } from "react-hook-form";
 import Data from "../../../data.json";
 import { useTranslation } from "react-i18next";
 
-const Message = Data.Form_Message.map(({ id, Title }) => {
-  return (
-    <label key={id} htmlFor="Message">
-      {Title}
-    </label>
-  );
-});
-
 const ServicesForm = () => {
   const { i18n } = useTranslation();
 
@@ -265,6 +257,31 @@ const ServicesForm = () => {
   });
 
   // ----------------------------------------------------------
+
+  const modifiedMessage = Data.Form_Message.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Title: data.Title_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Title: data.Title_fr,
+      };
+    }
+    return data;
+  });
+
+  const Message = modifiedMessage.map(({ id, Title }) => {
+    return (
+      <label key={id} htmlFor="Message">
+        {Title}
+      </label>
+    );
+  });
 
   // ----------------------------------------------------------
 
