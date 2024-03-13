@@ -11,20 +11,14 @@ const ServicesForm = () => {
     if (i18n.language === "ar") {
       return {
         id: data.id,
-        headerOne: data.headerOne,
-        headerTwo: data.headerTwo,
-        description: data.description_ar,
-        button: data.button_ar,
+        Paragraph: data.Paragraph_ar,
       };
     }
 
     if (i18n.language === "fr") {
       return {
         id: data.id,
-        headerOne: data.headerOne,
-        headerTwo: data.headerTwo,
-        description: data.description_fr,
-        button: data.button_ar,
+        Paragraph: data.Paragraph_fr,
       };
     }
     return data;
