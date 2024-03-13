@@ -275,6 +275,23 @@ const PlatformsForm = () => {
     );
   });
 
+  const modifiedRequired = Data.Form_Required.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Content: data.Content_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Content: data.Content_ar,
+      };
+    }
+    return data;
+  });
+
   const inputStyle = `p-2 mt-1 border-b-2 outline-none border-mainColor`;
 
   const {

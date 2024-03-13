@@ -673,5 +673,14 @@
       "Message_ar": "رسالة",
       "Message_fr": "Message"
     }
+  ],
+
+  "Form_Required": [
+    {
+      "id": 1,
+      "Content": "This field is require",
+      "Content_ar": " يببيي بلبل سميلناسمينل",
+      "Content_fr": "This field is require"
+    }
   ]
 }
