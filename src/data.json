@@ -278,7 +278,6 @@
       "header": "Our Story",
       "header_ar": "ابا يشنايي",
       "header_fr": "Our Story",
-
       "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non reprehenderit architecto vero sequi suscipit, earum porro quo ad voluptas nisi recusandae illum ipsum amet, repellendus soluta tenetur veritatis tempore odit sunt nihil quam laudantium aliquid neque illo! Quae suscipit asperiores quasi nesciunt exercitationem vero vel alias, repellat dignissimos tempore ad rerum tempora dolorem nihil distinctio culpa commodi aliquam sint, molestias optio labore nam. Dolorum aliquid aut rerum a deserunt dolor saepe, iure nesciunt velit recusandae asperiores soluta adipisci, porro perferendis reprehenderit sapiente mollitia obcaecati ut? Exercitationem molestias, cumque dicta officia deserunt rerum sapiente a? Harum, natus itaque distinctio illo rem sapiente dolorem maiores ipsa, commodi quidem qui. Laborum repellendus nemo quis numquam officiis in impedit alias deserunt, ipsa ex error ipsam molestiae perspiciatis, ab eaque. Dicta quos accusamus, porro iusto doloribus et nisi officia? Iste, obcaecati ipsam! Reprehenderit animi fugiat doloremque repudiandae, vel accusantium veniam corrupti. At odio distinctio impedit.",
       "description_ar": "لااب يبتلايتل يلتاسنيتل سيمتلشي شيهتبش حهاشيبىيسلت شحهبهصق اسيجسينالاتل شتملاسياثهل خسيعالستلاضه سهالخهقت سهاسشكخق سهالهقاقحخ سثهفاقسل سخعلاسضخ سيهلاثهثب شيخهابثه سيخهالضثهه سيحهلاصهض سبحهل ببيلهاسل يسلعخابكهيعل سشبعخللاقشبعلاب بخسعالخسل خسالعف شجخعبلااثي سعلاصع شحخهقبع شخهقلالقع خهقلعل شخعصشض خعبيالا جشلا خهبالàق_ شجخعلب سخعلاس شخعللاسج  سيخعلسبلع سيخعلسعص خعسئكهع سخيعلاقçلا شيسخعللا_ىثض سخيعللاضث سيخعاس سيخعلسبلع سيخعلسعص خعسئكهع سخيعلاقçلا شيسخعللا_ىثض سخيعللاضثع  ",
       "description_fr": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non reprehenderit architecto vero sequi suscipit, earum porro quo ad voluptas nisi recusandae illum ipsum amet, repellendus soluta tenetur veritatis tempore odit sunt nihil quam laudantium aliquid neque illo! Quae suscipit asperiores quasi nesciunt exercitationem vero vel alias, repellat dignissimos tempore ad rerum tempora dolorem nihil distinctio culpa commodi aliquam sint, molestias optio labore nam. Dolorum aliquid aut rerum a deserunt dolor saepe, iure nesciunt velit recusandae asperiores soluta adipisci, porro perferendis reprehenderit sapiente mollitia obcaecati ut? Exercitationem molestias, cumque dicta officia deserunt rerum sapiente a? Harum, natus itaque distinctio illo rem sapiente dolorem maiores ipsa, commodi quidem qui. Laborum repellendus nemo quis numquam officiis in impedit alias deserunt, ipsa ex error ipsam molestiae perspiciatis, ab eaque. Dicta quos accusamus, porro iusto doloribus et nisi officia? Iste, obcaecati ipsam! Reprehenderit animi fugiat doloremque repudiandae, vel accusantium veniam corrupti. At odio distinctio impedit."
@@ -494,6 +493,15 @@
       "Paragraph": "Welcome to Our Immigration Platforms, your one-stop solution for streamlined immigration services. With expert guidance and user-friendly interfaces, we make your journey to new beginnings hassle-free.",
       "Paragraph_ar": "العايبي ينععلتس سيتابنيالي سيهلتسنمالمستل سيملتنسيمنلاسي سيمنلتسمينال سميلناسمينلا ",
       "Paragraph_fr": "Welcome to Our Immigration Platforms, your one-stop solution for streamlined immigration services. With expert guidance and user-friendly interfaces, we make your journey to new beginnings hassle-free."
+    }
+  ],
+
+  "Platforms_Paragraph_One": [
+    {
+      "id": 1,
+      "Paragraph": "Welcome to our form page! Please fill out the form below with your details and any inquiries you may have. Your information is secure and will only be used to assist you. If you need help, just let us know. Thank you for reaching out!",
+      "Paragraph_ar": "سيتنبي سيتملس قهتلص لتسعبلاصخ سخعلاسل شكعبلال  يمبتاىبي بمتاب سبلتبس بسختلبس سبحختش حشهثتب سيلسب قغن قفسا شق فت غقن شثغ  فتي غ ثفعشس قافتغت سغت سقغتش غستست سخلاف شيتلفع سهلسلاقسل ",
+      "Paragraph_fr": "Welcome to our form page! Please fill out the form below with your details and any inquiries you may have. Your information is secure and will only be used to assist you. If you need help, just let us know. Thank you for reaching out!"
     }
   ],
 

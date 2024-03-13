@@ -1,3 +1,4 @@
+import Data from "../../../data.json";
 import { useParams } from "react-router-dom";
 import PlatformsDetailsHeader from "./PlatformsDetailsHeader";
 import PlatformsForm from "./PlatformsForm";
@@ -20,6 +21,43 @@ const PlatformsDetails = () => {
   Title("Dz Work Away | Détails des plateformes");
 
   const { i18n } = useTranslation();
+
+  // -----------------------------------------------------------
+
+  const modifiedDataHeaderAndParagraph = Data.Platforms_Paragraph_One.map(
+    (data) => {
+      if (i18n.language === "ar") {
+        return {
+          id: data.id,
+          Paragraph: data.Paragraph_ar,
+        };
+      }
+
+      if (i18n.language === "fr") {
+        return {
+          id: data.id,
+          Paragraph: data.Paragraph_fr,
+        };
+      }
+      return data;
+    }
+  );
+
+  const ParagraphOne = modifiedDataHeaderAndParagraph.map(
+    ({ id, Paragraph }) => {
+      return (
+        <div key={id}>
+          <div>
+            <div>
+              <p>{Paragraph}</p>
+            </div>
+          </div>
+        </div>
+      );
+    }
+  );
+
+  // ----------------------------------------------------------
 
   const { platformId } = useParams();
   const platform = data.find((platform) => platform.id == platformId);
@@ -46,15 +84,7 @@ const PlatformsDetails = () => {
                 <div>
                   <h1 className="relative mb-2 headingStyleLg">{header}</h1>
                 </div>
-                <div>
-                  <p>
-                    Welcome to our form page! Please fill out the form below
-                    with your details and any inquiries you may have. Your
-                    information is secure and will only be used to assist you.
-                    If you need help, just let us know. Thank you for reaching
-                    out!
-                  </p>
-                </div>
+                <div>{ParagraphOne}</div>
               </motion.div>
             </div>
             <div>
