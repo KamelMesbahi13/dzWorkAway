@@ -6,8 +6,6 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useTranslation } from "react-i18next";
 
 const ContactSection = () => {
-  // ---------------------------------------------------------
-
   const { i18n } = useTranslation();
 
   const modifiedDataParagraphs = Data.ContactSection_Paragraphs.map((data) => {
@@ -61,7 +59,7 @@ const ContactSection = () => {
       if (i18n.language === "fr") {
         return {
           id: data.id,
-          header: data.header_ar,
+          header: data.header_fr,
           description: data.description_fr,
         };
       }
@@ -109,6 +107,7 @@ const ContactSection = () => {
       );
     }
   );
+
   // ---------------------------------------------------------
 
   return (

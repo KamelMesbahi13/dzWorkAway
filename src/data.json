@@ -174,33 +174,31 @@
     {
       "id": 1,
       "header": "Fly Your Dream Destination",
-      "header_ar": "بنالنمالشيبن يلنيالنيالن",
-      "header_fr": "Fly Your Dream Destination",
+      "header_ar": "سافر إلى وجهة أحلامك",
+      "header_fr": "Envolez-vous vers votre destination de rêve",
 
-      "description": "Idea of denouncing pleasure & praising pain was born.",
-      "description_ar": "يبخعابل سيهتههلتي يهلتيهلهتتتشب حيهتلهيستلهي شيحهلتحهبال سبحهلتبيهتل",
-      "description_fr": "Idea of denouncing pleasure & praising pain was born."
+      "description": "Choose your destination and we'll find the solution",
+      "description_ar": "اختر وجهتك وسنجد لك الحل المناسب لك",
+      "description_fr": "Choisissez votre destination et nous trouvons la solution",
+
+      "button": "Contact Us",
+      "button_ar": "تواصل معنا",
+      "button_fr": "Contactez-nous"
     }
   ],
 
   "ContactSection_Paragraphs": [
     {
       "id": 1,
-      "paragraph": "Entering & Leaving From Country",
-      "paragraph_ar": "التيتل يناالثهل يمتاتتال يلمتتال",
-      "paragraph_fr": "Entering & Leaving From Country"
+      "paragraph": "We redigest your CV",
+      "paragraph_ar": "نعيد فحص سيرتك الذاتية",
+      "paragraph_fr": "Nous redigons votre CV"
     },
     {
       "id": 2,
-      "paragraph": "Entering & Leaving From Country",
-      "paragraph_ar": "التيتل يناالثهل يمتاتتال يلمتتال",
-      "paragraph_fr": "Entering & Leaving From Country"
-    },
-    {
-      "id": 3,
-      "paragraph": "Entering & Leaving From Country",
-      "paragraph_ar": "التيتل يناالثهل يمتاتتال يلمتتال",
-      "paragraph_fr": "Entering & Leaving From Country"
+      "paragraph": "We apply to you",
+      "paragraph_ar": "نحن نقدم لك",
+      "paragraph_fr": "Nous vous postulons"
     }
   ],
 
