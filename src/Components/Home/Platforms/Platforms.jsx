@@ -95,7 +95,7 @@ const Services = () => {
         id: data.id,
         header: data.header_fr,
         description: data.description_fr,
-        button: data.button_ar,
+        button: data.button_fr,
       };
     }
     return data;
@@ -158,7 +158,7 @@ const Services = () => {
         id: data.id,
         header: data.header_fr,
         description: data.description_fr,
-        button: data.button_ar,
+        button: data.button_fr,
       };
     }
     return data;
