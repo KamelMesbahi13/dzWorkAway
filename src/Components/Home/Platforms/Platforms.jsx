@@ -226,7 +226,7 @@ const Services = () => {
 
           <div className="grid grid-cols-1 gap-8 mt-12 md:grid-cols-2 textCenter">
             <div>
-              <div className="duration-500 hover:scale-[1.01] hover:shadow-2xl card rounded-md p-8 w-full md:w-[60%] shadow-xl md:h-[60vh] bg-white">
+              <div className="duration-500 hover:scale-[1.01] hover:shadow-2xl card rounded-md p-8 w-full md:w-[60%] shadow-xl rtl:md:h-[30rem] md:h-[40rem] bg-white">
                 <motion.div
                   initial="hidden"
                   whileInView="visible"
@@ -244,7 +244,7 @@ const Services = () => {
             </div>
 
             <div>
-              <div className="duration-500 hover:scale-[1.01] hover:shadow-2xl card rounded-md p-8 w-full md:w-[60%] shadow-xl md:h-[60vh] bg-white">
+              <div className="duration-500 hover:scale-[1.01] hover:shadow-2xl card rounded-md p-8 w-full md:w-[60%] shadow-xl rtl:md:h-[30rem] md:h-[40rem] bg-white">
                 <motion.div
                   initial="hidden"
                   whileInView="visible"
