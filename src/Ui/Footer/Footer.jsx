@@ -193,7 +193,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className="relative w-full mt-12 md:mt-20 h-[50rem] lg:h-[31rem] footerBack border border-grey">
+      <div className="relative w-full mt-12 md:mt-20 h-[60rem] lg:h-[50rem] footerBack border border-grey">
         <div className="container">
           <div className="absolute -translate-y-1/2 top-1/2 rtl:lg:w-[94%]">
             <div className="flex flex-col items-center justify-between lg:flex-row">
@@ -219,23 +219,13 @@ const Footer = () => {
               <div className="w-full my-4 lg:w-1/4 lg:textCenter">
                 {LinksHeader}{" "}
                 <div className="flex flex-row flex-wrap lg:flex-nowrap lg:flex-col gap-y-8">
-                  {/* {footerItems.map((el, i) => (
-                    <div key={i}>
-                      <a
-                        rel="noreferrer"
-                        className="ltr:mr-2 rtl:ml-2 link"
-                        href={footerLinks[i]}
-                      >
-                        {el}
-                      </a>
-                    </div>
-                  ))} */}
-
-                  <a to="/">{modifiedDataNav.map((el) => el.ItemOne)}</a>
-                  <a to="/Nos-Services">
+                  <a className="ltr:mr-2 rtl:ml-2 link" to="/">
+                    {modifiedDataNav.map((el) => el.ItemOne)}
+                  </a>
+                  <a className="ltr:mr-2 rtl:ml-2 link" to="/Nos-Services">
                     {modifiedDataNav.map((el) => el.ItemTwo)}
                   </a>
-                  <a to="/À Propos-de-Nous">
+                  <a className="ltr:mr-2 rtl:ml-2 link" to="/À Propos-de-Nous">
                     {modifiedDataNav.map((el) => el.ItemThree)}
                   </a>
                   <a to="/Contactez-Nous">

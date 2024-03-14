@@ -53,6 +53,7 @@ const ContactSection = () => {
           id: data.id,
           header: data.header_ar,
           description: data.description_ar,
+          button: data.button_ar,
         };
       }
 
@@ -61,6 +62,7 @@ const ContactSection = () => {
           id: data.id,
           header: data.header_fr,
           description: data.description_fr,
+          button: data.button_fr,
         };
       }
       return data;
@@ -68,7 +70,7 @@ const ContactSection = () => {
   );
 
   const HeadingsAndParagraphs = modifiedDataHeaderParagraph.map(
-    ({ id, header, description }) => {
+    ({ id, header, description, button }) => {
       return (
         <div key={id}>
           <div>
@@ -95,7 +97,7 @@ const ContactSection = () => {
                         target="_blank"
                         href="/Contactez-Nous"
                       >
-                        <button className="buttonCust">Contact US</button>
+                        <button className="buttonCust">{button}</button>
                       </a>
                     </div>
                   </div>
