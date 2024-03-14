@@ -39,27 +39,6 @@ const data = [
   },
 ];
 
-const Buttons = Data.Home_Header_Button.map(
-  ({ id, button_one, button_two }) => {
-    return (
-      <div key={id}>
-        <div>
-          <div>
-            <div className="flex mt-4">
-              <a rel="noreferrer" target="_blank" href="/À Propos-de-Nous">
-                <button className="ltr:mr-8 simpleButton">{button_one}</button>
-              </a>
-              <a target="_blank" rel="noreferrer" href="/Nos-Services">
-                <button className="simpleButton rtl:mr-8">{button_two}</button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-);
-
 export default function App() {
   const { i18n } = useTranslation();
 
@@ -86,9 +65,47 @@ export default function App() {
     return data;
   });
 
+  const modifiedButton = Data.Home_Header_Button.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        button_one: data.button_one_ar,
+        button_two: data.button_two_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        button_one: data.button_one_fr,
+        button_two: data.button_two_fr,
+      };
+    }
+    return data;
+  });
+
+  const Buttons = modifiedButton.map(({ id, button_one, button_two }) => {
+    return (
+      <div key={id}>
+        <div>
+          <div>
+            <div className="flex mt-4">
+              <a rel="noreferrer" target="_blank" href="/À Propos-de-Nous">
+                <button className="ltr:mr-8 simpleButton">{button_one}</button>
+              </a>
+              <a target="_blank" rel="noreferrer" href="/Nos-Services">
+                <button className="simpleButton rtl:mr-8">{button_two}</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  });
+
   return (
     <>
-      <div className="h-[75vh] md:h-[100vh] w-full">
+      <div className="h-[25rem] md:h-[30rem] w-full">
         <Swiper
           centeredSlides={true}
           autoplay={{
@@ -103,11 +120,11 @@ export default function App() {
             return (
               <SwiperSlide key={id} className="relative text-white">
                 <LazyLoadImage
-                  className="h-[75vh] w-full md:h-[100vh]"
+                  className="h-[25rem] md:h-[30rem] w-full"
                   src={Img}
                   alt={alt}
                 />
-                <div className="absolute w-full md:w-1/2 p-8 lg:px-24 top-[15%] sm:top-[20%]">
+                <div className="absolute w-full md:w-1/2 p-8 lg:px-24 top-[0%] sm:top-[10%]">
                   <div>
                     <h1 className="mb-4 md:text-5xl">{heading}</h1>
                     <p>{paragraph}</p>

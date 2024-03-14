@@ -3,7 +3,12 @@
     {
       "id": 1,
       "button_one": "Know More About Us",
-      "button_two": "Check Our Services"
+      "button_one_ar": "تعرف المزيد عنا",
+      "button_one_fr": "En savoir plus sur nous",
+
+      "button_two": "Check Our Services",
+      "button_two_ar": "اطلع على خدماتنا",
+      "button_two_fr": "Découvrez nos services"
     }
   ],
 
