@@ -94,10 +94,8 @@ const AboutUs = () => {
     ({ id, header, paragraph }) => {
       return (
         <div key={id}>
-          <div>
-            <p className="mb-1 text-lg font-bold rtl:textRight md:text-xl">
-              {header}
-            </p>
+          <div className="rtl:textRight">
+            <p className="mb-1 text-lg font-bold md:text-xl">{header}</p>
             <p>{paragraph}</p>
           </div>
         </div>
@@ -195,7 +193,7 @@ const AboutUs = () => {
                 >
                   <div>{ParagraphOne}</div>
 
-                  <div className="text-left">
+                  <div className="">
                     <div className="flex flex-col justify-between mt-8 md:flex-row">
                       <div className="flex items-center md:w-[80%] shadow-md p-4 duration-500 hover:shadow-lg">
                         <LazyLoadImage
@@ -207,7 +205,7 @@ const AboutUs = () => {
                       </div>
                       <div className="flex items-center md:w-[80%] shadow-md p-4 duration-500 hover:shadow-lg">
                         <LazyLoadImage
-                          className="w-10 h-10 mr-4"
+                          className="w-10 h-10 rtl:ml-4 ltr:mr-4"
                           src={Mission}
                           alt="Mission"
                         />

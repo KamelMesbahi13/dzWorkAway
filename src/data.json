@@ -33,18 +33,18 @@
   "AboutUs_Heading": [
     {
       "id": 1,
-      "heading": "Welcome to immigration Advisory services",
-      "heading_fr": "Welcome to immigration Advisory services fr",
-      "heading_ar": "ال يااينبا يبتااصصتب يبمتشم"
+      "heading": "Welcome to DZ WORK AWAY Your trusted partner for your immigration needs",
+      "heading_fr": "Bienvenue sur DZ WORK AWAY Votre partenaire de confiance pour vos besoins en immigration",
+      "heading_ar": "مرحبًا بك في DZ WORK AWAY شريكك الموثوق به لتلبية احتياجاتك في مجال الهجرة"
     }
   ],
 
   "AboutUs_Paragraph_One": [
     {
       "id": 1,
-      "paragraph": "Quisque dignissim enim diam, eget pulvinar ex viverra id. Nulla a lobortis lectus, id volutpat magna. Morbi consequat porttitor fermentum. Nulla vestibulum tincidunt viverra. Vestibulum accumsan molestie lorem, non laoreet massa. Duis at dui sem. Vivamus ut gravida libero",
-      "paragraph_fr": "Quisque dignissim enim diam, eget pulvinar ex viverra id. Nulla a lobortis lectus, id volutpat magna. Morbi consequat porttitor fermentum. Nulla vestibulum tincidunt viverra. Vestibulum accumsan molestie lorem, non laoreet massa. Duis at dui sem. Vivamus ut gravida libero fr",
-      "paragraph_ar": "يلنتبل سينتامتشسنىبكنلاليه شسنبشلميتبض سيبنتنيبل يبميتتي"
+      "paragraph": "Welcome to the website of DZ WORK AWAY, your one-stop shop for all your immigration needs. Whether you're an individual looking to move to a new country for work, family or study reasons, or a company looking to recruit international talent, we're here to help you navigate through the complexities of the immigration process.",
+      "paragraph_fr": "Bienvenue sur le site web de DZ WORK AWAY, votre guichet unique pour tous vos besoins en immigration. Que vous soyez un individu cherchant à déménager dans un nouveau pays pour des raisons professionnelles, familiales ou d'études, ou que vous soyez une entreprise désireuse de recruter des talents internationaux, nous sommes là pour vous aider à naviguer à travers les complexités du processus d'immigration.",
+      "paragraph_ar": "مرحباً بك في الموقع الإلكتروني لشركة DZ WORK AWAY، موقعك الشامل لجميع احتياجاتك المتعلقة بالهجرة. سواء كنت فرداً تتطلع إلى الانتقال إلى بلد جديد للعمل أو الأسرة أو الدراسة أو كنت شركة تتطلع إلى توظيف مواهب دولية، نحن هنا لمساعدتك في التعامل مع تعقيدات عملية الهجرة"
     }
   ],
 
@@ -52,11 +52,11 @@
     {
       "id": 1,
       "header": "Our Vision",
-      "header_fr": "Our Vision fr",
-      "header_ar": "الببل بللاي",
-      "paragraph": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-      "paragraph_fr": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-      "paragraph_ar": "ال يعبايلتال يعاتتيا يبايتباي يلايتتيب"
+      "header_fr": "Notre Vision",
+      "header_ar": "رؤيتنا",
+      "paragraph": "Our immigration website simplifies the global immigration process, fostering inclusivity and confidence in new beginnings.",
+      "paragraph_fr": "Notre site Internet sur l'immigration simplifie le processus d'immigration mondiale, encourageant l'inclusion et la confiance dans les nouveaux départs.",
+      "paragraph_ar": "يعمل موقعنا الإلكتروني للهجرة على تبسيط عملية الهجرة العالمية وتعزيز الشمولية والثقة في البدايات الجديدة."
     }
   ],
 
@@ -64,11 +64,11 @@
     {
       "id": 1,
       "header": "Our Mission",
-      "header_fr": "Our Mission fr",
-      "header_ar": "الببل بللاي",
-      "paragraph": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-      "paragraph_fr": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-      "paragraph_ar": "ال يعبايلتال يعاتتيا يبايتباي يلايتتيب"
+      "header_fr": "Notre Mission",
+      "header_ar": "مهمتنا",
+      "paragraph": "Our mission is to simplify global immigration, offering clarity and support to individuals and businesses, fostering inclusivity and enabling new beginnings.",
+      "paragraph_fr": "Notre mission est de simplifier l'immigration mondiale, en offrant clarté et soutien aux particuliers et aux entreprises, en favorisant l'inclusion et en permettant de nouveaux départs.",
+      "paragraph_ar": "مهمتنا هي تبسيط الهجرة العالمية، وتقديم الوضوح والدعم للأفراد والشركات، وتعزيز الشمولية وتمكين البدايات الجديدة."
     }
   ],
 
