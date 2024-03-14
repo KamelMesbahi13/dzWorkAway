@@ -75,12 +75,12 @@
   "Platforms_Heading_Paragraphs": [
     {
       "id": 1,
-      "heading": "Discover a Comprehensive Online Immigration Platform",
-      "heading_ar": "ابابابتشيمبا يئمنلامتلايس يمبتايست",
-      "heading_fr": "Discover a Comprehensive Online Immigration Platform",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
-      "description_ar": "التينينبلتت ؤاترئتمابتمئيالمتؤالمتؤالؤ ئمؤلاؤمءامتؤءالمءؤالمتءال ؤملاتءؤنمالمؤءالنؤال",
-      "description_fr": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam."
+      "heading": "Discover Our Immigration Services",
+      "heading_ar": "اكتشف خدمات الهجرة التي نقدمها",
+      "heading_fr": "Découvrez nos services d'immigration",
+      "description": "Start your immigration journey easily with our online services. Get expert guidance for pursuing new opportunities",
+      "description_ar": "ابدأ رحلة الهجرة بسهولة مع خدماتنا عبر الإنترنت. احصل على إرشادات الخبراء للبحث عن فرص جديدة",
+      "description_fr": "Commencez facilement votre parcours d'immigration grâce à nos services en ligne. Obtenez des conseils d'experts pour saisir de nouvelles opportunités"
     }
   ],
 
@@ -115,13 +115,13 @@
   "Services_Heading_Paragraphs": [
     {
       "id": 1,
-      "heading": "Discover a Comprehensive Online Immigration Platform",
-      "heading_ar": "ابابابتشيمبا يئمنلامتلايس يمبتايست",
-      "heading_fr": "Discover a Comprehensive Online Immigration Platform",
+      "heading": "Discover Our Immigration Platforms",
+      "heading_ar": "اكتشف منصاتنا للهجرة",
+      "heading_fr": "Découvrez nos plateformes d'immigration",
 
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
-      "description_ar": "التينينبلتت ؤاترئتمابتمئيالمتؤالمتؤالؤ ئمؤلاؤمءامتؤءالمءؤالمتءال ؤملاتءؤنمالمؤءالنؤال",
-      "description_fr": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam."
+      "description": "Begin your immigration journey effortlessly using our online platform. Access expert guidance for reuniting with loved ones or pursuing new opportunities.",
+      "description_ar": "ابدأ رحلة الهجرة دون عناء باستخدام منصتنا عبر الإنترنت. احصل على إرشادات الخبراء للمّ شمل أحبائك أو البحث عن فرص جديدة.",
+      "description_fr": "Commencez votre parcours d'immigration sans effort en utilisant notre plateforme en ligne. Bénéficiez de conseils d'experts pour retrouver vos proches ou saisir de nouvelles opportunités."
     }
   ],
 
@@ -132,13 +132,13 @@
       "header_ar": "فغلعاهخ هماعنلي البتنتمن",
       "header_fr": "All The World",
 
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
-      "description_ar": "نتالنبتلابت يمابميابمياب هابميئابناي يئهبتنميتبهيتب يهبتهيتبهي",
-      "description_fr": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
+      "description": "Our unique service offers the creation of profiles on 20 platforms in various European countries, Canada, the Netherlands and the USA, facilitating your job search and your professional immigration project. By working with us, you'll benefit from personalized support that includes writing your professional profiles and submitting targeted applications to maximize your chances of landing a job and carrying out your professional immigration project in the country of your choice.",
+      "description_ar": "تقدم خدمتنا الفريدة من نوعها إنشاء ملفات تعريفية على 20 منصة في مختلف الدول الأوروبية وكندا وهولندا والولايات المتحدة الأمريكية، مما يسهل عملية بحثك عن وظيفة ومشروع الهجرة المهنية الخاص بك. من خلال العمل معنا، ستستفيد من الدعم الشخصي الذي يشمل كتابة ملفاتك الشخصية المهنية وتقديم الطلبات المستهدفة لزيادة فرصك في الحصول على وظيفة وتنفيذ مشروع الهجرة المهنية في البلد الذي تختاره.",
+      "description_fr": "Notre service unique offre la création de profils sur 20 plateformes dans divers pays d'Europe, au Canada, aux Pays-Bas et aux États-Unis, facilitant ainsi votre recherche d'emploi et votre projet d'immigration professionnelle. En collaborant avec nous, vous bénéficiez d'un accompagnement personnalisé qui comprend la rédaction de vos profils professionnels et la soumission de candidatures ciblées pour maximiser vos chances de décrocher un emploi et de réaliser votre projet d'immigration professionnelle dans le pays de votre choix.",
 
-      "button": "Apply",
-      "button_ar": "يلليلي",
-      "button_fr": "Apply"
+      "button": "See More",
+      "button_ar": "اطلع على المزيد",
+      "button_fr": "Voir Plus"
     }
   ],
 
@@ -146,14 +146,14 @@
     {
       "id": 2,
       "header": "Canada",
-      "header_ar": "فغلعاهخ هماعنلبي البتنتمن",
+      "header_ar": "كندا",
       "header_fr": "Canada",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
-      "description_ar": "نتالنبتلابت يمابميابمياب هابميئابناي يئهبتنميتبهيتب يهبتهيتبهي",
-      "description_fr": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
-      "button": "Apply",
-      "button_ar": "يلليلي",
-      "button_fr": "Apply"
+      "description": "Our exclusive service offers you the creation of profiles on 12 specialized platforms in Canada, simplifying your job search and professional immigration process. With our expertise, we create powerful professional profiles and submit targeted applications to maximize your chances of success in your immigration and employment project in Canada.",
+      "description_ar": "تقدم لك خدمتنا الحصرية إنشاء ملفات تعريفية على 12 منصة متخصصة في كندا، مما يسهل عملية بحثك عن وظيفة وعملية الهجرة المهنية. نستخدم خبرتنا لإنشاء ملفات تعريف مهنية قوية وتقديم طلبات مستهدفة لزيادة فرص نجاحك في مشروعك للهجرة والتوظيف في كندا.",
+      "description_fr": "Notre service exclusif vous offre la création de profils sur 12 plateformes spécialisées au Canada, simplifiant ainsi votre recherche d'emploi et votre processus d'immigration professionnelle. Avec notre expertise, nous élaborons des profils professionnels percutants et soumettons des candidatures ciblées pour maximiser vos chances de succès dans votre projet d'immigration et d'emploi au Canada.",
+      "button": "See More",
+      "button_ar": "اطلع على المزيد",
+      "button_fr": "Voir Plus"
     }
   ],
 
@@ -537,9 +537,9 @@
   "Services_Service_Header_Paragraph": [
     {
       "id": 1,
-      "Header": "Discover a Comprehensive Online Immigration Platform",
+      "Header": "Discover a Comprehensive Online Immigration Services",
       "Header_ar": " لناسم لناسم بلبل سميلناسمينل",
-      "Header_fr": "Discover a Comprehensive Online Immigration Platform",
+      "Header_fr": "Discover a Comprehensive Online Immigration Services",
       "Paragraph": "Step into an online platform tailored to meet your immigration needs. Explore personalized solutions designed to guide you through every step of your journey, ensuring a seamless transition to your new destination.",
       "Paragraph_ar": "العايبي ينععلتس سيتابنيالي سيهلتسنمالمستل سيملتنسيمنلاسي سيمنلتسمينال سميلناسمينلا ",
       "Paragraph_fr": "Step into an online platform tailored to meet your immigration needs. Explore personalized solutions designed to guide you through every step of your journey, ensuring a seamless transition to your new destination."

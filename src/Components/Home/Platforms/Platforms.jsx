@@ -143,9 +143,7 @@ const Services = () => {
     }
   );
 
-  // -----------------------------------------------------
-
-  const modifiedDataBoxTwo = Data.Services_One.map((data) => {
+  const modifiedDataBoxTwo = Data.Services_Two.map((data) => {
     if (i18n.language === "ar") {
       return {
         id: data.id,
