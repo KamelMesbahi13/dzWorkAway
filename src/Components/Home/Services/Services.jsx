@@ -132,8 +132,8 @@ const Services = () => {
     if (i18n.language === "ar") {
       return {
         id: data.id,
-        headerOne: data.headerOne,
-        headerTwo: data.headerTwo,
+        headerOne: data.headerOne_ar,
+        headerTwo: data.headerTwo_ar,
         description: data.description_ar,
         button: data.button_ar,
       };
@@ -142,8 +142,8 @@ const Services = () => {
     if (i18n.language === "fr") {
       return {
         id: data.id,
-        headerOne: data.headerOne,
-        headerTwo: data.headerTwo,
+        headerOne: data.headerOne_fr,
+        headerTwo: data.headerTwo_fr,
         description: data.description_fr,
         button: data.button_ar,
       };
@@ -205,8 +205,8 @@ const Services = () => {
     if (i18n.language === "ar") {
       return {
         id: data.id,
-        headerThree: data.headerThree,
-        headerFour: data.headerFour,
+        headerThree: data.headerThree_ar,
+        headerFour: data.headerFour_ar,
         description: data.description_ar,
         button: data.button_ar,
       };
@@ -215,8 +215,8 @@ const Services = () => {
     if (i18n.language === "fr") {
       return {
         id: data.id,
-        headerThree: data.headerThree,
-        headerFour: data.headerFour,
+        headerThree: data.headerThree_fr,
+        headerFour: data.headerFour_fr,
         description: data.description_fr,
         button: data.button_ar,
       };

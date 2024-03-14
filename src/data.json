@@ -88,7 +88,13 @@
     {
       "id": 1,
       "headerOne": "Arrima",
+      "headerOne_ar": "أريما",
+      "headerOne_fr": "Arrima",
+
       "headerTwo": "Entrée Express",
+      "headerTwo_ar": "Entrée Express",
+      "headerTwo_fr": "Entrée Express",
+
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
       "description_ar": "نتالنبتلابت يمابميابمياب هابميئابناي يئهبتنميتبهيتب يهبتهيتبهي",
       "description_fr": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
@@ -101,8 +107,15 @@
   "Platforms_Two": [
     {
       "id": 2,
-      "headerFour": "New Brunswick",
-      "headerThree": "New Zélande",
+
+      "headerFour": "New Zélande",
+      "headerFour_ar": "نيوزيلندا",
+      "headerFour_fr": "New Zélande",
+
+      "headerThree": "New Brunswick",
+      "headerThree_ar": "نيو برونزيك",
+      "headerThree_fr": "New Brunswick",
+
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
       "description_ar": "نتالنبتلابت يمابميابمياب هابميئابناي يئهبتنميتبهيتب يهبتهيتبهي",
       "description_fr": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores nihil repudiandae, ut est maiores quam nostrum fugiat earum laboriosam.",
@@ -129,8 +142,8 @@
     {
       "id": 1,
       "header": "All The World",
-      "header_ar": "فغلعاهخ هماعنلي البتنتمن",
-      "header_fr": "All The World",
+      "header_ar": "كل العالم",
+      "header_fr": "Tout Le Monde",
 
       "description": "Our unique service offers the creation of profiles on 20 platforms in various European countries, Canada, the Netherlands and the USA, facilitating your job search and your professional immigration project. By working with us, you'll benefit from personalized support that includes writing your professional profiles and submitting targeted applications to maximize your chances of landing a job and carrying out your professional immigration project in the country of your choice.",
       "description_ar": "تقدم خدمتنا الفريدة من نوعها إنشاء ملفات تعريفية على 20 منصة في مختلف الدول الأوروبية وكندا وهولندا والولايات المتحدة الأمريكية، مما يسهل عملية بحثك عن وظيفة ومشروع الهجرة المهنية الخاص بك. من خلال العمل معنا، ستستفيد من الدعم الشخصي الذي يشمل كتابة ملفاتك الشخصية المهنية وتقديم الطلبات المستهدفة لزيادة فرصك في الحصول على وظيفة وتنفيذ مشروع الهجرة المهنية في البلد الذي تختاره.",
