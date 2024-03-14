@@ -31,12 +31,12 @@ const contact = [
   {
     id: 1,
     Img: Phone,
-    Content: "05 55 55 55",
+    Content: "0550 51 00 61",
   },
   {
     id: 2,
     Img: Gmail,
-    Content: "admin@gmail.com",
+    Content: "contact@dzworkaway.com",
   },
 ];
 
@@ -187,7 +187,6 @@ const Footer = () => {
       );
     }
   );
-  // -------------------------------------------------------------
 
   const year = new Date().getFullYear();
 
