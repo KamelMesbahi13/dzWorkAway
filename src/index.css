@@ -69,6 +69,10 @@ h1 {
     direction: initial;
   }
 
+  .rightDirection {
+    direction: rtl;
+  }
+
   .buttonCust {
     color: white;
     padding: 13px 20px 13px;

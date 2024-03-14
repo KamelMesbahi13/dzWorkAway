@@ -6,38 +6,34 @@ import "swiper/css";
 import "./Swiper.css";
 import ImgOne from "../../../../assets/HomePageOne.webp";
 import ImgThree from "../../../../assets/HomePageThree.webp";
-import Check from "../../../../assets/check.png";
 import { useTranslation } from "react-i18next";
 
 const data = [
   {
     id: 1,
-    heading: "Immigration visa Consulting",
-    heading_ar: "This Text Is On Arabic",
-    heading_fr: "This Text Is On fr",
-
-    paragraph_ar: "This Paragraph Is On Arabic",
-    paragraph_fr: "This Paragraph Is On fr",
-
-    paragraph: "Expert Guidance for a Seamless Immigration Journey",
-    paragraph_check: "Meeting Your Unique Needs",
-    paragraph_check_ar: "يبننتب",
-    paragraph_check_fr: "frfrfrfr",
-
+    heading: "Your Immigration Partner",
+    heading_ar: "شريكك في الهجرة",
+    heading_fr: "Votre Partenaire en Immigration",
+    paragraph:
+      "We are here to guide you through the immigration process, whether it's for working abroad, immigrating with your family, or pursuing international training. With our expertise and personalized approach, achieve your projects with confidence. Contact us today to start your journey towards a new life.",
+    paragraph_fr:
+      "Nous sommes là pour vous guider à travers le processus d'immigration sans conditions que ce soit pour travailler à l'étranger, immigrer avec votre famille ou suivre des formations internationales. Avec notre expertise et notre approche personnalisée, réalisez vos projets en toute confiance. Contactez-nous dès aujourd'hui pour commencer votre voyage vers une nouvelle vie.",
+    paragraph_ar:
+      "نحن هنا لنوجِّهكم خلال عملية الهجرة بدون قيود، سواء كان ذلك للعمل في الخارج، أو للهجرة مع عائلتكم، أو لمتابعة تدريبات دولية. باستخدام خبرتنا ونهجنا الشخصي، يمكنكم تحقيق مشاريعكم بثقة. اتصلوا بنا اليوم لبدء رحلتكم نحو حياة جديدة",
     Img: ImgOne,
     alt: "Background One",
   },
   {
     id: 2,
-    heading: "Immigration visa Consulting",
-    heading_ar: "This Text Is On Arabic",
-    paragraph_ar: "This Paragraph Is On Arabic",
-    paragraph_fr: "This Paragraph Is On fr",
-    paragraph: "Expert Guidance for a Seamless Immigration Journey",
-    paragraph_check: "Meeting Your Unique Needs",
-    paragraph_check_ar: "This Check Paragraph is on arabic",
-    paragraph_check_fr: "This Check Paragraph is on fr",
-
+    heading: "Your Immigration Partner",
+    heading_fr: "Votre Partenaire en Immigration",
+    heading_ar: "شريكك في الهجرة",
+    paragraph:
+      "We are here to guide you through the immigration process, whether it's for working abroad, immigrating with your family, or pursuing international training. With our expertise and personalized approach, achieve your projects with confidence. Contact us today to start your journey towards a new life.",
+    paragraph_fr:
+      "Nous sommes là pour vous guider à travers le processus d'immigration sans conditions que ce soit pour travailler à l'étranger, immigrer avec votre famille ou suivre des formations internationales. Avec notre expertise et notre approche personnalisée, réalisez vos projets en toute confiance. Contactez-nous dès aujourd'hui pour commencer votre voyage vers une nouvelle vie.",
+    paragraph_ar:
+      "نحن هنا لنوجِّهكم خلال عملية الهجرة بدون قيود، سواء كان ذلك للعمل في الخارج، أو للهجرة مع عائلتكم، أو لمتابعة تدريبات دولية. باستخدام خبرتنا ونهجنا الشخصي، يمكنكم تحقيق مشاريعكم بثقة. اتصلوا بنا اليوم لبدء رحلتكم نحو حياة جديدة",
     Img: ImgThree,
     alt: "Background Three",
   },
@@ -73,7 +69,6 @@ export default function App() {
         id: data.id,
         heading: data.heading_ar,
         paragraph: data.paragraph_ar,
-        paragraph_check: data.paragraph_check_ar,
         Img: data.Img,
         alt: data.alt,
       };
@@ -84,7 +79,6 @@ export default function App() {
         id: data.id,
         heading: data.heading_fr,
         paragraph: data.paragraph_fr,
-        paragraph_check: data.paragraph_check_fr,
         Img: data.Img,
         alt: data.alt,
       };
@@ -105,36 +99,24 @@ export default function App() {
           modules={[Autoplay]}
           className="mySwiper"
         >
-          {modifiedData.map(
-            ({ id, heading, paragraph, paragraph_check, Img, alt }) => {
-              return (
-                <SwiperSlide key={id} className="relative text-white">
-                  <LazyLoadImage
-                    className="h-[75vh] w-full md:h-[100vh]"
-                    src={Img}
-                    alt={alt}
-                  />
-                  <div className="absolute w-full md:w-1/2 p-8 lg:px-24 top-[15%] sm:top-[20%]">
-                    <div>
-                      <h1 className="mb-4 md:text-5xl">{heading}</h1>
-                      <h6>{paragraph}</h6>
-                    </div>
-                    <div>
-                      <div className="flex flex-row">
-                        <LazyLoadImage
-                          className="!w-6 h-6 rtl:ml-2 ltr:mr-2"
-                          src={Check}
-                          alt="Check"
-                        />
-                        <p>{paragraph_check}</p>
-                      </div>{" "}
-                    </div>
-                    <div>{Buttons}</div>
+          {modifiedData.map(({ id, heading, paragraph, Img, alt }) => {
+            return (
+              <SwiperSlide key={id} className="relative text-white">
+                <LazyLoadImage
+                  className="h-[75vh] w-full md:h-[100vh]"
+                  src={Img}
+                  alt={alt}
+                />
+                <div className="absolute w-full md:w-1/2 p-8 lg:px-24 top-[15%] sm:top-[20%]">
+                  <div>
+                    <h1 className="mb-4 md:text-5xl">{heading}</h1>
+                    <p>{paragraph}</p>
                   </div>
-                </SwiperSlide>
-              );
-            }
-          )}
+                  <div>{Buttons}</div>
+                </div>
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
       </div>
     </>
