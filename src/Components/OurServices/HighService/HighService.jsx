@@ -24,8 +24,8 @@ const data = [
   {
     id: 2,
     Title: "Speed",
-    Title_ar: "شبيل",
-    Title_fr: "Speed",
+    Title_ar: "السرعة",
+    Title_fr: "Vitesse",
     Content:
       "We are committed to providing our customers with a high level of service characterized by unrivalled speed and reliability.",
     Content_ar:
@@ -38,8 +38,8 @@ const data = [
   {
     id: 3,
     Title: "Reliability",
-    Title_ar: "ضصيبنشييخ",
-    Title_fr: "Reliability",
+    Title_ar: "الموثوقية",
+    Title_fr: "Fiabilité",
     Content:
       "With us, every interaction is treated with meticulous care, guaranteeing an exceptional customer experience at every stage of their immigration journey.",
     Content_ar:
