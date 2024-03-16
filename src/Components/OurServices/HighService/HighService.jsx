@@ -10,14 +10,14 @@ const data = [
   {
     id: 1,
     Title: "Quality",
-    Title_ar: "يبةسم",
-    Title_fr: "Quality",
+    Title_ar: "الجودة",
+    Title_fr: "Qualité",
     Content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur earum laborum quisquam nihil. Itaque consectetur neque consequuntur et fuga dignissimos, eos rem! Provident veniam temporibus non beatae laudantium consectetur error!",
+      "Trust us to provide you with top-quality, fast and reliable service, every time.",
     Content_ar:
-      "سمبتلبس سبتللاسنتبل سبمتلاسى شهخقالسب سخعبالىشحهب شسبخلاهاسش شسبحهلسبهل سحهلعشيبش شيحهلعشيتلاعقسل قسعلتاسب",
+      "اعتمد علينا لتزويدك بخدمة عالية الجودة وسريعة وموثوقة في كل مرة.",
     Content_fr:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur earum laborum quisquam nihil. Itaque consectetur neque consequuntur et fuga dignissimos, eos rem! Provident veniam temporibus non beatae laudantium consectetur error!",
+      "Faites-nous confiance pour vous offrir un service de qualité supérieure, rapide et fiable, à chaque instant.",
     Icon: Quality,
   },
 
@@ -27,11 +27,11 @@ const data = [
     Title_ar: "شبيل",
     Title_fr: "Speed",
     Content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur earum laborum quisquam nihil. Itaque consectetur neque consequuntur et fuga dignissimos, eos rem! Provident veniam temporibus non beatae laudantium consectetur error!",
+      "We are committed to providing our customers with a high level of service characterized by unrivalled speed and reliability.",
     Content_ar:
-      "سمبتلبس سبتللاسنتبل سبمتلاسى شهخقالسب سخعبالىشحهب شسبخلاهاسش شسبحهلسبهل سحهلعشيبش شيحهلعشيتلاعقسل قسعلتاسب",
+      "نحن ملتزمون بتزويد عملائنا بمستوى عالٍ من الخدمة التي تتميز بالسرعة والموثوقية التي لا مثيل لها.",
     Content_fr:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur earum laborum quisquam nihil. Itaque consectetur neque consequuntur et fuga dignissimos, eos rem! Provident veniam temporibus non beatae laudantium consectetur error!",
+      "Nous nous engageons à fournir à nos clients un niveau élevé de service caractérisé par sa rapidité et sa fiabilité inégalées.",
     Icon: Speed,
   },
 
@@ -41,11 +41,11 @@ const data = [
     Title_ar: "ضصيبنشييخ",
     Title_fr: "Reliability",
     Content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur earum laborum quisquam nihil. Itaque consectetur neque consequuntur et fuga dignissimos, eos rem! Provident veniam temporibus non beatae laudantium consectetur error!",
+      "With us, every interaction is treated with meticulous care, guaranteeing an exceptional customer experience at every stage of their immigration journey.",
     Content_ar:
-      "سمبتلبس سبتللاسنتبل سبمتلاسى شهخقالسب سخعبالىشحهب شسبخلاهاسش شسبحهلسبهل سحهلعشيبش شيحهلعشيتلاعقسل قسعلتاسب",
+      "معنا، يتم التعامل مع كل حالة بعناية، مما يضمن تجربة عملاء استثنائية في كل مرحلة من مراحل رحلة الهجرة.",
     Content_fr:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur earum laborum quisquam nihil. Itaque consectetur neque consequuntur et fuga dignissimos, eos rem! Provident veniam temporibus non beatae laudantium consectetur error!",
+      "Chez nous, chaque interaction est traitée avec un soin méticuleux, garantissant une expérience client exceptionnelle à chaque étape de leur parcours d'immigration.",
     Icon: Reliability,
   },
 ];
