@@ -25,8 +25,6 @@ const DataImgsTwo = [
 const Services = () => {
   const { i18n } = useTranslation();
 
-  // -----------------------------------------------------
-
   const modifiedDataHeaderAndParagraph = Data.Services_Heading_Paragraphs.map(
     (data) => {
       if (i18n.language === "ar") {
@@ -205,10 +203,6 @@ const Services = () => {
       );
     }
   );
-
-  // -----------------------------------------------------
-
-  // -----------------------------------------------------
 
   return (
     <>
