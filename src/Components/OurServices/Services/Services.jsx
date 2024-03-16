@@ -17,42 +17,41 @@ const data = [
     Heading_fr: "Conseil en Immigration",
 
     Description:
-      "With extensive experience guiding countless clients, we offer seasoned expertise to navigate your journey seamlessly. Trust in our track record and let us streamline your path to success.",
+      "Our immigration experts are here to guide you every step of the way. Whether you have questions about visa requirements, immigration procedures or current regulations, we're here to provide you with sound, personalized advice.",
     Description_ar:
-      "انستمب سبخهلا سبخهالس شخهاب شخيهال شيهخال شخهشثال شحçاض بهاس هيسال سخيهلا ",
+      "خبراء الهجرة لدينا هنا لإرشادك في كل خطوة على الطريق. وسواء كانت لديك أسئلة حول متطلبات التأشيرة أو إجراءات الهجرة أو اللوائح الحالية، فنحن هنا لنقدم لك المشورة السليمة والشخصية.",
     Description_fr:
-      "With extensive experience guiding countless clients, we offer seasoned expertise to navigate your journey seamlessly. Trust in our track record and let us streamline your path to success.",
+      "Nos experts en immigration sont là pour vous guider à chaque étape du processus. Que vous ayez des questions sur les exigences en matière de visas, les procédures d'immigration ou les réglementations en vigueur, nous sommes là pour vous fournir des conseils avisés et personnalisés.",
   },
 
   {
     id: 2,
     Img: ImgTwo,
-    Heading: "Career Counseling",
-    Heading_ar: "مسايلاص ضخبهتسش",
-    Heading_fr: "Career Counseling",
+    Heading: "Case management",
+    Heading_ar: "إدارة الملفات",
+    Heading_fr: "Gestion de Dossiers",
 
     Description:
-      "Your needs come first. We prioritize understanding your goals, challenges, and aspirations to deliver tailored solutions and exceptional service, ensuring your satisfaction and success.",
-
+      "We understand that the paperwork associated with immigration can be overwhelming. Our experienced team takes charge of managing your files, ensuring that all necessary documents are submitted in a timely manner and in compliance with government requirements..",
     Description_ar:
-      "انستمب سبخهلا سبخهالس شخهاب شخيهال شيهخال شخهشثال شحçاض بهاس هيسال سخيهلا ",
+      "نحن ندرك أن الأعمال الورقية المرتبطة بالهجرة يمكن أن تكون مرهقة. سيتولى فريقنا المتمرس إدارة ملفاتك، مما يضمن تقديم جميع المستندات اللازمة في الوقت المناسب وبما يتوافق مع المتطلبات الحكومية.",
     Description_fr:
-      "With extensive experience guiding countless clients, we offer seasoned expertise to navigate your journey seamlessly. Trust in our track record and let us streamline your path to success.",
+      "Nous comprenons que la paperasserie associée à l'immigration peut être écrasante. Notre équipe expérimentée prend en charge la gestion de vos dossiers, veillant à ce que tous les documents nécessaires soient soumis en temps opportun et en conformité avec les exigences gouvernementales.",
   },
 
   {
     id: 3,
     Img: ImgThree,
-    Heading: "Visa Guidance",
-    Heading_ar: "هسقهالس شبضضب",
-    Heading_fr: "Visa Guidance",
+    Heading: "Visa Services",
+    Heading_ar: "خدمات التأشيرات",
+    Heading_fr: "Services de Visa",
 
     Description:
-      "Trust our guidance. We offer tailored advice to help you navigate life's complexities with confidence and clarity.",
+      "Whether you need a work visa, a student visa, a permanent residence visa or any other type of visa, we are here to help you obtain the necessary authorizations to enter and stay in the country of your choice.",
     Description_ar:
-      "انستمب سبخهلا سبخهالس شخهاب شخيهال شيهخال شخهشثال شحçاض بهاس هيسال سخيهلا ",
+      "سواء كنت بحاجة إلى تأشيرة عمل أو تأشيرة طالب أو تأشيرة إقامة دائمة أو أي نوع آخر من التأشيرات، نحن هنا لمساعدتك في الحصول على التصاريح اللازمة للدخول إلى البلد الذي تختاره والإقامة فيه.",
     Description_fr:
-      "With extensive experience guiding countless clients, we offer seasoned expertise to navigate your journey seamlessly. Trust in our track record and let us streamline your path to success.",
+      "Que vous ayez besoin d'un visa de travail, d'un visa d'étudiant, d'un visa de résidence permanente ou tout autre type de visa, nous sommes là pour vous aider à obtenir les autorisations nécessaires pour entrer et rester dans le pays de votre choix.",
   },
 
   {
