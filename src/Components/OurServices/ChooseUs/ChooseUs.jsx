@@ -160,11 +160,11 @@ const ChooseUs = () => {
         <div>
           <div className="w-full md:w-2/4">{HeadingsAndParagraphsOne}</div>
           <div className="flex flex-col justify-between py-4 mt-12 duration-500 shadow-lg md:py-0 hover:shadow-xl bg-grey md:mt-16 md:flex-row">
-            <div className="w-full ltr:pl-4 rtl:pr-4 md:w-1/2 md:mt-20">
+            <div className="w-full ltr:pl-4 rtl:pr-4 md:w-1/2 md:py-8">
               {HeadingsAndParagraphsTwo}
             </div>
 
-            <div className="grid grid-cols-1 md:p-4 md:gap-y-8 md:grid-cols-2 md:gap-x-52 textCenter">
+            <div className="grid grid-cols-2 md:p-4 md:gap-y-8 md:gap-x-52 textCenter">
               {modifiedDataContent.map(({ id, Icon, Heading }) => {
                 return (
                   <div key={id}>
