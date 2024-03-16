@@ -12,32 +12,32 @@ const data = [
     id: 1,
     Icon: ImgOne,
     Heading: "Team",
-    Heading_ar: "بللس",
-    Heading_fr: "Team",
+    Heading_ar: "فريق",
+    Heading_fr: "L'équipe",
   },
 
   {
     id: 2,
     Icon: ImgTwo,
     Heading: "CheckList",
-    Heading_ar: "سيلصضضش",
-    Heading_fr: "CheckList",
+    Heading_ar: "قائمة المراجعة",
+    Heading_fr: "Liste De Contrôle",
   },
 
   {
     id: 3,
     Icon: ImgThree,
     Heading: "Support",
-    Heading_ar: "نهفغهمف",
-    Heading_fr: "Support",
+    Heading_ar: "الدعم",
+    Heading_fr: "Soutien",
   },
 
   {
     id: 4,
     Icon: ImgFour,
     Heading: "Quality",
-    Heading_ar: "ضشسبلات",
-    Heading_fr: "Quality",
+    Heading_ar: "الجودة",
+    Heading_fr: "Qualité",
   },
 ];
 
