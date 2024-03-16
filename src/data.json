@@ -206,8 +206,8 @@
     {
       "id": 1,
       "header": "About Us",
-      "header_ar": "االبي للبي",
-      "header_fr": "About Us"
+      "header_ar": "معلومات عنا",
+      "header_fr": "À Propos De Nous"
     }
   ],
 
@@ -387,7 +387,7 @@
       "id": 1,
       "header": "Our Services",
       "header_ar": "ثهشب سبلتا",
-      "header_fr": "OurServices"
+      "header_fr": "Our Services"
     }
   ],
 
