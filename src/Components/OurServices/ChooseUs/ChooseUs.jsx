@@ -13,7 +13,7 @@ const data = [
     Icon: ImgOne,
     Heading: "Team",
     Heading_ar: "فريق",
-    Heading_fr: "L'équipe",
+    Heading_fr: "Team Dévouée",
   },
 
   {
@@ -21,7 +21,7 @@ const data = [
     Icon: ImgTwo,
     Heading: "CheckList",
     Heading_ar: "قائمة المراجعة",
-    Heading_fr: "Liste De Contrôle",
+    Heading_fr: "Check-list Complète",
   },
 
   {
@@ -29,7 +29,7 @@ const data = [
     Icon: ImgThree,
     Heading: "Support",
     Heading_ar: "الدعم",
-    Heading_fr: "Soutien",
+    Heading_fr: "Support Personnalisé",
   },
 
   {
@@ -37,7 +37,7 @@ const data = [
     Icon: ImgFour,
     Heading: "Quality",
     Heading_ar: "الجودة",
-    Heading_fr: "Qualité",
+    Heading_fr: "Qualité Garantie",
   },
 ];
 
