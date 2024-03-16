@@ -12,9 +12,9 @@ const data = [
   {
     id: 1,
     Img: ImgOne,
-    Heading: "Document Preparation",
-    Heading_ar: "تلاسلقس مسهلتصح",
-    Heading_fr: "Document Preparation",
+    Heading: "Immigration Consulting",
+    Heading_ar: "استشارات الهجرة",
+    Heading_fr: "Conseil en Immigration",
 
     Description:
       "With extensive experience guiding countless clients, we offer seasoned expertise to navigate your journey seamlessly. Trust in our track record and let us streamline your path to success.",
