@@ -386,8 +386,8 @@
     {
       "id": 1,
       "header": "Our Services",
-      "header_ar": "ثهشب سبلتا",
-      "header_fr": "Our Services"
+      "header_ar": "خدماتنا",
+      "header_fr": "Nos services"
     }
   ],
 
@@ -395,12 +395,11 @@
     {
       "id": 1,
       "header": "Welcome to DZ Work Away Immigration Services",
-      "header_ar": "النيب يتتي ينرامئنتاي ئيمناني يئمبا",
-      "header_fr": "Welcome to DZ Work Away Immigration Services",
-
+      "header_ar": "مرحباً بك في DZ Work Away لخدمات الهجرة",
+      "header_fr": "Bienvenue à DZ Work Away Immigration Services",
       "description": "At DZ Work Away, we are your trusted guide through immigration. Whether it is a work visa, family reunion, or residency, we are here to simplify the process with expertise and personalized support.",
-      "description_ar": "يبخعابل سيهتههلتي يهلتيهلهتتتشب حيهتلهيستلهي شيحهلتحهبال سبحهلتبيهل",
-      "description_fr": "At DZ Work Away, we are your trusted guide through immigration. Whether it is a work visa, family reunion, or residency, we are here to simplify the process with expertise and personalized support."
+      "description_ar": "نحن في DZ Work Away، نحن مرشدك الموثوق به في مجال الهجرة. سواء كانت تأشيرة عمل، أو لم شمل الأسرة، أو الإقامة، نحن هنا لتبسيط العملية بالخبرة والدعم الشخصي.",
+      "description_fr": "Chez DZ Work Away, nous sommes votre guide de confiance en matière d'immigration. Qu'il s'agisse d'un visa de travail, d'un regroupement familial ou d'une résidence, nous sommes là pour simplifier le processus grâce à notre expertise et à notre soutien personnalisé."
     }
   ],
 
