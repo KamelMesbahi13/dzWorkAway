@@ -57,16 +57,16 @@ const data = [
   {
     id: 4,
     Img: ImgFour,
-    Heading: "Application Assistance",
-    Heading_ar: "ضضبلثفي بيخنش يبثض",
-    Heading_fr: "Application Assistance",
+    Heading: "Services for Businesses",
+    Heading_ar: "خدمات الأعمال",
+    Heading_fr: "Services pour les Entreprises",
 
     Description:
-      "Our support is unwavering. We're here to guide you through challenges and celebrate your successes, offering personalized assistance every step of the way.",
+      "For companies looking to recruit international talent, we offer a range of tailored services to make the immigration process easier for your employees. From initial consultation to assistance with the application process, we're here to make things simple for you and your employees.",
     Description_ar:
-      "انستمب سبخهلا سبخهالس شخهاب شخيهال شيهخال شخهشثال شحçاض بهاس هيسال سخيهلا ",
+      "بالنسبة للشركات التي تتطلع إلى توظيف مواهب دولية، نقدم مجموعة من الخدمات المخصصة لتسهيل عملية الهجرة على موظفيك. من الاستشارة الأولية إلى المساعدة في عملية تقديم الطلبات، نحن هنا لتبسيط الأمور لك ولموظفيك.",
     Description_fr:
-      "With extensive experience guiding countless clients, we offer seasoned expertise to navigate your journey seamlessly. Trust in our track record and let us streamline your path to success.",
+      "Pour les entreprises qui cherchent à recruter des talents internationaux, nous offrons une gamme de services sur mesure pour faciliter le processus d'immigration pour vos employés. De la consultation initiale à l'assistance dans le cadre du processus de demande, nous sommes là pour simplifier les choses pour vous et vos employés.",
   },
 ];
 
@@ -162,7 +162,7 @@ const WhyUs = () => {
               return (
                 <div key={id}>
                   <div>
-                    <div className="p-4 duration-300 shadow-xl lg:h-[28rem] md:cardServices xl:h-[22rem] hover:text-white lg:p-8">
+                    <div className="p-4 duration-300 shadow-xl lg:h-[40rem] md:cardServices xl:h-[30rem] hover:text-white lg:p-8">
                       <div className="relative w-16 h-16 bg-white rounded-full">
                         <LazyLoadImage
                           className="absolute w-12 h-12 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"
