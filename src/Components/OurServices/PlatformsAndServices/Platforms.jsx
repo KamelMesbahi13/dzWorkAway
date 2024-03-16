@@ -5,6 +5,7 @@ import Plane from "../../../assets/Plane.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import Services from "./Services";
 
 const DataImgsOne = [
   {
@@ -22,7 +23,7 @@ const DataImgsTwo = [
   },
 ];
 
-const Platforms = () => {
+const Platform = () => {
   const { i18n } = useTranslation();
 
   const modifiedDataHeaderAndParagraph = Data.Services_Heading_Paragraphs.map(
@@ -256,9 +257,10 @@ const Platforms = () => {
             </div>
           </div>
         </div>
+        <Services />
       </div>
     </>
   );
 };
 
-export default Platforms;
+export default Platform;
