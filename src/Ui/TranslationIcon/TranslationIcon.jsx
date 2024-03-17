@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import i18next from "i18next";
-import cookies from "js-cookie";
 import classNames from "classnames";
 import PropTypes from "prop-types";
 
@@ -37,13 +35,21 @@ const GlobeIcon = ({ width = 24, height = 24 }) => (
 
 function TranslateIcon() {
   const [isOpen, setIsOpen] = useState(false);
-  const currentLanguageCode = cookies.get("i18next") || "fr";
+  const currentLanguageCode = localStorage.getItem("i18next") || "fr";
   const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
+    // Set the language from local storage as the default language
+    i18n.changeLanguage(currentLanguageCode);
     document.body.dir = currentLanguage.dir || "ltr";
-  }, [currentLanguage, t]);
+  }, [currentLanguage, currentLanguageCode, i18n]);
+
+  const changeLanguage = (code) => {
+    i18n.changeLanguage(code);
+    setIsOpen(false);
+    localStorage.setItem("i18next", code); // Store language preference in local storage
+  };
 
   return (
     <div>
@@ -66,19 +72,15 @@ function TranslateIcon() {
                 <div>
                   {languages.map(({ code, name }, i) => (
                     <li key={i}>
-                      <a
-                        href="#"
+                      <button
                         className={classNames("block px-4 py-2 text-sm", {
                           "text-gray-500": currentLanguageCode === code,
                           "text-gray-900": currentLanguageCode !== code,
                         })}
-                        onClick={() => {
-                          i18next.changeLanguage(code);
-                          setIsOpen(false);
-                        }}
+                        onClick={() => changeLanguage(code)}
                       >
                         {name}
-                      </a>
+                      </button>
                     </li>
                   ))}
                 </div>
