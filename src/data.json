@@ -219,7 +219,7 @@
 
       "description": "Welcome to our immigration agency! We are passionate about helping individuals and families achieve their dreams of living and working in Canada and other countries.",
       "description_ar": "مرحباً بك في وكالة الهجرة لدينا! نحن متحمسون لمساعدة الأفراد والعائلات على تحقيق أحلامهم في العيش والعمل في كندا وبلدان أخرى.",
-      "description_fr": "Welcome to our immigration agency! We are passionate about helping individuals and families achieve their dreams of living and working in Canada and other countries."
+      "description_fr": "Bienvenue dans notre agence d'immigration ! Notre passion est d'aider les personnes et les familles à réaliser leur rêve de vivre et de travailler au Canada et dans d'autres pays."
     }
   ],
 
@@ -291,8 +291,8 @@
     {
       "id": 1,
       "header": "Our Story",
-      "header_ar": "ابا يشنايي",
-      "header_fr": "Our Story",
+      "header_ar": "قصتنا",
+      "header_fr": "Notre histoire",
       "description": "the project's creator, in his youth, was dedicated to helping many unemployed friends who were confined to their homes to find opportunities outside their home countries. One day, a friend he had helped move to Canada, giving him a new-found stability, suggested the idea of setting up an agency to extend this help to the general population, thus facilitating work opportunities abroad. Thus was born DZ Work Away, driven by the vision of empowering individuals to seek better opportunities beyond their borders.",
       "description_ar": "كرس منشئ المشروع، في شبابه، نفسه لمساعدة العديد من أصدقائه العاطلين عن العمل الذين كانوا حبيسي منازلهم لإيجاد فرص عمل خارج بلدهم الأصلي. وفي أحد الأيام، عرض عليه أحد أصدقائه الذي ساعده على الانتقال إلى كندا، مما منحه استقرارًا جديدًا، فكرة إنشاء وكالة لتوسيع نطاق هذه المساعدة لتشمل عامة الناس، وبالتالي تسهيل فرص العمل في الخارج. وهكذا ولدت وكالة DZ Work Away، مدفوعة برؤية تمكين الأفراد من البحث عن فرص أفضل خارج حدودهم.",
       "description_fr": "le createur du projet, dans sa jeunesse, se consacrait à aider de nombreux amis sans emploi qui étaient confinés chez eux à trouver des opportunités en dehors de leur pays d'origine. Un jour, un ami qu'il avait aidé à déménager au Canada, lui offrant ainsi une stabilité retrouvée, lui a proposé l'idée d'établir une agence pour étendre cette aide à la population en général, facilitant ainsi les opportunités de travail à l'étranger. Ainsi est né DZ Work Away, animé par la vision d'autonomiser les individus à chercher de meilleures perspectives au-delà des frontières."
@@ -325,11 +325,11 @@
     {
       "id": 1,
       "header": "What Our Clients Said About US",
-      "header_ar": "المنب بتس سابلا سايتت سبتلى",
-      "header_fr": "What Our Clients Said About US",
+      "header_ar": "ما قاله عملاؤنا عنا",
+      "header_fr": "Ce que nos clients ont dit de nous",
 
-      "description": "Thanks to Dz Work Away my immigration process was smooth and stress-free. Their personalized support and expertise made all the difference. Highly recommend!",
-      "description_ar": "التينينبلتت ؤاترئتمابتمئيالمتؤالمتؤالؤ ئمؤلاؤمءامتؤءالمءؤالمتءال ؤملاتءؤنمالمؤءالنؤال",
+      "description": "Our clients love our outstanding service, quick responses, and attention to detail. Their feedback reflects our commitment to excellence and strong client relationships",
+      "description_ar": "يحب عملاؤنا خدمتنا المتميزة واستجابتنا السريعة واهتمامنا بالتفاصيل. تعكس ملاحظاتهم التزامنا بالتميز وعلاقاتنا القوية مع العملاء",
       "description_fr": "Thanks to Dz Work Away my immigration process was smooth and stress-free. Their personalized support and expertise made all the difference. Highly recommend!"
     }
   ],
