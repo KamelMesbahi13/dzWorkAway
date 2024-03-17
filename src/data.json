@@ -646,8 +646,8 @@
     {
       "id": 1,
       "Header": "Links",
-      "Header_ar": "سميلناسمينل",
-      "Header_fr": "Liens."
+      "Header_ar": "الروابط",
+      "Header_fr": "Liens"
     }
   ],
 
@@ -666,7 +666,9 @@
       "Header": "Social Media",
       "Header_ar": "اتصل بنا",
       "Header_fr": "Nos Contacts",
-      "Privacy_Policy_Text": "Please find our Privacy Policy here."
+      "Privacy_Policy_Text": "Please find our Privacy Policy here.",
+      "Privacy_Policy_Text_ar": "يُرجى الاطلاع على سياسة الخصوصية الخاصة بنا هنا.",
+      "Privacy_Policy_Text_fr": "Vous trouverez ici notre politique de protection de la vie privée."
     }
   ],
 
@@ -678,7 +680,7 @@
       "Name_fr": "Nom",
 
       "Email": "Email",
-      "Email_ar": "ايسثص",
+      "Email_ar": "ايمايل",
       "Email_fr": "Email",
 
       "Message": "Message",
