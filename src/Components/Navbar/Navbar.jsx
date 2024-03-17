@@ -115,14 +115,16 @@ const Navbar = () => {
               }
             >
               <div className="flex flex-col px-8 py-16 gap-y-8">
-                <Link to="/">{modifiedDataNav.map((el) => el.ItemOne)}</Link>
-                <Link to="/Nos-Services">
+                <Link onClick={navHandler} to="/">
+                  {modifiedDataNav.map((el) => el.ItemOne)}
+                </Link>
+                <Link onClick={navHandler} to="/Nos-Services">
                   {modifiedDataNav.map((el) => el.ItemTwo)}
                 </Link>
-                <Link to="/À Propos-de-Nous">
+                <Link onClick={navHandler} to="/À Propos-de-Nous">
                   {modifiedDataNav.map((el) => el.ItemThree)}
                 </Link>
-                <Link to="/Contactez-Nous">
+                <Link onClick={navHandler} to="/Contactez-Nous">
                   {modifiedDataNav.map((el) => el.ItemFour)}
                 </Link>
 
@@ -150,7 +152,9 @@ const Navbar = () => {
                   >
                     <img className="w-5" src={Instagram} alt="Instagram" />
                   </a>
-                  <TranslateIcon />
+                  <div>
+                    <TranslateIcon />
+                  </div>
                 </div>
               </div>
             </div>
