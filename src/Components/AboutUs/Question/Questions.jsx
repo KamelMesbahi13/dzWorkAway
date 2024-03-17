@@ -10,8 +10,6 @@ import { useTranslation } from "react-i18next";
 const Questions = () => {
   const { i18n } = useTranslation();
 
-  // --------------------------------------------------------
-
   const modifiedDataHeaderAndParagraph =
     Data.AboutUs_Question_Heading_Paragraph.map((data) => {
       if (i18n.language === "ar") {
@@ -49,16 +47,6 @@ const Questions = () => {
       );
     }
   );
-
-  // --------------------------------------------------------
-
-  // --------------------------------------------------------
-
-  // --------------------------------------------------------
-
-  // --------------------------------------------------------
-
-  // --------------------------------------------------------
 
   const [activeAccordion, setActiveAccordion] = useState("");
 
