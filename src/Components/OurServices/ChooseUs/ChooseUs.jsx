@@ -164,7 +164,7 @@ const ChooseUs = () => {
               {HeadingsAndParagraphsTwo}
             </div>
 
-            <div className="grid grid-cols-2 md:p-4 md:gap-y-8 md:gap-x-52 textCenter">
+            <div className="grid grid-cols-2 md:p-4 md:gap-y-8 md:gap-x-24 textCenter">
               {modifiedDataContent.map(({ id, Icon, Heading }) => {
                 return (
                   <div key={id}>
