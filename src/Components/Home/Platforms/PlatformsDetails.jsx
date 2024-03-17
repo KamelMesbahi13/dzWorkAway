@@ -6,17 +6,6 @@ import Title from "../../../GeneralFunctions/Title";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
-// const data = [
-//   {
-//     id: 1,
-//     header: "All The World",
-//   },
-//   {
-//     id: 2,
-//     header: "Canada",
-//   },
-// ];
-
 const PlatformsDetails = () => {
   Title("Dz Work Away | Détails des plateformes");
 
