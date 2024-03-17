@@ -15,16 +15,16 @@
   "navbarItems": [
     {
       "id": 1,
-      "ItemOne": "Accueil",
+      "ItemOne": "Home",
       "ItemOne_ar": "الصفحة الرئيسية",
       "ItemOne_fr": "Accueil",
-      "ItemTwo": "Nos Services",
+      "ItemTwo": "Our Services",
       "ItemTwo_ar": "خدماتنا",
       "ItemTwo_fr": "Nos Services",
-      "ItemThree": "À Propos de Nous",
+      "ItemThree": "About Us",
       "ItemThree_ar": "عنا",
       "ItemThree_fr": "À Propos de Nous",
-      "ItemFour": "Contactez Nous",
+      "ItemFour": "Contact Us",
       "ItemFour_ar": "اتصل بنا",
       "ItemFour_fr": "Contactez Nous"
     }
