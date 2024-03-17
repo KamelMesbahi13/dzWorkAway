@@ -673,7 +673,16 @@
     }
   ],
 
-  "Privacy_Header_Paragraph": [
+  "Privacy_Header": [
+    {
+      "id": 1,
+      "header": "Politics and Privacy",
+      "header_ar": "السياسة والخصوصية",
+      "header_fr": "Politique et confidentialité"
+    }
+  ],
+
+  "Privacy_Header_Paragraph_One": [
     {
       "id": 1,
       "Header": "Privacy Policy Statement: Your Data Security and Confidentiality Commitment",
@@ -685,12 +694,15 @@
     }
   ],
 
-  "Privacy_Header": [
+  "Privacy_Header_Paragraph_Two": [
     {
       "id": 1,
-      "header": "Politics and Privacy",
-      "header_ar": "السياسة والخصوصية",
-      "header_fr": "Politique et confidentialité"
+      "Header": "Politics and Privacy",
+      "Header_ar": "السياسة والخصوصية",
+      "Header_fr": "Politique et confidentialité",
+      "Privacy_Policy_Text": "Security and Privacy : 1_ Commitment to the protection of users' personal data. 2_Use of encryption technologies to secure sensitive information. 3_Privacy policy detailing how user data is collected, used and protected. 4_Security measures in place to prevent unauthorized access or data breaches. 5_Commitment not to share or sell user information to third parties without their. Explicit consent. Legal Policy : 6_Conditions of use of the site and the immigration services offered. 7_Responsibilities and rights of users regarding use of the site and its functionalities. 8_Limitation of liability for damages resulting from use of the site. 9_Dispute resolution procedures and jurisdiction in the event of a dispute. 10_Waiver of liability for the accuracy of the information provided on the site, particularly with regard to immigration laws and regulations.",
+      "Privacy_Policy_Text_ar": "الأمن والسري 1_ الالتزام بحماية البيانات الشخصية للمستخدمين. 2_استخدام تقنيات التشفير لتأمين المعلومات الحساسة. 3_سياسة الخصوصية التي توضح بالتفصيل كيفية جمع بيانات المستخدم واستخدامها وحمايتها. 4ـ التدابير الأمنية المعمول بها لمنع الوصول غير المصرح به أو اختراق البيانات. 5_الالتزام بعدم مشاركة أو بيع معلومات المستخدم إلى أطراف ثالثة دون موافقة صريحة. السياسة القانونية : 6_شروط استخدام الموقع وخدمات الهجرة المقدمة. 7_واجبات وحقوق المستخدمين فيما يتعلق باستخدام الموقع ووظائفه. 8ـ حدود المسؤولية عن أي ضرر ناتج عن استخدام الموقع. 9_إجراءات تسوية المنازعات والاختصاص القضائي في حال نشوب نزاع. 10ـإخلاء المسؤولية عن دقة المعلومات المقدمة على الموقع، خاصة فيما يتعلق بقوانين ولوائح الهجرة.",
+      "Privacy_Policy_Text_fr": "Sécurité et Confidentialité: 1_ Engagement envers la protection des données personnelles des utilisateurs. 2_Utilisation de technologies de cryptage pour sécuriser les informations sensibles. 3_Politique de confidentialité détaillant la manière dont les données des utilisateurs sont collectées, utilisées et protégées. 4_Mesures de sécurité mises en place pour prévenir les accès non autorisés ou les violations de données. 5_Engagement à ne pas partager ni vendre les informations des utilisateurs à des tiers sans leur. Consentement explicite. Politique Juridique : 6_Conditions d'utilisation du site et des services d'immigration proposés. 7_Responsabilités et droits des utilisateurs en matière d'utilisation du site et de ses fonctionnalités. 8_Limitation de responsabilité pour les dommages éventuels résultant de l'utilisation du site. 9_Procédures de résolution des litiges et juridiction compétente en cas de conflit. 10_Clause de non-responsabilité concernant l'exactitude des informations fournies sur le site, notamment en ce qui concerne les lois et réglementations en matière d'immigration."
     }
   ]
 }
