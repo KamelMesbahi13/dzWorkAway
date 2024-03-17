@@ -329,8 +329,8 @@
     {
       "id": 1,
       "header": "Contact Us",
-      "header_ar": "االبي شيببلي",
-      "header_fr": "Contact Us"
+      "header_ar": "تواصل معنا",
+      "header_fr": "Contactez-Nous"
     }
   ],
 
@@ -338,12 +338,12 @@
     {
       "id": 1,
       "header": "If You Have Any Question Drop A Message Or Visit Us",
-      "header_ar": "سنابل سينتشمه شهسبا شتسبيل سيللانلح سبعلقص سلقعلصح",
-      "header_fr": "If You Have Any Question Drop A Message Or Visit Us",
+      "header_ar": "إذا كان لديك أي استفسار أرسل لنا رسالة أو قم بزيارتنا",
+      "header_fr": "Si vous avez des questions, envoyez-nous un message ou visitez-nous.",
 
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ipsa excepturi est mollitia voluptatem nihil illum? Eaque laudantium natus laboriosam doloremque officiis necessitatibus tempora incidunt eum consequatur animi? Ut, quasi.",
-      "description_ar": "بنللاتب بسنتلبس لسبنتللابس سكخعشص سخعالىصقعل قخصعللا شخقهلال شخ_اقهل شقخلا شقخلاصق شصخعقلشص قخ_لف خشلاب فغثهش شجثعخلاف شغلاعف فثخعللا شخعرلاشثج شجخثلاشج شقثلتثقل صخقشهلاشجثلا شحثعهخلاقثعش شخعلاشثجخه شخجقثعللافغ علابلتلا خعلاابلىشث شجعفلال جشعقلار",
-      "description_fr": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ipsa excepturi est mollitia voluptatem nihil illum? Eaque laudantium natus laboriosam doloremque officiis necessitatibus tempora incidunt eum consequatur animi? Ut, quasi."
+      "description_ar": "إذا كانت لديك أي أسئلة أو كنت بحاجة إلى مزيد من المعلومات، فلا تتردد في الاتصال بنا عن طريق إرسال رسالة إلينا. يمكنك أيضاً زيارتنا للتحدث معنا شخصياً والحصول على إجابات مباشرة على أسئلتك.",
+      "description_fr": "Si vous avez des questions ou si vous avez besoin de plus d'informations, n'hésitez pas à nous contacter en envoyant un message. Vous pouvez également nous rendre visite pour discuter en personne et obtenir des réponses directes à vos interrogations."
     }
   ],
 
@@ -351,20 +351,20 @@
     {
       "id": 1,
       "Title": "Contact Our Team",
-      "Title_ar": "بتلسا ستبالس",
-      "Title_fr": "Contact Our Team",
+      "Title_ar": "تواصل مع فريقنا",
+      "Title_fr": "Contacter notre équipe",
 
       "Paragraph": "Reach out to our team for prompt assistance and dedicated support.",
-      "Paragraph_ar": "سيتنبي سيتملس قهتلص لتسعبلاصخ سخعلاسل شكعبلال سخلاف شيتلفع سهلسلاقسل ",
-      "Paragraph_fr": "Reach ut to our team for prompt assistance and dedicated support.",
+      "Paragraph_ar": "تواصل مع فريقنا للحصول على المساعدة الفورية والدعم المتفاني.",
+      "Paragraph_fr": "Contactez notre équipe pour une assistance rapide et un soutien dévoué.",
 
       "CallUs_Title": "Call us",
-      "CallUs_Title_ar": "تيب ثخب",
-      "CallUs_Title_fr": "Call us",
+      "CallUs_Title_ar": "اتصل بنا",
+      "CallUs_Title_fr": "Appelez-nous",
 
       "CallUs_paragraph": "Contact us for personalized support. Call now to speak to our dedicated team.",
-      "CallUs_paragraph_ar": "سمتيلالب سمتللايب ميستلال سياسب يتبلال منالسب يكنتلاسب ينتسب سحهيلقل سيحهلسبل",
-      "CallUs_paragraph_fr": "Contact us for personalized support. Call now to speak to our dedicated team.",
+      "CallUs_paragraph_ar": "اتصل بنا للحصول على دعم مخصص. اتصل الآن للتحدث إلى فريقنا المتخصص.",
+      "CallUs_paragraph_fr": "Contactez-nous pour une assistance personnalisée. Appelez-nous dès maintenant pour parler à notre équipe dévouée.",
 
       "CallUs": "0555 55 55 55",
 
