@@ -5,7 +5,6 @@
       "button_one": "Know More About Us",
       "button_one_ar": "تعرف المزيد عنا",
       "button_one_fr": "En savoir plus sur nous",
-
       "button_two": "Check Our Services",
       "button_two_ar": "اطلع على خدماتنا",
       "button_two_fr": "Découvrez nos services"
@@ -90,11 +89,9 @@
       "headerOne": "Arrima",
       "headerOne_ar": "أريما",
       "headerOne_fr": "Arrima",
-
       "headerTwo": "Entrée Express",
       "headerTwo_ar": "Entrée Express",
       "headerTwo_fr": "Entrée Express",
-
       "description": "We offer a complete registration and profile creation service on the Arrima and Entrée Express platforms, as well as personalized follow-up of your file until it is accepted. With our expertise, we're with you every step of the way, giving you the peace of mind you need to achieve your goal of immigrating to Canada.",
       "description_ar": "نحن نقدم لك خدمة تسجيل وإنشاء ملفك الشخصي بالكامل على منصتي أريما و إنتريه إكسبريس، بالإضافة إلى المتابعة الشخصية لملفك حتى يتم قبوله. وبفضل خبرتنا، ندعمك في كل مرحلة من مراحل عملية الهجرة، مما يمنحك راحة البال التي تحتاجها لتحقيق هدفك في الهجرة إلى كندا.",
       "description_fr": "Nous offrons un service complet d'inscription et de création de profil sur les plateformes d'Arrima et d'Entrée Express, ainsi que le suivi personnalisé de votre dossier jusqu'à son acceptation. Avec notre expertise, nous vous accompagnons à chaque étape du processus d'immigration, vous offrant ainsi la tranquillité d'esprit nécessaire pour atteindre votre objectif d'immigrer au Canada.",
@@ -107,15 +104,12 @@
   "Platforms_Two": [
     {
       "id": 2,
-
       "headerFour": "New Zélande",
       "headerFour_ar": "نيوزيلندا",
       "headerFour_fr": "New Zélande",
-
       "headerThree": "New Brunswick",
       "headerThree_ar": "نيو برونزيك",
       "headerThree_fr": "New Brunswick",
-
       "description": "We also offer a complete registration and profile creation service for New Brunswick and New Zealand immigration programs. With our dedicated expertise, we assist you throughout the entire process, from submission of your application to its careful follow-up through to acceptance. Trust our team to guide you on your immigration journey to these attractive destinations.",
       "description_ar": "كما نقدم أيضاً خدمة تسجيل وإنشاء ملف تعريف كامل لبرامج الهجرة في نيو برونزويك ونيوزيلندا. وبفضل خبرتنا المتخصصة، نساعدك خلال العملية بأكملها، بدءاً من تقديم طلبك إلى مراقبته بعناية حتى قبوله. ثق بفريقنا لإرشادك في رحلة الهجرة إلى هذه الوجهات الجذابة.",
       "description_fr": "Nous offrons également un service complet d'inscription et de création de profil pour les programmes d'immigration du Nouveau-Brunswick, ainsi que pour ceux de la Nouvelle-Zélande. Avec notre expertise dédiée, nous vous assistons tout au long du processus, depuis la soumission de votre candidature jusqu'à son suivi attentif jusqu'à l'acceptation. Faites confiance à notre équipe pour vous guider dans votre parcours d'immigration vers ces destinations attrayantes.",
@@ -143,11 +137,9 @@
       "header": "All The World",
       "header_ar": "كل العالم",
       "header_fr": "Tout Le Monde",
-
       "description": "Our unique service offers the creation of profiles on 20 platforms in various European countries, Canada, the Netherlands and the USA, facilitating your job search and your professional immigration project. By working with us, you'll benefit from personalized support that includes writing your professional profiles and submitting targeted applications to maximize your chances of landing a job and carrying out your professional immigration project in the country of your choice.",
       "description_ar": "تقدم خدمتنا الفريدة من نوعها إنشاء ملفات تعريفية على 20 منصة في مختلف الدول الأوروبية وكندا وهولندا والولايات المتحدة الأمريكية، مما يسهل عملية بحثك عن وظيفة ومشروع الهجرة المهنية الخاص بك. من خلال العمل معنا، ستستفيد من الدعم الشخصي الذي يشمل كتابة ملفاتك الشخصية المهنية وتقديم الطلبات المستهدفة لزيادة فرصك في الحصول على وظيفة وتنفيذ مشروع الهجرة المهنية في البلد الذي تختاره.",
       "description_fr": "Notre service unique offre la création de profils sur 20 plateformes dans divers pays d'Europe, au Canada, aux Pays-Bas et aux États-Unis, facilitant ainsi votre recherche d'emploi et votre projet d'immigration professionnelle. En collaborant avec nous, vous bénéficiez d'un accompagnement personnalisé qui comprend la rédaction de vos profils professionnels et la soumission de candidatures ciblées pour maximiser vos chances de décrocher un emploi et de réaliser votre projet d'immigration professionnelle dans le pays de votre choix.",
-
       "button": "See More",
       "button_ar": "اطلع على المزيد",
       "button_fr": "Voir Plus"
@@ -175,11 +167,9 @@
       "header": "Fly Your Dream Destination",
       "header_ar": "سافر إلى وجهة أحلامك",
       "header_fr": "Envolez-vous vers votre destination de rêve",
-
       "description": "Choose your destination and we'll find the solution",
       "description_ar": "اختر وجهتك وسنجد لك الحل المناسب لك",
       "description_fr": "Choisissez votre destination et nous trouvons la solution",
-
       "button": "Contact Us",
       "button_ar": "تواصل معنا",
       "button_fr": "Contactez-nous"
@@ -216,7 +206,6 @@
       "header": "Welcome To Dz Work Away",
       "header_ar": "مرحباً بكم في Dz Work Away",
       "header_fr": "Bienvenue à Dz Work Away",
-
       "description": "Welcome to our immigration agency! We are passionate about helping individuals and families achieve their dreams of living and working in Canada and other countries.",
       "description_ar": "مرحباً بك في وكالة الهجرة لدينا! نحن متحمسون لمساعدة الأفراد والعائلات على تحقيق أحلامهم في العيش والعمل في كندا وبلدان أخرى.",
       "description_fr": "Bienvenue dans notre agence d'immigration ! Notre passion est d'aider les personnes et les familles à réaliser leur rêve de vivre et de travailler au Canada et dans d'autres pays."
@@ -238,7 +227,6 @@
       "header": "Answers to Your Immigration Questions",
       "header_ar": "النيب يتتي ينرامئنتاي ئيمناني يئمبا",
       "header_fr": "Answers to Your Immigration Questions",
-
       "description": "Discover Clear Solutions: Your Top Immigration Questions Answered. Get quick, concise answers to common immigration inquiries, curated by our expert team.",
       "description_ar": "تسلايب يمتبيا شيكنتبثه يتلنيسل ش شنابمشتيل شينلش شكينتل شمنيلش هاثهقثعف شعخايب شثهاث سبلب يلتعمي لبتيف يبغثف صقغض تعخم عخغغغ",
       "description_fr": "Discover Clear Solutions: Your Top Immigration Questions Answered. Get quick, concise answers to common immigration inquiries, curated by our expert team."
@@ -305,7 +293,6 @@
       "header": "Why We Are The Best?",
       "header_ar": "لماذا نحن الأفضل؟",
       "header_fr": "Pourquoi nous sommes les meilleurs?",
-
       "description": "At DZ Work Away, we understand that the decision to immigrate is one of the most significant steps you will ever take. That is why we are committed to making your journey as smooth and successful as possible. Here is why you should choose us:",
       "description_ar": "ندرك في DZ Work Away أن قرار الهجرة هو أحد أهم الخطوات التي ستتخذها على الإطلاق. ولهذا السبب نحن ملتزمون بجعل رحلتك سلسة وناجحة قدر الإمكان. إليك الأسباب التي تجعلك تختارنا:",
       "description_fr": "Chez DZ Work Away, nous comprenons que la décision d'immigrer est l'une des étapes les plus importantes de votre vie. C'est pourquoi nous nous engageons à faire en sorte que votre voyage soit aussi facile et réussi que possible. Voici pourquoi vous devriez nous choisir:"
@@ -348,7 +335,6 @@
       "header": "If You Have Any Question Drop A Message Or Visit Us",
       "header_ar": "إذا كان لديك أي استفسار أرسل لنا رسالة أو قم بزيارتنا",
       "header_fr": "Si vous avez des questions, envoyez-nous un message ou visitez-nous.",
-
       "description": "If you have any questions or require further information, please do not hesitate to contact us by sending us a message. You can also visit us for a face-to-face chat and get direct answers to your questions.",
       "description_ar": "إذا كانت لديك أي أسئلة أو كنت بحاجة إلى مزيد من المعلومات، فلا تتردد في الاتصال بنا عن طريق إرسال رسالة إلينا. يمكنك أيضاً زيارتنا للتحدث معنا شخصياً والحصول على إجابات مباشرة على أسئلتك.",
       "description_fr": "Si vous avez des questions ou si vous avez besoin de plus d'informations, n'hésitez pas à nous contacter en envoyant un message. Vous pouvez également nous rendre visite pour discuter en personne et obtenir des réponses directes à vos interrogations."
@@ -361,29 +347,22 @@
       "Title": "Contact Our Team",
       "Title_ar": "تواصل مع فريقنا",
       "Title_fr": "Contacter notre équipe",
-
       "Paragraph": "Reach out to our team for prompt assistance and dedicated support.",
       "Paragraph_ar": "تواصل مع فريقنا للحصول على المساعدة الفورية والدعم المتفاني.",
       "Paragraph_fr": "Contactez notre équipe pour une assistance rapide et un soutien dévoué.",
-
       "CallUs_Title": "Call us",
       "CallUs_Title_ar": "اتصل بنا",
       "CallUs_Title_fr": "Appelez-nous",
-
       "CallUs_paragraph": "Contact us for personalized support. Call now to speak to our dedicated team.",
       "CallUs_paragraph_ar": "اتصل بنا للحصول على دعم مخصص. اتصل الآن للتحدث إلى فريقنا المتخصص.",
       "CallUs_paragraph_fr": "Contactez-nous pour une assistance personnalisée. Appelez-nous dès maintenant pour parler à notre équipe dévouée.",
-
       "CallUs": "05 50 51 00 61",
-
       "VisitUs_Title": "Visit us",
       "VisitUs_Title_ar": "قم بزيارتنا",
       "VisitUs_Title_fr": "Visitez-nous",
-
       "VisitUs_paragraph": "Come visit us! Our doors are open to you for any questions or advice. Looking forward to meeting you.",
       "VisitUs_paragraph_ar": "تفضل بزيارتنا! أبوابنا مفتوحة لكم للإجابة عن أي أسئلة أو استشارات. نتطلع إلى لقائك.",
       "VisitUs_paragraph_fr": "Venez nous rendre visite ! Nos portes vous sont ouvertes pour toute question ou conseil. Au plaisir de vous rencontrer.",
-
       "VisitUs": "Numéro 1, Résidence Zidan, Bloc 1, Boumerdès 35000"
     }
   ],
@@ -448,7 +427,6 @@
       "header": "Our Services",
       "header_ar": "خدماتنا",
       "header_fr": "Nos Services",
-
       "description": "At DZ Work Away, we understand that the decision to immigrate is one of the most significant steps you will ever take. That is why we are committed to making your journey as smooth and successful as possible. Here is why you should choose us:",
       "description_ar": "ندرك في DZ Work Away أن قرار الهجرة هو أحد أهم الخطوات التي ستتخذها على الإطلاق. ولهذا السبب نحن ملتزمون بجعل رحلتك سلسة وناجحة قدر الإمكان. إليك الأسباب التي تجعلك تختارنا:",
       "description_fr": "Chez DZ Work Away, nous comprenons que la décision d'immigrer est l'une des étapes les plus importantes de votre vie. C'est pourquoi nous nous engageons à faire en sorte que votre voyage soit aussi facile et réussi que possible. Voici pourquoi vous devriez nous choisir:"
@@ -686,11 +664,9 @@
       "Name": "Name",
       "Name_ar": "اسم",
       "Name_fr": "Nom",
-
       "Email": "Email",
       "Email_ar": "ايمايل",
       "Email_fr": "Email",
-
       "Message": "Message",
       "Message_ar": "رسالة",
       "Message_fr": "Message"
