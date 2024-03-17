@@ -671,5 +671,26 @@
       "Message_ar": "رسالة",
       "Message_fr": "Message"
     }
+  ],
+
+  "Privacy_Header_Paragraph": [
+    {
+      "id": 1,
+      "Header": "Privacy Policy Statement: Your Data Security and Confidentiality Commitment",
+      "Header_ar": "بيان سياسة الخصوصية: التزامك بأمن وسرية البيانات الخاصة بك",
+      "Header_fr": "Déclaration de politique de confidentialité : Votre engagement en matière de sécurité et de confidentialité des données",
+      "Privacy_Policy_Text": "Welcome to DZ Work Away. We are committed to protecting your privacy. Rest assured, your data is safe with us. We adhere to strict security measures and respect your preferences. Your trust matters.",
+      "Privacy_Policy_Text_ar": "مرحباً بك في DZ Work Away. نحن ملتزمون بحماية خصوصيتك. كن مطمئناً، بياناتك آمنة معنا. نحن نلتزم بإجراءات أمنية صارمة ونحترم تفضيلاتك. ثقتك مهمة.",
+      "Privacy_Policy_Text_fr": "Bienvenue sur le site de DZ Work Away. Nous nous engageons à protéger votre vie privée. Soyez assuré que vos données sont en sécurité chez nous. Nous appliquons des mesures de sécurité strictes et respectons vos préférences. Votre confiance est importante."
+    }
+  ],
+
+  "Privacy_Header": [
+    {
+      "id": 1,
+      "header": "Politics and Privacy",
+      "header_ar": "السياسة والخصوصية",
+      "header_fr": "Politique et confidentialité"
+    }
   ]
 }

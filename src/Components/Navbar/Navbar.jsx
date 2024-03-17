@@ -51,14 +51,16 @@ const Navbar = () => {
                 <img className="w-28" src={Logo} alt="Logo" />
               </div>
               <div className="flex gap-8">
-                <Link to="/">{modifiedDataNav.map((el) => el.ItemOne)}</Link>
-                <Link to="/Nos-Services">
+                <Link className="link" to="/">
+                  {modifiedDataNav.map((el) => el.ItemOne)}
+                </Link>
+                <Link className="link" to="/Nos-Services">
                   {modifiedDataNav.map((el) => el.ItemTwo)}
                 </Link>
-                <Link to="/À Propos-de-Nous">
+                <Link className="link" to="/À Propos-de-Nous">
                   {modifiedDataNav.map((el) => el.ItemThree)}
                 </Link>
-                <Link to="/Contactez-Nous">
+                <Link className="link" to="/Contactez-Nous">
                   {modifiedDataNav.map((el) => el.ItemFour)}
                 </Link>
               </div>

@@ -1,6 +1,48 @@
+import Data from "../../../data.json";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const ContentPrivacy = () => {
+  const { i18n } = useTranslation();
+
+  const modifiedDataHeaderAndParagraph = Data.Privacy_Header_Paragraph.map(
+    (data) => {
+      if (i18n.language === "ar") {
+        return {
+          id: data.id,
+          Header: data.Header_ar,
+          Privacy_Policy_Text: data.Privacy_Policy_Text_ar,
+        };
+      }
+
+      if (i18n.language === "fr") {
+        return {
+          id: data.id,
+          Header: data.Header_fr,
+          Privacy_Policy_Text: data.Header_fr,
+        };
+      }
+      return data;
+    }
+  );
+
+  const HeadingsAndParagraphs = modifiedDataHeaderAndParagraph.map(
+    ({ id, Header, Privacy_Policy_Text }) => {
+      return (
+        <div key={id}>
+          <div>
+            <h1 className="relative mb-2 lg:mb-0 before:absolute before:hidden rtl:lg:pr-20 ltr:lg:pl-20 before:md:block before:h-2 before:w-16 before:rtl:left-[93%] before:left-0 before:bg-hoverColor before:top-1/2 before:-translate-y-1/2g">
+              {Header}
+            </h1>
+          </div>
+          <div className="relative">
+            <p>{Privacy_Policy_Text}</p>
+          </div>
+        </div>
+      );
+    }
+  );
+
   return (
     <>
       <div className="mt-12">
@@ -13,25 +55,12 @@ const ContentPrivacy = () => {
                 viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 0.5 }}
                 variants={{
-                  hidden: { opacity: 0, x: -50 },
-                  visible: { opacity: 1, x: 0 },
+                  hidden: { opacity: 0 },
+                  visible: { opacity: 1 },
                 }}
                 className="w-full mb-16 md:w-3/4"
               >
-                <div>
-                  <h1 className="relative mb-2 lg:headingStyleLg">
-                    Privacy Policy Statement: Your Data Security and
-                    Confidentiality Commitment
-                  </h1>
-                </div>
-                <div className="relative">
-                  <p>
-                    Welcome to DZ Work Away. We are committed to protecting your
-                    privacy. Rest assured, your data is safe with us. We adhere
-                    to strict security measures and respect your preferences.
-                    Your trust matters.
-                  </p>
-                </div>
+                <div>{HeadingsAndParagraphs}</div>
               </motion.div>
 
               <div>
