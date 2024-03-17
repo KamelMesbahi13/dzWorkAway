@@ -50,6 +50,12 @@ function TranslateIcon() {
     localStorage.setItem("i18next", code);
   };
 
+  const [nav, setNav] = useState(true);
+
+  const navHandler = () => {
+    setNav(!nav);
+  };
+
   return (
     <div>
       <div className="language-select">
@@ -70,7 +76,7 @@ function TranslateIcon() {
                 </li>
                 <div>
                   {languages.map(({ code, name }, i) => (
-                    <li key={i}>
+                    <li onClick={navHandler} key={i}>
                       <button
                         className={classNames("block px-4 py-2 text-sm", {
                           "text-gray-500": currentLanguageCode === code,

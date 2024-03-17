@@ -11,8 +11,6 @@ const PlatformsDetails = () => {
 
   const { i18n } = useTranslation();
 
-  // -----------------------------------------------------------
-
   const modifiedDataHeaderAndParagraph = Data.Platforms_Paragraph_One.map(
     (data) => {
       if (i18n.language === "ar") {
@@ -46,8 +44,6 @@ const PlatformsDetails = () => {
     }
   );
 
-  // ----------------------------------------------------------
-
   const modifiedDataHeaderAndParagraphTwo = Data.Platforms_Paragraph_Two.map(
     (data) => {
       if (i18n.language === "ar") {
@@ -80,8 +76,6 @@ const PlatformsDetails = () => {
       );
     }
   );
-
-  // ----------------------------------------------------------
 
   const modifiedDataHeader = Data.PlatformDetails_Header.map((data) => {
     if (i18n.language === "ar") {
@@ -119,8 +113,8 @@ const PlatformsDetails = () => {
                 viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 0.5 }}
                 variants={{
-                  hidden: { opacity: 0, x: -50 },
-                  visible: { opacity: 1, x: 0 },
+                  hidden: { opacity: 0 },
+                  visible: { opacity: 1 },
                 }}
                 className="w-full md:w-3/4"
               >
@@ -139,8 +133,8 @@ const PlatformsDetails = () => {
                 viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 0.5 }}
                 variants={{
-                  hidden: { opacity: 0, x: -50 },
-                  visible: { opacity: 1, x: 0 },
+                  hidden: { opacity: 0 },
+                  visible: { opacity: 1 },
                 }}
                 className="mt-12"
               >

@@ -5,8 +5,6 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 const Introduction = () => {
-  // --------------------------------------
-
   const { i18n } = useTranslation();
 
   const modifiedDataHeaderAndParagraph =
@@ -40,8 +38,8 @@ const Introduction = () => {
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.5 }}
               variants={{
-                hidden: { opacity: 0, x: -50 },
-                visible: { opacity: 1, x: 0 },
+                hidden: { opacity: 0 },
+                visible: { opacity: 1 },
               }}
             >
               <h1 className="relative md:headingStyleMd lg:headingStyleLg">
@@ -54,8 +52,6 @@ const Introduction = () => {
       );
     }
   );
-
-  // --------------------------------------
 
   const modifiedDataHeaderAndParagraphTwo =
     Data.AboutUs_Introduction_Paragraph_Two.map((data) => {
@@ -86,8 +82,8 @@ const Introduction = () => {
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.5 }}
               variants={{
-                hidden: { opacity: 0, x: 50 },
-                visible: { opacity: 1, x: 0 },
+                hidden: { opacity: 0 },
+                visible: { opacity: 1 },
               }}
             >
               <p>{description}</p>

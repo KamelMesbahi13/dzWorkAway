@@ -139,8 +139,8 @@ const WhyUs = () => {
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.5 }}
               variants={{
-                hidden: { opacity: 0, x: -50 },
-                visible: { opacity: 1, x: 0 },
+                hidden: { opacity: 0 },
+                visible: { opacity: 1 },
               }}
             >
               {Heading}
@@ -153,8 +153,8 @@ const WhyUs = () => {
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.5 }}
             variants={{
-              hidden: { opacity: 0, x: 50 },
-              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0 },
+              visible: { opacity: 1 },
             }}
             className="grid w-full grid-cols-1 mt-8 lg:mt-32 gap-y-6 lg:gap-20 lg:grid-cols-2"
           >

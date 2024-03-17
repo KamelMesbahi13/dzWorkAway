@@ -5,8 +5,6 @@ import { useTranslation } from "react-i18next";
 const ServicesForm = () => {
   const { i18n } = useTranslation();
 
-  // ----------------------------------------------------------
-
   const modifiedHeader = Data.ServicesForm_Heading.map((data) => {
     if (i18n.language === "ar") {
       return {

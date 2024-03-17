@@ -133,8 +133,6 @@ const Questions = () => {
     );
   });
 
-  // -----------------------------------------------------------
-
   return (
     <motion.div
       initial="hidden"

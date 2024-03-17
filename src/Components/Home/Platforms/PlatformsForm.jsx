@@ -32,8 +32,6 @@ const PlatformsForm = () => {
     );
   });
 
-  // ----------------------------------------------------------
-
   const modifiedName = Data.Form_Name.map((data) => {
     if (i18n.language === "ar") {
       return {
@@ -58,8 +56,6 @@ const PlatformsForm = () => {
       </label>
     );
   });
-
-  // ----------------------------------------------------------
 
   const modifiedLastName = Data.Form_LastName.map((data) => {
     if (i18n.language === "ar") {
@@ -86,8 +82,6 @@ const PlatformsForm = () => {
     );
   });
 
-  // ----------------------------------------------------------
-
   const modifiedEmail = Data.Form_Email.map((data) => {
     if (i18n.language === "ar") {
       return {
@@ -112,8 +106,6 @@ const PlatformsForm = () => {
       </label>
     );
   });
-
-  // ----------------------------------------------------------
 
   const modifiedPhoneNumber = Data.Form_Phone_Number.map((data) => {
     if (i18n.language === "ar") {
