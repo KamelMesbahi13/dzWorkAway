@@ -15,7 +15,6 @@ const data = [
     Heading: "Immigration Consulting",
     Heading_ar: "استشارات الهجرة",
     Heading_fr: "Conseil en Immigration",
-
     Description:
       "Our immigration experts are here to guide you every step of the way. Whether you have questions about visa requirements, immigration procedures or current regulations, we're here to provide you with sound, personalized advice.",
     Description_ar:
@@ -30,7 +29,6 @@ const data = [
     Heading: "Case management",
     Heading_ar: "إدارة الملفات",
     Heading_fr: "Gestion de Dossiers",
-
     Description:
       "We understand that the paperwork associated with immigration can be overwhelming. Our experienced team takes charge of managing your files, ensuring that all necessary documents are submitted in a timely manner and in compliance with government requirements..",
     Description_ar:
@@ -45,7 +43,6 @@ const data = [
     Heading: "Visa Services",
     Heading_ar: "خدمات التأشيرات",
     Heading_fr: "Services de Visa",
-
     Description:
       "Whether you need a work visa, a student visa, a permanent residence visa or any other type of visa, we are here to help you obtain the necessary authorizations to enter and stay in the country of your choice.",
     Description_ar:
@@ -60,7 +57,6 @@ const data = [
     Heading: "Services for Businesses",
     Heading_ar: "خدمات الأعمال",
     Heading_fr: "Services pour les Entreprises",
-
     Description:
       "For companies looking to recruit international talent, we offer a range of tailored services to make the immigration process easier for your employees. From initial consultation to assistance with the application process, we're here to make things simple for you and your employees.",
     Description_ar:
@@ -162,7 +158,7 @@ const WhyUs = () => {
               return (
                 <div key={id}>
                   <div>
-                    <div className="p-4 duration-300 shadow-xl lg:h-[40rem] md:cardServices xl:h-[30rem] hover:text-white lg:p-8">
+                    <div className="p-4 duration-300 shadow-xl lg:rtl:h-[30rem] lg:ltr:h-[40rem] md:cardServices xl:rtl:h-[20rem] xl:ltr:h-[30rem] hover:text-white lg:p-8">
                       <div className="relative w-16 h-16 bg-white rounded-full">
                         <LazyLoadImage
                           className="absolute w-12 h-12 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"
