@@ -239,7 +239,7 @@ const Footer = () => {
                 {LinksHeader}{" "}
                 <div className="flex flex-row flex-wrap lg:flex-nowrap lg:flex-col gap-y-8">
                   <a
-                    className="rtl:ml-2 ltr:mr-2 md:rtl:ml-0 md:ltr:mr-0"
+                    className="rtl:ml-2 ltr:mr-2 rtl:md:ml-0 ltr:md:mr-0"
                     href="/"
                   >
                     {modifiedDataNav.map((el) => el.ItemOne)}
@@ -299,7 +299,7 @@ const Footer = () => {
                       {time.map(({ id, Img, Content }) => {
                         return (
                           <div key={id}>
-                            <div className="flex items-center ltr:flex-row rtl:flex-row-reverse">
+                            <div className="flex items-center mb-4 ltr:flex-row rtl:flex-row-reverse">
                               <div className="w-10 h-10">
                                 <LazyLoadImage
                                   className="w-6 my-2 ltr:mr-12 rtl:ml-12"
