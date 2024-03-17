@@ -15,11 +15,11 @@ const data = [
     heading_ar: "شريكك في الهجرة",
     heading_fr: "Votre Partenaire en Immigration",
     paragraph:
-      "We are here to guide you through the immigration process, whether it's for working abroad, immigrating with your family, or pursuing international training. With our expertise and personalized approach, achieve your projects with confidence. Contact us today to start your journey towards a new life.",
+      "We help you navigate the immigration process for work, family, or training abroad with expert guidance. Our personalized approach ensures confidence in achieving your goals. Contact us now to start your journey toward a new life.",
     paragraph_fr:
-      "Nous sommes là pour vous guider à travers le processus d'immigration sans conditions que ce soit pour travailler à l'étranger, immigrer avec votre famille ou suivre des formations internationales. Avec notre expertise et notre approche personnalisée, réalisez vos projets en toute confiance. Contactez-nous dès aujourd'hui pour commencer votre voyage vers une nouvelle vie.",
+      "Nous vous aidons à naviguer dans le processus d'immigration pour le travail, la famille ou la formation à l'étranger grâce à des conseils d'experts. Notre approche personnalisée vous permet d'atteindre vos objectifs en toute confiance. Contactez-nous dès maintenant pour commencer votre voyage vers une nouvelle vie.",
     paragraph_ar:
-      "نحن هنا لنوجِّهكم خلال عملية الهجرة بدون قيود، سواء كان ذلك للعمل في الخارج، أو للهجرة مع عائلتكم، أو لمتابعة تدريبات دولية. باستخدام خبرتنا ونهجنا الشخصي، يمكنكم تحقيق مشاريعكم بثقة. اتصلوا بنا اليوم لبدء رحلتكم نحو حياة جديدة",
+      "نحن نساعدك على الإبحار في عملية الهجرة للعمل أو الأسرة أو التدريب في الخارج مع إرشادات الخبراء. يضمن لك نهجنا الشخصي الثقة في تحقيق أهدافك. اتصل بنا الآن لبدء رحلتك نحو حياة جديدة.",
     Img: ImgOne,
     alt: "Background One",
   },
@@ -29,11 +29,11 @@ const data = [
     heading_fr: "Votre Partenaire en Immigration",
     heading_ar: "شريكك في الهجرة",
     paragraph:
-      "We are here to guide you through the immigration process, whether it's for working abroad, immigrating with your family, or pursuing international training. With our expertise and personalized approach, achieve your projects with confidence. Contact us today to start your journey towards a new life.",
+      "We help you navigate the immigration process for work, family, or training abroad with expert guidance. Our personalized approach ensures confidence in achieving your goals. Contact us now to start your journey toward a new life.",
     paragraph_fr:
-      "Nous sommes là pour vous guider à travers le processus d'immigration sans conditions que ce soit pour travailler à l'étranger, immigrer avec votre famille ou suivre des formations internationales. Avec notre expertise et notre approche personnalisée, réalisez vos projets en toute confiance. Contactez-nous dès aujourd'hui pour commencer votre voyage vers une nouvelle vie.",
+      "Nous vous aidons à naviguer dans le processus d'immigration pour le travail, la famille ou la formation à l'étranger grâce à des conseils d'experts. Notre approche personnalisée vous permet d'atteindre vos objectifs en toute confiance. Contactez-nous dès maintenant pour commencer votre voyage vers une nouvelle vie.",
     paragraph_ar:
-      "نحن هنا لنوجِّهكم خلال عملية الهجرة بدون قيود، سواء كان ذلك للعمل في الخارج، أو للهجرة مع عائلتكم، أو لمتابعة تدريبات دولية. باستخدام خبرتنا ونهجنا الشخصي، يمكنكم تحقيق مشاريعكم بثقة. اتصلوا بنا اليوم لبدء رحلتكم نحو حياة جديدة",
+      "نحن نساعدك على الإبحار في عملية الهجرة للعمل أو الأسرة أو التدريب في الخارج مع إرشادات الخبراء. يضمن لك نهجنا الشخصي الثقة في تحقيق أهدافك. اتصل بنا الآن لبدء رحلتك نحو حياة جديدة.",
     Img: ImgThree,
     alt: "Background Three",
   },
