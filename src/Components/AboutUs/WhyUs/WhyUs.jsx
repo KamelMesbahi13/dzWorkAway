@@ -60,9 +60,9 @@ const data = [
     Description:
       "Our support is unwavering. We're here to guide you through challenges and celebrate your successes, offering personalized assistance every step of the way.",
     Description_ar:
-      "ماسبل سيملاسي سيلش شيختل يحخستل شحهيلتق حقهاش حهيت حهيسل شخحبس شيخلت شيجختلش شجيختل شج ثهقا شبشيلا حشثهف",
+      "دعمنا لا يتزعزع. نحن هنا لإرشادك خلال التحديات والاحتفال بنجاحاتك، ونقدم لك المساعدة الشخصية في كل خطوة على الطريق.",
     Description_fr:
-      "With extensive experience guiding countless clients, we offer seasoned expertise to navigate your journey seamlessly. Trust in our track record and let us streamline your path to success.",
+      "Notre soutien est inébranlable. Nous sommes là pour vous aider à relever les défis et à célébrer vos succès, en vous offrant une assistance personnalisée à chaque étape.",
   },
 ];
 
