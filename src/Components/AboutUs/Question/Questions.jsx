@@ -65,7 +65,7 @@ const Questions = () => {
             aria-controls={id}
             onClick={onClick}
           >
-            <h6>{title}</h6>
+            <p className="text-xl">{title}</p>
 
             {isOpen ? (
               <LazyLoadImage

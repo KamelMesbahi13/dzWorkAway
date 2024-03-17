@@ -237,41 +237,41 @@
     {
       "id": 1,
       "title": "What are the main immigration pathways to Canada?",
-      "title_ar": "الينتل ناباال سمتبىب سىبجتب ستبىلىثض قبتلت تتب",
-      "title_fr": "What services does your immigration agency offer?",
+      "title_ar": "ما هي مسارات الهجرة الرئيسية إلى كندا؟",
+      "title_fr": "Quelles sont les principales voies d'immigration vers le Canada ?",
       "description": "Canada offers pathways like Express Entry for skilled workers, Provincial Nominee Programs (PNPs), family sponsorship, and refugee programs.",
-      "description_ar": "بنللاتب بسنتلبس لسبنتللابس سكخعشص سخعالىصقعل قخصعللا شخقهلال شخ_اقهل شقخلا شقخلاصق شصخعقلشص قخ_لف خشلاب فغثهش شجثعخلاف شغلاعف فثخعللا شخعرلاشثج شجخثلاشج شقثلتثقل صخقشهلاشجثلا شحثعهخلاقثعش شخعلاشثجخه شخجقثعللافغ علابلتلا خعلاابلىشث شجعفلال جشعقلار ",
-      "description_fr": "At Dz Work Away, we offer a wide range of immigration services tailored to meet the diverse needs of our clients. Our services include visa applications, permanent residency applications, citizenship applications, immigration consultations, family sponsorship, work permits, study permits, and more. Whether you're an individual, family, or employer, we're here to provide comprehensive support and guidance throughout your immigration journey."
+      "description_ar": "تقدم كندا مسارات مثل برنامج الدخول السريع للعمال المهرة، وبرامج المرشحين الإقليميين (PNPs)، وبرامج الرعاية العائلية، وبرامج اللاجئين.",
+      "description_fr": "Le Canada propose des voies d'accès telles que l'Entrée express pour les travailleurs qualifiés, les programmes de candidats des provinces (PNP), le parrainage familial et les programmes de réfugiés."
     },
 
     {
       "id": 2,
-      "title": " How does Canada's Express Entry system work?",
-      "title_ar": "الينتل ناباال سمتبىب سىبجتب ستبىلىثض قبتلت تتب",
-      "title_fr": "What services does your immigration agency offer?",
+      "title": "How does Canada's Express Entry system work?",
+      "title_ar": "كيف يعمل نظام الدخول السريع الكندي؟",
+      "title_fr": "Comment fonctionne le système d'entrée express du Canada ?",
       "description": "Express Entry is a points-based system for skilled workers. Candidates create a profile and are ranked based on factors like age, education, work experience, and language skills.",
-      "description_ar": "بنللاتب بسنتلبس لسبنتللابس سكخعشص سخعالىصقعل قخصعللا شخقهلال شخ_اقهل شقخلا شقخلاصق شصخعقلشص قخ_لف خشلاب فغثهش شجثعخلاف شغلاعف فثخعللا شخعرلاشثج شجخثلاشج شقثلتثقل صخقشهلاشجثلا شحثعهخلاقثعش شخعلاشثجخه شخجقثعللافغ علابلتلا خعلاابلىشث شجعفلال جشعقلار ",
-      "description_fr": "At Dz Work Away, we offer a wide range of immigration services tailored to meet the diverse needs of our clients. Our services include visa applications, permanent residency applications, citizenship applications, immigration consultations, family sponsorship, work permits, study permits, and more. Whether you're an individual, family, or employer, we're here to provide comprehensive support and guidance throughout your immigration journey."
+      "description_ar": "الدخول السريع هو نظام يعتمد على النقاط للعمال المهرة. يقوم المرشحون بإنشاء ملف تعريف ويتم تصنيفهم بناءً على عوامل مثل العمر والتعليم والخبرة العملية والمهارات اللغوية.",
+      "description_fr": "L'entrée express est un système de points pour les travailleurs qualifiés. Les candidats créent un profil et sont classés en fonction de facteurs tels que l'âge, l'éducation, l'expérience professionnelle et les compétences linguistiques."
     },
 
     {
       "id": 3,
       "title": "What options are there for global entrepreneurs in Canada",
-      "title_ar": "الينتل ناباال سمتبىب سىبجتب ستبىلىثض قبتلت تتب",
-      "title_fr": "What services does your immigration agency offer?",
+      "title_ar": "ما هي الخيارات المتاحة لرواد الأعمال العالميين في كندا",
+      "title_fr": "Quelles sont les possibilités offertes aux entrepreneurs internationaux au Canada ?",
       "description": "Global entrepreneurs can use the Start-Up Visa Program, Provincial Nominee Programs (PNPs), and Self-Employed Persons Program to start businesses in Canada.",
-      "description_ar": "بنللاتب بسنتلبس لسبنتللابس سكخعشص سخعالىصقعل قخصعللا شخقهلال شخ_اقهل شقخلا شقخلاصق شصخعقلشص قخ_لف خشلاب فغثهش شجثعخلاف شغلاعف فثخعللا شخعرلاشثج شجخثلاشج شقثلتثقل صخقشهلاشجثلا شحثعهخلاقثعش شخعلاشثجخه شخجقثعللافغ علابلتلا خعلاابلىشث شجعفلال جشعقلار ",
-      "description_fr": "At Dz Work Away, we offer a wide range of immigration services tailored to meet the diverse needs of our clients. Our services include visa applications, permanent residency applications, citizenship applications, immigration consultations, family sponsorship, work permits, study permits, and more. Whether you're an individual, family, or employer, we're here to provide comprehensive support and guidance throughout your immigration journey."
+      "description_ar": "يمكن لرواد الأعمال العالميين استخدام برنامج تأشيرة البدء، وبرامج المرشحين الإقليميين (PNPs)، وبرنامج الأشخاص العاملين لحسابهم الخاص لبدء أعمالهم في كندا.",
+      "description_fr": "Les entrepreneurs internationaux peuvent utiliser le programme de visa de démarrage, le programme des candidats des provinces (PNP) et le programme des travailleurs indépendants pour créer des entreprises au Canada."
     },
 
     {
       "id": 4,
       "title": "Can international students in Canada become permanent residents?",
-      "title_ar": "الينتل ناباال سمتبىب سىبجتب ستبىلىثض قبتلت تتب",
-      "title_fr": "What services does your immigration agency offer?",
+      "title_ar": "هل يمكن للطلاب الدوليين في كندا أن يصبحوا مقيمين دائمين؟",
+      "title_fr": "Les étudiants étrangers au Canada peuvent-ils devenir des résidents permanents ?",
       "description": "Yes, international students can transition to permanent residency through the Post-Graduation Work Permit (PGWP), Provincial Nominee Programs (PNPs), and Canadian Experience Class (CEC) after gaining work experience.",
-      "description_ar": "بنللاتب بسنتلبس لسبنتللابس سكخعشص سخعالىصقعل قخصعللا شخقهلال شخ_اقهل شقخلا شقخلاصق شصخعقلشص قخ_لف خشلاب فغثهش شجثعخلاف شغلاعف فثخعللا شخعرلاشثج شجخثلاشج شقثلتثقل صخقشهلاشجثلا شحثعهخلاقثعش شخعلاشثجخه شخجقثعللافغ علابلتلا خعلاابلىشث شجعفلال جشعقلار ",
-      "description_fr": "At Dz Work Away, we offer a wide range of immigration services tailored to meet the diverse needs of our clients. Our services include visa applications, permanent residency applications, citizenship applications, immigration consultations, family sponsorship, work permits, study permits, and more. Whether you're an individual, family, or employer, we're here to provide comprehensive support and guidance throughout your immigration journey."
+      "description_ar": "نعم، يمكن للطلاب الدوليين الانتقال إلى الإقامة الدائمة من خلال تصريح العمل بعد التخرج (PGWP)، وبرامج المرشحين الإقليميين (PNPs)، وفئة الخبرة الكندية (CEC) بعد اكتساب الخبرة العملية.",
+      "description_fr": "Oui, les étudiants étrangers peuvent obtenir la résidence permanente grâce au permis de travail post-diplôme (PGWP), aux programmes de candidats des provinces (PNP) et à la catégorie de l'expérience canadienne (CEC) après avoir acquis une expérience professionnelle."
     }
   ],
 
