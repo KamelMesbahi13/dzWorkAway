@@ -13,50 +13,50 @@ const data = [
     id: 1,
     Img: ImgOne,
     Heading: "Experience",
-    Heading_ar: "لاينيتب",
-    Heading_fr: "Experience",
+    Heading_ar: "الخبرة",
+    Heading_fr: "Expérience",
     Description:
       "With extensive experience guiding countless clients, we offer seasoned expertise to navigate your journey seamlessly. Trust in our track record and let us streamline your path to success.",
     Description_ar:
-      "ماسبل سيملاسي سيلش شيختل يحخستل شحهيلتق حقهاش حهيت حهيسل شخحبس شيخلت شيجختلش شجيختل شج ثهقا شبشيلا حشثهف",
+      "من خلال خبرتنا الواسعة في توجيه عدد لا يحصى من العملاء، نقدم لك خبرات متمرسة لتخوض رحلتك بسلاسة. ثِق في سجلنا الحافل ودعنا نيسر لك طريقك نحو النجاح.",
     Description_fr:
-      "With extensive experience guiding countless clients, we offer seasoned expertise to navigate your journey seamlessly. Trust in our track record and let us streamline your path to success.",
+      "Forts d'une expérience considérable dans l'accompagnement d'innombrables clients, nous offrons une expertise chevronnée qui vous permettra de naviguer en toute transparence. Faites confiance à notre expérience et laissez-nous tracer votre chemin vers le succès.",
   },
 
   {
     id: 2,
     Img: ImgTwo,
     Heading: "Priority",
-    Heading_ar: "لاينيتب",
-    Heading_fr: "Priority",
+    Heading_ar: "الأولويات",
+    Heading_fr: "Priorité",
     Description:
       "Your needs come first. We prioritize understanding your goals, challenges, and aspirations to deliver tailored solutions and exceptional service, ensuring your satisfaction and success.",
     Description_ar:
-      "ماسبل سيملاسي سيلش شيختل يحخستل شحهيلتق حقهاش حهيت حهيسل شخحبس شيخلت شيجختلش شجيختل شج ثهقا شبشيلا حشثهف",
+      "احتياجاتك تأتي أولاً. نحن نعطي الأولوية لفهم أهدافك وتحدياتك وتطلعاتك لتقديم حلول مصممة خصيصاً لك وخدمة استثنائية، مما يضمن رضاك ونجاحك.",
     Description_fr:
-      "With extensive experience guiding countless clients, we offer seasoned expertise to navigate your journey seamlessly. Trust in our track record and let us streamline your path to success.",
+      "Vos besoins sont prioritaires. Nous nous attachons à comprendre vos objectifs, vos défis et vos aspirations afin de vous proposer des solutions sur mesure et un service exceptionnel, garantissant ainsi votre satisfaction et votre réussite.",
   },
 
   {
     id: 3,
     Img: ImgThree,
     Heading: "Advice",
-    Heading_ar: "لاينيتب",
-    Heading_fr: "Priority",
+    Heading_ar: "النصيحة",
+    Heading_fr: "Conseil",
     Description:
       "Trust our guidance. We offer tailored advice to help you navigate life's complexities with confidence and clarity.",
     Description_ar:
-      "ماسبل سيملاسي سيلش شيختل يحخستل شحهيلتق حقهاش حهيت حهيسل شخحبس شيخلت شيجختلش شجيختل شج ثهقا شبشيلا حشثهف",
+      "ثق بإرشاداتنا. نحن نقدم لك مشورة مصممة خصيصاً لمساعدتك في التعامل مع تعقيدات الحياة بثقة ووضوح.",
     Description_fr:
-      "With extensive experience guiding countless clients, we offer seasoned expertise to navigate your journey seamlessly. Trust in our track record and let us streamline your path to success.",
+      "Faites confiance à nos conseils. Nous offrons des conseils sur mesure pour vous aider à naviguer dans les complexités de la vie avec confiance et clarté.",
   },
 
   {
     id: 4,
     Img: ImgFour,
     Heading: "Support",
-    Heading_ar: "لاينيتب",
-    Heading_fr: "Priority",
+    Heading_ar: "الدعم والمساندة",
+    Heading_fr: "Soutien",
     Description:
       "Our support is unwavering. We're here to guide you through challenges and celebrate your successes, offering personalized assistance every step of the way.",
     Description_ar:
