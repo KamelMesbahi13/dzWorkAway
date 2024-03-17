@@ -136,6 +136,33 @@ const WhyUs = () => {
 
   // --------------------------------------------------------
 
+  const modifiedDataButton = Data.AboutUs_WhyUs_Button.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        button: data.button_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        button: data.button_fr,
+      };
+    }
+    return data;
+  });
+
+  const Button = modifiedDataButton.map(({ button, id }) => {
+    return (
+      <div key={id}>
+        <a rel="noreferrer" target="_blank" href="/Nos-Services">
+          <button className="mt-12 buttonCust">{button}</button>
+        </a>{" "}
+      </div>
+    );
+  });
+
   // --------------------------------------------------------
 
   // --------------------------------------------------------
@@ -168,9 +195,7 @@ const WhyUs = () => {
                 visible: { opacity: 1, y: 0 },
               }}
             >
-              <a rel="noreferrer" target="_blank" href="/Nos-Services">
-                <button className="mt-12 buttonCust">Our Services</button>
-              </a>{" "}
+              {Button}
             </motion.div>
           </div>
 
@@ -189,7 +214,7 @@ const WhyUs = () => {
               return (
                 <div key={id}>
                   <div>
-                    <div className="ease-in border-2 border-opacity-0 border-secondColor hover:border-opacity-100 p-4 duration-300 shadow-xl lg:h-[28rem] xl:h-[22rem] lg:p-8">
+                    <div className="ease-in border-2 border-opacity-0 border-secondColor hover:border-opacity-100 p-4 duration-300 shadow-xl lg:ltr:h-[36rem] lg:rtl:h-[20rem] xl:ltr:h-[28rem] xl:rtl:h-[18rem] lg:p-8">
                       <div>
                         <LazyLoadImage
                           className="w-12 h-12"

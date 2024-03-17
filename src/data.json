@@ -302,13 +302,22 @@
   "AboutUs_WhyUs_Heading_Paragraph": [
     {
       "id": 1,
-      "header": "Why We Are The Best",
-      "header_ar": "لايب شيناب سينلال",
-      "header_fr": "Why We Are The Best",
+      "header": "Why We Are The Best?",
+      "header_ar": "لماذا نحن الأفضل؟",
+      "header_fr": "Pourquoi nous sommes les meilleurs?",
 
       "description": "At DZ Work Away, we understand that the decision to immigrate is one of the most significant steps you will ever take. That is why we are committed to making your journey as smooth and successful as possible. Here is why you should choose us:",
-      "description_ar": "بنللاتب بسنتلبس لسبنتللابس سكخعشص سخعالىصقعل قخصعللا شخقهلال شخ_اقهل شقخلا شقخلاصق شصخعقلشص قخ_لف خشلاب فغثهش شجثعخلاف شغلاعف فثخعللا شخعرلاشثج شجخثلاشج شقثلتثقل صخقشهلاشجثلا شحثعهخلاقثعش شخعلاشثجخه شخجقثعللافغ علابلتلا خعلاابلىشث شجعفلال جشعقلار ",
-      "description_fr": "At DZ Work Away, we understand that the decision to immigrate is one of the most significant steps you will ever take. That is why we are committed to making your journey as smooth and successful as possible. Here is why you should choose us:"
+      "description_ar": "ندرك في DZ Work Away أن قرار الهجرة هو أحد أهم الخطوات التي ستتخذها على الإطلاق. ولهذا السبب نحن ملتزمون بجعل رحلتك سلسة وناجحة قدر الإمكان. إليك الأسباب التي تجعلك تختارنا:",
+      "description_fr": "Chez DZ Work Away, nous comprenons que la décision d'immigrer est l'une des étapes les plus importantes de votre vie. C'est pourquoi nous nous engageons à faire en sorte que votre voyage soit aussi facile et réussi que possible. Voici pourquoi vous devriez nous choisir:"
+    }
+  ],
+
+  "AboutUs_WhyUs_Button": [
+    {
+      "id": 1,
+      "button": "Our Services",
+      "button_ar": "خدماتنا",
+      "button_fr": "Nos services"
     }
   ],
 
