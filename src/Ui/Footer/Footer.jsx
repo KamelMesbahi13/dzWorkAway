@@ -181,6 +181,33 @@ const Footer = () => {
     }
   );
 
+  const modifiedDataPrivacy = Data.Privacy.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Header: data.Header_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Header: data.Header_fr,
+      };
+    }
+    return data;
+  });
+
+  const SocialMediaPrivacy = modifiedDataPrivacy.map(({ id, Header }) => {
+    return (
+      <div key={id}>
+        <a href="/Confidentialité" className="italic font-bold">
+          {Header}
+        </a>
+      </div>
+    );
+  });
+
   const year = new Date().getFullYear();
 
   return (
@@ -252,7 +279,7 @@ const Footer = () => {
                       {contact.map(({ id, Img, Content }) => {
                         return (
                           <div key={id}>
-                            <div className="flex items-center ltr:flex-row rtl:flex-row-reverse">
+                            <div className="flex items-center mb-4 ltr:flex-row rtl:flex-row-reverse">
                               <div className="w-10 h-10">
                                 <LazyLoadImage
                                   className="w-6 my-2 ltr:mr-2 rtl:ml-2"
@@ -287,6 +314,7 @@ const Footer = () => {
                           </div>
                         );
                       })}
+                      <div>{SocialMediaPrivacy}</div>
                     </div>
                   </div>
                 </div>

@@ -35,7 +35,7 @@ const ContentPrivacy = () => {
               {Header}
             </h1>
           </div>
-          <div className="relative">
+          <div>
             <p>{Privacy_Policy_Text}</p>
           </div>
         </div>
@@ -43,13 +43,13 @@ const ContentPrivacy = () => {
     }
   );
 
-  const HeadingsAndParagraphsTwo = Data.Privacy_Header_Paragraph_Two.map(
+  const HeadingsAndParagraphsTwo = Data.Privacy_Header_Paragraph_Header_One.map(
     (data) => {
       if (i18n.language === "ar") {
         return {
           id: data.id,
           Header: data.Header_ar,
-          Privacy_Policy_Text: data.Privacy_Policy_Text_ar,
+          Privacy_Policy_Text_Header: data.Privacy_Policy_Text_Header_ar,
         };
       }
 
@@ -57,7 +57,7 @@ const ContentPrivacy = () => {
         return {
           id: data.id,
           Header: data.Header_fr,
-          Privacy_Policy_Text: data.Header_fr,
+          Privacy_Policy_Text_Header: data.Privacy_Policy_Text_Header_fr,
         };
       }
       return data;
@@ -65,16 +65,416 @@ const ContentPrivacy = () => {
   );
 
   const modifiedDataHeaderAndParagraphTwo = HeadingsAndParagraphsTwo.map(
-    ({ id, Header, Privacy_Policy_Text }) => {
+    ({ id, Header, Privacy_Policy_Text_Header }) => {
       return (
         <div key={id}>
           <div>
             <div className="mb-8 textCenter">
               <h1>{Header}</h1>
             </div>
-            <div className="relative pl-4 before:absolute lg:pl-8 before:md:block before:h-full before:w-2 before:left-0 before:bg-hoverColor before:top-1/2 before:-translate-y-1/2">
-              <p>{Privacy_Policy_Text}</p>
+            <div className="relative">
+              <h6>{Privacy_Policy_Text_Header}</h6>
             </div>
+          </div>
+        </div>
+      );
+    }
+  );
+
+  // --------------------------------------------------------
+
+  const ModifiedDataParagraphOne = Data.Privacy_Paragraph_One.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Privacy_Policy_Text: data.Privacy_Policy_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Privacy_Policy_Text: data.Privacy_Policy_Text_fr,
+      };
+    }
+    return data;
+  });
+
+  const ParagraphOne = ModifiedDataParagraphOne.map(
+    ({ id, Privacy_Policy_Text }) => {
+      return (
+        <div key={id}>
+          <div>
+            <p>
+              <span className="font-bold ltr:mr-4 rtl:ml-4 text-mainColor">
+                1_
+              </span>
+              {Privacy_Policy_Text}
+            </p>
+          </div>
+        </div>
+      );
+    }
+  );
+
+  // --------------------------------------------------------
+
+  const ModifiedDataParagraphTwo = Data.Privacy_Paragraph_Two.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Privacy_Policy_Text: data.Privacy_Policy_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Privacy_Policy_Text: data.Privacy_Policy_Text_fr,
+      };
+    }
+    return data;
+  });
+
+  const ParagraphTwo = ModifiedDataParagraphTwo.map(
+    ({ id, Privacy_Policy_Text }) => {
+      return (
+        <div key={id}>
+          <div>
+            <p>
+              <span className="font-bold ltr:mr-4 rtl:ml-4 text-mainColor">
+                2_
+              </span>
+              {Privacy_Policy_Text}
+            </p>
+          </div>
+        </div>
+      );
+    }
+  );
+
+  // --------------------------------------------------------
+
+  const ModifiedDataParagraphThree = Data.Privacy_Paragraph_Three.map(
+    (data) => {
+      if (i18n.language === "ar") {
+        return {
+          id: data.id,
+          Privacy_Policy_Text: data.Privacy_Policy_ar,
+        };
+      }
+
+      if (i18n.language === "fr") {
+        return {
+          id: data.id,
+          Privacy_Policy_Text: data.Privacy_Policy_Text_fr,
+        };
+      }
+      return data;
+    }
+  );
+
+  const ParagraphThree = ModifiedDataParagraphThree.map(
+    ({ id, Privacy_Policy_Text }) => {
+      return (
+        <div key={id}>
+          <div>
+            <p>
+              <span className="font-bold ltr:mr-4 rtl:ml-4 text-mainColor">
+                3_
+              </span>
+              {Privacy_Policy_Text}
+            </p>
+          </div>
+        </div>
+      );
+    }
+  );
+
+  // ---------------------------------------------------------
+
+  const ModifiedDataParagraphFour = Data.Privacy_Paragraph_Four.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Privacy_Policy_Text: data.Privacy_Policy_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Privacy_Policy_Text: data.Privacy_Policy_Text_fr,
+      };
+    }
+    return data;
+  });
+
+  const ParagraphFour = ModifiedDataParagraphFour.map(
+    ({ id, Privacy_Policy_Text }) => {
+      return (
+        <div key={id}>
+          <div>
+            <p>
+              <span className="font-bold ltr:mr-4 rtl:ml-4 text-mainColor">
+                4_
+              </span>
+              {Privacy_Policy_Text}
+            </p>
+          </div>
+        </div>
+      );
+    }
+  );
+
+  // ----------------------------------------------------------
+
+  const HeadingsAndParagraphsThree =
+    Data.Privacy_Header_Paragraph_Header_Two.map((data) => {
+      if (i18n.language === "ar") {
+        return {
+          id: data.id,
+          Header: data.Header_ar,
+        };
+      }
+
+      if (i18n.language === "fr") {
+        return {
+          id: data.id,
+          Header: data.Header_fr,
+        };
+      }
+      return data;
+    });
+
+  const modifiedDataHeaderAndParagraphThree = HeadingsAndParagraphsThree.map(
+    ({ id, Header }) => {
+      return (
+        <div key={id}>
+          <div>
+            <div>
+              <h6>{Header}</h6>
+            </div>
+          </div>
+        </div>
+      );
+    }
+  );
+
+  // ----------------------------------------------------------
+
+  const ModifiedDataParagraphFive = Data.Privacy_Paragraph_Five.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Privacy_Policy_Text: data.Privacy_Policy_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Privacy_Policy_Text: data.Privacy_Policy_Text_fr,
+      };
+    }
+    return data;
+  });
+
+  const ParagraphFive = ModifiedDataParagraphFive.map(
+    ({ id, Privacy_Policy_Text }) => {
+      return (
+        <div key={id}>
+          <div>
+            <p>
+              <span className="font-bold ltr:mr-4 rtl:ml-4 text-mainColor">
+                5_
+              </span>
+              {Privacy_Policy_Text}
+            </p>
+          </div>
+        </div>
+      );
+    }
+  );
+
+  // ----------------------------------------------------------
+
+  const ModifiedDataParagraphSix = Data.Privacy_Paragraph_Six.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Privacy_Policy_Text: data.Privacy_Policy_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Privacy_Policy_Text: data.Privacy_Policy_Text_fr,
+      };
+    }
+    return data;
+  });
+
+  const ParagraphSix = ModifiedDataParagraphSix.map(
+    ({ id, Privacy_Policy_Text }) => {
+      return (
+        <div key={id}>
+          <div>
+            <p>
+              <span className="font-bold ltr:mr-4 rtl:ml-4 text-mainColor">
+                1_
+              </span>
+              {Privacy_Policy_Text}
+            </p>
+          </div>
+        </div>
+      );
+    }
+  );
+
+  // ----------------------------------------------------------
+
+  const ModifiedDataParagraphSeven = Data.Privacy_Paragraph_Seven.map(
+    (data) => {
+      if (i18n.language === "ar") {
+        return {
+          id: data.id,
+          Privacy_Policy_Text: data.Privacy_Policy_ar,
+        };
+      }
+
+      if (i18n.language === "fr") {
+        return {
+          id: data.id,
+          Privacy_Policy_Text: data.Privacy_Policy_Text_fr,
+        };
+      }
+      return data;
+    }
+  );
+
+  const ParagraphSeven = ModifiedDataParagraphSeven.map(
+    ({ id, Privacy_Policy_Text }) => {
+      return (
+        <div key={id}>
+          <div>
+            <p>
+              <span className="font-bold ltr:mr-4 rtl:ml-4 text-mainColor">
+                2_
+              </span>
+              {Privacy_Policy_Text}
+            </p>
+          </div>
+        </div>
+      );
+    }
+  );
+
+  // ----------------------------------------------------------
+
+  const ModifiedDataParagraphEight = Data.Privacy_Paragraph_Eight.map(
+    (data) => {
+      if (i18n.language === "ar") {
+        return {
+          id: data.id,
+          Privacy_Policy_Text: data.Privacy_Policy_ar,
+        };
+      }
+
+      if (i18n.language === "fr") {
+        return {
+          id: data.id,
+          Privacy_Policy_Text: data.Privacy_Policy_Text_fr,
+        };
+      }
+      return data;
+    }
+  );
+
+  const ParagraphEight = ModifiedDataParagraphEight.map(
+    ({ id, Privacy_Policy_Text }) => {
+      return (
+        <div key={id}>
+          <div>
+            <p>
+              <span className="font-bold ltr:mr-4 rtl:ml-4 text-mainColor">
+                3_
+              </span>
+              {Privacy_Policy_Text}
+            </p>
+          </div>
+        </div>
+      );
+    }
+  );
+
+  // ----------------------------------------------------------
+
+  const ModifiedDataParagraphNine = Data.Privacy_Paragraph_Nine.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Privacy_Policy_Text: data.Privacy_Policy_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Privacy_Policy_Text: data.Privacy_Policy_Text_fr,
+      };
+    }
+    return data;
+  });
+
+  const ParagraphNine = ModifiedDataParagraphNine.map(
+    ({ id, Privacy_Policy_Text }) => {
+      return (
+        <div key={id}>
+          <div>
+            <p>
+              <span className="font-bold ltr:mr-4 rtl:ml-4 text-mainColor">
+                4_
+              </span>
+              {Privacy_Policy_Text}
+            </p>
+          </div>
+        </div>
+      );
+    }
+  );
+
+  // ----------------------------------------------------------
+
+  const ModifiedDataParagraphTen = Data.Privacy_Paragraph_Ten.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Privacy_Policy_Text: data.Privacy_Policy_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Privacy_Policy_Text: data.Privacy_Policy_Text_fr,
+      };
+    }
+    return data;
+  });
+
+  const ParagraphTen = ModifiedDataParagraphTen.map(
+    ({ id, Privacy_Policy_Text }) => {
+      return (
+        <div key={id}>
+          <div>
+            <p>
+              <span className="font-bold ltr:mr-4 rtl:ml-4 text-mainColor">
+                5_
+              </span>
+              {Privacy_Policy_Text}
+            </p>
           </div>
         </div>
       );
@@ -100,8 +500,27 @@ const ContentPrivacy = () => {
               >
                 <div>{HeadingsAndParagraphs}</div>
               </motion.div>
+              <div>
+                <div>{modifiedDataHeaderAndParagraphTwo}</div>
+                <div>
+                  <div className="mt-4">
+                    {ParagraphOne}
+                    {ParagraphTwo}
+                    {ParagraphThree}
+                    {ParagraphFour}
+                    {ParagraphFive}
+                  </div>
+                </div>
+              </div>
 
-              {modifiedDataHeaderAndParagraphTwo}
+              <div className="mt-8">
+                <div>{modifiedDataHeaderAndParagraphThree}</div>
+                {ParagraphSix}
+                {ParagraphSeven}
+                {ParagraphEight}
+                {ParagraphNine}
+                {ParagraphTen}
+              </div>
             </div>
           </div>
         </div>
