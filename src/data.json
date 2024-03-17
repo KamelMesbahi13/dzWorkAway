@@ -131,9 +131,9 @@
       "heading": "Discover Our Immigration Platforms",
       "heading_ar": "اكتشف منصاتنا للهجرة",
       "heading_fr": "Découvrez nos plateformes d'immigration",
-      "description": "Explorez nos plateformes d'immigration : Des ressources simplifiées pour les visas et la citoyenneté, ainsi que des conseils d'experts pour faciliter votre parcours d'immigration.",
-      "description_ar": "ابدأ رحلة الهجرة دون عناء باستخدامة.",
-      "description_fr": "Explore Our Immigration Platforms: Simplified resources for visas, citizenship, and expert insights to empower your immigration journey."
+      "description": "Explore Our Immigration Platforms: Simplified resources for visas, citizenship, and expert insights to empower your immigration journey.",
+      "description_ar": "استكشف منصاتنا الخاصة بالهجرة: موارد مبسطة للتأشيرات والجنسية ومشورة الخبراء لتسهيل رحلة الهجرة الخاصة بك.",
+      "description_fr": "Explorez nos plateformes d'immigration : Des ressources simplifiées pour les visas et la citoyenneté, ainsi que des conseils d'experts pour faciliter votre parcours d'immigration."
     }
   ],
 
@@ -349,7 +349,7 @@
       "header_ar": "إذا كان لديك أي استفسار أرسل لنا رسالة أو قم بزيارتنا",
       "header_fr": "Si vous avez des questions, envoyez-nous un message ou visitez-nous.",
 
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ipsa excepturi est mollitia voluptatem nihil illum? Eaque laudantium natus laboriosam doloremque officiis necessitatibus tempora incidunt eum consequatur animi? Ut, quasi.",
+      "description": "If you have any questions or require further information, please do not hesitate to contact us by sending us a message. You can also visit us for a face-to-face chat and get direct answers to your questions.",
       "description_ar": "إذا كانت لديك أي أسئلة أو كنت بحاجة إلى مزيد من المعلومات، فلا تتردد في الاتصال بنا عن طريق إرسال رسالة إلينا. يمكنك أيضاً زيارتنا للتحدث معنا شخصياً والحصول على إجابات مباشرة على أسئلتك.",
       "description_fr": "Si vous avez des questions ou si vous avez besoin de plus d'informations, n'hésitez pas à nous contacter en envoyant un message. Vous pouvez également nous rendre visite pour discuter en personne et obtenir des réponses directes à vos interrogations."
     }
@@ -446,7 +446,7 @@
     {
       "id": 1,
       "header": "Our Services",
-      "header_ar": "تبسلت سيمهل ييسش",
+      "header_ar": "خدماتنا",
       "header_fr": "Nos Services",
 
       "description": "At DZ Work Away, we understand that the decision to immigrate is one of the most significant steps you will ever take. That is why we are committed to making your journey as smooth and successful as possible. Here is why you should choose us:",
@@ -480,8 +480,8 @@
     {
       "id": 1,
       "Paragraph": "Welcome to our form page! Please fill out the form below with your details and any inquiries you may have. Your information is secure and will only be used to assist you. If you need help, just let us know. Thank you for reaching out!",
-      "Paragraph_ar": "سيتنبي سيتملس قهتلص لتسعبلاصخ سخعلاسل شكعبلال  يمبتاىبي بمتاب سبلتبس بسختلبس سبحختش حشهثتب سيلسب قغن قفسا شق فت غقن شثغ  فتي غ ثفعشس قافتغت سغت سقغتش غستست سخلاف شيتلفع سهلسلاقسل ",
-      "Paragraph_fr": "Welcome to our form page! Please fill out the form below with your details and any inquiries you may have. Your information is secure and will only be used to assist you. If you need help, just let us know. Thank you for reaching out!"
+      "Paragraph_ar": "مرحباً بك في صفحة الاستمارات! يرجى ملء النموذج أدناه بتفاصيلك وأي استفسارات قد تكون لديك. معلوماتك آمنة ولن يتم استخدامها إلا لمساعدتك. إذا كنت بحاجة إلى مساعدة، فقط أخبرنا بذلك. شكراً لتواصلك معنا!",
+      "Paragraph_fr": "Bienvenue sur notre page de formulaires ! Veuillez remplir le formulaire ci-dessous en indiquant vos coordonnées et toute question que vous pourriez avoir. Vos informations sont sécurisées et ne seront utilisées que pour vous aider. Si vous avez besoin d'aide, faites-le nous savoir. Merci de nous avoir contactés !"
     }
   ],
 
@@ -498,8 +498,8 @@
     {
       "id": 1,
       "Paragraph": "Please fill out the form below with your information",
-      "Paragraph_ar": "تفلاي سبلتمنتل سنتلس هقتلس سحهتل سلنهىك يكات بهلتس ",
-      "Paragraph_fr": "Please fill out the form below with your information"
+      "Paragraph_ar": "يرجى ملء النموذج أدناه بالمعلومات الخاصة بك",
+      "Paragraph_fr": "Veuillez remplir le formulaire ci-dessous avec vos informations"
     }
   ],
 
@@ -507,11 +507,11 @@
     {
       "id": 1,
       "Header": "Our Platforms",
-      "Header_ar": "ىبتث ثمتش",
-      "Header_fr": "Our Platforms",
+      "Header_ar": "منصاتنا",
+      "Header_fr": "Nos plateformes",
       "Paragraph": "Welcome to Our Immigration Platforms, your one-stop solution for streamlined immigration services. With expert guidance and user-friendly interfaces, we make your journey to new beginnings hassle-free.",
-      "Paragraph_ar": "العايبي ينععلتس سيتابنيالي سيهلتسنمالمستل سيملتنسيمنلاسي سيمنلتسمينال سميلناسمينلا ",
-      "Paragraph_fr": "Welcome to Our Immigration Platforms, your one-stop solution for streamlined immigration services. With expert guidance and user-friendly interfaces, we make your journey to new beginnings hassle-free."
+      "Paragraph_ar": "مرحباً بك في منصات الهجرة الخاصة بنا، الحل الشامل لخدمات الهجرة المبسطة. بفضل إرشادات الخبراء والواجهات سهلة الاستخدام، نجعل رحلتك إلى بدايات جديدة خالية من المتاعب.",
+      "Paragraph_fr": "Bienvenue sur nos plateformes d'immigration, votre solution unique pour des services d'immigration rationalisés. Grâce à des conseils d'experts et à des interfaces conviviales, nous faisons en sorte que votre voyage vers un nouveau départ se déroule sans encombre."
     }
   ],
 
@@ -519,17 +519,17 @@
     {
       "id": 1,
       "Paragraph": "Welcome to our form page! Please fill out the form below with your details and any inquiries you may have. Your information is secure and will only be used to assist you. If you need help, just let us know. Thank you for reaching out!",
-      "Paragraph_ar": "سيتنبي سيتملس قهتلص لتسعبلاصخ سخعلاسل شكعبلال  يمبتاىبي بمتاب سبلتبس بسختلبس سبحختش حشهثتب سيلسب قغن قفسا شق فت غقن شثغ  فتي غ ثفعشس قافتغت سغت سقغتش غستست سخلاف شيتلفع سهلسلاقسل ",
-      "Paragraph_fr": "Welcome to our form page! Please fill out the form below with your details and any inquiries you may have. Your information is secure and will only be used to assist you. If you need help, just let us know. Thank you for reaching out!"
+      "Paragraph_ar": "مرحباً بك في صفحة الاستمارات! يرجى ملء النموذج أدناه بتفاصيلك وأي استفسارات قد تكون لديك. معلوماتك آمنة ولن يتم استخدامها إلا لمساعدتك. إذا كنت بحاجة إلى مساعدة، فقط أخبرنا بذلك. شكراً لتواصلك معنا!",
+      "Paragraph_fr": "Bienvenue sur notre page de formulaires ! Veuillez remplir le formulaire ci-dessous en indiquant vos coordonnées et toute question que vous pourriez avoir. Vos informations sont sécurisées et ne seront utilisées que pour vous aider. Si vous avez besoin d'aide, faites-le nous savoir. Merci de nous avoir contactés !"
     }
   ],
 
   "Platforms_Paragraph_Two": [
     {
       "id": 1,
-      "Paragraph": "ARRIMA and Entrée express are both systems used in the province of Quebec, Canada, for managing immigration applications. ARRIMA stands for Arrima System, which is Quebec s Expression of Interest (EOI) system for managing applications to the Quebec Skilled Worker Program (QSWP). It allows candidates to submit an expression of interest online and enter a pool of candidates. The Quebec government then selects candidates from this pool based on their skills, qualifications, and the labor market needs of the province. Entrée express, on the other hand, is not specific to Quebec but rather a federal system used across Canada. It manages applications for the Federal Skilled Worker Program, Federal Skilled Trades Program, and Canadian Experience Class. Applicants create an online profile, enter a pool of candidates, and are then ranked based on various factors such as age, education, work experience, and language proficiency. The Canadian government regularly invites top-ranked candidates to apply for permanent residence. In summary, ARRIMA is specific to Quebec s immigration system, while Entrée express is part of Canada s federal immigration system.",
-      "Paragraph_ar": "سيتنبي سيتملس قهتلص لتسعبلاصخ سخعلاسل شكعبلال  يمبتاىبي بمتاب سبلتبس بسختلبس سبحختش حشهثتب سيلسب قغن قفسا شق فت غقن شثغ  فتي غ ثفعشس قافتغت سغت سقغتش غستست سخلاف شيتلفع سهلسلاقس سيتنبي سيتملس قهتلص لتسعبلاصخ سخعلاسل شكعبلال  يمبتاىبي بمتاب سبلتبس بسختلبس سبحختش حشهثتب سيلسب قغن قفسا شق فت غقن شثغ  فتي غ ثفعشس قافتغت سغت سقغتش غستست سخلاف شيتلفع سهلسلاقس سيتنبي سيتملس قهتلص لتسعبلاصخ سخعلاسل شكعبلال  يمبتاىبي بمتاب سبلتبس بسختلبس سبحختش حشهثتب سيلسب قغن قفسا شق فت غقن شثغ  فتي غ ثفعشس قافتغت سغت سقغتش غستست سخلاف شيتلفع سهلسلاقس سيتنبي سيتملس قهتلص لتسعبلاصخ سخعلاسل شكعبلال  يمبتاىبي بمتاب سبلتبس بسختلبس سبحختش حشهثتب سيلسب قغن قفسا شق فت غقن شثغ  فتي غ ثفعشس قافتغت سغت سقغتش غستست سخلاف شيتلفع سهلسلاقس سيتنبي سيتملس قهتلص لتسعبلاصخ سخعلاسل شكعبلال  يمبتاىبي بمتاب سبلتبس بسختلبس سبحختش حشهثتب سيلسب قغن قفسا شق فت غقن شثغ  فتي غ ثفعشس قافتغت سغت سقغتش غستست سخلاف شيتلفع سهلسلاقس سيتنبي سيتملس قهتلص لتسعبلاصخ سخعلاسل شكعبلال  يمبتاىبي بمتاب سبلتبس بسختلبس سبحختش حشهثتب سيلسب قغن قفسا شق فت غقن شثغ  فتي غ ثفعشس قافتغت سغت سقغتش غستست سخلاف شيتلفع سهلسلاقس سيتنبي سيتملس قهتلص لتسعبلاصخ سخعلاسل شكعبلال  يمبتاىبي بمتاب سبلتبس بسختلبس سبحختش حشهثتب سيلسب قغن قفسا شق فت غقن شثغ  فتي غ ثفعشس قافتغت سغت سقغتش غستست سخلاف شيتلفع سهلسلاقس",
-      "Paragraph_fr": "ARRIMA and Entrée express are both systems used in the province of Quebec, Canada, for managing immigration applications. ARRIMA stands for Arrima System, which is Quebec s Expression of Interest (EOI) system for managing applications to the Quebec Skilled Worker Program (QSWP). It allows candidates to submit an expression of interest online and enter a pool of candidates. The Quebec government then selects candidates from this pool based on their skills, qualifications, and the labor market needs of the province. Entrée express, on the other hand, is not specific to Quebec but rather a federal system used across Canada. It manages applications for the Federal Skilled Worker Program, Federal Skilled Trades Program, and Canadian Experience Class. Applicants create an online profile, enter a pool of candidates, and are then ranked based on various factors such as age, education, work experience, and language proficiency. The Canadian government regularly invites top-ranked candidates to apply for permanent residence. In summary, ARRIMA is specific to Quebec s immigration system, while Entrée express is part of Canada s federal immigration system."
+      "Paragraph": "ARRIMA, short for : Arrimage Régional des Immigrants en Montérégie et Accord, is a comprehensive immigration management system initiated by the Quebec government in Canada. Specifically designed for the Montérégie region, ARRIMA facilitates the process for prospective immigrants wishing to settle in this area. The platform allows individuals to create detailed profiles, express their interest in immigrating to Quebec, and subsequently receive invitations to apply based on the province's selection criteria and labor market needs. ARRIMA aims to streamline and modernize the immigration process, making it more accessible and efficient for both applicants and the government. By leveraging technology, ARRIMA ensures that immigration applications are processed in a timely and transparent manner, benefiting skilled workers, entrepreneurs, and their families looking to establish themselves in Montérégie. Furthermore, ARRIMA plays a crucial role in supporting Quebec's economic development goals by attracting and retaining talent that aligns with the region's workforce needs. The program also emphasizes the successful integration of immigrants into the local community, fostering diversity, cultural exchange, and economic growth in Montérégie.",
+      "Paragraph_ar": " ARRIMA، اختصار لـ : Arrimage Rérigage Régional des Immigrants en Montérégie et Accord، هو نظام عالمي لإدارة الهجرة أطلقته حكومة كيبيك في كندا. صُمم هذا النظام خصيصاً لمنطقة مونتيريغي، حيث يسهل على المهاجرين المحتملين الاستقرار في هذه المنطقة. تتيح المنصة للأفراد إنشاء ملفات تعريفية مفصلة والتعبير عن رغبتهم في الهجرة إلى كيبيك ومن ثم تلقي دعوات للتقدم بطلبات بناءً على معايير الاختيار الخاصة بالمقاطعة واحتياجات سوق العمل. تهدف منصة ARRIMA إلى تبسيط وتحديث عملية الهجرة، مما يجعلها أكثر سهولة وفعالية لكل من المتقدمين والحكومة. ومن خلال الاستفادة من التكنولوجيا، تضمن الوكالة معالجة طلبات الهجرة في الوقت المناسب وبطريقة شفافة، مما يعود بالفائدة على العمال المهرة ورجال الأعمال وعائلاتهم الذين يتطلعون إلى الاستقرار في مونتيري. بالإضافة إلى ذلك، يلعب برنامج ARRIMA دوراً حاسماً في دعم أهداف التنمية الاقتصادية في كيبيك من خلال جذب المواهب التي تتناسب مع احتياجات المنطقة من العمالة والاحتفاظ بها. كما يركز البرنامج أيضاً على الاندماج الناجح للمهاجرين في المجتمع المحلي، وبالتالي تعزيز التنوع والتبادل الثقافي والنمو الاقتصادي في مونتيريغي.",
+      "Paragraph_fr": "ARRIMA, abréviation de : Arrimage Régional des Immigrants en Montérégie et Accord, est un système global de gestion de l'immigration initié par le gouvernement du Québec au Canada. Spécialement conçu pour la région de la Montérégie, ARRIMA facilite les démarches des candidats à l'immigration qui souhaitent s'installer dans cette région. La plateforme permet aux individus de créer des profils détaillés, d'exprimer leur intérêt à immigrer au Québec et de recevoir par la suite des invitations à postuler en fonction des critères de sélection de la province et des besoins du marché du travail. ARRIMA vise à rationaliser et à moderniser le processus d'immigration, en le rendant plus accessible et plus efficace à la fois pour les candidats et pour le gouvernement. En tirant parti de la technologie, ARRIMA veille à ce que les demandes d'immigration soient traitées en temps opportun et de manière transparente, ce qui profite aux travailleurs qualifiés, aux entrepreneurs et à leurs familles qui cherchent à s'établir en Montérégie. De plus, ARRIMA joue un rôle crucial dans le soutien des objectifs de développement économique du Québec en attirant et en retenant les talents qui correspondent aux besoins de la région en matière de main-d'œuvre. Le programme met également l'accent sur l'intégration réussie des immigrants dans la communauté locale, ce qui favorise la diversité, les échanges culturels et la croissance économique en Montérégie."
     }
   ],
 
@@ -552,11 +552,11 @@
     {
       "id": 1,
       "Header": "Discover a Comprehensive Online Immigration Services",
-      "Header_ar": " لناسم لناسم بلبل سميلناسمينل",
-      "Header_fr": "Discover a Comprehensive Online Immigration Services",
+      "Header_ar": "اكتشف خدمات الهجرة الشاملة عبر الإنترنت",
+      "Header_fr": "Découvrez un service d'immigration en ligne complet",
       "Paragraph": "Step into an online platform tailored to meet your immigration needs. Explore personalized solutions designed to guide you through every step of your journey, ensuring a seamless transition to your new destination.",
-      "Paragraph_ar": "العايبي ينععلتس سيتابنيالي سيهلتسنمالمستل سيملتنسيمنلاسي سيمنلتسمينال سميلناسمينلا ",
-      "Paragraph_fr": "Step into an online platform tailored to meet your immigration needs. Explore personalized solutions designed to guide you through every step of your journey, ensuring a seamless transition to your new destination."
+      "Paragraph_ar": "ادخل إلى منصة إلكترونية مصممة خصيصاً لتلبية احتياجاتك في مجال الهجرة. استكشف حلولاً مخصصة مصممة لإرشادك في كل خطوة من خطوات رحلتك، مما يضمن انتقالاً سلساً إلى وجهتك الجديدة.",
+      "Paragraph_fr": "Entrez dans une plateforme en ligne conçue pour répondre à vos besoins en matière d'immigration. Explorez des solutions personnalisées conçues pour vous guider à chaque étape de votre voyage, en vous assurant une transition en douceur vers votre nouvelle destination."
     }
   ],
 
