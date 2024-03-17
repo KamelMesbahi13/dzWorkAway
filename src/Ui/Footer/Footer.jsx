@@ -74,8 +74,6 @@ const Footer = () => {
     return data;
   });
 
-  // --------------------------------------------------------
-
   const modifiedDataParagraph = Data.Footer_Paragraph.map((data) => {
     if (i18n.language === "ar") {
       return {
@@ -101,8 +99,6 @@ const Footer = () => {
     );
   });
 
-  // ------------------------------------------------------------------
-
   const modifiedDataLinksHeader = Data.Footer_Links_Header.map((data) => {
     if (i18n.language === "ar") {
       return {
@@ -127,8 +123,6 @@ const Footer = () => {
       </div>
     );
   });
-
-  // -------------------------------------------------------------
 
   const modifiedDataSocialMediaLinks = Data.Footer_Social_Media_Header.map(
     (data) => {
@@ -159,7 +153,6 @@ const Footer = () => {
     }
   );
 
-  // ----------------------------------------------------------
   const modifiedDataSocialContactsHeader =
     Data.Footer_Social_Contacts_Header.map((data) => {
       if (i18n.language === "ar") {
@@ -192,7 +185,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className="relative w-full mt-12 md:mt-20 h-[60rem] lg:h-[50rem] footerBack border border-grey">
+      <div className="relative w-full mt-4 md:mt-20 h-[60rem] lg:h-[50rem] footerBack border border-grey">
         <div className="container">
           <div className="absolute -translate-y-1/2 top-1/2 rtl:lg:w-[94%]">
             <div className="flex flex-col items-center justify-between lg:flex-row">
@@ -218,14 +211,19 @@ const Footer = () => {
               <div className="w-full my-4 lg:w-1/4 lg:textCenter">
                 {LinksHeader}{" "}
                 <div className="flex flex-row flex-wrap lg:flex-nowrap lg:flex-col gap-y-8">
-                  <a href="/">{modifiedDataNav.map((el) => el.ItemOne)}</a>
-                  <a href="/Nos-Services">
+                  <a
+                    className="rtl:ml-2 ltr:mr-2 md:rtl:ml-0 md:ltr:mr-0"
+                    href="/"
+                  >
+                    {modifiedDataNav.map((el) => el.ItemOne)}
+                  </a>
+                  <a className="ml-2" href="/Nos-Services">
                     {modifiedDataNav.map((el) => el.ItemTwo)}
                   </a>
-                  <a href="/À Propos-de-Nous">
+                  <a className="ml-2" href="/À Propos-de-Nous">
                     {modifiedDataNav.map((el) => el.ItemThree)}
                   </a>
-                  <a href="/Contactez-Nous">
+                  <a className="ml-2" href="/Contactez-Nous">
                     {modifiedDataNav.map((el) => el.ItemFour)}
                   </a>
                 </div>
