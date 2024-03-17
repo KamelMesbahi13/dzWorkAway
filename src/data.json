@@ -366,18 +366,17 @@
       "CallUs_paragraph_ar": "اتصل بنا للحصول على دعم مخصص. اتصل الآن للتحدث إلى فريقنا المتخصص.",
       "CallUs_paragraph_fr": "Contactez-nous pour une assistance personnalisée. Appelez-nous dès maintenant pour parler à notre équipe dévouée.",
 
-      "CallUs": "0555 55 55 55",
+      "CallUs": "05 50 51 00 61",
 
       "VisitUs_Title": "Visit us",
-      "VisitUs_Title_ar": "باتس شيعخش",
-      "VisitUs_Title_fr": "Visit us",
+      "VisitUs_Title_ar": "قم بزيارتنا",
+      "VisitUs_Title_fr": "Visitez-nous",
 
       "VisitUs_paragraph": "Come visit us! Our doors are open to you for any questions or advice. Looking forward to meeting you.",
-      "VisitUs_paragraph_ar": "سينتلمان سيمهلانق سخيهلا فعشخس شبخعلاش شيخهابلش خهسالش خهالاا خسهقبال شخقعهل جلاخبهاش شخعلا",
-      "VisitUs_paragraph_fr": "Come visit us! Our doors are open to you for any questions or advice. Looking forward to meeting you.",
+      "VisitUs_paragraph_ar": "تفضل بزيارتنا! أبوابنا مفتوحة لكم للإجابة عن أي أسئلة أو استشارات. نتطلع إلى لقائك.",
+      "VisitUs_paragraph_fr": "Venez nous rendre visite ! Nos portes vous sont ouvertes pour toute question ou conseil. Au plaisir de vous rencontrer.",
 
-      "VisitUs": "Numéro 1, Résidence Zidan, Bloc 1, Boumerdès 35000",
-      "Privacy_Policy_Text": "Please find our Privacy Policy here."
+      "VisitUs": "Numéro 1, Résidence Zidan, Bloc 1, Boumerdès 35000"
     }
   ],
 
@@ -666,7 +665,8 @@
       "id": 1,
       "Header": "Social Media",
       "Header_ar": "اتصل بنا",
-      "Header_fr": "Nos Contacts"
+      "Header_fr": "Nos Contacts",
+      "Privacy_Policy_Text": "Please find our Privacy Policy here."
     }
   ],
 
@@ -684,15 +684,6 @@
       "Message": "Message",
       "Message_ar": "رسالة",
       "Message_fr": "Message"
-    }
-  ],
-
-  "Form_Required": [
-    {
-      "id": 1,
-      "Content": "This field is require",
-      "Content_ar": " يببيي بلبل سميلناسمينل",
-      "Content_fr": "This field is require"
     }
   ]
 }
