@@ -40,7 +40,6 @@ function TranslateIcon() {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
-    // Set the language from local storage as the default language
     i18n.changeLanguage(currentLanguageCode);
     document.body.dir = currentLanguage.dir || "ltr";
   }, [currentLanguage, currentLanguageCode, i18n]);
@@ -48,7 +47,7 @@ function TranslateIcon() {
   const changeLanguage = (code) => {
     i18n.changeLanguage(code);
     setIsOpen(false);
-    localStorage.setItem("i18next", code); // Store language preference in local storage
+    localStorage.setItem("i18next", code);
   };
 
   return (
