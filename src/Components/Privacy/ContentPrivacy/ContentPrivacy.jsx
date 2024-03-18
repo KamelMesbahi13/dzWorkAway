@@ -31,7 +31,7 @@ const ContentPrivacy = () => {
       return (
         <div key={id}>
           <div>
-            <h1 className="relative mb-2 lg:mb-0 before:absolute before:hidden rtl:lg:pr-20 ltr:lg:pl-20 before:md:block before:h-2 before:w-16 before:rtl:left-[93%] before:left-0 before:bg-hoverColor before:top-1/2 before:-translate-y-1/2g">
+            <h1 className="relative mb-2 xl:mb-0 before:absolute before:hidden rtl:xl:pr-20 ltr:xl:pl-20 before:md:block before:h-2 before:w-16 before:rtl:left-[93%] before:left-0 before:bg-hoverColor before:top-1/2 before:-translate-y-1/2g">
               {Header}
             </h1>
           </div>

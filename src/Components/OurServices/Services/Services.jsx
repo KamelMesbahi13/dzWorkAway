@@ -113,7 +113,7 @@ const WhyUs = () => {
     return (
       <div key={id}>
         <div>
-          <h1 className="relative mb-2 lg:mb-0 md:headingStyleMd lg:headingStyleLg">
+          <h1 className="relative mb-2 lg:mb-0 md:headingStyleMd xl:headingStyleLg">
             {header}
           </h1>
         </div>

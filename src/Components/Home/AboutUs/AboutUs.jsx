@@ -31,7 +31,7 @@ const AboutUs = () => {
   const Heading = modifiedDataHeader.map(({ id, heading }) => {
     return (
       <div key={id}>
-        <h1 className="relative p-0 mt-4 mb-2 md:mb-8 md:mt-0 lg:headingStyleLg">
+        <h1 className="relative p-0 mt-4 mb-2 md:mb-8 md:mt-0 xl:headingStyleLg">
           {heading}
         </h1>{" "}
       </div>

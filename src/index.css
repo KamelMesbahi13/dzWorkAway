@@ -37,7 +37,7 @@ h1 {
   }
 
   .headingStyleLg {
-    @apply before:absolute before:hidden rtl:lg:pr-20 ltr:lg:pl-20 before:md:block before:h-2 before:w-16 before:rtl:left-[89%] before:left-0 before:bg-hoverColor before:top-1/2 before:-translate-y-1/2;
+    @apply before:absolute before:hidden rtl:xl:pr-20 ltr:xl:pl-20 before:xl:block before:h-2 before:w-16 before:rtl:left-[89%] before:left-0 before:bg-hoverColor before:top-1/2 before:-translate-y-1/2;
   }
 
   .container {

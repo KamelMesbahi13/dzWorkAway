@@ -71,7 +71,7 @@ const ChooseUs = () => {
           <div>
             {" "}
             <div>
-              <h1 className="relative headingStyleLg">{header}</h1>
+              <h1 className="relative xl:headingStyleLg">{header}</h1>
             </div>
             <div>
               <p>{description}</p>

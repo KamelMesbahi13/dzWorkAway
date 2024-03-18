@@ -42,9 +42,7 @@ const Introduction = () => {
                 visible: { opacity: 1 },
               }}
             >
-              <h1 className="relative md:headingStyleMd lg:headingStyleLg">
-                {header}
-              </h1>
+              <h1 className="relative xl:headingStyleLg">{header}</h1>
               <p className="mt-4">{description}</p>
             </motion.div>
           </div>
