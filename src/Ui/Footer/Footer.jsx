@@ -97,7 +97,7 @@ const Footer = () => {
   const Paragraph = modifiedDataParagraph.map(({ id, Paragraph }) => {
     return (
       <div key={id}>
-        <p className="w-3/4 my-4 lg:w-full lg:my-8">{Paragraph}</p>
+        <p className="w-full my-4 lg:my-8">{Paragraph}</p>
       </div>
     );
   });

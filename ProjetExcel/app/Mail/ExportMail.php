@@ -12,20 +12,21 @@ class ExportMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $excelPath;
     public $pdfPath;
+    public $degreePath;
+    public $passportPath;
     public $firstName;
     public $lastName;
 
     /**
-     * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($excelPath, $pdfPath, $firstName, $lastName)
+    public function __construct($pdfPath, $degreePath, $passportPath,$firstName, $lastName)
     {
-        $this->excelPath = $excelPath;
         $this->pdfPath = $pdfPath;
+        $this->degreePath = $degreePath; 
+        $this->passportPath = $passportPath; 
         $this->firstName = $firstName;
         $this->lastName = $lastName;
     }
@@ -40,16 +41,24 @@ class ExportMail extends Mailable
         $message = $this->view('Client.export')
             ->subject('Fichiers exportés pour ' . $this->firstName . ' ' . $this->lastName);
 
-        if ($this->excelPath) {
-            $excelContents = file_get_contents($this->excelPath);
-            $message->attachData($excelContents, 'exportExcel.xlsx', [
-                'mime' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
-            ]);
-        }
 
         if ($this->pdfPath) {
             $pdfContents = file_get_contents($this->pdfPath);
-            $message->attachData($pdfContents, 'exportPdf.pdf', [
+            $message->attachData($pdfContents, 'Cv.pdf', [
+                'mime' => 'application/pdf'
+            ]);
+        }
+
+        if ($this->degreePath) {
+            $pdfContents = file_get_contents($this->degreePath);
+            $message->attachData($pdfContents, 'degree.pdf', [
+                'mime' => 'application/pdf'
+            ]);
+        }
+
+        if ($this->passportPath) {
+            $pdfContents = file_get_contents($this->passportPath);
+            $message->attachData($pdfContents, 'passport.pdf', [
                 'mime' => 'application/pdf'
             ]);
         }

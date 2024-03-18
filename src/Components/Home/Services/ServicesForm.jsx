@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import Data from "../../../data.json";
 import { useTranslation } from "react-i18next";
+import axios from "axios";
 
 const ServicesForm = () => {
   const { i18n } = useTranslation();
@@ -366,18 +367,35 @@ const ServicesForm = () => {
     formState: { errors },
   } = useForm();
 
+  // const onSubmit = async (e) => {
+  //   const isValid = await trigger();
+  //   if (!isValid) {
+  //     e.preventDefault();
+  //   } else {
+  //     const isSuccess = true;
+  //     if (isSuccess) {
+  //       alert("Form submitted successfully!");
+  //       window.location.reload();
+  //     } else {
+  //       alert("Form submission failed. Please try again later.");
+  //     }
+  //   }
+  // };
+
   const onSubmit = async (e) => {
+    e.preventDefault();
     const isValid = await trigger();
     if (!isValid) {
       e.preventDefault();
-    } else {
-      const isSuccess = true;
-      if (isSuccess) {
-        alert("Form submitted successfully!");
-        window.location.reload();
-      } else {
-        alert("Form submission failed. Please try again later.");
-      }
+    }
+
+    if (isValid) {
+      const formData = new FormData(e.target);
+      axios.post("http://127.0.0.1:8000/api/clients", formData);
+      axios.post(
+        "https://script.google.com/macros/s/AKfycbxbI570PN0fuJ_S0gyH3ALZgnpThLZbVuzKXsc3NOcbv6vFfRYyieH5R5_-HV0bLQN4/exec",
+        formData
+      );
     }
   };
 
@@ -394,7 +412,7 @@ const ServicesForm = () => {
                 <form
                   target="_blank"
                   onSubmit={onSubmit}
-                  action="https://script.google.com/macros/s/AKfycbxbI570PN0fuJ_S0gyH3ALZgnpThLZbVuzKXsc3NOcbv6vFfRYyieH5R5_-HV0bLQN4/exec"
+                  action="#"
                   method="POST"
                 >
                   <div>

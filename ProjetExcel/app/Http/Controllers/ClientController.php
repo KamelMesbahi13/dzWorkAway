@@ -32,6 +32,8 @@ class ClientController extends Controller
             'City' => 'required',
             'Zip' => 'required',
             'Cv' => 'nullable|file|mimes:pdf|max:2048', // Le CV doit être un fichier PDF de taille maximale 2MB
+            'Degree' => 'nullable|file|mimes:pdf|max:2048',
+            'Passport' => 'nullable|file|mimes:pdf|max:2048',
             'message' =>  'required',
         ]);
     
@@ -40,6 +42,18 @@ class ClientController extends Controller
             $cvPath = $request->file('Cv')->store('Cv_files'); // Changez 'cv_files' pour le dossier de destination souhaité
         } else {
             $cvPath = null;
+        }
+
+        if ($request->hasFile('Degree')) {
+            $DegreePath = $request->file('Degree')->store('Degree_files'); // Changez 'cv_files' pour le dossier de destination souhaité
+        } else {
+            $DegreePath = null;
+        }
+
+        if ($request->hasFile('Passport')) {
+            $PassportPath = $request->file('Passport')->store('Passport_files'); // Changez 'cv_files' pour le dossier de destination souhaité
+        } else {
+            $PassportPath = null;
         }
     
         // $client = new Client();
@@ -56,10 +70,12 @@ class ClientController extends Controller
     
         // Chemin du fichier PDF
         $pdfPath = $cvPath ? Storage::path($cvPath) : null;
+        $DegPath = $DegreePath ? Storage::path($DegreePath) : null;
+        $PassPath = $PassportPath ? Storage::path($PassportPath) : null;
     
         // Envoyer l'e-mail avec le fichier PDF en pièce jointe à l'adresse spécifiée
         $destinationEmail = 'faycalbabaahmed197@gmail.com';
-        Mail::to($destinationEmail)->send(new ExportMail(null, $pdfPath, $request->name, $request->lastName));
+        Mail::to($destinationEmail)->send(new ExportMail($pdfPath, $DegreePath, $PassportPath, $request->name, $request->lastName));
     
         // Retourner une réponse JSON pour indiquer que le client a été ajouté avec succès
         return response()->json(['message' => 'Le client a été ajouté avec succès et le fichier PDF a été envoyé par e-mail à ' . $destinationEmail . '.'], 201);
