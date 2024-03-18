@@ -130,14 +130,6 @@ const Navbar = () => {
                   {modifiedDataNav.map((el) => el.ItemFour)}
                 </Link>
 
-                <div className="mx-auto mt-2 lg:hidden">
-                  <img
-                    className={nav ? "invisible w-24" : "visible w-24"}
-                    src={Logo}
-                    alt="Logo"
-                  />
-                </div>
-
                 <div className="flex items-center justify-center gap-2">
                   <a
                     href="https://web.facebook.com/dzworkaway"
@@ -157,6 +149,14 @@ const Navbar = () => {
                   <div>
                     <TranslateIcon />
                   </div>
+                </div>
+
+                <div className="mx-auto mt-2 lg:hidden">
+                  <img
+                    className={nav ? "invisible w-24" : "visible w-24"}
+                    src={Logo}
+                    alt="Logo"
+                  />
                 </div>
               </div>
             </div>

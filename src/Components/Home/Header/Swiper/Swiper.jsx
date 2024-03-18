@@ -105,7 +105,7 @@ export default function App() {
 
   return (
     <>
-      <div className="h-[25rem] md:h-[30rem] w-full">
+      <div className="ltr:h-[25rem] rtl:h-[20rem] md:ltr:h-[30rem] md:rtl:h-[30rem] w-full">
         <Swiper
           centeredSlides={true}
           autoplay={{
