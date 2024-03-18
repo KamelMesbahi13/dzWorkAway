@@ -223,30 +223,30 @@ const ServicesForm = () => {
 
   // ----------------------------------------------------------
 
-  const modifiedCv = Data.Form_Cv.map((data) => {
-    if (i18n.language === "ar") {
-      return {
-        id: data.id,
-        Title: data.Title_ar,
-      };
-    }
+  // const modifiedCv = Data.Form_Cv.map((data) => {
+  //   if (i18n.language === "ar") {
+  //     return {
+  //       id: data.id,
+  //       Title: data.Title_ar,
+  //     };
+  //   }
 
-    if (i18n.language === "fr") {
-      return {
-        id: data.id,
-        Title: data.Title_fr,
-      };
-    }
-    return data;
-  });
+  //   if (i18n.language === "fr") {
+  //     return {
+  //       id: data.id,
+  //       Title: data.Title_fr,
+  //     };
+  //   }
+  //   return data;
+  // });
 
-  const Cv = modifiedCv.map(({ id, Title }) => {
-    return (
-      <label key={id} htmlFor="Cv">
-        {Title}
-      </label>
-    );
-  });
+  // const Cv = modifiedCv.map(({ id, Title }) => {
+  //   return (
+  //     <label key={id} htmlFor="Cv">
+  //       {Title}
+  //     </label>
+  //   );
+  // });
 
   // ----------------------------------------------------------
 
@@ -305,7 +305,7 @@ const ServicesForm = () => {
                 <form
                   target="_blank"
                   onSubmit={onSubmit}
-                  action="#"
+                  action="https://script.google.com/macros/s/AKfycbx5HWEV4uR-vznVi3HRxJcT3SdHWijHtb8zhyMvQhAD7QxTP_unCIRGd6IwSrAoqAEH/exec"
                   method="POST"
                 >
                   <div>
@@ -316,6 +316,7 @@ const ServicesForm = () => {
                           <input
                             className={`${inputStyle} mb-6 md:mb-0 w-full`}
                             type="text"
+                            name="name"
                             {...register("name", {
                               required: true,
                               minLength: 5,
@@ -477,14 +478,14 @@ const ServicesForm = () => {
                         )}
                       </div>
 
-                      <div className="mt-6">
+                      {/* <div className="mt-6">
                         {Cv} <br />
                         <input
                           required
                           className={`${inputStyle} w-full`}
                           type="file"
                         />
-                      </div>
+                      </div> */}
 
                       <div className="mt-6">
                         {Message} <br />
