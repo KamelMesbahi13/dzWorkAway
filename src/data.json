@@ -543,7 +543,7 @@
       "id": 1,
       "Title": "First Name",
       "Title_ar": "الأسم",
-      "Title_fr": "First Name"
+      "Title_fr": "Prénom"
     }
   ],
 
@@ -552,7 +552,7 @@
       "id": 1,
       "Title": "Last Name",
       "Title_ar": "اللقب",
-      "Title_fr": "Last Name"
+      "Title_fr": "Nom"
     }
   ],
 
@@ -570,7 +570,7 @@
       "id": 1,
       "Title": "Phone Number",
       "Title_ar": "رقم الهاتف",
-      "Title_fr": "Phone Number"
+      "Title_fr": "Numéro De Téléphone"
     }
   ],
 
@@ -588,7 +588,7 @@
       "id": 1,
       "Title": "City",
       "Title_ar": "الولاية",
-      "Title_fr": "City"
+      "Title_fr": "Wilaya"
     }
   ],
 
@@ -597,7 +597,7 @@
       "id": 1,
       "Title": "Zip / Postal Code",
       "Title_ar": "Zip / Postal Code",
-      "Title_fr": "Zip / Postal Code"
+      "Title_fr": "Zip / Code Postal"
     }
   ],
 
@@ -606,7 +606,25 @@
       "id": 1,
       "Title": "Your Cv",
       "Title_ar": "السيرة الذاتية",
-      "Title_fr": "Your Cv"
+      "Title_fr": "Ton Cv"
+    }
+  ],
+
+  "Form_Degree": [
+    {
+      "id": 1,
+      "Title": "Your Degree",
+      "Title_ar": "الشهادة",
+      "Title_fr": "Ton Diplôme"
+    }
+  ],
+
+  "Form_Passport": [
+    {
+      "id": 1,
+      "Title": "First Page Of Your Passport",
+      "Title_ar": "أول صفحة من جواز سفرك",
+      "Title_fr": "Première Page De Votre Passeport"
     }
   ],
 

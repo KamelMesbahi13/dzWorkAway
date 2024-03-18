@@ -26,7 +26,7 @@ const ServicesForm = () => {
     return (
       <div key={id}>
         <div>
-          <p>{Paragraph}</p>
+          <h6>{Paragraph}</h6>
         </div>
       </div>
     );
@@ -223,30 +223,84 @@ const ServicesForm = () => {
 
   // ----------------------------------------------------------
 
-  // const modifiedCv = Data.Form_Cv.map((data) => {
-  //   if (i18n.language === "ar") {
-  //     return {
-  //       id: data.id,
-  //       Title: data.Title_ar,
-  //     };
-  //   }
+  const modifiedCv = Data.Form_Cv.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Title: data.Title_ar,
+      };
+    }
 
-  //   if (i18n.language === "fr") {
-  //     return {
-  //       id: data.id,
-  //       Title: data.Title_fr,
-  //     };
-  //   }
-  //   return data;
-  // });
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Title: data.Title_fr,
+      };
+    }
+    return data;
+  });
 
-  // const Cv = modifiedCv.map(({ id, Title }) => {
-  //   return (
-  //     <label key={id} htmlFor="Cv">
-  //       {Title}
-  //     </label>
-  //   );
-  // });
+  const Cv = modifiedCv.map(({ id, Title }) => {
+    return (
+      <label key={id} htmlFor="Cv">
+        {Title}
+      </label>
+    );
+  });
+
+  // ----------------------------------------------------------
+
+  const modifiedDegree = Data.Form_Degree.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Title: data.Title_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Title: data.Title_fr,
+      };
+    }
+    return data;
+  });
+
+  const Degree = modifiedDegree.map(({ id, Title }) => {
+    return (
+      <label key={id} htmlFor="Degree">
+        {Title}
+      </label>
+    );
+  });
+
+  // ----------------------------------------------------------
+
+  const modifiedPassport = Data.Form_Passport.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Title: data.Title_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Title: data.Title_fr,
+      };
+    }
+    return data;
+  });
+
+  const Passport = modifiedPassport.map(({ id, Title }) => {
+    return (
+      <label key={id} htmlFor="Degree">
+        {Title}
+      </label>
+    );
+  });
 
   // ----------------------------------------------------------
 
@@ -289,6 +343,14 @@ const ServicesForm = () => {
     const isValid = await trigger();
     if (!isValid) {
       e.preventDefault();
+    } else {
+      const isSuccess = true;
+      if (isSuccess) {
+        alert("Form submitted successfully!");
+        window.location.reload();
+      } else {
+        alert("Form submission failed. Please try again later.");
+      }
     }
   };
 
@@ -299,7 +361,7 @@ const ServicesForm = () => {
           <div>
             <div>
               <div className="mb-12 md:mb-36 textCenter">
-                <h6>{Heading}</h6>
+                <div>{Heading}</div>
               </div>
               <div>
                 <form
@@ -485,14 +547,59 @@ const ServicesForm = () => {
                         )}
                       </div>
 
-                      {/* <div className="mt-6">
+                      <div className="mt-6">
                         {Cv} <br />
                         <input
-                          required
                           className={`${inputStyle} w-full`}
                           type="file"
+                          name="Cv"
+                          {...register("Cv", {
+                            required: true,
+                          })}
                         />
-                      </div> */}
+                        {errors.Cv && (
+                          <p className="mt-1 text-mainColor">
+                            {errors.Cv.type === "required" &&
+                              "This field is require"}
+                          </p>
+                        )}
+                      </div>
+
+                      <div className="mt-6">
+                        {Degree} <br />
+                        <input
+                          className={`${inputStyle} w-full`}
+                          type="file"
+                          name="Degree"
+                          {...register("Degree", {
+                            required: true,
+                          })}
+                        />
+                        {errors.Degree && (
+                          <p className="mt-1 text-mainColor">
+                            {errors.Degree.type === "required" &&
+                              "This field is require"}
+                          </p>
+                        )}
+                      </div>
+
+                      <div className="mt-6">
+                        {Passport} <br />
+                        <input
+                          className={`${inputStyle} w-full`}
+                          type="file"
+                          name="Passport"
+                          {...register("Passport", {
+                            required: true,
+                          })}
+                        />
+                        {errors.Passport && (
+                          <p className="mt-1 text-mainColor">
+                            {errors.Passport.type === "required" &&
+                              "This field is require"}
+                          </p>
+                        )}
+                      </div>
 
                       <div className="mt-6">
                         {Message} <br />
