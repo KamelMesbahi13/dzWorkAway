@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import Data from "../../../data.json";
 import { useTranslation } from "react-i18next";
+import axios from "axios";
 
 const PlatformsForm = () => {
   const { i18n } = useTranslation();
@@ -276,9 +277,19 @@ const PlatformsForm = () => {
   } = useForm();
 
   const onSubmit = async (e) => {
+    e.preventDefault();
     const isValid = await trigger();
     if (!isValid) {
       e.preventDefault();
+    }
+
+    if (isValid) {
+      const formData = new FormData(e.target);
+      axios.post("http://127.0.0.1:8000/api/clients", formData);
+      axios.post(
+        "https://script.google.com/macros/s/AKfycby1TB6CIB3sCfT5sr-0iHKlvgaNUwkhmS_L6STsR90cziVnos4Sxhen_NAbEXYhW8Q/exec",
+        formData
+      );
     }
   };
 
@@ -295,7 +306,7 @@ const PlatformsForm = () => {
                 <form
                   target="_blank"
                   onSubmit={onSubmit}
-                  action="https://script.google.com/macros/s/AKfycby1TB6CIB3sCfT5sr-0iHKlvgaNUwkhmS_L6STsR90cziVnos4Sxhen_NAbEXYhW8Q/exec"
+                  action="#"
                   method="POST"
                 >
                   <div>
