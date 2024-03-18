@@ -239,18 +239,27 @@ const Footer = () => {
                 {LinksHeader}{" "}
                 <div className="flex flex-row flex-wrap lg:flex-nowrap lg:flex-col gap-y-8">
                   <a
-                    className="rtl:ml-2 ltr:mr-2 rtl:md:ml-0 ltr:md:mr-0"
+                    className="rtl:ml-2 ltr:mr-2 ltr:md:mr-0 md:ml-0 rtl:mr-2 rtl:md:mr-0"
                     href="/"
                   >
                     {modifiedDataNav.map((el) => el.ItemOne)}
                   </a>
-                  <a className="ml-2" href="/Nos-Services">
+                  <a
+                    className="rtl:ml-2 ltr:mr-2 ltr:md:mr-0 md:ml-0 rtl:mr-2 rtl:md:mr-0"
+                    href="/Nos-Services"
+                  >
                     {modifiedDataNav.map((el) => el.ItemTwo)}
                   </a>
-                  <a className="ml-2" href="/À Propos-de-Nous">
+                  <a
+                    className="rtl:ml-2 ltr:mr-2 ltr:md:mr-0 md:ml-0 rtl:mr-2 rtl:md:mr-0"
+                    href="/À Propos-de-Nous"
+                  >
                     {modifiedDataNav.map((el) => el.ItemThree)}
                   </a>
-                  <a className="ml-2" href="/Contactez-Nous">
+                  <a
+                    className="rtl:ml-2 ltr:mr-2 ltr:md:mr-0 md:ml-0 rtl:mr-2"
+                    href="/Contactez-Nous"
+                  >
                     {modifiedDataNav.map((el) => el.ItemFour)}
                   </a>
                 </div>
