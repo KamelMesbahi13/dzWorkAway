@@ -15,56 +15,55 @@ const Data = [
     id: 1,
     Img: ImgMan,
     Testi:
-      "I couldn't be happier with the service provided by DZ Work Away. As a male immigrant navigating a complex process, their team's guidance and expertise were invaluable. They made everything clear and straightforward, and I'm now living my dream in a new country. Thank you, DZ Work Away!",
+      "DZWorkaway made my immigration journey smooth and hassle-free. Their attention to detail and personalized assistance were commendable. I'm grateful for their support in helping me secure my visa and embark on a new chapter in my life. Thank you, DZWorkaway",
     Testi_ar:
-      "سيبتل سبتلبسلال سبتللابس سبمتاضث يشمتبلسي سيلانشي لبسمتل ثفشخع خفلاع سخلسب شخهباث شيخهاب شهثب لهللاش شخهلاص يهاي شيخيشجي يخعللاشي شيخعلاشيل شسخعهلار ءئخعهباش شسخهقا",
+      "جعلت DZWorkaway رحلتي للهجرة سلسة وخالية من المتاعب. كان اهتمامهم بالتفاصيل ومساعدتهم الشخصية جديرة بالثناء. أنا ممتن لدعمهم في مساعدتي في الحصول على تأشيرتي والبدء في فصل جديد من حياتي. شكراً لك، DZWorkaway!",
     Testi_fr:
-      "I couldn't be happier with the service provided by DZ Work Away. As a male immigrant navigating a complex process, their team's guidance and expertise were invaluable. They made everything clear and straightforward, and I'm now living my dream in a new country. Thank you, DZ Work Away!",
-    Name: "John Doe",
-    Name_ar: "تبلا شيتاي",
-    Name_fr: "John Doe",
+      "DZWorkaway a fait en sorte que mon voyage d'immigration se déroule en douceur et sans tracas. Leur attention aux détails et leur assistance personnalisée sont louables. Je leur suis reconnaissant de m'avoir aidé à obtenir mon visa et à entamer un nouveau chapitre de ma vie. Merci, DZWorkaway !",
+    Name: "Sofiane Benmoussa",
+    Name_ar: " سفيان بن موسى",
+    Name_fr: "JSofiane Benmoussa",
   },
 
   {
     id: 2,
     Img: ImgWoman,
-
     Testi:
-      "Choosing DZ Work Away was the best decision I made for my immigration journey. The support I received from their team was exceptional. They took the time to understand my individual needs and concerns, and they were with me every step of the way. I'm now settled in my new home country, and I owe it all to DZ Work Away",
+      "I had a wonderful experience with DZWorkaway. Their team was extremely helpful and guided me through every step of my immigration process. Thanks to their expertise, I now have a new beginning in a country I've always dreamt of. I highly recommend DZWorkaway for their professionalism and dedication.",
     Testi_ar:
-      "سيبتل سبتلبسلال سبتللابس سبمتاضث يشمتبلسي سيلانشي لبسمتل ثفشخع خفلاع سخلسب شخهباث شيخهاب شهثب لهللاش شخهلاص يهاي شيخيشجي يخعللاشي شيخعلاشيل شسخعهلار ءئخعهباش شسخهقا",
+      "الشهادة: لقد حظيت بتجربة رائعة مع DZWorkaway. كان فريقهم متعاوناً للغاية وأرشدني في كل خطوة من خطوات عملية الهجرة الخاصة بي. بفضل خبرتهم، لدي الآن بداية جديدة في بلد لطالما حلمت به. أنا أوصي بشدة بـ DZWorkaway لمهنيتهم وتفانيهم.",
     Testi_fr:
-      "I couldn't be happier with the service provided by DZ Work Away. As a male immigrant navigating a complex process, their team's guidance and expertise were invaluable. They made everything clear and straightforward, and I'm now living my dream in a new country. Thank you, DZ Work Away!",
-    Name: "Emily Smith",
-    Name_ar: "يهص شخباا",
-    Name_fr: "Emily Smith",
+      "J'ai eu une expérience formidable avec DZWorkaway. Leur équipe a été extrêmement utile et m'a guidée à travers chaque étape de mon processus d'immigration. Grâce à leur expertise, j'ai maintenant un nouveau départ dans un pays dont j'ai toujours rêvé. Je recommande vivement DZWorkaway pour son professionnalisme et son dévouement",
+    Name: "Nadia Belkacem",
+    Name_ar: "نادية بلقاسم",
+    Name_fr: "Nadia Belkacem",
   },
 
   {
     id: 3,
     Img: ImgMan,
     Testi:
-      "I was impressed by the professionalism and dedication of DZ Work Away. As a male immigrant, I had many questions and uncertainties about the process, but their team provided clear answers and reassurance. Thanks to their expertise, I successfully obtained my visa and am now building a new life",
+      "DZWorkaway exceeded my expectations with their professionalism and efficiency. They provided me with accurate information, addressed all my concerns promptly, and made the entire immigration process seamless. I'm grateful for their support in helping me achieve my immigration goals. Thank you, DZWorkaway",
     Testi_ar:
-      "سيبتل سبتلبسلال سبتللابس سبمتاضث يشمتبلسي سيلانشي لبسمتل ثفشخع خفلاع سخلسب شخهباث شيخهاب شهثب لهللاش شخهلاص يهاي شيخيشجي يخعللاشي شيخعلاشيل شسخعهلار ءئخعهباش شسخهقا",
+      "لقد تجاوزت DZWorkaway توقعاتي باحترافيتهم وكفاءتهم. لقد زودوني بمعلومات دقيقة، وعالجوا جميع مخاوفي على الفور، وجعلوا عملية الهجرة بأكملها سلسة. أنا ممتن لدعمهم في مساعدتي على تحقيق أهدافي في الهجرة. شكراً لك، DZWorkaway!",
     Testi_fr:
-      "I was impressed by the professionalism and dedication of DZ Work Away. As a male immigrant, I had many questions and uncertainties about the process, but their team provided clear answers and reassurance. Thanks to their expertise, I successfully obtained my visa and am now building a new life",
-    Name: "David Johnson",
-    Name_ar: "ثثضب لهثضش",
-    Name_fr: "David Johnson",
+      "DZWorkaway a dépassé mes attentes grâce à son professionnalisme et à son efficacité. Ils m'ont fourni des informations précises, ont répondu rapidement à toutes mes questions et ont fait en sorte que l'ensemble du processus d'immigration se déroule sans encombre. Je leur suis reconnaissant de m'avoir aidé à atteindre mes objectifs en matière d'immigration. Merci, DZWorkaway ",
+    Name: "Youssef Hamdi",
+    Name_ar: "يوسف حمدي",
+    Name_fr: "Youssef Hamdi",
   },
   {
     id: 4,
     Img: ImgWoman,
     Testi:
-      "I can't thank DZ Work Away enough for their support throughout my immigration journey. As a female immigrant, I appreciated their understanding and empathy. They were patient, attentive, and always available to answer my questions. Thanks to their guidance, I'm now thriving in a new country.",
+      "I can't thank DZWorkaway enough for their exceptional service. They went above and beyond to ensure that my immigration process was successful. Their team's expertise and guidance were invaluable, and I'm now happily settled in my new home country. I highly recommend DZWorkaway to anyone seeking reliable immigration services.",
     Testi_ar:
-      "سيبتل سبتلبسلال سبتللابس سبمتاضث يشمتبلسي سيلانشي لبسمتل ثفشخع خفلاع سخلسب شخهباث شيخهاب شهثب لهللاش شخهلاص يهاي شيخيشجي يخعللاشي شيخعلاشيل شسخعهلار ءئخعهباش شسخهقا",
+      "لا أستطيع أن أشكر DZWorkaway بما فيه الكفاية على خدمتهم الاستثنائية. لقد ذهبوا إلى أبعد الحدود لضمان نجاح عملية الهجرة الخاصة بي. كانت خبرة فريقهم وتوجيهاتهم لا تقدر بثمن، وأنا الآن مستقرة بسعادة في بلدي الجديد. أوصي بشدة بشركة DZWorkaway لأي شخص يبحث عن خدمات هجرة موثوقة",
     Testi_fr:
-      "I can't thank DZ Work Away enough for their support throughout my immigration journey. As a female immigrant, I appreciated their understanding and empathy. They were patient, attentive, and always available to answer my questions. Thanks to their guidance, I'm now thriving in a new country.",
-    Name: "Sophia Garcia",
-    Name_ar: "يخعبل شييص",
-    Name_fr: "Sophia Garcia",
+      "Je ne saurais trop remercier DZWorkaway pour son service exceptionnel. Ils se sont surpassés pour s'assurer que mon processus d'immigration soit couronné de succès. L'expertise et les conseils de leur équipe ont été inestimables, et je suis maintenant bien installée dans mon nouveau pays d'origine. Je recommande vivement DZWorkaway à tous ceux qui recherchent des services d'immigration fiables",
+    Name: "Amira Djebbar",
+    Name_ar: "أميرة جبار",
+    Name_fr: "Amira Djebbar",
   },
 ];
 

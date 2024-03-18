@@ -60,7 +60,7 @@ const data = [
     Description:
       "Our support is unwavering. We're here to guide you through challenges and celebrate your successes, offering personalized assistance every step of the way.",
     Description_ar:
-      "دعمنا لا يتزعزع. نحن هنا لإرشادك خلال التحديات والاحتفال بنجاحاتك، ونقدم لك المساعدة الشخصية في كل خطوة على الطريق.",
+      "دعمنا غير متموج. نحن هنا لإرشادك خلال التحديات والاحتفال بنجاحاتك، ونقدم لك المساعدة الشخصية في كل خطوة على الطريق.",
     Description_fr:
       "Notre soutien est inébranlable. Nous sommes là pour vous aider à relever les défis et à célébrer vos succès, en vous offrant une assistance personnalisée à chaque étape.",
   },

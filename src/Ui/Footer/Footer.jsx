@@ -44,7 +44,10 @@ const time = [
   {
     id: 1,
     Img: Time,
-    Content: "De 08:00h - 16:00h (Vendredi Et Samedi Fermé)",
+    Content: "08:00h - 16:00h (Friday and Saturday closed)",
+    Content_ar:
+      "من الساعة 08:00 صباحاً إلى الساعة 16:00 مساءً (الجمعة و السبت مغلق)",
+    Content_fr: "De 08:00h - 16:00h (Vendredi Et Samedi Fermé)",
   },
 ];
 
@@ -208,6 +211,46 @@ const Footer = () => {
     );
   });
 
+  // --------------------------------------------------------
+
+  const modifiedTime = time.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Img: data.Img,
+        Content: data.Content_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Img: data.Img,
+        Content: data.Content_fr,
+      };
+    }
+    return data;
+  });
+
+  const Time = modifiedTime.map(({ id, Content, Img }) => {
+    return (
+      <div key={id}>
+        <div className="flex items-center mb-4 ltr:flex-row rtl:flex-row-reverse">
+          <div className="w-10 h-10">
+            <LazyLoadImage
+              className="w-6 my-2 ltr:mr-12 rtl:ml-12"
+              src={Img}
+              alt="Contact"
+            />
+          </div>
+          <div>
+            <p className="rtl:ml-4">{Content}</p>
+          </div>
+        </div>
+      </div>
+    );
+  });
+
   const year = new Date().getFullYear();
 
   return (
@@ -305,24 +348,7 @@ const Footer = () => {
                           </div>
                         );
                       })}
-                      {time.map(({ id, Img, Content }) => {
-                        return (
-                          <div key={id}>
-                            <div className="flex items-center mb-4 ltr:flex-row rtl:flex-row-reverse">
-                              <div className="w-10 h-10">
-                                <LazyLoadImage
-                                  className="w-6 my-2 ltr:mr-12 rtl:ml-12"
-                                  src={Img}
-                                  alt="Contact"
-                                />
-                              </div>
-                              <div>
-                                <p className="rtl:ml-4">{Content}</p>
-                              </div>
-                            </div>
-                          </div>
-                        );
-                      })}
+                      {Time}
                       <div>{SocialMediaPrivacy}</div>
                     </div>
                   </div>

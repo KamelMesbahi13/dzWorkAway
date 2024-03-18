@@ -500,10 +500,10 @@ const ContentPrivacy = () => {
               >
                 <div>{HeadingsAndParagraphs}</div>
               </motion.div>
-              <div>
+              <div className="mb-4 md:mb-8">
                 <div>{modifiedDataHeaderAndParagraphTwo}</div>
                 <div>
-                  <div className="mt-4">
+                  <div className="mt-4 md:mt-8">
                     {ParagraphOne}
                     {ParagraphTwo}
                     {ParagraphThree}
@@ -513,13 +513,15 @@ const ContentPrivacy = () => {
                 </div>
               </div>
 
-              <div className="mt-8">
+              <div>
                 <div>{modifiedDataHeaderAndParagraphThree}</div>
-                {ParagraphSix}
-                {ParagraphSeven}
-                {ParagraphEight}
-                {ParagraphNine}
-                {ParagraphTen}
+                <div className="mt-4 md:mt-8">
+                  {ParagraphSix}
+                  {ParagraphSeven}
+                  {ParagraphEight}
+                  {ParagraphNine}
+                  {ParagraphTen}
+                </div>
               </div>
             </div>
           </div>
