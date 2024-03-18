@@ -44,8 +44,6 @@ const ContactSection = () => {
     );
   });
 
-  // ------------------------------------------------------
-
   const modifiedDataHeaderParagraph = Data.ContactSection_Heading_Paragraph.map(
     (data) => {
       if (i18n.language === "ar") {
