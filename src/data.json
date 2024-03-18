@@ -367,6 +367,15 @@
     }
   ],
 
+  "GetInTouch_Button": [
+    {
+      "id": 1,
+      "Button": "Submit",
+      "Button_ar": "أرسل",
+      "Button_fr": "Envoyer"
+    }
+  ],
+
   "OurServices_Header": [
     {
       "id": 1,
@@ -481,6 +490,15 @@
     }
   ],
 
+  "ServicesForm_Button": [
+    {
+      "id": 1,
+      "Button": "Submit",
+      "Button_ar": "أرسل",
+      "Button_fr": "Envoyer"
+    }
+  ],
+
   "Platform_Header": [
     {
       "id": 1,
@@ -579,7 +597,7 @@
       "id": 1,
       "Title": "Address",
       "Title_ar": "العنوان",
-      "Title_fr": "Address"
+      "Title_fr": "Adresse"
     }
   ],
 

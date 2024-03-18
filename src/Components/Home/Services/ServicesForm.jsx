@@ -331,6 +331,33 @@ const ServicesForm = () => {
 
   // ----------------------------------------------------------
 
+  const modifiedDataButton = Data.ServicesForm_Button.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Button: data.Button_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Button: data.Button_fr,
+      };
+    }
+    return data;
+  });
+
+  const Button = modifiedDataButton.map(({ Button, id }) => {
+    return (
+      <div key={id}>
+        <div className="mt-4 textCenter">
+          <button className="buttonCust">{Button}</button>
+        </div>
+      </div>
+    );
+  });
+
   const inputStyle = `p-2 mt-1 border-b-2 outline-none border-mainColor`;
 
   const {
@@ -381,7 +408,7 @@ const ServicesForm = () => {
                             name="name"
                             {...register("name", {
                               required: true,
-                              minLength: 5,
+                              minLength: 3,
                               maxLength: 30,
                             })}
                           />
@@ -405,7 +432,7 @@ const ServicesForm = () => {
                             name="lastName"
                             {...register("lastName", {
                               required: true,
-                              minLength: 5,
+                              minLength: 3,
                               maxLength: 30,
                             })}
                           />
@@ -612,9 +639,7 @@ const ServicesForm = () => {
                         />
                       </div>
                     </div>
-                    <div className="mt-4 textCenter">
-                      <button className="buttonCust">Submit</button>
-                    </div>
+                    {Button}
                   </div>
                 </form>
               </div>

@@ -114,6 +114,31 @@ const GetInTouch = () => {
     }
   };
 
+  const modifiedDataButton = Data.GetInTouch_Button.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Button: data.Button_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Button: data.Button_fr,
+      };
+    }
+    return data;
+  });
+
+  const Button = modifiedDataButton.map(({ Button, id }) => {
+    return (
+      <div key={id}>
+        <button className="w-full mt-4 buttonCust">{Button}</button>
+      </div>
+    );
+  });
+
   const inputStyles = `w-full mt-5 rounded-md focus:outline-none bg-grey px-5 py-3`;
 
   return (
@@ -184,7 +209,7 @@ const GetInTouch = () => {
                             className={inputStyles}
                             {...register("name", {
                               required: true,
-                              minLength: 5,
+                              minLength: 3,
                               maxLength: 100,
                             })}
                           />
@@ -243,11 +268,7 @@ const GetInTouch = () => {
                                 "Min Length should be more than 5 characters"}
                             </p>
                           )}
-                          <div>
-                            <button className="w-full mt-4 buttonCust">
-                              Submit
-                            </button>
-                          </div>
+                          {Button}
                         </form>
                         <div>
                           <div className="my-4">
