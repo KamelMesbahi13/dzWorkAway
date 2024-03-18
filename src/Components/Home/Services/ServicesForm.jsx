@@ -340,6 +340,7 @@ const ServicesForm = () => {
                           <input
                             className={`${inputStyle} w-full`}
                             type="text"
+                            name="lastName"
                             {...register("lastName", {
                               required: true,
                               minLength: 5,
@@ -364,6 +365,7 @@ const ServicesForm = () => {
                         <input
                           className={`${inputStyle} w-full`}
                           type="email"
+                          name="email"
                           {...register("email", {
                             required: true,
                             pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -384,6 +386,7 @@ const ServicesForm = () => {
                         <input
                           className={`${inputStyle} w-full`}
                           type="text"
+                          name="PhoneNumber"
                           {...register("PhoneNumber", {
                             required: true,
                             pattern: /^[0-9]+$/,
@@ -410,6 +413,7 @@ const ServicesForm = () => {
                         <input
                           className={`${inputStyle} w-full`}
                           type="text"
+                          name="address"
                           {...register("Address", {
                             required: true,
                             minLength: 3,
@@ -434,6 +438,7 @@ const ServicesForm = () => {
                         <input
                           className={`${inputStyle} w-full`}
                           type="text"
+                          name="city"
                           {...register("City", {
                             required: true,
                             minLength: 5,
@@ -456,6 +461,8 @@ const ServicesForm = () => {
                       <div className="mt-6">
                         {Zip} <br />
                         <input
+                          type="number"
+                          name="zip"
                           className={`${inputStyle} w-full`}
                           {...register("Zip", {
                             required: true,
