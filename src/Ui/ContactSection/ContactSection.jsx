@@ -1,5 +1,5 @@
 import Data from "../../data.json";
-import Img from "../../assets/ContactSection.png";
+import Img from "../../assets/ContactSection.webp";
 import Check from "../../assets/check.png";
 import { motion } from "framer-motion";
 import { LazyLoadImage } from "react-lazy-load-image-component";

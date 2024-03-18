@@ -1,4 +1,4 @@
-import Img from "../../../assets/PlatformDetailsBack.jpg";
+import Img from "../../../assets/PlatformDetailsBack.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";

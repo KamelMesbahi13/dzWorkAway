@@ -1,5 +1,5 @@
 import Data from "../../../data.json";
-import Img from "../../../assets/OurStoryImg.jpg";
+import Img from "../../../assets/OurStoryImg.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";

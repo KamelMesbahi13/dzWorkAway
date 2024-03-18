@@ -3,7 +3,7 @@ import ImgOne from "../../../assets/Experience.png";
 import ImgTwo from "../../../assets/Priority.png";
 import ImgThree from "../../../assets/Advice.png";
 import ImgFour from "../../../assets/Support.png";
-import Shape from "../../../assets/OurServicesShape.jpg";
+import Shape from "../../../assets/OurServicesShape.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
