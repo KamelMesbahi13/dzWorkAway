@@ -108,7 +108,7 @@
       "headerFour_ar": "نيوزيلندا",
       "headerFour_fr": "New Zélande",
       "headerThree": "New Brunswick",
-      "headerThree_ar": "نيو برونزيك",
+      "headerThree_ar": "نيو برونزويك",
       "headerThree_fr": "New Brunswick",
       "description": "We also offer a complete registration and profile creation service for New Brunswick and New Zealand immigration programs. With our dedicated expertise, we assist you throughout the entire process, from submission of your application to its careful follow-up through to acceptance. Trust our team to guide you on your immigration journey to these attractive destinations.",
       "description_ar": "كما نقدم أيضاً خدمة تسجيل وإنشاء ملف تعريف كامل لبرامج الهجرة في نيو برونزويك ونيوزيلندا. وبفضل خبرتنا المتخصصة، نساعدك خلال العملية بأكملها، بدءاً من تقديم طلبك إلى مراقبته بعناية حتى قبوله. ثق بفريقنا لإرشادك في رحلة الهجرة إلى هذه الوجهات الجذابة.",
@@ -304,7 +304,7 @@
       "id": 1,
       "button": "Our Services",
       "button_ar": "خدماتنا",
-      "button_fr": "Nos services"
+      "button_fr": "Nos Services"
     }
   ],
 
@@ -692,7 +692,7 @@
       "id": 1,
       "Header": "Please find our Privacy Policy here.",
       "Header_ar": "يُرجى الاطلاع على سياسة الخصوصية الخاصة بنا هنا.",
-      "Header_fr": "Vous trouverez ici notre politique de protection de la vie privée."
+      "Header_fr": "Vous trouverez notre politique de confidentialité ici"
     }
   ],
 
