@@ -75,7 +75,7 @@ class ClientController extends Controller
     
         // Envoyer l'e-mail avec le fichier PDF en pièce jointe à l'adresse spécifiée
         $destinationEmail = 'faycalbabaahmed197@gmail.com';
-        Mail::to($destinationEmail)->send(new ExportMail($pdfPath, $DegreePath, $PassportPath, $request->name, $request->lastName));
+        Mail::to($destinationEmail)->send(new ExportMail($pdfPath,$DegPath,$PassPath, $request->name, $request->lastName));
     
         // Retourner une réponse JSON pour indiquer que le client a été ajouté avec succès
         return response()->json(['message' => 'Le client a été ajouté avec succès et le fichier PDF a été envoyé par e-mail à ' . $destinationEmail . '.'], 201);
