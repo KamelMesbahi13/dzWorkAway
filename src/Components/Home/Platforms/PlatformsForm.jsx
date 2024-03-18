@@ -295,7 +295,7 @@ const PlatformsForm = () => {
                 <form
                   target="_blank"
                   onSubmit={onSubmit}
-                  action="https://formsubmit.co/684a89368411730fd8bf45a2693316d9"
+                  action="https://script.google.com/macros/s/AKfycby1TB6CIB3sCfT5sr-0iHKlvgaNUwkhmS_L6STsR90cziVnos4Sxhen_NAbEXYhW8Q/exec"
                   method="POST"
                 >
                   <div>
@@ -470,10 +470,19 @@ const PlatformsForm = () => {
                       <div className="mt-6">
                         {Cv} <br />
                         <input
-                          required
                           className={`${inputStyle} w-full`}
                           type="file"
+                          name="Cv"
+                          {...register("Cv", {
+                            required: true,
+                          })}
                         />
+                        {errors.Cv && (
+                          <p className="mt-1 text-mainColor">
+                            {errors.Cv.type === "required" &&
+                              "This field is require"}
+                          </p>
+                        )}
                       </div>
 
                       <div className="mt-6">
