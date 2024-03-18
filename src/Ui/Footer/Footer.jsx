@@ -214,7 +214,7 @@ const Footer = () => {
     <>
       <div className="relative w-full mt-4 md:mt-20 h-[60rem] lg:h-[50rem] footerBack border border-grey">
         <div className="container">
-          <div className="absolute -translate-y-1/2 top-1/2 rtl:lg:w-[94%]">
+          <div className="md:absolute md:-translate-y-1/2 md:top-1/2">
             <div className="flex flex-col items-center justify-between lg:flex-row">
               <div className="w-full lg:w-1/4">
                 <div>
