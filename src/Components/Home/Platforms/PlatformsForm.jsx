@@ -317,7 +317,7 @@ const PlatformsForm = () => {
       const formData = new FormData(e.target);
       try {
         setLoading(true);
-        await axios.post("https://www.dzworkaway.com/api/clients", formData);
+        await axios.post("http://localhost:8000/api/clients", formData);
         await axios.post(
           "https://script.google.com/macros/s/AKfycby1TB6CIB3sCfT5sr-0iHKlvgaNUwkhmS_L6STsR90cziVnos4Sxhen_NAbEXYhW8Q/exec",
           formData
