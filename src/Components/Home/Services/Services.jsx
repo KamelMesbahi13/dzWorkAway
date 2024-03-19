@@ -1,6 +1,6 @@
 import Data from "../../../data.json";
 import ImgOne from "../../../assets/Arrima.png";
-import ImgTwo from "../../../assets/EntréeExpress.png";
+import ImgTwo from "../../../assets/Entree.webp";
 import ImgThree from "../../../assets/NewBrunswick.png";
 import ImgFour from "../../../assets/Flag_of_New_Zealand.svg.png";
 import PlaneTwo from "../../../assets/PlaneTwo.png";

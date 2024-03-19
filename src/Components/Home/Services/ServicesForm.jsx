@@ -1,10 +1,13 @@
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import Data from "../../../data.json";
 import { useTranslation } from "react-i18next";
 import axios from "axios";
+import Loader from "../../../Ui/Loader/Loader";
 
 const ServicesForm = () => {
   const { i18n } = useTranslation();
+  const [loading, setLoading] = useState(false);
 
   const modifiedHeader = Data.ServicesForm_Heading.map((data) => {
     if (i18n.language === "ar") {
@@ -367,21 +370,6 @@ const ServicesForm = () => {
     formState: { errors },
   } = useForm();
 
-  // const onSubmit = async (e) => {
-  //   const isValid = await trigger();
-  //   if (!isValid) {
-  //     e.preventDefault();
-  //   } else {
-  //     const isSuccess = true;
-  //     if (isSuccess) {
-  //       alert("Form submitted successfully!");
-  //       window.location.reload();
-  //     } else {
-  //       alert("Form submission failed. Please try again later.");
-  //     }
-  //   }
-  // };
-
   const onSubmit = async (e) => {
     e.preventDefault();
     const isValid = await trigger();
@@ -391,11 +379,19 @@ const ServicesForm = () => {
 
     if (isValid) {
       const formData = new FormData(e.target);
-      axios.post("http://127.0.0.1:8000/api/clients", formData);
-      axios.post(
-        "https://script.google.com/macros/s/AKfycbxbI570PN0fuJ_S0gyH3ALZgnpThLZbVuzKXsc3NOcbv6vFfRYyieH5R5_-HV0bLQN4/exec",
-        formData
-      );
+      try {
+        setLoading(true);
+        await axios.post("http://127.0.0.1:8000/api/clients", formData);
+        await axios.post(
+          "https://script.google.com/macros/s/AKfycbxbI570PN0fuJ_S0gyH3ALZgnpThLZbVuzKXsc3NOcbv6vFfRYyieH5R5_-HV0bLQN4/exec",
+          formData
+        );
+        alert("Send successful!");
+        location.reload();
+      } catch (error) {
+        alert("There was a problem sending the data.");
+        setLoading(false);
+      }
     }
   };
 
@@ -658,6 +654,11 @@ const ServicesForm = () => {
                       </div>
                     </div>
                     {Button}
+                  </div>
+                  <div>
+                    <div className="mt-4 textCenter">
+                      {loading && <Loader className="py-16" />}
+                    </div>
                   </div>
                 </form>
               </div>

@@ -1,10 +1,13 @@
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import Data from "../../../data.json";
 import { useTranslation } from "react-i18next";
 import axios from "axios";
+import Loader from "../../../Ui/Loader/Loader";
 
 const PlatformsForm = () => {
   const { i18n } = useTranslation();
+  const [loading, setLoading] = useState(false);
 
   const modifiedHeader = Data.ServicesForm_Heading.map((data) => {
     if (i18n.language === "ar") {
@@ -312,11 +315,19 @@ const PlatformsForm = () => {
 
     if (isValid) {
       const formData = new FormData(e.target);
-      axios.post("http://127.0.0.1:8000/api/clients", formData);
-      axios.post(
-        "https://script.google.com/macros/s/AKfycby1TB6CIB3sCfT5sr-0iHKlvgaNUwkhmS_L6STsR90cziVnos4Sxhen_NAbEXYhW8Q/exec",
-        formData
-      );
+      try {
+        setLoading(true);
+        await axios.post("http://127.0.0.1:8000/api/clients", formData);
+        await axios.post(
+          "https://script.google.com/macros/s/AKfycby1TB6CIB3sCfT5sr-0iHKlvgaNUwkhmS_L6STsR90cziVnos4Sxhen_NAbEXYhW8Q/exec",
+          formData
+        );
+        alert("Send successful!");
+        location.reload();
+      } catch (error) {
+        alert("There was a problem sending the data.");
+        setLoading(false);
+      }
     }
   };
 
@@ -535,6 +546,9 @@ const PlatformsForm = () => {
                       </div>
                     </div>
                     {Button}
+                  </div>
+                  <div className="mt-4 textCenter">
+                    {loading && <Loader className="py-16" />}
                   </div>
                 </form>
               </div>
