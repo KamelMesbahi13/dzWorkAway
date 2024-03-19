@@ -844,5 +844,17 @@
       "Privacy_Policy_ar": "التنازل عن المسؤولية عن دقة المعلومات المقدمة على الموقع، خاصة فيما يتعلق بقوانين ولوائح الهجرة.",
       "Privacy_Policy_Text_fr": "Renonciation à toute responsabilité quant à l'exactitude des informations fournies sur le site, notamment en ce qui concerne les lois et règlements en matière d'immigration."
     }
+  ],
+
+  "Copyright": [
+    {
+      "id": 1,
+      "Content_Copyright": "Copyright",
+      "Content_Copyright_ar": "حقوق الطبع والنشر",
+      "Content_Copyright_fr": "Droit D'auteur ",
+      "Content": "All Rights Reserved To",
+      "Content_ar": "جميع الحقوق محفوظة لـ",
+      "Content_fr": "Tous les droits sont réservés à "
+    }
   ]
 }

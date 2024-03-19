@@ -9,6 +9,8 @@ import Phone from "../../assets/PhoneCall.png";
 import Time from "../../assets/Time.png";
 import { useTranslation } from "react-i18next";
 
+const year = new Date().getFullYear();
+
 const socialMedia = [
   {
     id: 1,
@@ -251,7 +253,39 @@ const Footer = () => {
     );
   });
 
-  const year = new Date().getFullYear();
+  const modifiedCopyright = Data.Copyright.map((data) => {
+    if (i18n.language === "ar") {
+      return {
+        id: data.id,
+        Content: data.Content_ar,
+        Content_Copyright: data.Content_Copyright_ar,
+      };
+    }
+
+    if (i18n.language === "fr") {
+      return {
+        id: data.id,
+        Content: data.Content_fr,
+        Content_Copyright: data.Content_Copyright_fr,
+      };
+    }
+    return data;
+  });
+
+  const Copyright = modifiedCopyright.map(
+    ({ id, Content, Content_Copyright }) => {
+      return (
+        <div key={id}>
+          <div>
+            <p>
+              {Content_Copyright} <span>&#169;</span> {Content}
+              <span className="font-semibold">Dz Work Away {year} </span>
+            </p>
+          </div>
+        </div>
+      );
+    }
+  );
 
   return (
     <>
@@ -361,14 +395,7 @@ const Footer = () => {
       <div>
         <div className="relative w-full h-20 bg-grey">
           <div className="container absolute -translate-y-1/2 top-1/2">
-            <div className="flex items-center justify-center">
-              <div>
-                <p>
-                  Copyright <span>&#169;</span> All Rights Reserved To{" "}
-                  <span className="font-semibold">Dz Work Away {year} </span>
-                </p>
-              </div>
-            </div>
+            <div className="flex items-center justify-center">{Copyright}</div>
           </div>
         </div>
       </div>
