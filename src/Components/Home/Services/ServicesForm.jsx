@@ -377,7 +377,7 @@ const ServicesForm = () => {
       const formData = new FormData(e.target);
       try {
         setLoading(true);
-        await axios.post("http://localhost:8000/api/clients", formData);
+        // await axios.post("http://localhost:8000/api/clients", formData);
         await axios.post(
           "https://script.google.com/macros/s/AKfycbxbI570PN0fuJ_S0gyH3ALZgnpThLZbVuzKXsc3NOcbv6vFfRYyieH5R5_-HV0bLQN4/exec",
           formData
