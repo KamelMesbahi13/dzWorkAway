@@ -36,8 +36,6 @@ const ServicesForm = () => {
     );
   });
 
-  // ----------------------------------------------------------
-
   const modifiedName = Data.Form_Name.map((data) => {
     if (i18n.language === "ar") {
       return {
@@ -62,8 +60,6 @@ const ServicesForm = () => {
       </label>
     );
   });
-
-  // ----------------------------------------------------------
 
   const modifiedLastName = Data.Form_LastName.map((data) => {
     if (i18n.language === "ar") {
