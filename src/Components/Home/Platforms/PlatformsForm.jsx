@@ -316,12 +316,12 @@ const PlatformsForm = () => {
     if (isValid) {
       const formData = new FormData(e.target);
       try {
-        console.log(formData);
         setLoading(true);
         await axios.post(
           "https://script.google.com/macros/s/AKfycby1TB6CIB3sCfT5sr-0iHKlvgaNUwkhmS_L6STsR90cziVnos4Sxhen_NAbEXYhW8Q/exec",
           formData
         );
+        // await axios.post("http://localhost:8000/api/clients", formData);
         alert("Send successful!");
         location.reload();
       } catch (error) {
@@ -521,7 +521,7 @@ const PlatformsForm = () => {
                         <input
                           className={`${inputStyle} w-full`}
                           type="file"
-                          accept="application/pdf"
+                          name="Cv"
                           {...register("Cv", {
                             required: true,
                           })}
