@@ -386,8 +386,8 @@ const ServicesForm = () => {
         alert("Send successful!");
         location.reload();
       } catch (error) {
-        alert("There was a problem sending the data.");
         setLoading(false);
+        alert("There was a problem sending the data.");
       }
     }
   };
