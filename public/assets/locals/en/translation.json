@@ -1,3 +1,5 @@
 {
-  "required": "This field is require"
+  "required": "This field is require",
+  "maxLengthOne": "Max Length is 30 character",
+  "minLengthOne": "Name should be more than 5 characters"
 }

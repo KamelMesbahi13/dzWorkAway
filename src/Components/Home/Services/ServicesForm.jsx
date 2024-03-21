@@ -428,10 +428,10 @@ const ServicesForm = () => {
                               {errors.name.type === "required" &&
                                 `${t("required")}`}
                               {errors.name.type === "maxLength" &&
-                                "Max Length is 30 character"}
+                                `${t("maxLengthOne")}`}
                               {errors.name &&
                                 errors.name.type === "minLength" &&
-                                "Name should be more than 5 characters"}
+                                `${t("minLengthOne")}`}
                             </p>
                           )}
                         </div>
@@ -452,7 +452,7 @@ const ServicesForm = () => {
                               {errors.lastName.type === "required" &&
                                 `${t("required")}`}
                               {errors.lastName.type === "maxLength" &&
-                                "Max Length is 30 character"}
+                                `${t("maxLengthOne")}`}
                               {errors.lastName &&
                                 errors.lastName.type === "minLength" &&
                                 "Name should be more than 5 characters"}
