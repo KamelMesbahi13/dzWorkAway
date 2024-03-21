@@ -871,5 +871,20 @@
       "Content_Two_ar": "موافق",
       "Content_Two_fr": "Ok"
     }
+  ],
+
+  "Success": [
+    {
+      "id": 1,
+      "Header": "Succsseful",
+      "Header_ar": "ناجح",
+      "Header_fr": "Succès",
+      "Content": "Request successfully registered! Thank you!",
+      "Content_ar": "تم تسجيل الطلب بنجاح! شكراً لك",
+      "Content_fr": "Votre demande a été enregistrée avec succès ! Merci !",
+      "Content_Two": "Ok",
+      "Content_Two_ar": "موافق",
+      "Content_Two_fr": "Ok"
+    }
   ]
 }

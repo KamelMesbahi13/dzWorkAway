@@ -9,7 +9,7 @@ const Success = () => {
     location.reload();
   };
 
-  const modifiedData = Data.Failed.map((data) => {
+  const modifiedData = Data.Success.map((data) => {
     if (i18n.language === "ar") {
       return {
         id: data.id,
@@ -50,7 +50,7 @@ const Success = () => {
           <div>
             <button
               onClick={reload}
-              className="text-white simpleButton bg-[#F15249] duration-300 hover:bg-[#FF0000]"
+              className="text-white simpleButton bg-[#28A745] duration-300 hover:bg-[#218838]"
             >
               {Content_Two}
             </button>
