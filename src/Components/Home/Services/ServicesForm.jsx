@@ -7,6 +7,7 @@ import Loader from "../../../Ui/Loader/Loader";
 
 const ServicesForm = () => {
   const { i18n } = useTranslation();
+  const { t } = useTranslation();
   const [loading, setLoading] = useState(false);
 
   const modifiedHeader = Data.ServicesForm_Heading.map((data) => {
@@ -425,7 +426,7 @@ const ServicesForm = () => {
                           {errors.name && (
                             <p className="mt-1 text-mainColor">
                               {errors.name.type === "required" &&
-                                "This field is require"}
+                                `${t("required")}`}
                               {errors.name.type === "maxLength" &&
                                 "Max Length is 30 character"}
                               {errors.name &&
@@ -449,7 +450,7 @@ const ServicesForm = () => {
                           {errors.lastName && (
                             <p className="mt-1 text-mainColor">
                               {errors.lastName.type === "required" &&
-                                "This field is require"}
+                                `${t("required")}`}
                               {errors.lastName.type === "maxLength" &&
                                 "Max Length is 30 character"}
                               {errors.lastName &&
@@ -473,7 +474,7 @@ const ServicesForm = () => {
                         {errors.email && (
                           <p className="mt-1 text-mainColor">
                             {errors.email.type === "required" &&
-                              "This field is require"}
+                              `${t("required")}`}
                             {errors.email.type === "pattern" &&
                               "Invalid Email Address"}
                           </p>
@@ -496,7 +497,7 @@ const ServicesForm = () => {
                         {errors.PhoneNumber && (
                           <p className="mt-1 text-mainColor">
                             {errors.PhoneNumber.type === "required" &&
-                              "This field is required"}
+                              `${t("required")}`}
                             {errors.PhoneNumber.type === "minLength" &&
                               "Phone number should be more than 5 characters"}
                             {errors.PhoneNumber.type === "maxLength" &&
@@ -522,7 +523,7 @@ const ServicesForm = () => {
                         {errors.Address && (
                           <p className="mt-1 text-mainColor">
                             {errors.Address.type === "required" &&
-                              "This field is require"}
+                              `${t("required")}`}
                             {errors.Address.type === "maxLength" &&
                               "Max Length is 100 character"}
                             {errors.Address &&
@@ -547,7 +548,7 @@ const ServicesForm = () => {
                         {errors.City && (
                           <p className="mt-1 text-mainColor">
                             {errors.City.type === "required" &&
-                              "This field is require"}
+                              `${t("required")}`}
                             {errors.City.type === "maxLength" &&
                               "Max Length is 50 character"}
                             {errors.City &&
@@ -573,7 +574,7 @@ const ServicesForm = () => {
                         {errors.Zip && (
                           <p className="mt-1 text-mainColor">
                             {errors.Zip.type === "required" &&
-                              "This field is required"}
+                              `${t("required")}`}
                             {errors.Zip.type === "minLength" &&
                               "Phone number should be more than 2 characters"}
                             {errors.Zip.type === "maxLength" &&
@@ -597,7 +598,7 @@ const ServicesForm = () => {
                         {errors.Cv && (
                           <p className="mt-1 text-mainColor">
                             {errors.Cv.type === "required" &&
-                              "This field is require"}
+                              `${t("required")}`}
                           </p>
                         )}
                       </div>
@@ -615,7 +616,7 @@ const ServicesForm = () => {
                         {errors.Degree && (
                           <p className="mt-1 text-mainColor">
                             {errors.Degree.type === "required" &&
-                              "This field is require"}
+                              `${t("required")}`}
                           </p>
                         )}
                       </div>
@@ -633,7 +634,7 @@ const ServicesForm = () => {
                         {errors.Passport && (
                           <p className="mt-1 text-mainColor">
                             {errors.Passport.type === "required" &&
-                              "This field is require"}
+                              `${t("required")}`}
                           </p>
                         )}
                       </div>
