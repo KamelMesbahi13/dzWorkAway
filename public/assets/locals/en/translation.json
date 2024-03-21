@@ -3,6 +3,7 @@
   "maxLengthOne": "Max Length is 30 character",
   "minLengthOne": "Name should be more than 5 characters",
   "email": "Invalid Email Address",
-  "minLengthTwo": "Phone number should be more than 5 characters",
-  "maxLengthTwo": "Max Length is 30 character"
+  "minLengthTwo": "Phone number should be more than 7 characters",
+  "maxLengthTwo": "Phone number should be less than 15 characters",
+  "phone_number": "Please enter phone number"
 }

@@ -489,8 +489,8 @@ const ServicesForm = () => {
                           {...register("PhoneNumber", {
                             required: true,
                             pattern: /^[0-9]+$/,
-                            minLength: 5,
-                            maxLength: 100,
+                            minLength: 7,
+                            maxLength: 15,
                           })}
                         />
                         {errors.PhoneNumber && (
@@ -498,11 +498,11 @@ const ServicesForm = () => {
                             {errors.PhoneNumber.type === "required" &&
                               `${t("required")}`}
                             {errors.PhoneNumber.type === "minLength" &&
-                              "Phone number should be more than 5 characters"}
+                              `${t("minLengthTwo")}`}
                             {errors.PhoneNumber.type === "maxLength" &&
-                              "Max length is 100 characters"}
+                              `${t("maxLengthTwo")}`}
                             {errors.PhoneNumber.type === "pattern" &&
-                              "Please enter a valid phone number"}
+                              `${t("phone_number")}`}
                           </p>
                         )}
                       </div>
