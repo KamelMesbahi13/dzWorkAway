@@ -455,7 +455,7 @@ const ServicesForm = () => {
                                 `${t("maxLengthOne")}`}
                               {errors.lastName &&
                                 errors.lastName.type === "minLength" &&
-                                "Name should be more than 5 characters"}
+                                `${t("minLengthOne")}`}
                             </p>
                           )}
                         </div>
@@ -476,7 +476,7 @@ const ServicesForm = () => {
                             {errors.email.type === "required" &&
                               `${t("required")}`}
                             {errors.email.type === "pattern" &&
-                              "Invalid Email Address"}
+                              `${t("required")}`}
                           </p>
                         )}
                       </div>

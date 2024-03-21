@@ -1,5 +1,6 @@
 {
   "required": "This field is require",
   "maxLengthOne": "Max Length is 30 character",
-  "minLengthOne": "Name should be more than 5 characters"
+  "minLengthOne": "Name should be more than 5 characters",
+  "email": "Invalid Email Address"
 }
