@@ -525,6 +525,7 @@ const ServicesForm = () => {
                               `${t("required")}`}
                             {errors.Address.type === "maxLength" &&
                               `${t("maxLengthThree")}`}
+
                             {errors.Address &&
                               errors.Address.type === "minLength" &&
                               `${t("minLengthThree")}`}
@@ -575,11 +576,10 @@ const ServicesForm = () => {
                             {errors.Zip.type === "required" &&
                               `${t("required")}`}
                             {errors.Zip.type === "minLength" &&
-                              `${t("maxLengthOne")}`}
+                              `${t("minLengthFour")}`}
                             {errors.Zip.type === "maxLength" &&
-                              "Max length is 20 characters"}
-                            {errors.Zip.type === "pattern" &&
-                              "Please enter a valid phone number"}
+                              `${t("maxLengthFour")}`}
+                            {errors.Zip.type === "pattern" && `${t("Zip")}`}
                           </p>
                         )}
                       </div>

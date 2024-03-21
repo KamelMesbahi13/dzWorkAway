@@ -7,5 +7,10 @@
   "maxLengthTwo": "Le numéro de téléphone doit comporter moins de 15 caractères.",
   "phone_number": "Veuillez saisir un numéro de téléphone.",
   "maxLengthThree": "La longueur maximale est de 100 caractères.",
-  "minLengthThree": "L'adresse doit comporter plus de 5 caractères."
+  "minLengthThree": "L'adresse doit comporter plus de 5 caractères.",
+
+  "maxLengthFour": "La longueur maximale est de 5 caractères",
+  "minLengthFour": "Le code postal doit comporter 5 caractères.",
+
+  "Zip": "Veuillez saisir le code postal"
 }
