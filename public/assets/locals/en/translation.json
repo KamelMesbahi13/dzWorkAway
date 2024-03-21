@@ -5,5 +5,8 @@
   "email": "Invalid Email Address",
   "minLengthTwo": "Phone number should be more than 7 characters",
   "maxLengthTwo": "Phone number should be less than 15 characters",
-  "phone_number": "Please enter phone number"
+  "phone_number": "Please enter phone number",
+
+  "maxLengthThree": "Max Length is 100 character",
+  "minLengthThree": "Address should be more than 5 characters"
 }

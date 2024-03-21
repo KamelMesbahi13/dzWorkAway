@@ -5,5 +5,7 @@
   "email": "Adresse e-mail invalide",
   "minLengthTwo": "Le numéro de téléphone doit comporter plus de 7 caractères",
   "maxLengthTwo": "Le numéro de téléphone doit comporter moins de 15 caractères",
-  "phone_number": "Veuillez saisir un numéro de téléphone"
+  "phone_number": "Veuillez saisir un numéro de téléphone",
+  "maxLengthThree": "",
+  "minLengthThree": ""
 }

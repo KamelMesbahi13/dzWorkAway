@@ -5,5 +5,7 @@
   "email": "عنوان بريد إلكتروني غير صالح",
   "minLengthTwo": "يجب أن يكون رقم الهاتف أكثر من 7 ارقام",
   "maxLengthTwo": "يجب أن يكون رقم الهاتف أقل من 15 حرفاً",
-  "phone_number": "يُرجى إدخال رقم هاتف "
+  "phone_number": "يُرجى إدخال رقم هاتف ",
+  "maxLengthThree": "",
+  "minLengthThree": ""
 }
