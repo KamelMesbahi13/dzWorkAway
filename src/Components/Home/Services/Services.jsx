@@ -103,22 +103,12 @@ const Services = () => {
           <div>
             <div>
               {" "}
-              <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 0.5 }}
-                variants={{
-                  hidden: { opacity: 0 },
-                  visible: { opacity: 1 },
-                }}
-                className="mb-8"
-              >
+              <div className="mb-8">
                 <h1 className="relative w-full mb-4 sm:mb-12 lg:mb-4 md:w-1/2 xl:headingStyleLg">
                   {heading}{" "}
                 </h1>
                 <p className="w-full md:w-3/4">{description}</p>
-              </motion.div>
+              </div>
             </div>
           </div>
         </div>
@@ -156,17 +146,7 @@ const Services = () => {
       return (
         <div key={id}>
           <div className="duration-500 hover:scale-[1.01] hover:shadow-2xl card rounded-md p-8 w-full md:w-[60%] shadow-xl rtl:md:h-[30rem] md:h-[40rem] bg-white">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.5 }}
-              variants={{
-                hidden: { opacity: 0, y: 100 },
-                visible: { opacity: 1, y: 0 },
-              }}
-              className="md:pt-8 card-content"
-            >
+            <div className="md:pt-8 card-content">
               {ImagesOne}
               <div className="w-full h-[2px] mt-4 bg-grey"></div>
               <div>
@@ -192,7 +172,7 @@ const Services = () => {
                   <button className="buttonCust">{button}</button>
                 </a>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       );
@@ -229,17 +209,7 @@ const Services = () => {
       return (
         <div key={id}>
           <div className="duration-500 hover:scale-[1.01] hover:shadow-2xl card rounded-md p-8 w-full md:w-[60%] shadow-xl rtl:md:h-[30rem] md:h-[40rem] bg-white">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.5 }}
-              variants={{
-                hidden: { opacity: 0, y: 100 },
-                visible: { opacity: 1, y: 0 },
-              }}
-              className="md:pt-8 card-content"
-            >
+            <div className="md:pt-8 card-content">
               {ImagesTwo}
               <div className="w-full h-[2px] mt-4 bg-grey"></div>
               <div>
@@ -265,7 +235,7 @@ const Services = () => {
                   <button className="buttonCust">{button}</button>
                 </a>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       );
@@ -285,10 +255,20 @@ const Services = () => {
             />
           </div>
 
-          <div className="grid grid-cols-1 gap-8 mt-12 md:grid-cols-2 textCenter">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 100 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            className="grid grid-cols-1 gap-8 mt-12 md:grid-cols-2 textCenter"
+          >
             {dataOneRendering}
             {dataTwoRendering}
-          </div>
+          </motion.div>
         </div>
       </div>
     </>

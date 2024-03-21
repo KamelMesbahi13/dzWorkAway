@@ -53,22 +53,12 @@ const Services = () => {
           <div>
             <div>
               {" "}
-              <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 0.5 }}
-                variants={{
-                  hidden: { opacity: 0 },
-                  visible: { opacity: 1 },
-                }}
-                className="mb-8"
-              >
+              <div className="mb-8">
                 <h1 className="relative w-full mb-4 sm:mb-12 lg:mb-4 md:w-1/2 xl:headingStyleLg">
                   {heading}{" "}
                 </h1>
                 <p className="w-full md:w-3/4">{description}</p>
-              </motion.div>
+              </div>
             </div>
           </div>
         </div>
