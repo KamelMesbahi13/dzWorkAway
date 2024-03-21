@@ -854,7 +854,24 @@
       "Content_Copyright_fr": "Droit D'auteur ",
       "Content": "All Rights Reserved To",
       "Content_ar": "جميع الحقوق محفوظة لـ",
-      "Content_fr": "Tous les droits sont réservés à "
+      "Content_fr": "Tous les droits sont réservés à"
+    }
+  ],
+
+  "Failed": [
+    {
+      "id": 1,
+      "Header": "Oops",
+      "Header_ar": "عفوًا",
+      "Header_fr": "Oops",
+
+      "Content": "Something Went Wrong",
+      "Content_ar": "حدث خطأ ما",
+      "Content_fr": "Quelque chose n'a pas marché",
+
+      "Content_Two": "Ok",
+      "Content_Two_ar": "موافق",
+      "Content_Two_fr": "Ok"
     }
   ]
 }
