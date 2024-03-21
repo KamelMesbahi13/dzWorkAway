@@ -864,11 +864,9 @@
       "Header": "Oops",
       "Header_ar": "عفوًا",
       "Header_fr": "Oops",
-
       "Content": "Something Went Wrong",
       "Content_ar": "حدث خطأ ما",
       "Content_fr": "Quelque chose n'a pas marché",
-
       "Content_Two": "Ok",
       "Content_Two_ar": "موافق",
       "Content_Two_fr": "Ok"
