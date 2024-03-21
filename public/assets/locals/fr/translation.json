@@ -2,5 +2,7 @@
   "required": "Ce champ est obligatoire",
   "maxLengthOne": "Longueur maximale : 30 caractères",
   "minLengthOne": "Le nom doit comporter plus de 5 caractères",
-  "email": "Adresse e-mail invalide"
+  "email": "Adresse e-mail invalide",
+  "minLengthTwo": "Le numéro de téléphone doit comporter plus de 5 caractères",
+  "maxLengthTwo": ""
 }

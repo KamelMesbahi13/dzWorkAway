@@ -475,8 +475,7 @@ const ServicesForm = () => {
                           <p className="mt-1 text-mainColor">
                             {errors.email.type === "required" &&
                               `${t("required")}`}
-                            {errors.email.type === "pattern" &&
-                              `${t("required")}`}
+                            {errors.email.type === "pattern" && `${t("email")}`}
                           </p>
                         )}
                       </div>
