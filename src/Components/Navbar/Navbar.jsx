@@ -48,7 +48,9 @@ const Navbar = () => {
           <div className="z-50 hidden w-full py-6 lg:flex">
             <div className="flex items-center justify-between w-full">
               <div>
-                <img className="w-28" src={Logo} alt="Logo" />
+                <a href="/">
+                  <img className="w-28" src={Logo} alt="Logo" />
+                </a>
               </div>
               <div className="flex gap-8">
                 <Link className="link" to="/">

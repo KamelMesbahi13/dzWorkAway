@@ -4,11 +4,15 @@ import Data from "../../../data.json";
 import { useTranslation } from "react-i18next";
 import axios from "axios";
 import Loader from "../../../Ui/Loader/Loader";
+import Success from "../../../Ui/Success/Success";
+import Failed from "../../../Ui/Failed/Failed";
 
 const PlatformsForm = () => {
   const { i18n } = useTranslation();
   const { t } = useTranslation();
   const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [failed, setFailed] = useState(false);
 
   const modifiedHeader = Data.ServicesForm_Heading.map((data) => {
     if (i18n.language === "ar") {
@@ -136,8 +140,6 @@ const PlatformsForm = () => {
       </label>
     );
   });
-
-  // ----------------------------------------------------------
 
   const modifiedAddress = Data.Form_Address.map((data) => {
     if (i18n.language === "ar") {
@@ -323,11 +325,11 @@ const PlatformsForm = () => {
           formData
         );
         await axios.post("https://api.dzworkaway.com/api/clients", formData);
-        alert("Send successful!");
+        setSuccess(true);
         location.reload();
       } catch (error) {
-        alert("There was a problem sending the data.");
         setLoading(false);
+        setFailed(true);
       }
     }
   };
@@ -531,6 +533,7 @@ const PlatformsForm = () => {
                         <input
                           className={`${inputStyle} w-full`}
                           type="file"
+                          accept="application/pdf"
                           name="Cv"
                           {...register("Cv", {
                             required: true,
@@ -560,6 +563,8 @@ const PlatformsForm = () => {
                   <div className="mt-4 textCenter">
                     {loading && <Loader className="py-16" />}
                   </div>
+                  <div>{success && <Success className="py-16" />}</div>
+                  <div>{failed && <Failed className="py-16" />}</div>
                 </form>
               </div>
             </div>
