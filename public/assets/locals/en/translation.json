@@ -1,7 +1,7 @@
 {
   "required": "This field is require.",
   "maxLengthOne": "Max Length is 30 character.",
-  "minLengthOne": "Name should be more than 5 characters.",
+  "minLengthOne": "Name should be more than 3 characters.",
   "email": "Invalid Email Address.",
   "minLengthTwo": "Phone number should be more than 7 characters.",
   "maxLengthTwo": "Phone number should be less than 15 characters.",
@@ -9,8 +9,8 @@
   "maxLengthThree": "Max Length is 100 character.",
   "minLengthThree": "Address should be more than 5 characters.",
 
-  "maxLengthFour": "Max Length is 5 character.",
-  "minLengthFour": "Zip Code should be 5 characters.",
+  "maxLengthFour": "Max Length is 5 numbers.",
+  "minLengthFour": "Zip Code should be 5 numbers.",
 
   "Zip": "Please enter Zip Code."
 }
