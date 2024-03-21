@@ -6,6 +6,6 @@
   "minLengthTwo": "يجب أن يكون رقم الهاتف أكثر من 7 ارقام",
   "maxLengthTwo": "يجب أن يكون رقم الهاتف أقل من 15 حرفاً",
   "phone_number": "يُرجى إدخال رقم هاتف ",
-  "maxLengthThree": "",
-  "minLengthThree": ""
+  "maxLengthThree": "الحد الأقصى للطول 100 حرف",
+  "minLengthThree": "يجب أن يكون العنوان أكثر من 5 أحرف"
 }

@@ -1,11 +1,11 @@
 {
-  "required": "Ce champ est obligatoire",
-  "maxLengthOne": "Longueur maximale : 30 caractères",
-  "minLengthOne": "Le nom doit comporter plus de 5 caractères",
-  "email": "Adresse e-mail invalide",
-  "minLengthTwo": "Le numéro de téléphone doit comporter plus de 7 caractères",
-  "maxLengthTwo": "Le numéro de téléphone doit comporter moins de 15 caractères",
-  "phone_number": "Veuillez saisir un numéro de téléphone",
-  "maxLengthThree": "",
-  "minLengthThree": ""
+  "required": "Ce champ est obligatoire.",
+  "maxLengthOne": "Longueur maximale : 30 caractères.",
+  "minLengthOne": "Le nom doit comporter plus de 5 caractères.",
+  "email": "Adresse e-mail invalide.",
+  "minLengthTwo": "Le numéro de téléphone doit comporter plus de 7 caractères.",
+  "maxLengthTwo": "Le numéro de téléphone doit comporter moins de 15 caractères.",
+  "phone_number": "Veuillez saisir un numéro de téléphone.",
+  "maxLengthThree": "La longueur maximale est de 100 caractères.",
+  "minLengthThree": "L'adresse doit comporter plus de 5 caractères."
 }

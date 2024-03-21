@@ -524,10 +524,10 @@ const ServicesForm = () => {
                             {errors.Address.type === "required" &&
                               `${t("required")}`}
                             {errors.Address.type === "maxLength" &&
-                              "Max Length is 100 character"}
+                              `${t("maxLengthThree")}`}
                             {errors.Address &&
                               errors.Address.type === "minLength" &&
-                              "Name should be more than 3 characters"}
+                              `${t("minLengthThree")}`}
                           </p>
                         )}{" "}
                       </div>
@@ -541,7 +541,7 @@ const ServicesForm = () => {
                           {...register("City", {
                             required: true,
                             minLength: 5,
-                            maxLength: 50,
+                            maxLength: 30,
                           })}
                         />
                         {errors.City && (
@@ -549,10 +549,10 @@ const ServicesForm = () => {
                             {errors.City.type === "required" &&
                               `${t("required")}`}
                             {errors.City.type === "maxLength" &&
-                              "Max Length is 50 character"}
+                              `${t("maxLengthOne")}`}
                             {errors.City &&
                               errors.City.type === "minLength" &&
-                              "Name should be more than 5 characters"}
+                              `${t("minLengthOne")}`}
                           </p>
                         )}
                       </div>
@@ -566,8 +566,8 @@ const ServicesForm = () => {
                           {...register("Zip", {
                             required: true,
                             pattern: /^[0-9]+$/,
-                            minLength: 2,
-                            maxLength: 20,
+                            minLength: 5,
+                            maxLength: 5,
                           })}
                         />
                         {errors.Zip && (
@@ -575,7 +575,7 @@ const ServicesForm = () => {
                             {errors.Zip.type === "required" &&
                               `${t("required")}`}
                             {errors.Zip.type === "minLength" &&
-                              "Phone number should be more than 2 characters"}
+                              `${t("maxLengthOne")}`}
                             {errors.Zip.type === "maxLength" &&
                               "Max length is 20 characters"}
                             {errors.Zip.type === "pattern" &&
