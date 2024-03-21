@@ -12,7 +12,7 @@ const PlatformsForm = () => {
   const { t } = useTranslation();
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
-  const [failed, setFailed] = useState(false);
+  const [failed, setFailed] = useState(true);
 
   const modifiedHeader = Data.ServicesForm_Heading.map((data) => {
     if (i18n.language === "ar") {
@@ -334,8 +334,6 @@ const PlatformsForm = () => {
     }
   };
 
-  // -----------------------------------------------------------------
-
   return (
     <>
       <div className="mt-12 md:mt-20">
@@ -563,8 +561,10 @@ const PlatformsForm = () => {
                   <div className="mt-4 textCenter">
                     {loading && <Loader className="py-16" />}
                   </div>
-                  <div>{success && <Success className="py-16" />}</div>
-                  <div>{failed && <Failed className="py-16" />}</div>
+                  <div className="textCenter">
+                    <div>{success && <Success className="py-16" />}</div>
+                    <div>{failed && <Failed className="py-16" />}</div>
+                  </div>
                 </form>
               </div>
             </div>
