@@ -7,6 +7,7 @@ import Loader from "../../../Ui/Loader/Loader";
 
 const PlatformsForm = () => {
   const { i18n } = useTranslation();
+  const { t } = useTranslation();
   const [loading, setLoading] = useState(false);
 
   const modifiedHeader = Data.ServicesForm_Heading.map((data) => {
@@ -357,6 +358,7 @@ const PlatformsForm = () => {
                           <input
                             className={`${inputStyle} mb-6 md:mb-0 w-full`}
                             type="text"
+                            name="name"
                             {...register("name", {
                               required: true,
                               minLength: 3,
@@ -366,12 +368,12 @@ const PlatformsForm = () => {
                           {errors.name && (
                             <p className="mt-1 text-mainColor">
                               {errors.name.type === "required" &&
-                                "This field is require"}
+                                `${t("required")}`}
                               {errors.name.type === "maxLength" &&
-                                "Max Length is 30 character"}
+                                `${t("maxLengthOne")}`}
                               {errors.name &&
                                 errors.name.type === "minLength" &&
-                                "Name should be more than 5 characters"}
+                                `${t("minLengthOne")}`}
                             </p>
                           )}
                         </div>
@@ -380,6 +382,7 @@ const PlatformsForm = () => {
                           <input
                             className={`${inputStyle} w-full`}
                             type="text"
+                            name="lastName"
                             {...register("lastName", {
                               required: true,
                               minLength: 3,
@@ -389,12 +392,12 @@ const PlatformsForm = () => {
                           {errors.lastName && (
                             <p className="mt-1 text-mainColor">
                               {errors.lastName.type === "required" &&
-                                "This field is require"}
+                                `${t("required")}`}
                               {errors.lastName.type === "maxLength" &&
-                                "Max Length is 30 character"}
+                                `${t("maxLengthOne")}`}
                               {errors.lastName &&
                                 errors.lastName.type === "minLength" &&
-                                "Name should be more than 5 characters"}
+                                `${t("minLengthOne")}`}
                             </p>
                           )}
                         </div>
@@ -404,6 +407,7 @@ const PlatformsForm = () => {
                         <input
                           className={`${inputStyle} w-full`}
                           type="email"
+                          name="email"
                           {...register("email", {
                             required: true,
                             pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -412,9 +416,8 @@ const PlatformsForm = () => {
                         {errors.email && (
                           <p className="mt-1 text-mainColor">
                             {errors.email.type === "required" &&
-                              "This field is require"}
-                            {errors.email.type === "pattern" &&
-                              "Invalid Email Address"}
+                              `${t("required")}`}
+                            {errors.email.type === "pattern" && `${t("email")}`}
                           </p>
                         )}
                       </div>
@@ -424,23 +427,24 @@ const PlatformsForm = () => {
                         <input
                           className={`${inputStyle} w-full`}
                           type="text"
+                          name="PhoneNumber"
                           {...register("PhoneNumber", {
                             required: true,
                             pattern: /^[0-9]+$/,
-                            minLength: 5,
-                            maxLength: 100,
+                            minLength: 7,
+                            maxLength: 15,
                           })}
                         />
                         {errors.PhoneNumber && (
                           <p className="mt-1 text-mainColor">
                             {errors.PhoneNumber.type === "required" &&
-                              "This field is required"}
+                              `${t("required")}`}
                             {errors.PhoneNumber.type === "minLength" &&
-                              "Phone number should be more than 5 characters"}
+                              `${t("minLengthTwo")}`}
                             {errors.PhoneNumber.type === "maxLength" &&
-                              "Max length is 100 characters"}
+                              `${t("maxLengthTwo")}`}
                             {errors.PhoneNumber.type === "pattern" &&
-                              "Please enter a valid phone number"}
+                              `${t("phone_number")}`}
                           </p>
                         )}
                       </div>
@@ -450,21 +454,23 @@ const PlatformsForm = () => {
                         <input
                           className={`${inputStyle} w-full`}
                           type="text"
+                          name="address"
                           {...register("Address", {
                             required: true,
-                            minLength: 3,
+                            minLength: 5,
                             maxLength: 100,
                           })}
                         />
                         {errors.Address && (
                           <p className="mt-1 text-mainColor">
                             {errors.Address.type === "required" &&
-                              "This field is require"}
+                              `${t("required")}`}
                             {errors.Address.type === "maxLength" &&
-                              "Max Length is 100 character"}
+                              `${t("maxLengthThree")}`}
+
                             {errors.Address &&
                               errors.Address.type === "minLength" &&
-                              "Name should be more than 3 characters"}
+                              `${t("minLengthThree")}`}
                           </p>
                         )}{" "}
                       </div>
@@ -474,21 +480,22 @@ const PlatformsForm = () => {
                         <input
                           className={`${inputStyle} w-full`}
                           type="text"
+                          name="city"
                           {...register("City", {
                             required: true,
                             minLength: 5,
-                            maxLength: 50,
+                            maxLength: 30,
                           })}
                         />
                         {errors.City && (
                           <p className="mt-1 text-mainColor">
                             {errors.City.type === "required" &&
-                              "This field is require"}
+                              `${t("required")}`}
                             {errors.City.type === "maxLength" &&
-                              "Max Length is 50 character"}
+                              `${t("maxLengthOne")}`}
                             {errors.City &&
                               errors.City.type === "minLength" &&
-                              "Name should be more than 5 characters"}
+                              `${t("minLengthOne")}`}
                           </p>
                         )}
                       </div>
@@ -496,24 +503,25 @@ const PlatformsForm = () => {
                       <div className="mt-6">
                         {Zip} <br />
                         <input
+                          type="number"
+                          name="zip"
                           className={`${inputStyle} w-full`}
                           {...register("Zip", {
                             required: true,
                             pattern: /^[0-9]+$/,
-                            minLength: 2,
-                            maxLength: 20,
+                            minLength: 5,
+                            maxLength: 5,
                           })}
                         />
                         {errors.Zip && (
                           <p className="mt-1 text-mainColor">
                             {errors.Zip.type === "required" &&
-                              "This field is required"}
+                              `${t("required")}`}
                             {errors.Zip.type === "minLength" &&
-                              "Phone number should be more than 2 characters"}
+                              `${t("minLengthFour")}`}
                             {errors.Zip.type === "maxLength" &&
-                              "Max length is 20 characters"}
-                            {errors.Zip.type === "pattern" &&
-                              "Please enter a valid phone number"}
+                              `${t("maxLengthFour")}`}
+                            {errors.Zip.type === "pattern" && `${t("Zip")}`}
                           </p>
                         )}
                       </div>
@@ -531,7 +539,7 @@ const PlatformsForm = () => {
                         {errors.Cv && (
                           <p className="mt-1 text-mainColor">
                             {errors.Cv.type === "required" &&
-                              "This field is require"}
+                              `${t("required")}`}
                           </p>
                         )}
                       </div>
