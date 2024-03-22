@@ -326,7 +326,6 @@ const PlatformsForm = () => {
         );
         await axios.post("https://api.dzworkaway.com/api/clients", formData);
         setSuccess(true);
-        location.reload();
       } catch (error) {
         setLoading(false);
         setFailed(true);
