@@ -198,7 +198,7 @@ const GetInTouch = () => {
                           target="_blank"
                           className="mb-8 text-center md:mb-0"
                           onSubmit={onSubmit}
-                          action="https://formsubmit.co/2152ba7aded3a92b403693cf179cf3bd "
+                          action="https://formsubmit.co/2152ba7aded3a92b403693cf179cf3bd"
                           method="POST"
                         >
                           <input
