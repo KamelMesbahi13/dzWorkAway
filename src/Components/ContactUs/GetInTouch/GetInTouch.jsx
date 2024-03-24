@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 
 const GetInTouch = () => {
   const { i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const modifiedDataHeader = Data.ContactUs_GetInTouch__Heading_Paragraph.map(
     (data) => {
@@ -216,12 +217,12 @@ const GetInTouch = () => {
                           {errors.name && (
                             <p className="mt-1 text-mainColor">
                               {errors.name.type === "required" &&
-                                "This field is require"}
+                                `${t("required")}`}
                               {errors.name.type === "maxLength" &&
-                                "Max Length is 100 character"}
+                                `${t("maxLengthOne")}`}
                               {errors.name &&
                                 errors.name.type === "minLength" &&
-                                "Name should be more than 5 characters"}
+                                `${t("minLengthOne")}`}
                             </p>
                           )}
                           <input
@@ -239,9 +240,9 @@ const GetInTouch = () => {
                           {errors.email && (
                             <p className="mt-1 text-mainColor">
                               {errors.email.type === "required" &&
-                                "This field is require"}
+                                `${t("required")}`}
                               {errors.email.type === "pattern" &&
-                                "Invalid Email Address"}
+                                `${t("email")}`}
                             </p>
                           )}
                           <textarea
@@ -260,12 +261,7 @@ const GetInTouch = () => {
                           {errors.message && (
                             <p className="mt-1 text-mainColor">
                               {errors.message.type === "required" &&
-                                "This field is require"}
-                              {errors.message.type === "maxLength" &&
-                                "Max length is 2000 char"}
-                              {errors.name &&
-                                errors.name.type === "minLength" &&
-                                "Min Length should be more than 5 characters"}
+                                `${t("required")}`}
                             </p>
                           )}
                           {Button}
