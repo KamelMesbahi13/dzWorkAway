@@ -91,8 +91,6 @@ const ServicesForm = () => {
     );
   });
 
-  // ----------------------------------------------------------
-
   const modifiedEmail = Data.Form_Email.map((data) => {
     if (i18n.language === "ar") {
       return {
@@ -117,8 +115,6 @@ const ServicesForm = () => {
       </label>
     );
   });
-
-  // ----------------------------------------------------------
 
   const modifiedPhoneNumber = Data.Form_Phone_Number.map((data) => {
     if (i18n.language === "ar") {
@@ -145,8 +141,6 @@ const ServicesForm = () => {
     );
   });
 
-  // ----------------------------------------------------------
-
   const modifiedAddress = Data.Form_Address.map((data) => {
     if (i18n.language === "ar") {
       return {
@@ -171,8 +165,6 @@ const ServicesForm = () => {
       </label>
     );
   });
-
-  // ----------------------------------------------------------
 
   const modifiedCity = Data.Form_City.map((data) => {
     if (i18n.language === "ar") {
@@ -199,8 +191,6 @@ const ServicesForm = () => {
     );
   });
 
-  // ----------------------------------------------------------
-
   const modifiedZip = Data.Form_Zip.map((data) => {
     if (i18n.language === "ar") {
       return {
@@ -225,8 +215,6 @@ const ServicesForm = () => {
       </label>
     );
   });
-
-  // ----------------------------------------------------------
 
   const modifiedCv = Data.Form_Cv.map((data) => {
     if (i18n.language === "ar") {
@@ -253,8 +241,6 @@ const ServicesForm = () => {
     );
   });
 
-  // ----------------------------------------------------------
-
   const modifiedDegree = Data.Form_Degree.map((data) => {
     if (i18n.language === "ar") {
       return {
@@ -279,8 +265,6 @@ const ServicesForm = () => {
       </label>
     );
   });
-
-  // ----------------------------------------------------------
 
   const modifiedPassport = Data.Form_Passport.map((data) => {
     if (i18n.language === "ar") {
@@ -307,8 +291,6 @@ const ServicesForm = () => {
     );
   });
 
-  // ----------------------------------------------------------
-
   const modifiedMessage = Data.Form_Message.map((data) => {
     if (i18n.language === "ar") {
       return {
@@ -333,8 +315,6 @@ const ServicesForm = () => {
       </label>
     );
   });
-
-  // ----------------------------------------------------------
 
   const modifiedDataButton = Data.ServicesForm_Button.map((data) => {
     if (i18n.language === "ar") {

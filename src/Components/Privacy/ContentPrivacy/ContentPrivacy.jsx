@@ -81,8 +81,6 @@ const ContentPrivacy = () => {
     }
   );
 
-  // --------------------------------------------------------
-
   const ModifiedDataParagraphOne = Data.Privacy_Paragraph_One.map((data) => {
     if (i18n.language === "ar") {
       return {
@@ -117,8 +115,6 @@ const ContentPrivacy = () => {
     }
   );
 
-  // --------------------------------------------------------
-
   const ModifiedDataParagraphTwo = Data.Privacy_Paragraph_Two.map((data) => {
     if (i18n.language === "ar") {
       return {
@@ -152,8 +148,6 @@ const ContentPrivacy = () => {
       );
     }
   );
-
-  // --------------------------------------------------------
 
   const ModifiedDataParagraphThree = Data.Privacy_Paragraph_Three.map(
     (data) => {
@@ -191,8 +185,6 @@ const ContentPrivacy = () => {
     }
   );
 
-  // ---------------------------------------------------------
-
   const ModifiedDataParagraphFour = Data.Privacy_Paragraph_Four.map((data) => {
     if (i18n.language === "ar") {
       return {
@@ -227,8 +219,6 @@ const ContentPrivacy = () => {
     }
   );
 
-  // ----------------------------------------------------------
-
   const HeadingsAndParagraphsThree =
     Data.Privacy_Header_Paragraph_Header_Two.map((data) => {
       if (i18n.language === "ar") {
@@ -260,8 +250,6 @@ const ContentPrivacy = () => {
       );
     }
   );
-
-  // ----------------------------------------------------------
 
   const ModifiedDataParagraphFive = Data.Privacy_Paragraph_Five.map((data) => {
     if (i18n.language === "ar") {
@@ -297,8 +285,6 @@ const ContentPrivacy = () => {
     }
   );
 
-  // ----------------------------------------------------------
-
   const ModifiedDataParagraphSix = Data.Privacy_Paragraph_Six.map((data) => {
     if (i18n.language === "ar") {
       return {
@@ -332,8 +318,6 @@ const ContentPrivacy = () => {
       );
     }
   );
-
-  // ----------------------------------------------------------
 
   const ModifiedDataParagraphSeven = Data.Privacy_Paragraph_Seven.map(
     (data) => {
@@ -371,8 +355,6 @@ const ContentPrivacy = () => {
     }
   );
 
-  // ----------------------------------------------------------
-
   const ModifiedDataParagraphEight = Data.Privacy_Paragraph_Eight.map(
     (data) => {
       if (i18n.language === "ar") {
@@ -409,8 +391,6 @@ const ContentPrivacy = () => {
     }
   );
 
-  // ----------------------------------------------------------
-
   const ModifiedDataParagraphNine = Data.Privacy_Paragraph_Nine.map((data) => {
     if (i18n.language === "ar") {
       return {
@@ -444,8 +424,6 @@ const ContentPrivacy = () => {
       );
     }
   );
-
-  // ----------------------------------------------------------
 
   const ModifiedDataParagraphTen = Data.Privacy_Paragraph_Ten.map((data) => {
     if (i18n.language === "ar") {

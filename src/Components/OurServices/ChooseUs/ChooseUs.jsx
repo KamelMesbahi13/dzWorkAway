@@ -82,8 +82,6 @@ const ChooseUs = () => {
     }
   );
 
-  // ---------------------------------------------------------
-
   const modifiedDataHeaderTwo =
     Data.OurServices_ChooseUs__Heading_Paragraph_Two.map((data) => {
       if (i18n.language === "ar") {
@@ -120,8 +118,6 @@ const ChooseUs = () => {
       );
     }
   );
-
-  // ----------------------------------------------------------
 
   const modifiedDataContent = data.map((data) => {
     if (i18n.language === "ar") {

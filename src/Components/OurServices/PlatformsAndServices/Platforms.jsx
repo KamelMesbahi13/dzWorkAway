@@ -77,8 +77,6 @@ const Platform = () => {
     }
   );
 
-  // -----------------------------------------------------
-
   const modifiedDataBoxOne = Data.Services_One.map((data) => {
     if (i18n.language === "ar") {
       return {
