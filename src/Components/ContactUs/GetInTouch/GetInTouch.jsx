@@ -299,7 +299,7 @@ const GetInTouch = () => {
                             <div className="flex items-center initialDirection">
                               <div>
                                 <a
-                                  href="tel:+2135555555"
+                                  href="tel:+213550510061"
                                   className="flex items-center"
                                 >
                                   <div className="mr-4">
