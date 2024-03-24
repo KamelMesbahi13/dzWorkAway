@@ -69,8 +69,6 @@ const data = [
 const WhyUs = () => {
   const { i18n } = useTranslation();
 
-  // --------------------------------------------------------
-
   const modifiedDataHeaderAndParagraph =
     Data.AboutUs_WhyUs_Heading_Paragraph.map((data) => {
       if (i18n.language === "ar") {
@@ -111,8 +109,6 @@ const WhyUs = () => {
     }
   );
 
-  // --------------------------------------------------------
-
   const modifiedDataBoxes = data.map((data) => {
     if (i18n.language === "ar") {
       return {
@@ -133,8 +129,6 @@ const WhyUs = () => {
     }
     return data;
   });
-
-  // --------------------------------------------------------
 
   const modifiedDataButton = Data.AboutUs_WhyUs_Button.map((data) => {
     if (i18n.language === "ar") {
@@ -180,17 +174,6 @@ const WhyUs = () => {
             >
               {HeadingsAndParagraphs}
             </motion.div>
-            <motion.div
-              className="hidden md:block"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.5 }}
-              variants={{
-                hidden: { opacity: 0, y: 150 },
-                visible: { opacity: 1, y: 0 },
-              }}
-            ></motion.div>
           </div>
 
           <motion.div
