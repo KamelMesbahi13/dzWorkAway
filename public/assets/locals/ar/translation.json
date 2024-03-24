@@ -12,8 +12,8 @@
   "minLengthFour": "يجب أن يكون الرمز البريدي 5 أرقام.",
   "Zip": "الرجاء إدخال الرمز البريدي",
   "home": "الصفحة الرئيسية",
-  "contactus": "",
-  "ourServices": "",
-  "privacy": "",
-  "aboutUs": ""
+  "contactus": "تواصل معنا",
+  "ourServices": "خدماتنا",
+  "privacy": "سياسة الخصوصية",
+  "aboutUs": "معلومات عنا"
 }

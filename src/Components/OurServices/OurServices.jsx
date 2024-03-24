@@ -6,9 +6,11 @@ const ChooseUs = lazy(() => import("./ChooseUs/ChooseUs"));
 const Services = lazy(() => import("./Services/Services"));
 const Platforms = lazy(() => import("./PlatformsAndServices/Platforms"));
 import Title from "../../GeneralFunctions/Title";
+import { useTranslation } from "react-i18next";
 
 const OurServices = () => {
-  Title("Dz Work Away | Nos-Services");
+  const { t } = useTranslation();
+  Title(`Dz Work Away | ${t("ourServices")}`);
 
   return (
     <>

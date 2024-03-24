@@ -12,8 +12,8 @@
   "minLengthFour": "Zip Code should be 5 numbers.",
   "Zip": "Please enter Zip Code.",
   "home": "Home Page",
-  "contactus": "",
-  "ourServices": "",
+  "contactus": "Contact Us",
+  "ourServices": "Our Services",
   "privacy": "Privacy",
-  "aboutUs": ""
+  "aboutUs": "About Us"
 }

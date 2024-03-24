@@ -12,8 +12,8 @@
   "minLengthFour": "Le code postal doit comporter 5 numéros.",
   "Zip": "Veuillez saisir le code postal",
   "home": "Accueil",
-  "contactus": "",
-  "ourServices": "",
+  "contactus": "Contactez-nous",
+  "ourServices": "Nos services",
   "privacy": "Confidentialité",
-  "aboutUs": ""
+  "aboutUs": "À propos de nous"
 }
