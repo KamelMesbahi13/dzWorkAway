@@ -38,8 +38,6 @@ const AboutUs = () => {
     );
   });
 
-  // ----------------------------------------------------
-
   const modifiedDataParagraphOne = Data.AboutUs_Paragraph_One.map((data) => {
     if (i18n.language === "ar") {
       return {
@@ -66,8 +64,6 @@ const AboutUs = () => {
       </div>
     );
   });
-
-  // ---------------------------------------------------
 
   const modifiedDataParagraphVision = Data.AboutUs_Paragraph_Two_Vision.map(
     (data) => {
@@ -102,8 +98,6 @@ const AboutUs = () => {
       );
     }
   );
-
-  // ---------------------------------------------------
 
   const modifiedDataParagraphMission = Data.AboutUs_Paragraph_Two_Mission.map(
     (data) => {
@@ -140,10 +134,6 @@ const AboutUs = () => {
       );
     }
   );
-
-  // ---------------------------------------------------
-
-  // ---------------------------------------------------
 
   return (
     <>
