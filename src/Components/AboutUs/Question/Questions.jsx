@@ -93,8 +93,6 @@ const Questions = () => {
     children: PropTypes.node.isRequired,
   };
 
-  // -----------------------------------------------------------
-
   const modifiedDataQuestion = Data.AboutUs_Question.map((data) => {
     if (i18n.language === "ar") {
       return {
