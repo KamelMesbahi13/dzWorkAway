@@ -108,8 +108,6 @@ const ContactSection = () => {
     }
   );
 
-  // ---------------------------------------------------------
-
   return (
     <>
       <div className="mt-20 border-2 shadow-xl md:mt-40 border-grey">
