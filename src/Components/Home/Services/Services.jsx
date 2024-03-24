@@ -73,8 +73,6 @@ const ImagesTwo = DataImgsTwo.map(({ id, ImgThree, ImgFour, alt }) => {
 const Services = () => {
   const { i18n } = useTranslation();
 
-  // -----------------------------------------------------
-
   const modifiedDataHeaderAndParagraph = Data.Platforms_Heading_Paragraphs.map(
     (data) => {
       if (i18n.language === "ar") {
@@ -115,8 +113,6 @@ const Services = () => {
       );
     }
   );
-
-  // -----------------------------------------------------
 
   const modifiedDataBoxOne = Data.Platforms_One.map((data) => {
     if (i18n.language === "ar") {
@@ -178,8 +174,6 @@ const Services = () => {
       );
     }
   );
-
-  // -----------------------------------------------------
 
   const modifiedDataBoxTwo = Data.Platforms_Two.map((data) => {
     if (i18n.language === "ar") {

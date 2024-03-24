@@ -166,8 +166,6 @@ const PlatformsForm = () => {
     );
   });
 
-  // ----------------------------------------------------------
-
   const modifiedCity = Data.Form_City.map((data) => {
     if (i18n.language === "ar") {
       return {
@@ -192,8 +190,6 @@ const PlatformsForm = () => {
       </label>
     );
   });
-
-  // ----------------------------------------------------------
 
   const modifiedZip = Data.Form_Zip.map((data) => {
     if (i18n.language === "ar") {
@@ -220,8 +216,6 @@ const PlatformsForm = () => {
     );
   });
 
-  // ----------------------------------------------------------
-
   const modifiedCv = Data.Form_Cv.map((data) => {
     if (i18n.language === "ar") {
       return {
@@ -246,8 +240,6 @@ const PlatformsForm = () => {
       </label>
     );
   });
-
-  // ----------------------------------------------------------
 
   const modifiedMessage = Data.Form_Message.map((data) => {
     if (i18n.language === "ar") {
