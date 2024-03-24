@@ -10,5 +10,10 @@
   "minLengthThree": "L'adresse doit comporter plus de 5 caractères.",
   "maxLengthFour": "La longueur maximale est de 5 numéros",
   "minLengthFour": "Le code postal doit comporter 5 numéros.",
-  "Zip": "Veuillez saisir le code postal"
+  "Zip": "Veuillez saisir le code postal",
+  "home": "Accueil",
+  "contactus": "",
+  "ourServices": "",
+  "privacy": "Confidentialité",
+  "aboutUs": ""
 }

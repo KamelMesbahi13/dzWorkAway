@@ -8,9 +8,12 @@
   "phone_number": "Please enter phone number.",
   "maxLengthThree": "Max Length is 100 character.",
   "minLengthThree": "Address should be more than 5 characters.",
-
   "maxLengthFour": "Max Length is 5 numbers.",
   "minLengthFour": "Zip Code should be 5 numbers.",
-
-  "Zip": "Please enter Zip Code."
+  "Zip": "Please enter Zip Code.",
+  "home": "Home Page",
+  "contactus": "",
+  "ourServices": "",
+  "privacy": "Privacy",
+  "aboutUs": ""
 }

@@ -7,9 +7,12 @@ const ContactSection = lazy(() =>
   import("../../Ui/ContactSection/ContactSection")
 );
 import Title from "../../GeneralFunctions/Title";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
-  Title("Dz Work Away | Accueil");
+  const { t } = useTranslation();
+
+  Title(`Dz Work Away | ${t("home")}`);
 
   return (
     <>
