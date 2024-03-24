@@ -7,7 +7,8 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 const PlatformsDetails = () => {
-  Title("Dz Work Away | Détails des plateformes");
+  const { t } = useTranslation();
+  Title(`Dz Work Away | ${t("platformDetails")}`);
 
   const { i18n } = useTranslation();
 
